@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rim Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="loginScreen">
+    <div class="loginBox">
+      <h2>Login</h2>
+      <p>Enter your name and WhatsApp number to view catalogue</p>
+
+      <input
+        type="text"
+        id="loginName"
+        placeholder="Customer Name"
+      >
+
+      <input
+        type="tel"
+        id="loginPhone"
+        placeholder="Example: 60123456789"
+      >
+
+      <button id="loginButton">Continue</button>
+
+      <small id="loginError"></small>
+    </div>
+  </div>
+
+  <header>
+    <h1>Rim Catalogue</h1>
+
+    <input type="text" id="search" placeholder="Search rim...">
+
+    <button id="logoutButton">Logout</button>
+
+    <button id="cartButton">
+      Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <!-- FRONT MENU LIKE EXCEL SHEETS -->
+  <div class="categoryMenu">
+    <button onclick="showCategory('14')">14</button>
+    <button onclick="showCategory('15X6.5')">15X6.5</button>
+    <button onclick="showCategory('15X7.0')">15X7.0</button>
+    <button onclick="showCategory('16X')">16X</button>
+    <button onclick="showCategory('17X')">17X</button>
+    <button onclick="showCategory('18X')">18X</button>
+    <button onclick="showCategory('19X')">19X</button>
+    <button onclick="showCategory('20X')">20X</button>
+    <button onclick="showCategory('4X4')">4X4</button>
+    <button onclick="showCategory('NEW ARRIVAL')">NEW ARRIVAL</button>
+    <button onclick="showCategory('FORGED')">FORGED</button>
+  </div>
+
+  <!-- PRODUCT AREA -->
+  <div id="productGrid" class="grid"></div>
+
+  <!-- CART PANEL -->
+  <div id="cartPanel" class="hidden">
+    <div class="cartHeader">
+      <h2>Your Cart</h2>
+      <button id="closeCart">X</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <button id="sendWhatsapp">Send To WhatsApp</button>
+  </div>
+
+  <!-- PHOTO VIEWER -->
+  <div id="photoViewer" class="hidden photoViewer">
+    <div class="photoViewerBox">
+      <button class="closeViewer" onclick="closePhotoViewer()">X</button>
+
+      <h3 id="viewerTitle">Front View</h3>
+
+      <img id="viewerImage" src="">
+
+      <div class="viewerButtons">
+        <button onclick="prevPhoto()">Previous</button>
+        <button onclick="nextPhoto()">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORCE BROWSER TO LOAD LATEST SCRIPT -->
+  <script src="script.js?v=999"></script>
+
+</body>
+</html>
