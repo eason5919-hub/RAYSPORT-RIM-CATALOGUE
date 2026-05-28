@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Rim Catalogue</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- FORCE BROWSER TO LOAD LATEST CSS -->
+  <link rel="stylesheet" href="style.css?v=999">
 </head>
 
 <body>
@@ -13,7 +16,7 @@
   <div id="loginScreen" class="loginScreen">
     <div class="loginBox">
       <h2>Login</h2>
-      <p>Enter your name and WhatsApp number to view catalogue</p>
+      <p>Enter customer name and sales person WhatsApp number</p>
 
       <input
         type="text"
@@ -24,7 +27,7 @@
       <input
         type="tel"
         id="loginPhone"
-        placeholder="Example: 60123456789"
+        placeholder="Sales Person WhatsApp. Example: 60123456789"
       >
 
       <button id="loginButton">Continue</button>
@@ -45,7 +48,7 @@
     </button>
   </header>
 
-  <!-- FRONT MENU LIKE EXCEL SHEETS -->
+  <!-- CATEGORY MENU -->
   <div class="categoryMenu">
     <button onclick="showCategory('14')">14</button>
     <button onclick="showCategory('15X6.5')">15X6.5</button>
