@@ -5,7 +5,10 @@ let customerPhone = "";
 let customerName = "";
 
 async function loadProducts(){
-  const res = await fetch('products.json?v=' + new Date().getTime());
+  const res = await fetch('products.json?refresh=' + Date.now(), {
+    cache: 'no-store'
+  });
+
   products = await res.json();
   showCategory(currentCategory);
 }
@@ -38,11 +41,11 @@ function getDriveImageUrl(product, type){
     return "https://drive.google.com/thumbnail?id=" +
       fileId +
       "&sz=w1000&cache=" +
-      new Date().getTime();
+      Date.now();
   }
 
   const separator = url.includes("?") ? "&" : "?";
-  return url + separator + "cache=" + new Date().getTime();
+  return url + separator + "cache=" + Date.now();
 }
 
 function isValidWhatsappNumber(phone){
@@ -119,7 +122,6 @@ document.getElementById('logoutButton').onclick = () => {
 
 function showCategory(category){
   currentCategory = category;
-
   document.getElementById('search').value = '';
 
   document.querySelectorAll('.categoryMenu button').forEach(btn => {
@@ -136,7 +138,6 @@ function showCategory(category){
 
 function getCurrentFilteredProducts(){
   const q = document.getElementById('search').value.toLowerCase();
-
   const currentList = products.filter(p => p.category === currentCategory);
 
   return currentList.filter(p =>
@@ -144,6 +145,7 @@ function getCurrentFilteredProducts(){
       (p.description || '') + ' ' +
       (p.price || '') + ' ' +
       (p.status || '') + ' ' +
+      (p.extraInfo || '') + ' ' +
       (p.remark || '')
     ).toLowerCase().includes(q)
   );
@@ -205,7 +207,14 @@ function renderProducts(list){
 
         <div class="meta">
           <span class="price">${showPrice(p.price)}</span>
-          <span class="stock">${p.status || ''}</span>
+
+          <span class="stockBox">
+            <span class="stock">${p.status || ''}</span>
+
+            ${p.extraInfo
+              ? `<span class="extraInfo" style="color:${p.extraInfoColor || 'red'}">${p.extraInfo}</span>`
+              : ''}
+          </span>
         </div>
 
         ${p.remark ? `<div class="remark">${p.remark}</div>` : ''}

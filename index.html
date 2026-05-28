@@ -6,29 +6,19 @@
 
   <title>Rim Catalogue</title>
 
-  <!-- FORCE BROWSER TO LOAD LATEST CSS -->
-  <link rel="stylesheet" href="style.css?v=999">
+  <link rel="stylesheet" href="style.css?v=1003">
 </head>
 
 <body>
 
-  <!-- LOGIN SCREEN -->
   <div id="loginScreen" class="loginScreen">
     <div class="loginBox">
       <h2>Login</h2>
       <p>Enter customer name and sales person WhatsApp number</p>
 
-      <input
-        type="text"
-        id="loginName"
-        placeholder="Customer Name"
-      >
+      <input type="text" id="loginName" placeholder="Customer Name">
 
-      <input
-        type="tel"
-        id="loginPhone"
-        placeholder="Sales Person WhatsApp. Example: 60123456789"
-      >
+      <input type="tel" id="loginPhone" placeholder="Sales Person WhatsApp. Example: 60123456789">
 
       <button id="loginButton">Continue</button>
 
@@ -48,7 +38,6 @@
     </button>
   </header>
 
-  <!-- CATEGORY MENU -->
   <div class="categoryMenu">
     <button onclick="showCategory('14')">14</button>
     <button onclick="showCategory('15X6.5')">15X6.5</button>
@@ -63,10 +52,8 @@
     <button onclick="showCategory('FORGED')">FORGED</button>
   </div>
 
-  <!-- PRODUCT AREA -->
   <div id="productGrid" class="grid"></div>
 
-  <!-- CART PANEL -->
   <div id="cartPanel" class="hidden">
     <div class="cartHeader">
       <h2>Your Cart</h2>
@@ -78,7 +65,6 @@
     <button id="sendWhatsapp">Send To WhatsApp</button>
   </div>
 
-  <!-- PHOTO VIEWER -->
   <div id="photoViewer" class="hidden photoViewer">
     <div class="photoViewerBox">
       <button class="closeViewer" onclick="closePhotoViewer()">X</button>
@@ -94,8 +80,7 @@
     </div>
   </div>
 
-  <!-- FORCE BROWSER TO LOAD LATEST SCRIPT -->
-  <script src="script.js?v=999"></script>
+  <script src="script.js?v=1003"></script>
 
 </body>
 </html>
