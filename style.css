@@ -14,15 +14,16 @@ header{
   top:0;
   background:#111;
   color:white;
-  padding:16px;
-  z-index:2;
+  padding:12px;
+  z-index:10;
 }
 
 h1{
-  margin:0 0 6px;
+  margin:0 0 8px;
+  font-size:20px;
 }
 
-input{
+#search{
   width:100%;
   padding:12px;
   border-radius:10px;
@@ -30,102 +31,50 @@ input{
   font-size:16px;
 }
 
-/* LOGIN SCREEN */
-.loginScreen{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#111;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  z-index:99999;
-  padding:20px;
-}
-
-.loginBox{
-  background:white;
-  color:#111;
-  width:min(420px,100%);
-  padding:24px;
-  border-radius:16px;
-  box-shadow:0 10px 30px #0005;
-  text-align:center;
-}
-
-.loginBox h2{
-  margin:0 0 8px;
-}
-
-.loginBox p{
-  margin:0 0 16px;
-  color:#555;
-}
-
-.loginBox input{
-  margin-bottom:12px;
-}
-
-.loginBox button{
-  width:100%;
-}
-
-#loginError{
-  display:block;
-  color:#b00020;
-  margin-top:10px;
-  font-weight:bold;
-}
-
-/* LOGOUT BUTTON */
 #logoutButton{
-  margin-top:10px;
+  margin-top:8px;
   background:#555;
 }
 
 /* FRONT MENU */
 .categoryMenu{
   display:flex;
-  gap:10px;
+  gap:8px;
   overflow-x:auto;
-  padding:12px;
+  padding:10px;
   background:white;
   border-bottom:1px solid #ddd;
   position:sticky;
-  top:128px;
-  z-index:2;
+  top:105px;
+  z-index:9;
 }
 
 .categoryMenu button{
   white-space:nowrap;
-  background:#222;
+  background:#111;
   color:white;
   border:none;
-  padding:10px 14px;
+  padding:9px 12px;
   border-radius:10px;
   cursor:pointer;
   font-weight:bold;
+  font-size:13px;
 }
 
-/* SELECTED MENU BUTTON */
 .categoryMenu button.active{
-  background:#888;
+  background:#999;
   color:white;
 }
 
 /* PRODUCT GRID */
-main,
-.grid{
+.grid,
+main{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
   gap:14px;
   padding:14px;
-  align-items:stretch;
 }
 
-/* PRODUCT CARD */
 .card{
   background:white;
   border-radius:14px;
@@ -133,21 +82,18 @@ main,
   box-shadow:0 2px 10px #0001;
   display:flex;
   flex-direction:column;
-  height:100%;
+  min-height:100%;
 }
 
-/* PHOTO */
 .photo{
-  height:220px;
-  background:white;
+  height:190px;
+  background:#e5e5e5;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#777;
   text-align:center;
   cursor:pointer;
-  flex-shrink:0;
-  padding:4px;
 }
 
 .photo img{
@@ -157,19 +103,18 @@ main,
   background:white;
 }
 
-/* PRODUCT INFO */
 .info{
   padding:12px;
   display:flex;
   flex-direction:column;
   gap:8px;
   flex:1;
-  min-height:195px;
 }
 
 .desc{
   font-size:14px;
   line-height:1.35;
+  min-height:58px;
 }
 
 .meta{
@@ -179,27 +124,21 @@ main,
   align-items:center;
 }
 
-.stock{
+.price{
   font-weight:bold;
-  text-align:right;
 }
 
-.price{
+.stock{
   font-weight:bold;
 }
 
 .remark{
   font-size:13px;
   color:#555;
+  min-height:18px;
 }
 
-/* PUSH BUTTON TO BOTTOM */
-.info > button,
-.info > .qtyControls{
-  margin-top:auto;
-}
-
-/* BUTTON */
+/* BUTTONS */
 button{
   border:0;
   border-radius:10px;
@@ -215,7 +154,12 @@ button:disabled{
   cursor:not-allowed;
 }
 
-/* PLUS MINUS BUTTON */
+.card .info > button,
+.qtyControls{
+  margin-top:auto;
+}
+
+/* QUANTITY CONTROLS */
 .qtyControls{
   display:flex;
   gap:8px;
@@ -224,21 +168,26 @@ button:disabled{
 }
 
 .qtyControls button{
-  padding:6px 10px;
+  padding:7px 11px;
+  min-width:34px;
 }
 
-.qtyControls span{
-  min-width:24px;
+.qtyInput{
+  width:58px;
   text-align:center;
+  padding:7px;
+  border:1px solid #ccc;
+  border-radius:8px;
   font-weight:bold;
+  font-size:14px;
 }
 
 /* CART BUTTON */
 #cartButton{
   position:fixed;
-  right:16px;
-  bottom:16px;
-  z-index:3;
+  right:14px;
+  bottom:14px;
+  z-index:20;
   box-shadow:0 4px 20px #0004;
 }
 
@@ -250,7 +199,7 @@ button:disabled{
   height:100%;
   width:min(420px,100%);
   background:white;
-  z-index:4;
+  z-index:30;
   padding:16px;
   box-shadow:-5px 0 25px #0002;
   overflow:auto;
@@ -289,6 +238,52 @@ button:disabled{
   color:#073b18;
 }
 
+/* LOGIN */
+.loginScreen{
+  position:fixed;
+  inset:0;
+  background:#111;
+  z-index:99999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.loginBox{
+  background:white;
+  width:min(420px,100%);
+  padding:20px;
+  border-radius:16px;
+}
+
+.loginBox h2{
+  margin-top:0;
+}
+
+.loginBox p{
+  color:#555;
+}
+
+.loginBox input{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+.loginBox button{
+  width:100%;
+}
+
+#loginError{
+  color:#b00020;
+  display:block;
+  margin-top:10px;
+}
+
 /* PHOTO VIEWER */
 .photoViewer{
   position:fixed;
@@ -296,7 +291,7 @@ button:disabled{
   left:0;
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.85);
   display:flex;
   justify-content:center;
   align-items:center;
@@ -307,7 +302,8 @@ button:disabled{
   background:white;
   padding:15px;
   border-radius:12px;
-  max-width:90%;
+  width:90%;
+  max-width:600px;
   max-height:90%;
   text-align:center;
   position:relative;
@@ -333,43 +329,96 @@ button:disabled{
   margin-top:10px;
 }
 
-/* MOBILE */
+/* PHONE LAYOUT */
 @media(max-width:600px){
-  .categoryMenu{
-    top:124px;
+  header{
+    padding:10px;
   }
 
-  .grid{
+  h1{
+    font-size:18px;
+  }
+
+  .categoryMenu{
+    top:96px;
+    gap:7px;
+    padding:8px;
+  }
+
+  .categoryMenu button{
+    font-size:12px;
+    padding:8px 10px;
+  }
+
+  .grid,
+  main{
     grid-template-columns:1fr 1fr;
     gap:10px;
     padding:10px;
   }
 
+  .card{
+    border-radius:12px;
+  }
+
   .photo{
-    height:160px;
-    padding:3px;
+    height:145px;
   }
 
   .info{
     padding:9px;
-    min-height:180px;
+    gap:6px;
   }
 
   .desc{
     font-size:12px;
+    line-height:1.3;
+    min-height:62px;
   }
 
-  .meta{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:3px;
-  }
-
+  .price,
   .stock{
-    text-align:left;
+    font-size:13px;
+  }
+
+  .remark{
+    font-size:12px;
   }
 
   button{
     padding:9px 10px;
+    font-size:12px;
+  }
+
+  .qtyControls{
+    gap:5px;
+  }
+
+  .qtyControls button{
+    padding:7px 9px;
+    min-width:30px;
+  }
+
+  .qtyInput{
+    width:48px;
+    padding:6px;
+    font-size:13px;
+  }
+
+  #cartButton{
+    right:10px;
+    bottom:10px;
+  }
+}
+
+/* VERY SMALL PHONE */
+@media(max-width:380px){
+  .grid,
+  main{
+    grid-template-columns:1fr;
+  }
+
+  .photo{
+    height:220px;
   }
 }

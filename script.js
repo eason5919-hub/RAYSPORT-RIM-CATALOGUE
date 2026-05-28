@@ -15,11 +15,6 @@ function showPrice(price){
   return price;
 }
 
-/*
-  PHOTO RULE:
-  frontOriginal = Excel export front photo link
-  sideOriginal = Excel export side photo link
-*/
 function getDriveImageUrl(product, type){
   let url = "";
 
@@ -52,8 +47,6 @@ function getDriveImageUrl(product, type){
 
 function isValidWhatsappNumber(phone){
   phone = phone.replace(/\D/g, '');
-
-  // Malaysia WhatsApp format, example: 60123456789
   return /^60\d{8,10}$/.test(phone);
 }
 
@@ -69,7 +62,6 @@ function checkLogin(){
   ){
     customerPhone = savedPhone;
     customerName = savedName;
-
     document.getElementById('loginScreen').classList.add('hidden');
   }else{
     document.getElementById('loginScreen').classList.remove('hidden');
@@ -176,7 +168,16 @@ function renderProducts(list){
       orderButton = `
         <div class="qtyControls">
           <button onclick="changeQty('${p.sku}', -1)">-</button>
-          <span>${cartQty}</span>
+
+          <input
+            class="qtyInput"
+            type="number"
+            min="1"
+            value="${cartQty}"
+            onchange="setQtyAndRefresh('${p.sku}', this.value)"
+            oninput="setQty('${p.sku}', this.value)"
+          >
+
           <button onclick="changeQty('${p.sku}', 1)">+</button>
         </div>
       `;
@@ -224,6 +225,23 @@ function changeQty(sku, delta){
   renderProducts(getCurrentFilteredProducts());
 }
 
+function setQty(sku, value){
+  let qty = parseInt(value, 10);
+
+  if(isNaN(qty) || qty <= 0){
+    delete cart[sku];
+  }else{
+    cart[sku] = qty;
+  }
+
+  renderCart();
+}
+
+function setQtyAndRefresh(sku, value){
+  setQty(sku, value);
+  renderProducts(getCurrentFilteredProducts());
+}
+
 function removeItem(sku){
   delete cart[sku];
   renderCart();
@@ -247,11 +265,20 @@ function renderCart(){
 
     row.innerHTML = `
       <b>${p.description || ''}</b><br>
-      <small>Order Qty: ${qty}</small><br>
+      <small>Order Qty:</small>
 
       <div class="qtyControls">
         <button onclick="changeQty('${sku}', -1)">-</button>
-        <span>${qty}</span>
+
+        <input
+          class="qtyInput"
+          type="number"
+          min="1"
+          value="${qty}"
+          onchange="setQtyAndRefresh('${sku}', this.value)"
+          oninput="setQty('${sku}', this.value)"
+        >
+
         <button onclick="changeQty('${sku}', 1)">+</button>
         <button class="remove" onclick="removeItem('${sku}')">Remove</button>
       </div>
@@ -306,7 +333,6 @@ document.getElementById('sendWhatsapp').onclick = () => {
 
   window.open(`https://wa.me/${customerPhone}?text=${msg}`, '_blank');
 
-  /* CLEAR CART ONLY AFTER SEND — LOGIN STAYS */
   cart = {};
 
   renderCart();
