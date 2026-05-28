@@ -160,6 +160,10 @@ function renderProducts(list){
     const card = document.createElement('div');
     card.className = 'card';
 
+    if(p.rowColor){
+      card.style.backgroundColor = p.rowColor;
+    }
+
     let orderButton = '';
 
     if(soldOut){
