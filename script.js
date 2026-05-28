@@ -17,11 +17,8 @@ function showPrice(price){
 
 /*
   PHOTO RULE:
-  Front photo uses frontOriginal first.
-  Side photo uses sideOriginal first.
-
-  frontOriginal = Excel Column E hyperlink
-  sideOriginal = Excel Column F hyperlink
+  frontOriginal = Excel export front photo link
+  sideOriginal = Excel export side photo link
 */
 function getDriveImageUrl(product, type){
   let url = "";
@@ -61,8 +58,8 @@ function isValidWhatsappNumber(phone){
 }
 
 function checkLogin(){
-  const savedPhone = localStorage.getItem("customerPhone");
-  const savedName = localStorage.getItem("customerName");
+  const savedPhone = sessionStorage.getItem("customerPhone");
+  const savedName = sessionStorage.getItem("customerName");
 
   if(
     savedPhone &&
@@ -74,6 +71,8 @@ function checkLogin(){
     customerName = savedName;
 
     document.getElementById('loginScreen').classList.add('hidden');
+  }else{
+    document.getElementById('loginScreen').classList.remove('hidden');
   }
 }
 
@@ -98,15 +97,19 @@ document.getElementById('loginButton').onclick = () => {
   customerName = name;
   customerPhone = phone;
 
-  localStorage.setItem("customerName", name);
-  localStorage.setItem("customerPhone", phone);
+  sessionStorage.setItem("customerName", name);
+  sessionStorage.setItem("customerPhone", phone);
 
+  cart = {};
+  renderCart();
+
+  document.getElementById('loginError').textContent = "";
   document.getElementById('loginScreen').classList.add('hidden');
 };
 
 document.getElementById('logoutButton').onclick = () => {
-  localStorage.removeItem("customerName");
-  localStorage.removeItem("customerPhone");
+  sessionStorage.removeItem("customerName");
+  sessionStorage.removeItem("customerPhone");
 
   customerName = "";
   customerPhone = "";
@@ -281,7 +284,7 @@ document.getElementById('sendWhatsapp').onclick = () => {
     !customerName ||
     !isValidWhatsappNumber(customerPhone)
   ){
-    alert("Please login with customer name and valid WhatsApp number first");
+    alert("Please login with customer name and valid sales person WhatsApp number first");
     document.getElementById('loginScreen').classList.remove('hidden');
     return;
   }
@@ -302,6 +305,16 @@ document.getElementById('sendWhatsapp').onclick = () => {
   });
 
   window.open(`https://wa.me/${customerPhone}?text=${msg}`, '_blank');
+
+  /* CLEAR CART ONLY AFTER SEND — LOGIN STAYS */
+  cart = {};
+
+  renderCart();
+  renderProducts(getCurrentFilteredProducts());
+
+  document.getElementById('cartPanel').classList.add('hidden');
+
+  alert("Order sent. Cart cleared.");
 };
 
 let currentPhotoIndex = 0;
