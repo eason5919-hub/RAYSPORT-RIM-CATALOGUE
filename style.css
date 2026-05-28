@@ -18,9 +18,13 @@ header{
   z-index:10;
 }
 
-h1{
-  margin:0 0 8px;
-  font-size:20px;
+.headerLogo{
+  display:block;
+  width:100%;
+  max-width:420px;
+  height:auto;
+  margin:0 0 10px 0;
+  object-fit:contain;
 }
 
 #search{
@@ -345,8 +349,9 @@ button:disabled{
     padding:10px;
   }
 
-  h1{
-    font-size:18px;
+  .headerLogo{
+    max-width:280px;
+    margin-bottom:8px;
   }
 
   .categoryMenu{
