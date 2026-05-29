@@ -13,6 +13,7 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const sheetCategories = [
+  "ALL",
   "14",
   "15X6.5",
   "15X7.0",
@@ -23,6 +24,19 @@ const sheetCategories = [
   "20X",
   "4X4",
   "NEW ARRIVAL",
+  "FORGED"
+];
+
+const allIncludeCategories = [
+  "14",
+  "15X6.5",
+  "15X7.0",
+  "16X",
+  "17X",
+  "18X",
+  "19X",
+  "20X",
+  "4X4",
   "FORGED"
 ];
 
@@ -120,6 +134,14 @@ function productMatchesPcd(product, pcd){
   const normalizedDesc = normalizeText(product.description || '');
 
   return normalizedDesc.includes(normalizedPcd);
+}
+
+function productMatchesMainCategory(product, category){
+  if(category === "ALL"){
+    return allIncludeCategories.includes(product.category);
+  }
+
+  return product.category === category;
 }
 
 function showPrice(price){
@@ -276,7 +298,7 @@ function showCachedCategory(){
   }
 
   if(!categoryCardCache[currentCategory]){
-    const categoryProducts = products.filter(p => p.category === currentCategory);
+    const categoryProducts = products.filter(p => productMatchesMainCategory(p, currentCategory));
 
     categoryCardCache[currentCategory] = categoryProducts.map(p => {
       const card = createProductCard(p);
