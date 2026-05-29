@@ -4,13 +4,96 @@ let currentCategory = "14";
 let customerPhone = "";
 let customerName = "";
 
+const imageCacheVersion = Date.now();
+
+/*
+  Cache category cards so switching category does not recreate photos again.
+*/
+let categoryCardCache = {};
+let cardBySku = {};
+
+/*
+  Store latest products.json text.
+  If products.json is same, app does nothing.
+  If products.json changed, app updates automatically.
+*/
+let latestProductsJsonText = "";
+
 async function loadProducts(){
   const res = await fetch('products.json?refresh=' + Date.now(), {
     cache: 'no-store'
   });
 
-  products = await res.json();
+  latestProductsJsonText = await res.text();
+  products = JSON.parse(latestProductsJsonText);
+
+  preloadProductImages();
   showCategory(currentCategory);
+}
+
+/*
+  Auto check products.json every 60 seconds.
+  This does NOT create GitHub commits.
+  Customer stays logged in.
+  Cart stays.
+*/
+async function autoRefreshProducts(){
+  try{
+    const res = await fetch('products.json?refresh=' + Date.now(), {
+      cache: 'no-store'
+    });
+
+    const newText = await res.text();
+
+    if(newText === latestProductsJsonText){
+      return;
+    }
+
+    latestProductsJsonText = newText;
+    products = JSON.parse(newText);
+
+    /*
+      Clear product card cache because products.json changed.
+      Then rebuild current category.
+    */
+    categoryCardCache = {};
+    cardBySku = {};
+
+    /*
+      Remove cart items that no longer exist in products.json.
+      Existing valid cart items stay.
+    */
+    Object.keys(cart).forEach(sku => {
+      const stillExists = products.some(p => p.sku === sku);
+
+      if(!stillExists){
+        delete cart[sku];
+      }
+    });
+
+    preloadProductImages();
+    renderCart();
+    showCategory(currentCategory);
+
+    console.log("products.json updated automatically");
+
+  }catch(err){
+    console.log("Auto refresh failed:", err);
+  }
+}
+
+function preloadProductImages(){
+  products.forEach(p => {
+    if(p.frontOriginal || p.frontImage){
+      const img = new Image();
+      img.src = getDriveImageUrl(p, 'front');
+    }
+
+    if(p.sideOriginal || p.sideImage){
+      const img = new Image();
+      img.src = getDriveImageUrl(p, 'side');
+    }
+  });
 }
 
 function showPrice(price){
@@ -41,11 +124,11 @@ function getDriveImageUrl(product, type){
     return "https://drive.google.com/thumbnail?id=" +
       fileId +
       "&sz=w1000&cache=" +
-      Date.now();
+      imageCacheVersion;
   }
 
   const separator = url.includes("?") ? "&" : "?";
-  return url + separator + "cache=" + Date.now();
+  return url + separator + "cache=" + imageCacheVersion;
 }
 
 function isValidWhatsappNumber(phone){
@@ -111,13 +194,16 @@ document.getElementById('logoutButton').onclick = () => {
   cart = {};
 
   renderCart();
-  renderProducts(getCurrentFilteredProducts());
 
   document.getElementById('loginName').value = "";
   document.getElementById('loginPhone').value = "";
   document.getElementById('loginError').textContent = "";
   document.getElementById('cartPanel').classList.add('hidden');
   document.getElementById('loginScreen').classList.remove('hidden');
+
+  Object.keys(cardBySku).forEach(sku => {
+    updateProductOrderArea(sku);
+  });
 };
 
 function showCategory(category){
@@ -132,8 +218,46 @@ function showCategory(category){
     }
   });
 
-  const filtered = products.filter(p => p.category === category);
-  renderProducts(filtered);
+  showCachedCategory(category);
+}
+
+function showCachedCategory(category){
+  const grid = document.getElementById('productGrid');
+
+  while(grid.firstChild){
+    grid.removeChild(grid.firstChild);
+  }
+
+  if(!categoryCardCache[category]){
+    const categoryProducts = products.filter(p => p.category === category);
+
+    categoryCardCache[category] = categoryProducts.map(p => {
+      const card = createProductCard(p);
+      cardBySku[p.sku] = card;
+      return card;
+    });
+  }
+
+  const q = document.getElementById('search').value.toLowerCase();
+
+  categoryCardCache[category].forEach(card => {
+    const sku = card.dataset.sku;
+    const p = products.find(x => x.sku === sku);
+
+    if(!p) return;
+
+    const searchable = (
+      (p.description || '') + ' ' +
+      (p.price || '') + ' ' +
+      (p.status || '') + ' ' +
+      (p.extraInfo || '') + ' ' +
+      (p.remark || '')
+    ).toLowerCase();
+
+    if(searchable.includes(q)){
+      grid.appendChild(card);
+    }
+  });
 }
 
 function getCurrentFilteredProducts(){
@@ -151,80 +275,97 @@ function getCurrentFilteredProducts(){
   );
 }
 
-function renderProducts(list){
-  const grid = document.getElementById('productGrid');
-  grid.innerHTML = '';
+function isSoldOut(product){
+  return (product.status || '').toLowerCase().includes('sold out');
+}
 
-  list.forEach(p => {
-    const soldOut = (p.status || '').toLowerCase().includes('sold out');
-    const cartQty = cart[p.sku] || 0;
+function renderOrderControls(product){
+  const soldOut = isSoldOut(product);
+  const cartQty = cart[product.sku] || 0;
 
-    const card = document.createElement('div');
-    card.className = 'card';
+  if(soldOut){
+    return `<button disabled>Sold Out</button>`;
+  }
 
-    if(p.rowColor){
-      card.style.backgroundColor = p.rowColor;
-    }
+  if(cartQty > 0){
+    return `
+      <div class="qtyControls">
+        <button onclick="changeQty('${product.sku}', -1)">-</button>
 
-    let orderButton = '';
+        <input
+          class="qtyInput"
+          type="number"
+          min="1"
+          value="${cartQty}"
+          onchange="setQtyAndUpdate('${product.sku}', this.value)"
+          oninput="setQtyOnly('${product.sku}', this.value)"
+        >
 
-    if(soldOut){
-      orderButton = `<button disabled>Sold Out</button>`;
-    }else if(cartQty > 0){
-      orderButton = `
-        <div class="qtyControls">
-          <button onclick="changeQty('${p.sku}', -1)">-</button>
-
-          <input
-            class="qtyInput"
-            type="number"
-            min="1"
-            value="${cartQty}"
-            onchange="setQtyAndRefresh('${p.sku}', this.value)"
-            oninput="setQty('${p.sku}', this.value)"
-          >
-
-          <button onclick="changeQty('${p.sku}', 1)">+</button>
-        </div>
-      `;
-    }else{
-      orderButton = `
-        <button onclick="changeQty('${p.sku}', 1)">
-          Add to Cart
-        </button>
-      `;
-    }
-
-    card.innerHTML = `
-      <div class="photo" onclick="openPhotoViewer('${p.sku}')">
-        ${(p.frontOriginal || p.frontImage)
-          ? `<img src="${getDriveImageUrl(p, 'front')}" alt="">`
-          : 'No photo yet'}
-      </div>
-
-      <div class="info">
-        <div class="desc">${p.description || ''}</div>
-
-        <div class="meta">
-          <span class="price">${showPrice(p.price)}</span>
-
-          <span class="stockBox">
-            <span class="stock">${p.status || ''}</span>
-
-            ${p.extraInfo
-              ? `<span class="extraInfo" style="color:${p.extraInfoColor || 'red'}">${p.extraInfo}</span>`
-              : ''}
-          </span>
-        </div>
-
-        ${p.remark ? `<div class="remark">${p.remark}</div>` : ''}
-
-        ${orderButton}
+        <button onclick="changeQty('${product.sku}', 1)">+</button>
       </div>
     `;
+  }
 
-    grid.appendChild(card);
-  });
+  return `
+    <button onclick="changeQty('${product.sku}', 1)">
+      Add to Cart
+    </button>
+  `;
+}
+
+function createProductCard(p){
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.dataset.sku = p.sku;
+
+  if(p.rowColor){
+    card.style.backgroundColor = p.rowColor;
+  }
+
+  card.innerHTML = `
+    <div class="photo" onclick="openPhotoViewer('${p.sku}')">
+      ${(p.frontOriginal || p.frontImage)
+        ? `<img src="${getDriveImageUrl(p, 'front')}" alt="" loading="eager">`
+        : 'No photo yet'}
+    </div>
+
+    <div class="info">
+      <div class="desc">${p.description || ''}</div>
+
+      <div class="meta">
+        <span class="price">${showPrice(p.price)}</span>
+
+        <span class="stockBox">
+          <span class="stock">${p.status || ''}</span>
+
+          ${p.extraInfo
+            ? `<span class="extraInfo" style="color:${p.extraInfoColor || 'red'}">${p.extraInfo}</span>`
+            : ''}
+        </span>
+      </div>
+
+      ${p.remark ? `<div class="remark">${p.remark}</div>` : ''}
+
+      <div class="orderArea">
+        ${renderOrderControls(p)}
+      </div>
+    </div>
+  `;
+
+  return card;
+}
+
+function updateProductOrderArea(sku){
+  const product = products.find(p => p.sku === sku);
+  if(!product) return;
+
+  const card = cardBySku[sku];
+  if(!card) return;
+
+  const orderArea = card.querySelector('.orderArea');
+  if(!orderArea) return;
+
+  orderArea.innerHTML = renderOrderControls(product);
 }
 
 function changeQty(sku, delta){
@@ -235,10 +376,10 @@ function changeQty(sku, delta){
   }
 
   renderCart();
-  renderProducts(getCurrentFilteredProducts());
+  updateProductOrderArea(sku);
 }
 
-function setQty(sku, value){
+function setQtyOnly(sku, value){
   let qty = parseInt(value, 10);
 
   if(isNaN(qty) || qty <= 0){
@@ -250,15 +391,15 @@ function setQty(sku, value){
   renderCart();
 }
 
-function setQtyAndRefresh(sku, value){
-  setQty(sku, value);
-  renderProducts(getCurrentFilteredProducts());
+function setQtyAndUpdate(sku, value){
+  setQtyOnly(sku, value);
+  updateProductOrderArea(sku);
 }
 
 function removeItem(sku){
   delete cart[sku];
   renderCart();
-  renderProducts(getCurrentFilteredProducts());
+  updateProductOrderArea(sku);
 }
 
 function renderCart(){
@@ -288,8 +429,8 @@ function renderCart(){
           type="number"
           min="1"
           value="${qty}"
-          onchange="setQtyAndRefresh('${sku}', this.value)"
-          oninput="setQty('${sku}', this.value)"
+          onchange="setQtyAndUpdate('${sku}', this.value)"
+          oninput="setQtyOnly('${sku}', this.value)"
         >
 
         <button onclick="changeQty('${sku}', 1)">+</button>
@@ -302,7 +443,7 @@ function renderCart(){
 }
 
 document.getElementById('search').addEventListener('input', () => {
-  renderProducts(getCurrentFilteredProducts());
+  showCachedCategory(currentCategory);
 });
 
 document.getElementById('cartButton').onclick = () => {
@@ -346,10 +487,15 @@ document.getElementById('sendWhatsapp').onclick = () => {
 
   window.open(`https://wa.me/${customerPhone}?text=${msg}`, '_blank');
 
+  const oldCartSkus = Object.keys(cart);
+
   cart = {};
 
   renderCart();
-  renderProducts(getCurrentFilteredProducts());
+
+  oldCartSkus.forEach(sku => {
+    updateProductOrderArea(sku);
+  });
 
   document.getElementById('cartPanel').classList.add('hidden');
 
@@ -426,3 +572,11 @@ function closePhotoViewer(){
 
 checkLogin();
 loadProducts();
+
+/*
+  Auto refresh every 60 seconds.
+  Customer stays logged in.
+  Cart stays.
+  No GitHub commits created.
+*/
+setInterval(autoRefreshProducts, 60000);
