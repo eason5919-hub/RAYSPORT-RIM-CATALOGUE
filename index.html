@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RAYSPORT Rim Catalogue</title>
+  <!-- FORCE BROWSER NOT TO CACHE HTML -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
-  <link rel="stylesheet" href="style.css?v=1015">
+  <title>TYRE ONE Catalogue</title>
+
+  <!-- CHANGE VERSION WHEN YOU UPDATE CSS -->
+  <link rel="stylesheet" href="style.css?v=14005">
 </head>
 
 <body>
@@ -27,28 +33,29 @@
   </div>
 
   <header>
-    <img src="logo.png?v=1006" class="headerLogo" alt="RAYSPORT">
+    <div class="textLogo">TYRE ONE</div>
 
-    <input type="text" id="search" placeholder="Search rim...">
+    <input type="text" id="search" placeholder="Search tyre...">
 
     <div class="headerActionRow">
       <button id="logoutButton">Logout</button>
 
+      <div class="yearBox">
+        <button id="yearButton" onclick="showYearDropdown(event)">YEAR</button>
+      </div>
+
       <div class="pcdMenu">
-        <button onclick="showCategory('4X100')">4X100</button>
-        <button onclick="showCategory('4X108')">4X108</button>
-        <button onclick="showCategory('4X114.3')">4X114.3</button>
-        <button onclick="showCategory('8X100/110')">8X100/110</button>
-        <button onclick="showCategory('8X100/114.3')">8X100/114.3</button>
-        <button onclick="showCategory('5X100')">5X100</button>
-        <button onclick="showCategory('5X108')">5X108</button>
-        <button onclick="showCategory('5X112')">5X112</button>
-        <button onclick="showCategory('5X113.1')">5X113.1</button>
-        <button onclick="showCategory('5X114.3')">5X114.3</button>
-        <button onclick="showCategory('5X120')">5X120</button>
-        <button onclick="showCategory('6X114.3')">6X114.3</button>
-        <button onclick="showCategory('6X139.7')">6X139.7</button>
-        <button onclick="showCategory('12X135/139.7')">12X135/139.7</button>
+        <button onclick="showSize('R12')">R12</button>
+        <button onclick="showSize('R13')">R13</button>
+        <button onclick="showSize('R14')">R14</button>
+        <button onclick="showSize('R15')">R15</button>
+        <button onclick="showSize('R16')">R16</button>
+        <button onclick="showSize('R17')">R17</button>
+        <button onclick="showSize('R18')">R18</button>
+        <button onclick="showSize('R19')">R19</button>
+        <button onclick="showSize('R20')">R20</button>
+        <button onclick="showSize('R21')">R21</button>
+        <button onclick="showSize('R22')">R22</button>
       </div>
     </div>
 
@@ -57,19 +64,24 @@
     </button>
   </header>
 
+  <div id="yearDropdown" class="yearDropdown hidden">
+    <button onclick="clearYear()">ALL YEAR</button>
+    <button onclick="showYear('Y23')">Y23</button>
+    <button onclick="showYear('Y24')">Y24</button>
+    <button onclick="showYear('Y25')">Y25</button>
+    <button onclick="showYear('Y26')">Y26</button>
+  </div>
+
   <div class="categoryMenu">
     <button onclick="showCategory('ALL')">ALL</button>
-    <button onclick="showCategory('14')">14</button>
-    <button onclick="showCategory('15X6.5')">15X6.5</button>
-    <button onclick="showCategory('15X7.0')">15X7.0</button>
-    <button onclick="showCategory('16X')">16X</button>
-    <button onclick="showCategory('17X')">17X</button>
-    <button onclick="showCategory('18X')">18X</button>
-    <button onclick="showCategory('19X')">19X</button>
-    <button onclick="showCategory('20X')">20X</button>
-    <button onclick="showCategory('4X4')">4X4</button>
-    <button onclick="showCategory('NEW ARRIVAL')">NEW ARRIVAL</button>
-    <button onclick="showCategory('FORGED')">FORGED</button>
+    <button onclick="showCategory('APLUS')">APLUS</button>
+    <button onclick="showCategory('ROCKBLADE')">ROCKBLADE</button>
+    <button onclick="showCategory('HILO')">HILO</button>
+    <button onclick="showCategory('ARDENT')">ARDENT</button>
+    <button onclick="showCategory('RAUFFAN')">RAUFFAN</button>
+    <button onclick="showCategory('CROSSMAXX')">CROSSMAXX</button>
+    <button onclick="showCategory('NEOLIN')">NEOLIN</button>
+    <button onclick="showCategory('ROTALLA')">ROTALLA</button>
   </div>
 
   <div id="productGrid" class="grid"></div>
@@ -89,18 +101,18 @@
     <div class="photoViewerBox">
       <button class="closeViewer" onclick="closePhotoViewer()">X</button>
 
-      <h3 id="viewerTitle">Front View</h3>
+      <h3 id="viewerTitle">Photo</h3>
 
       <img id="viewerImage" src="">
 
       <div class="viewerButtons">
-        <button onclick="prevPhoto()">Previous</button>
-        <button onclick="nextPhoto()">Next</button>
+        <button onclick="closePhotoViewer()">Close</button>
       </div>
     </div>
   </div>
 
-  <script src="script.js?v=1015"></script>
+  <!-- CHANGE VERSION WHEN YOU UPDATE JS -->
+  <script src="script.js?v=14006"></script>
 
 </body>
 </html>
