@@ -52,17 +52,9 @@ async function autoRefreshProducts(){
     latestProductsJsonText = newText;
     products = JSON.parse(newText);
 
-    /*
-      Clear product card cache because products.json changed.
-      Then rebuild current category.
-    */
     categoryCardCache = {};
     cardBySku = {};
 
-    /*
-      Remove cart items that no longer exist in products.json.
-      Existing valid cart items stay.
-    */
     Object.keys(cart).forEach(sku => {
       const stillExists = products.some(p => p.sku === sku);
 
@@ -260,21 +252,6 @@ function showCachedCategory(category){
   });
 }
 
-function getCurrentFilteredProducts(){
-  const q = document.getElementById('search').value.toLowerCase();
-  const currentList = products.filter(p => p.category === currentCategory);
-
-  return currentList.filter(p =>
-    (
-      (p.description || '') + ' ' +
-      (p.price || '') + ' ' +
-      (p.status || '') + ' ' +
-      (p.extraInfo || '') + ' ' +
-      (p.remark || '')
-    ).toLowerCase().includes(q)
-  );
-}
-
 function isSoldOut(product){
   return (product.status || '').toLowerCase().includes('sold out');
 }
@@ -340,11 +317,11 @@ function createProductCard(p){
 
           ${p.extraInfo
             ? `<span class="extraInfo" style="color:${p.extraInfoColor || 'red'}">${p.extraInfo}</span>`
-            : ''}
+            : `<span class="extraInfo emptyExtra">&nbsp;</span>`}
         </span>
       </div>
 
-      ${p.remark ? `<div class="remark">${p.remark}</div>` : ''}
+      <div class="remark">${p.remark || '&nbsp;'}</div>
 
       <div class="orderArea">
         ${renderOrderControls(p)}
@@ -573,10 +550,4 @@ function closePhotoViewer(){
 checkLogin();
 loadProducts();
 
-/*
-  Auto refresh every 60 seconds.
-  Customer stays logged in.
-  Cart stays.
-  No GitHub commits created.
-*/
 setInterval(autoRefreshProducts, 60000);
