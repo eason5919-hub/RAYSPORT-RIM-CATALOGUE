@@ -1,23 +1,47 @@
 let products = [];
 let cart = {};
 let currentCategory = "14";
+let currentPcdFilter = "";
 let customerPhone = "";
 let customerName = "";
 
 const imageCacheVersion = Date.now();
 
-/*
-  Cache category cards so switching category does not recreate photos again.
-*/
 let categoryCardCache = {};
 let cardBySku = {};
 
-/*
-  Store latest products.json text.
-  If products.json is same, app does nothing.
-  If products.json changed, app updates automatically.
-*/
 let latestProductsJsonText = "";
+
+const sheetCategories = [
+  "14",
+  "15X6.5",
+  "15X7.0",
+  "16X",
+  "17X",
+  "18X",
+  "19X",
+  "20X",
+  "4X4",
+  "NEW ARRIVAL",
+  "FORGED"
+];
+
+const pcdCategories = [
+  "4X100",
+  "4X108",
+  "4X114.3",
+  "8X100/110",
+  "8X100/114.3",
+  "5X100",
+  "5X108",
+  "5X112",
+  "5X113.1",
+  "5X114.3",
+  "5X120",
+  "6X114.3",
+  "6X139.7",
+  "12X135/139.7"
+];
 
 async function loadProducts(){
   const res = await fetch('products.json?refresh=' + Date.now(), {
@@ -31,12 +55,6 @@ async function loadProducts(){
   showCategory(currentCategory);
 }
 
-/*
-  Auto check products.json every 60 seconds.
-  This does NOT create GitHub commits.
-  Customer stays logged in.
-  Cart stays.
-*/
 async function autoRefreshProducts(){
   try{
     const res = await fetch('products.json?refresh=' + Date.now(), {
@@ -65,7 +83,7 @@ async function autoRefreshProducts(){
 
     preloadProductImages();
     renderCart();
-    showCategory(currentCategory);
+    showCachedCategory();
 
     console.log("products.json updated automatically");
 
@@ -86,6 +104,22 @@ function preloadProductImages(){
       img.src = getDriveImageUrl(p, 'side');
     }
   });
+}
+
+function normalizeText(text){
+  return String(text || '')
+    .toUpperCase()
+    .replace(/\s+/g, '')
+    .trim();
+}
+
+function productMatchesPcd(product, pcd){
+  if(!pcd) return true;
+
+  const normalizedPcd = normalizeText(pcd);
+  const normalizedDesc = normalizeText(product.description || '');
+
+  return normalizedDesc.includes(normalizedPcd);
 }
 
 function showPrice(price){
@@ -199,31 +233,52 @@ document.getElementById('logoutButton').onclick = () => {
 };
 
 function showCategory(category){
-  currentCategory = category;
+  if(sheetCategories.includes(category)){
+    currentCategory = category;
+    currentPcdFilter = "";
+  }else if(pcdCategories.includes(category)){
+    if(currentPcdFilter === category){
+      currentPcdFilter = "";
+    }else{
+      currentPcdFilter = category;
+    }
+  }
+
   document.getElementById('search').value = '';
 
+  updateActiveButtons();
+  showCachedCategory();
+}
+
+function updateActiveButtons(){
   document.querySelectorAll('.categoryMenu button').forEach(btn => {
     btn.classList.remove('active');
 
-    if(btn.textContent.trim() === category){
+    if(btn.textContent.trim() === currentCategory){
       btn.classList.add('active');
     }
   });
 
-  showCachedCategory(category);
+  document.querySelectorAll('.pcdMenu button').forEach(btn => {
+    btn.classList.remove('active');
+
+    if(btn.textContent.trim() === currentPcdFilter){
+      btn.classList.add('active');
+    }
+  });
 }
 
-function showCachedCategory(category){
+function showCachedCategory(){
   const grid = document.getElementById('productGrid');
 
   while(grid.firstChild){
     grid.removeChild(grid.firstChild);
   }
 
-  if(!categoryCardCache[category]){
-    const categoryProducts = products.filter(p => p.category === category);
+  if(!categoryCardCache[currentCategory]){
+    const categoryProducts = products.filter(p => p.category === currentCategory);
 
-    categoryCardCache[category] = categoryProducts.map(p => {
+    categoryCardCache[currentCategory] = categoryProducts.map(p => {
       const card = createProductCard(p);
       cardBySku[p.sku] = card;
       return card;
@@ -232,7 +287,7 @@ function showCachedCategory(category){
 
   const q = document.getElementById('search').value.toLowerCase();
 
-  categoryCardCache[category].forEach(card => {
+  categoryCardCache[currentCategory].forEach(card => {
     const sku = card.dataset.sku;
     const p = products.find(x => x.sku === sku);
 
@@ -246,7 +301,10 @@ function showCachedCategory(category){
       (p.remark || '')
     ).toLowerCase();
 
-    if(searchable.includes(q)){
+    const matchSearch = searchable.includes(q);
+    const matchPcd = productMatchesPcd(p, currentPcdFilter);
+
+    if(matchSearch && matchPcd){
       grid.appendChild(card);
     }
   });
@@ -420,7 +478,7 @@ function renderCart(){
 }
 
 document.getElementById('search').addEventListener('input', () => {
-  showCachedCategory(currentCategory);
+  showCachedCategory();
 });
 
 document.getElementById('cartButton').onclick = () => {

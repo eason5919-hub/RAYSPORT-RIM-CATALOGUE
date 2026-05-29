@@ -35,9 +35,44 @@ header{
   font-size:16px;
 }
 
-#logoutButton{
+.headerActionRow{
+  display:flex;
+  align-items:center;
+  gap:8px;
   margin-top:8px;
+  overflow:hidden;
+}
+
+#logoutButton{
   background:#555;
+  flex:0 0 auto;
+}
+
+.pcdMenu{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  flex:1;
+  padding-bottom:2px;
+}
+
+.pcdMenu button{
+  white-space:nowrap;
+  background:#111;
+  color:white;
+  border:1px solid #333;
+  padding:9px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:13px;
+  flex:0 0 auto;
+}
+
+.pcdMenu button.active,
+.categoryMenu button.active{
+  background:#999;
+  color:white;
 }
 
 .categoryMenu{
@@ -48,7 +83,7 @@ header{
   background:white;
   border-bottom:1px solid #ddd;
   position:sticky;
-  top:105px;
+  top:165px;
   z-index:9;
 }
 
@@ -62,11 +97,6 @@ header{
   cursor:pointer;
   font-weight:bold;
   font-size:13px;
-}
-
-.categoryMenu button.active{
-  background:#999;
-  color:white;
 }
 
 .grid,
@@ -376,8 +406,21 @@ button:disabled{
     margin-bottom:8px;
   }
 
+  .headerActionRow{
+    gap:6px;
+  }
+
+  .pcdMenu{
+    gap:6px;
+  }
+
+  .pcdMenu button{
+    font-size:12px;
+    padding:8px 10px;
+  }
+
   .categoryMenu{
-    top:96px;
+    top:155px;
     gap:7px;
     padding:8px;
   }
