@@ -1,26 +1,60 @@
 let products = [];
 let cart = {};
-let currentCategory = "ALL";
-let currentYearFilter = "";
-let currentSizeFilter = "";
+let currentCategory = "14";
+let currentPcdFilter = "";
 let customerPhone = "";
 let customerName = "";
+
+const imageCacheVersion = Date.now();
 
 let categoryCardCache = {};
 let cardBySku = {};
 
 let latestProductsJsonText = "";
 
-const brandCategories = [
+const sheetCategories = [
   "ALL",
-  "APLUS",
-  "ROCKBLADE",
-  "HILO",
-  "ARDENT",
-  "RAUFFAN",
-  "CROSSMAXX",
-  "NEOLIN",
-  "ROTALLA"
+  "14",
+  "15X6.5",
+  "15X7.0",
+  "16X",
+  "17X",
+  "18X",
+  "19X",
+  "20X",
+  "4X4",
+  "NEW ARRIVAL",
+  "FORGED"
+];
+
+const allIncludeCategories = [
+  "14",
+  "15X6.5",
+  "15X7.0",
+  "16X",
+  "17X",
+  "18X",
+  "19X",
+  "20X",
+  "4X4",
+  "FORGED"
+];
+
+const pcdCategories = [
+  "4X100",
+  "4X108",
+  "4X114.3",
+  "8X100/110",
+  "8X100/114.3",
+  "5X100",
+  "5X108",
+  "5X112",
+  "5X113.1",
+  "5X114.3",
+  "5X120",
+  "6X114.3",
+  "6X139.7",
+  "12X135/139.7"
 ];
 
 async function loadProducts(){
@@ -31,7 +65,7 @@ async function loadProducts(){
   latestProductsJsonText = await res.text();
   products = JSON.parse(latestProductsJsonText);
 
-  assignInternalSkus();
+  preloadProductImages();
   showCategory(currentCategory);
 }
 
@@ -50,19 +84,18 @@ async function autoRefreshProducts(){
     latestProductsJsonText = newText;
     products = JSON.parse(newText);
 
-    assignInternalSkus();
-
     categoryCardCache = {};
     cardBySku = {};
 
     Object.keys(cart).forEach(sku => {
-      const stillExists = products.some(p => getProductSku(p) === sku && shouldShowProduct(p));
+      const stillExists = products.some(p => p.sku === sku);
 
       if(!stillExists){
         delete cart[sku];
       }
     });
 
+    preloadProductImages();
     renderCart();
     showCachedCategory();
 
@@ -73,195 +106,77 @@ async function autoRefreshProducts(){
   }
 }
 
-function assignInternalSkus(){
-  products.forEach((p, index) => {
-    const existingSku = cleanValue(
-      p.__sku ||
-      p.sku ||
-      p.SKU
-    );
-
-    if(existingSku){
-      p.__sku = existingSku;
-      return;
+function preloadProductImages(){
+  products.forEach(p => {
+    if(p.frontOriginal || p.frontImage){
+      const img = new Image();
+      img.src = getDriveImageUrl(p, 'front');
     }
 
-    const brand = getProductBrand(p);
-    const description = getProductDescription(p);
-    const photo = getProductPhotoText(p);
-    const price = getProductPrice(p);
-    const status = getProductStatus(p);
-
-    p.__sku = `${index}-${brand}-${description}-${photo}-${price}-${status}`;
+    if(p.sideOriginal || p.sideImage){
+      const img = new Image();
+      img.src = getDriveImageUrl(p, 'side');
+    }
   });
 }
 
-function cleanValue(value){
-  if(value === null || value === undefined) return "";
-  return String(value).trim();
+function normalizeText(text){
+  return String(text || '')
+    .toUpperCase()
+    .replace(/\s+/g, '')
+    .trim();
 }
 
-function getProductSku(product){
-  return cleanValue(product.__sku);
+function productMatchesPcd(product, pcd){
+  if(!pcd) return true;
+
+  const normalizedPcd = normalizeText(pcd);
+  const normalizedDesc = normalizeText(product.description || '');
+
+  return normalizedDesc.includes(normalizedPcd);
 }
 
-function getProductBrand(product){
-  return cleanValue(
-    product["Brand"] ||
-    product["BRAND"] ||
-    product["brand"]
-  ).toUpperCase();
+function productMatchesMainCategory(product, category){
+  if(category === "ALL"){
+    return allIncludeCategories.includes(product.category);
+  }
+
+  return product.category === category;
 }
 
-function getProductDescription(product){
-  return cleanValue(
-    product["Product Descriptions"] ||
-    product["PRODUCT DESCRIPTIONS"] ||
-    product["Product Description"] ||
-    product["product descriptions"] ||
-    product["description"]
-  );
+function showPrice(price){
+  if(price === '' || price === null || price === undefined) return '';
+  return price;
 }
 
-function getProductPhotoText(product){
-  return cleanValue(
-    product["PHOTO"] ||
-    product["Photo"] ||
-    product["photo"]
-  );
-}
+function getDriveImageUrl(product, type){
+  let url = "";
 
-function getProductPhotoUrl(product){
-  let url = cleanValue(
-    product["PHOTO_URL"] ||
-    product["Photo URL"] ||
-    product["photoUrl"] ||
-    product["photo_url"]
-  );
+  if(type === "front"){
+    url = product.frontOriginal || product.frontImage || "";
+  }else{
+    url = product.sideOriginal || product.sideImage || "";
+  }
 
   if(!url) return "";
 
+  let fileId = "";
+
   if(url.includes("/d/")){
-    const fileId = url.split("/d/")[1].split("/")[0];
-    return "https://drive.google.com/thumbnail?id=" + fileId + "&sz=w1200&cache=" + Date.now();
+    fileId = url.split("/d/")[1].split("/")[0];
+  }else if(url.includes("id=")){
+    fileId = url.split("id=")[1].split("&")[0];
   }
 
-  if(url.includes("id=")){
-    const fileId = url.split("id=")[1].split("&")[0];
-    return "https://drive.google.com/thumbnail?id=" + fileId + "&sz=w1200&cache=" + Date.now();
+  if(fileId){
+    return "https://drive.google.com/thumbnail?id=" +
+      fileId +
+      "&sz=w1000&cache=" +
+      imageCacheVersion;
   }
 
-  return url;
-}
-
-function getProductPrice(product){
-  return cleanValue(
-    product["PRICE"] ||
-    product["Price"] ||
-    product["price"]
-  );
-}
-
-function getProductStatus(product){
-  return cleanValue(
-    product["STATUS"] ||
-    product["Status"] ||
-    product["status"]
-  );
-}
-
-function getProductRowColor(product){
-  return cleanValue(
-    product["rowColor"] ||
-    product["ROW_COLOR"] ||
-    product["Row Color"]
-  );
-}
-
-function getStatusBgColor(product){
-  return cleanValue(
-    product["statusBgColor"] ||
-    product["STATUS_BG_COLOR"] ||
-    product["Status Bg Color"]
-  );
-}
-
-function getStatusFontColor(product){
-  return cleanValue(
-    product["statusFontColor"] ||
-    product["STATUS_FONT_COLOR"] ||
-    product["Status Font Color"]
-  );
-}
-
-function getProductSizeFilter(product){
-  const desc = getProductDescription(product).toUpperCase();
-
-  let match = desc.match(/R\s?(\d{2})/);
-
-  if(match){
-    return "R" + match[1];
-  }
-
-  match = desc.match(/(\d{2})R/);
-
-  if(match){
-    return "R" + match[1];
-  }
-
-  return "";
-}
-
-function getProductYear(product){
-  const allText = `
-    ${getProductDescription(product)}
-    ${getProductStatus(product)}
-  `.toUpperCase();
-
-  const match = allText.match(/Y\s?(23|24|25|26)/);
-
-  if(match){
-    return "Y" + match[1];
-  }
-
-  return "";
-}
-
-function shouldShowProduct(product){
-  const brand = getProductBrand(product);
-  const description = getProductDescription(product);
-  const photo = getProductPhotoText(product);
-  const photoUrl = getProductPhotoUrl(product);
-  const price = getProductPrice(product);
-  const status = getProductStatus(product);
-
-  const statusText = status.toLowerCase();
-
-  if(!brand && !description && !photo && !photoUrl && !price && !status){
-    return false;
-  }
-
-  if(statusText.includes("sold out")){
-    return false;
-  }
-
-  if(statusText.includes("not available")){
-    return false;
-  }
-
-  if(statusText.includes("no stock")){
-    return false;
-  }
-
-  if(statusText.includes("out of stock")){
-    return false;
-  }
-
-  if(statusText.includes("#n/a")){
-    return false;
-  }
-
-  return true;
+  const separator = url.includes("?") ? "&" : "?";
+  return url + separator + "cache=" + imageCacheVersion;
 }
 
 function isValidWhatsappNumber(phone){
@@ -340,117 +255,28 @@ document.getElementById('logoutButton').onclick = () => {
 };
 
 function showCategory(category){
-  if(brandCategories.includes(category)){
+  if(sheetCategories.includes(category)){
     currentCategory = category;
+    currentPcdFilter = "";
+  }else if(pcdCategories.includes(category)){
+    if(currentPcdFilter === category){
+      currentPcdFilter = "";
+    }else{
+      currentPcdFilter = category;
+    }
   }
 
   document.getElementById('search').value = '';
 
   updateActiveButtons();
   showCachedCategory();
-}
-
-function showYearDropdown(event){
-  if(event){
-    event.stopPropagation();
-  }
-
-  const dropdown = document.getElementById('yearDropdown');
-  const yearButton = document.getElementById('yearButton');
-
-  if(!dropdown || !yearButton) return;
-
-  const rect = yearButton.getBoundingClientRect();
-
-  dropdown.style.left = rect.left + "px";
-  dropdown.style.top = (rect.bottom + 6) + "px";
-
-  dropdown.classList.toggle('hidden');
-}
-
-function showYear(year){
-  if(currentYearFilter === year){
-    currentYearFilter = "";
-  }else{
-    currentYearFilter = year;
-  }
-
-  const dropdown = document.getElementById('yearDropdown');
-
-  if(dropdown){
-    dropdown.classList.add('hidden');
-  }
-
-  document.getElementById('search').value = '';
-
-  updateActiveButtons();
-  showCachedCategory();
-}
-
-function clearYear(){
-  currentYearFilter = "";
-
-  const dropdown = document.getElementById('yearDropdown');
-
-  if(dropdown){
-    dropdown.classList.add('hidden');
-  }
-
-  updateActiveButtons();
-  showCachedCategory();
-}
-
-function showSize(size){
-  if(currentSizeFilter === size){
-    currentSizeFilter = "";
-  }else{
-    currentSizeFilter = size;
-  }
-
-  document.getElementById('search').value = '';
-
-  updateActiveButtons();
-  showCachedCategory();
-}
-
-function productMatchesBrand(product){
-  if(currentCategory === "ALL"){
-    return true;
-  }
-
-  const brand = getProductBrand(product);
-  const desc = getProductDescription(product).toUpperCase();
-
-  return brand === currentCategory || desc.includes(currentCategory);
-}
-
-function productMatchesYear(product){
-  if(!currentYearFilter){
-    return true;
-  }
-
-  const year = getProductYear(product);
-  const desc = getProductDescription(product).toUpperCase();
-
-  return year === currentYearFilter || desc.includes(currentYearFilter);
-}
-
-function productMatchesSize(product){
-  if(!currentSizeFilter){
-    return true;
-  }
-
-  const size = getProductSizeFilter(product);
-  const desc = getProductDescription(product).toUpperCase();
-
-  return size === currentSizeFilter || desc.includes(currentSizeFilter);
 }
 
 function updateActiveButtons(){
   document.querySelectorAll('.categoryMenu button').forEach(btn => {
     btn.classList.remove('active');
 
-    if(btn.textContent.trim().toUpperCase() === currentCategory){
+    if(btn.textContent.trim() === currentCategory){
       btn.classList.add('active');
     }
   });
@@ -458,30 +284,10 @@ function updateActiveButtons(){
   document.querySelectorAll('.pcdMenu button').forEach(btn => {
     btn.classList.remove('active');
 
-    if(btn.textContent.trim().toUpperCase() === currentSizeFilter){
+    if(btn.textContent.trim() === currentPcdFilter){
       btn.classList.add('active');
     }
   });
-
-  document.querySelectorAll('.yearDropdown button').forEach(btn => {
-    btn.classList.remove('active');
-
-    if(btn.textContent.trim().toUpperCase() === currentYearFilter){
-      btn.classList.add('active');
-    }
-  });
-
-  const yearButton = document.getElementById('yearButton');
-
-  if(yearButton){
-    if(currentYearFilter){
-      yearButton.classList.add('active');
-      yearButton.textContent = currentYearFilter;
-    }else{
-      yearButton.classList.remove('active');
-      yearButton.textContent = "YEAR";
-    }
-  }
 }
 
 function showCachedCategory(){
@@ -491,80 +297,74 @@ function showCachedCategory(){
     grid.removeChild(grid.firstChild);
   }
 
-  if(!categoryCardCache["ALL_PRODUCTS"]){
-    const visibleProducts = products.filter(p => shouldShowProduct(p));
+  if(!categoryCardCache[currentCategory]){
+    const categoryProducts = products.filter(p => productMatchesMainCategory(p, currentCategory));
 
-    categoryCardCache["ALL_PRODUCTS"] = visibleProducts.map(p => {
-      const sku = getProductSku(p);
-
+    categoryCardCache[currentCategory] = categoryProducts.map(p => {
       const card = createProductCard(p);
-      cardBySku[sku] = card;
+      cardBySku[p.sku] = card;
       return card;
     });
   }
 
   const q = document.getElementById('search').value.toLowerCase();
 
-  categoryCardCache["ALL_PRODUCTS"].forEach(card => {
+  categoryCardCache[currentCategory].forEach(card => {
     const sku = card.dataset.sku;
-    const p = products.find(x => getProductSku(x) === sku);
+    const p = products.find(x => x.sku === sku);
 
     if(!p) return;
-    if(!shouldShowProduct(p)) return;
 
-    const searchable = `
-      ${getProductBrand(p)}
-      ${getProductDescription(p)}
-      ${getProductPhotoText(p)}
-      ${getProductPrice(p)}
-      ${getProductStatus(p)}
-    `.toLowerCase();
+    const searchable = (
+      (p.description || '') + ' ' +
+      (p.price || '') + ' ' +
+      (p.status || '') + ' ' +
+      (p.extraInfo || '') + ' ' +
+      (p.remark || '')
+    ).toLowerCase();
 
     const matchSearch = searchable.includes(q);
-    const matchBrand = productMatchesBrand(p);
-    const matchYear = productMatchesYear(p);
-    const matchSize = productMatchesSize(p);
+    const matchPcd = productMatchesPcd(p, currentPcdFilter);
 
-    if(matchSearch && matchBrand && matchYear && matchSize){
+    if(matchSearch && matchPcd){
       grid.appendChild(card);
     }
   });
 }
 
 function isSoldOut(product){
-  return !shouldShowProduct(product);
+  return (product.status || '').toLowerCase().includes('sold out');
 }
 
 function renderOrderControls(product){
   const soldOut = isSoldOut(product);
-  const sku = getProductSku(product);
-  const cartQty = cart[sku] || 0;
+  const cartQty = cart[product.sku] || 0;
 
   if(soldOut){
-    return `<button disabled onclick="event.stopPropagation()">Sold Out</button>`;
+    return `<button disabled>Sold Out</button>`;
   }
 
   if(cartQty > 0){
     return `
-      <div class="qtyControls" onclick="event.stopPropagation()">
-        <button onclick="changeQty('${escapeJsString(sku)}', -1)">-</button>
+      <div class="qtyControls">
+        <button onclick="changeQty('${product.sku}', -1)">-</button>
 
         <input
           class="qtyInput"
           type="number"
           min="1"
           value="${cartQty}"
-          onchange="setQtyAndUpdate('${escapeJsString(sku)}', this.value)"
-          oninput="setQtyOnly('${escapeJsString(sku)}', this.value)"
+          onchange="setQtyAndUpdate('${product.sku}', this.value)"
+          oninput="setQtyOnly('${product.sku}', this.value)"
         >
 
-        <button onclick="changeQty('${escapeJsString(sku)}', 1)">+</button>
+        <button onclick="changeQty('${product.sku}', 1)">+</button>
       </div>
     `;
   }
 
   return `
-    <button onclick="event.stopPropagation(); changeQty('${escapeJsString(sku)}', 1)">
+    <button onclick="changeQty('${product.sku}', 1)">
       Add to Cart
     </button>
   `;
@@ -573,66 +373,35 @@ function renderOrderControls(product){
 function createProductCard(p){
   const card = document.createElement('div');
   card.className = 'card';
+  card.dataset.sku = p.sku;
 
-  const sku = getProductSku(p);
-  card.dataset.sku = sku;
-  card.onclick = () => openPhotoViewer(sku);
-
-  const rowColor = getProductRowColor(p);
-
-  if(rowColor){
-    card.style.backgroundColor = rowColor;
-  }
-
-  const brand = getProductBrand(p);
-  const description = getProductDescription(p);
-  const price = getProductPrice(p);
-  const status = getProductStatus(p);
-  const statusBgColor = getStatusBgColor(p);
-  const statusFontColor = getStatusFontColor(p);
-
-  let statusStyle = "";
-
-  if(statusBgColor){
-    statusStyle += `background-color:${statusBgColor};`;
-  }
-
-  if(statusFontColor){
-    statusStyle += `color:${statusFontColor};`;
+  if(p.rowColor){
+    card.style.backgroundColor = p.rowColor;
   }
 
   card.innerHTML = `
+    <div class="photo" onclick="openPhotoViewer('${p.sku}')">
+      ${(p.frontOriginal || p.frontImage)
+        ? `<img src="${getDriveImageUrl(p, 'front')}" alt="" loading="eager">`
+        : 'No photo yet'}
+    </div>
+
     <div class="info">
-      <div class="desc">
-        ${brand ? `<b class="brandName">${escapeHtml(brand)}</b>` : ''}
-        ${escapeHtml(description)}
+      <div class="desc">${p.description || ''}</div>
+
+      <div class="meta">
+        <span class="price">${showPrice(p.price)}</span>
+
+        <span class="stockBox">
+          <span class="stock">${p.status || ''}</span>
+
+          ${p.extraInfo
+            ? `<span class="extraInfo" style="color:${p.extraInfoColor || 'red'}">${p.extraInfo}</span>`
+            : `<span class="extraInfo emptyExtra">&nbsp;</span>`}
+        </span>
       </div>
 
-      <div class="discountBox" onclick="event.stopPropagation()">
-        <label>DISCOUNT</label>
-        <input
-          class="discountInput"
-          type="text"
-          placeholder="0%"
-          oninput="calculateNett('${escapeJsString(sku)}', this.value)"
-        >
-      </div>
-
-      <div class="nettBox" onclick="event.stopPropagation()">
-        <label>NETT</label>
-        <input
-          class="nettInput"
-          type="text"
-          value=""
-          readonly
-        >
-      </div>
-
-      <div class="price">${escapeHtml(price)}</div>
-
-      <div class="stockBox">
-        <span class="stock" style="${statusStyle}">${escapeHtml(status)}</span>
-      </div>
+      <div class="remark">${p.remark || '&nbsp;'}</div>
 
       <div class="orderArea">
         ${renderOrderControls(p)}
@@ -643,70 +412,8 @@ function createProductCard(p){
   return card;
 }
 
-function getNumberFromPrice(value){
-  const cleaned = String(value || "")
-    .replace(/,/g, "")
-    .replace(/[^\d.]/g, "");
-
-  const num = parseFloat(cleaned);
-
-  if(isNaN(num)){
-    return 0;
-  }
-
-  return num;
-}
-
-function getDiscountPercent(value){
-  const cleaned = String(value || "")
-    .replace("%", "")
-    .replace(/[^\d.]/g, "");
-
-  const num = parseFloat(cleaned);
-
-  if(isNaN(num)){
-    return 0;
-  }
-
-  return num;
-}
-
-function calculateNett(sku, discountValue){
-  const product = products.find(p => getProductSku(p) === sku);
-  const card = cardBySku[sku];
-
-  if(!product || !card){
-    return;
-  }
-
-  const nettInput = card.querySelector(".nettInput");
-
-  if(!nettInput){
-    return;
-  }
-
-  const discountText = String(discountValue || "").trim();
-
-  // If discount box is empty, NETT stays empty
-  if(discountText === ""){
-    nettInput.value = "";
-    return;
-  }
-
-  const price = getNumberFromPrice(getProductPrice(product));
-  const discountPercent = getDiscountPercent(discountText);
-
-  let nett = price - (price * discountPercent / 100);
-
-  if(nett < 0){
-    nett = 0;
-  }
-
-  nettInput.value = nett.toFixed(2);
-}
-
 function updateProductOrderArea(sku){
-  const product = products.find(p => getProductSku(p) === sku);
+  const product = products.find(p => p.sku === sku);
   if(!product) return;
 
   const card = cardBySku[sku];
@@ -760,41 +467,41 @@ function renderCart(){
   box.innerHTML = '';
 
   Object.entries(cart).forEach(([sku, qty]) => {
-    const p = products.find(x => getProductSku(x) === sku);
+    const p = products.find(x => x.sku === sku);
 
     if(!p) return;
-    if(!shouldShowProduct(p)) return;
-
-    const brand = getProductBrand(p);
-    const description = getProductDescription(p);
 
     const row = document.createElement('div');
     row.className = 'cartRow';
 
     row.innerHTML = `
-      <b>${escapeHtml(brand)} ${escapeHtml(description)}</b>
+      <b>${p.description || ''}</b><br>
       <small>Order Qty:</small>
 
       <div class="qtyControls">
-        <button onclick="changeQty('${escapeJsString(sku)}', -1)">-</button>
+        <button onclick="changeQty('${sku}', -1)">-</button>
 
         <input
           class="qtyInput"
           type="number"
           min="1"
           value="${qty}"
-          onchange="setQtyAndUpdate('${escapeJsString(sku)}', this.value)"
-          oninput="setQtyOnly('${escapeJsString(sku)}', this.value)"
+          onchange="setQtyAndUpdate('${sku}', this.value)"
+          oninput="setQtyOnly('${sku}', this.value)"
         >
 
-        <button onclick="changeQty('${escapeJsString(sku)}', 1)">+</button>
-        <button class="remove" onclick="removeItem('${escapeJsString(sku)}')">Remove</button>
+        <button onclick="changeQty('${sku}', 1)">+</button>
+        <button class="remove" onclick="removeItem('${sku}')">Remove</button>
       </div>
     `;
 
     box.appendChild(row);
   });
 }
+
+document.getElementById('search').addEventListener('input', () => {
+  showCachedCategory();
+});
 
 document.getElementById('cartButton').onclick = () => {
   document.getElementById('cartPanel').classList.remove('hidden');
@@ -804,132 +511,121 @@ document.getElementById('closeCart').onclick = () => {
   document.getElementById('cartPanel').classList.add('hidden');
 };
 
-document.getElementById('search').addEventListener('input', () => {
-  showCachedCategory();
-});
-
-/* SEND WHATSAPP + RESET CART */
-
 document.getElementById('sendWhatsapp').onclick = () => {
-  if(!customerPhone || !isValidWhatsappNumber(customerPhone)){
-    alert("Please login with a valid WhatsApp number first.");
-    return;
-  }
-
   if(Object.keys(cart).length === 0){
-    alert("Cart is empty.");
+    alert("Cart is empty");
     return;
   }
 
-  let message = `TYRE ONE Order%0A`;
-  message += `Customer: ${encodeURIComponent(customerName)}%0A%0A`;
+  if(
+    !customerPhone ||
+    !customerName ||
+    !isValidWhatsappNumber(customerPhone)
+  ){
+    alert("Please login with customer name and valid sales person WhatsApp number first");
+    document.getElementById('loginScreen').classList.remove('hidden');
+    return;
+  }
 
-  Object.entries(cart).forEach(([sku, qty]) => {
-    const p = products.find(x => getProductSku(x) === sku);
+  let msg =
+    `New Rim Order%0A%0A` +
+    `Customer Name: ${encodeURIComponent(customerName)}%0A` +
+    `Sales Person WhatsApp: ${encodeURIComponent(customerPhone)}%0A`;
+
+  Object.entries(cart).forEach(([sku, qty], i) => {
+    const p = products.find(x => x.sku === sku);
 
     if(!p) return;
-    if(!shouldShowProduct(p)) return;
 
-    const brand = getProductBrand(p);
-    const description = getProductDescription(p);
-
-    message += `Brand: ${encodeURIComponent(brand)}%0A`;
-    message += `Description: ${encodeURIComponent(description)}%0A`;
-    message += `Order Qty: ${qty}%0A`;
-    message += `%0A`;
+    msg +=
+      `%0A${i+1}. ${encodeURIComponent(p.description || '')}` +
+      `%0AOrder Qty: ${qty}`;
   });
 
-  const url = `https://wa.me/${customerPhone}?text=${message}`;
+  window.open(`https://wa.me/${customerPhone}?text=${msg}`, '_blank');
 
-  window.open(url, '_blank');
+  const oldCartSkus = Object.keys(cart);
 
   cart = {};
+
   renderCart();
 
-  Object.keys(cardBySku).forEach(sku => {
+  oldCartSkus.forEach(sku => {
     updateProductOrderArea(sku);
   });
 
   document.getElementById('cartPanel').classList.add('hidden');
+
+  alert("Order sent. Cart cleared.");
 };
 
+let currentPhotoIndex = 0;
+let currentPhotos = [];
+
 function openPhotoViewer(sku){
-  const product = products.find(p => getProductSku(p) === sku);
+  const p = products.find(x => x.sku === sku);
 
-  if(!product) return;
+  if(!p) return;
 
-  const photoUrl = getProductPhotoUrl(product);
+  currentPhotos = [];
 
-  if(!photoUrl){
+  if(p.frontOriginal || p.frontImage){
+    currentPhotos.push({
+      title: "Front View",
+      product: p,
+      type: "front"
+    });
+  }
+
+  if(p.sideOriginal || p.sideImage){
+    currentPhotos.push({
+      title: "Side View",
+      product: p,
+      type: "side"
+    });
+  }
+
+  if(currentPhotos.length === 0){
+    alert("No photo available");
     return;
   }
 
-  document.getElementById('viewerTitle').textContent =
-    getProductBrand(product) + " " + getProductDescription(product);
+  currentPhotoIndex = 0;
+  showCurrentPhoto();
 
-  document.getElementById('viewerImage').src = photoUrl;
-
-  document.getElementById('photoViewer').classList.remove('hidden');
+  document.getElementById("photoViewer").classList.remove("hidden");
 }
 
-function closePhotoViewer(){
-  document.getElementById('photoViewer').classList.add('hidden');
-  document.getElementById('viewerImage').src = "";
-}
+function showCurrentPhoto(){
+  const photo = currentPhotos[currentPhotoIndex];
 
-function prevPhoto(){
-  return;
+  document.getElementById("viewerImage").src = getDriveImageUrl(photo.product, photo.type);
+  document.getElementById("viewerTitle").textContent = photo.title;
 }
 
 function nextPhoto(){
-  return;
+  currentPhotoIndex++;
+
+  if(currentPhotoIndex >= currentPhotos.length){
+    currentPhotoIndex = 0;
+  }
+
+  showCurrentPhoto();
 }
 
-function escapeHtml(text){
-  return String(text || "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+function prevPhoto(){
+  currentPhotoIndex--;
+
+  if(currentPhotoIndex < 0){
+    currentPhotoIndex = currentPhotos.length - 1;
+  }
+
+  showCurrentPhoto();
 }
 
-function escapeJsString(text){
-  return String(text || "")
-    .replaceAll("\\", "\\\\")
-    .replaceAll("'", "\\'")
-    .replaceAll('"', '\\"');
+function closePhotoViewer(){
+  document.getElementById("photoViewer").classList.add("hidden");
 }
-
-document.addEventListener('click', function(e){
-  const yearButton = document.getElementById('yearButton');
-  const yearDropdown = document.getElementById('yearDropdown');
-
-  if(!yearButton || !yearDropdown) return;
-
-  if(
-    !yearButton.contains(e.target) &&
-    !yearDropdown.contains(e.target)
-  ){
-    yearDropdown.classList.add('hidden');
-  }
-});
-
-window.addEventListener('scroll', function(){
-  const dropdown = document.getElementById('yearDropdown');
-
-  if(dropdown){
-    dropdown.classList.add('hidden');
-  }
-});
-
-window.addEventListener('resize', function(){
-  const dropdown = document.getElementById('yearDropdown');
-
-  if(dropdown){
-    dropdown.classList.add('hidden');
-  }
-});
 
 checkLogin();
 loadProducts();

@@ -15,18 +15,16 @@ header{
   background:#111;
   color:white;
   padding:12px;
-  z-index:1000;
+  z-index:10;
 }
 
-.textLogo{
+.headerLogo{
   display:block;
   width:100%;
   max-width:420px;
+  height:auto;
   margin:0 0 10px 0;
-  font-size:32px;
-  font-weight:900;
-  letter-spacing:2px;
-  color:white;
+  object-fit:contain;
 }
 
 #search{
@@ -42,71 +40,12 @@ header{
   align-items:center;
   gap:8px;
   margin-top:8px;
-  overflow-x:auto;
-  overflow-y:visible;
-  padding-bottom:2px;
+  overflow:hidden;
 }
 
 #logoutButton{
   background:#555;
   flex:0 0 auto;
-}
-
-.yearBox{
-  position:relative;
-  flex:0 0 auto;
-}
-
-#yearButton{
-  white-space:nowrap;
-  background:#111;
-  color:white;
-  border:1px solid #333;
-  padding:9px 12px;
-  border-radius:10px;
-  cursor:pointer;
-  font-weight:bold;
-  font-size:13px;
-  flex:0 0 auto;
-}
-
-#yearButton.active{
-  background:#999;
-  color:white;
-}
-
-.yearDropdown{
-  position:fixed;
-  background:white;
-  border-radius:10px;
-  padding:6px;
-  box-shadow:0 4px 18px #0004;
-  z-index:999999;
-  width:105px;
-}
-
-.yearDropdown button{
-  display:block;
-  width:100%;
-  white-space:nowrap;
-  background:#111;
-  color:white;
-  border:none;
-  padding:8px 10px;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
-  font-size:12px;
-  margin-bottom:5px;
-}
-
-.yearDropdown button:last-child{
-  margin-bottom:0;
-}
-
-.yearDropdown button.active{
-  background:#999;
-  color:white;
 }
 
 .pcdMenu{
@@ -145,7 +84,7 @@ header{
   border-bottom:1px solid #ddd;
   position:sticky;
   top:165px;
-  z-index:900;
+  z-index:9;
 }
 
 .categoryMenu button{
@@ -160,124 +99,116 @@ header{
   font-size:13px;
 }
 
-/* PRODUCT LIST */
 .grid,
 main{
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  padding:10px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:14px;
+  padding:14px;
 }
 
 .card{
   background:white;
-  border-radius:6px;
-  box-shadow:0 1px 4px #0001;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 2px 10px #0001;
+  display:flex;
+  flex-direction:column;
+  height:385px;
+}
+
+.photo{
+  height:190px;
+  background:#e5e5e5;
   display:flex;
   align-items:center;
-  min-height:54px;
-  padding:10px 12px;
+  justify-content:center;
+  color:#777;
+  text-align:center;
   cursor:pointer;
-  overflow:hidden;
-  transition:filter 0.15s ease, transform 0.05s ease;
-  border-bottom:1px solid #ddd;
+  flex-shrink:0;
 }
 
-.card:hover{
-  filter:brightness(0.98);
-}
-
-.card:active{
-  transform:scale(0.998);
-}
-
-/* PRODUCT ROW WITH DISCOUNT + NETT */
-.info{
-  display:grid;
-  grid-template-columns:1fr 95px 105px 120px 150px 140px;
-  align-items:center;
-  gap:12px;
+.photo img{
   width:100%;
+  height:100%;
+  object-fit:contain;
+  background:white;
+}
+
+.info{
+  padding:10px 12px 10px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  flex:1;
 }
 
 .desc{
-  font-size:15px;
-  line-height:1.3;
+  font-size:14px;
+  line-height:1.35;
+  height:54px;
   overflow:hidden;
+  flex-shrink:0;
 }
 
-.brandName{
-  font-weight:900;
-  margin-right:8px;
-  color:#111;
-}
-
-.discountBox,
-.nettBox{
+.meta{
   display:flex;
-  flex-direction:column;
-  gap:3px;
-}
-
-.discountBox label,
-.nettBox label{
-  font-size:11px;
-  font-weight:900;
-  color:#666;
-}
-
-.discountInput,
-.nettInput{
-  width:100%;
-  height:34px;
-  border:1px solid #d8d8d8;
-  border-radius:8px;
-  padding:6px 8px;
-  font-weight:900;
-  font-size:13px;
-  background:#f7f7f7;
-}
-
-.discountInput{
-  background:#fffdf0;
-}
-
-.nettInput{
-  background:#eef7ff;
-  color:#111;
+  justify-content:space-between;
+  gap:10px;
+  align-items:flex-start;
+  height:38px;
+  flex-shrink:0;
 }
 
 .price{
   font-weight:bold;
-  font-size:15px;
-  text-align:left;
-  white-space:nowrap;
+  padding-top:0;
 }
 
 .stockBox{
   display:flex;
-  justify-content:flex-start;
-  align-items:center;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:3px;
+  min-width:75px;
 }
 
 .stock{
   font-weight:bold;
-  text-align:center;
-  white-space:nowrap;
-  padding:5px 8px;
-  border-radius:0;
-  min-width:95px;
-  display:inline-block;
+  text-align:right;
+}
+
+.extraInfo{
+  font-size:13px;
+  font-weight:bold;
+  line-height:1.2;
+  text-align:right;
+  height:16px;
+}
+
+.emptyExtra{
+  visibility:hidden;
+}
+
+.remark{
+  font-size:13px;
+  color:#555;
+  height:18px;
+  overflow:hidden;
+  flex-shrink:0;
 }
 
 .orderArea{
+  margin-top:2px;
+  height:40px;
   display:flex;
-  justify-content:flex-end;
-  align-items:center;
+  align-items:flex-start;
+  flex-shrink:0;
 }
 
 .orderArea > button{
-  width:120px;
+  width:100%;
   height:38px;
 }
 
@@ -297,22 +228,22 @@ button:disabled{
 }
 
 .qtyControls{
-  width:140px;
+  width:100%;
   height:38px;
   display:flex;
-  gap:6px;
+  gap:8px;
   align-items:center;
   margin-top:0;
 }
 
 .qtyControls button{
-  padding:7px 10px;
-  min-width:32px;
+  padding:7px 11px;
+  min-width:34px;
   height:38px;
 }
 
 .qtyInput{
-  width:50px;
+  width:58px;
   height:38px;
   text-align:center;
   padding:7px;
@@ -326,7 +257,7 @@ button:disabled{
   position:fixed;
   right:14px;
   bottom:14px;
-  z-index:2000;
+  z-index:20;
   box-shadow:0 4px 20px #0004;
 }
 
@@ -337,7 +268,7 @@ button:disabled{
   height:100%;
   width:min(420px,100%);
   background:white;
-  z-index:3000;
+  z-index:30;
   padding:16px;
   box-shadow:-5px 0 25px #0002;
   overflow:auto;
@@ -353,65 +284,15 @@ button:disabled{
   align-items:center;
 }
 
-.cartHeader h2{
-  margin:0 0 14px 0;
-}
-
-#closeCart{
-  width:42px;
-  height:38px;
-  padding:0;
-  border-radius:10px;
-  background:#111;
-  color:white;
-  font-size:16px;
-}
-
 .cartRow{
   border-bottom:1px solid #eee;
   padding:12px 0;
-}
-
-.cartRow b{
-  display:block;
-  font-size:15px;
-  line-height:1.35;
-  margin-bottom:6px;
 }
 
 .cartRow small{
   display:block;
   color:#666;
   margin-top:4px;
-}
-
-/* FIX CART REMOVE BUTTON */
-.cartRow .qtyControls{
-  width:100%;
-  height:auto;
-  display:flex;
-  gap:8px;
-  align-items:center;
-  flex-wrap:nowrap;
-  margin-top:8px;
-}
-
-.cartRow .qtyControls button{
-  flex:0 0 auto;
-}
-
-.cartRow .qtyInput{
-  flex:0 0 58px;
-}
-
-.cartRow .remove{
-  background:#b00020;
-  color:white;
-  min-width:86px;
-  height:38px;
-  margin-left:0;
-  padding:7px 12px;
-  white-space:nowrap;
 }
 
 .remove{
@@ -489,7 +370,7 @@ button:disabled{
   padding:15px;
   border-radius:12px;
   width:90%;
-  max-width:720px;
+  max-width:600px;
   max-height:90%;
   text-align:center;
   position:relative;
@@ -497,7 +378,7 @@ button:disabled{
 
 .photoViewerBox img{
   max-width:100%;
-  max-height:75vh;
+  max-height:70vh;
   object-fit:contain;
 }
 
@@ -515,78 +396,18 @@ button:disabled{
   margin-top:10px;
 }
 
-@media(max-width:1100px){
-  .info{
-    grid-template-columns:1fr 85px 95px 100px 120px 130px;
-    gap:8px;
-  }
-
-  .desc{
-    font-size:14px;
-  }
-
-  .price{
-    font-size:14px;
-  }
-
-  .stock{
-    min-width:85px;
-    font-size:13px;
-  }
-
-  .orderArea > button{
-    width:115px;
-  }
-}
-
-@media(max-width:800px){
-  .info{
-    grid-template-columns:1fr 85px 95px;
-    gap:10px;
-  }
-
-  .price,
-  .stockBox,
-  .orderArea{
-    grid-column:auto;
-  }
-
-  .orderArea{
-    grid-column:1 / -1;
-    justify-content:flex-start;
-  }
-
-  .orderArea > button{
-    width:100%;
-  }
-
-  .qtyControls{
-    width:100%;
-  }
-}
-
 @media(max-width:600px){
   header{
     padding:10px;
   }
 
-  .textLogo{
-    font-size:26px;
+  .headerLogo{
+    max-width:280px;
     margin-bottom:8px;
   }
 
   .headerActionRow{
     gap:6px;
-  }
-
-  #yearButton{
-    font-size:12px;
-    padding:8px 10px;
-  }
-
-  .yearDropdown button{
-    font-size:12px;
-    padding:8px 10px;
   }
 
   .pcdMenu{
@@ -611,34 +432,33 @@ button:disabled{
 
   .grid,
   main{
-    gap:8px;
-    padding:8px;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:10px;
   }
 
   .card{
-    padding:12px;
-    min-height:118px;
-    align-items:flex-start;
+    border-radius:12px;
+    height:345px;
+  }
+
+  .photo{
+    height:145px;
   }
 
   .info{
-    grid-template-columns:1fr;
-    gap:8px;
+    padding:8px 9px 8px;
+    gap:5px;
   }
 
   .desc{
-    font-size:13px;
+    font-size:12px;
+    line-height:1.3;
+    height:58px;
   }
 
-  .discountBox,
-  .nettBox{
-    width:100%;
-  }
-
-  .discountInput,
-  .nettInput{
-    height:36px;
-    font-size:13px;
+  .meta{
+    height:38px;
   }
 
   .price,
@@ -647,15 +467,20 @@ button:disabled{
   }
 
   .stockBox{
-    justify-content:flex-start;
+    min-width:62px;
+  }
+
+  .extraInfo,
+  .remark{
+    font-size:12px;
   }
 
   .orderArea{
-    justify-content:flex-start;
+    margin-top:2px;
+    height:36px;
   }
 
   .orderArea > button{
-    width:100%;
     height:36px;
   }
 
@@ -666,11 +491,11 @@ button:disabled{
 
   .qtyControls{
     height:36px;
-    gap:6px;
+    gap:5px;
   }
 
   .qtyControls button{
-    padding:6px 9px;
+    padding:7px 9px;
     min-width:30px;
     height:36px;
   }
@@ -682,18 +507,23 @@ button:disabled{
     font-size:13px;
   }
 
-  .cartRow .qtyControls{
-    width:100%;
-    gap:6px;
+  #cartButton{
+    right:10px;
+    bottom:10px;
+  }
+}
+
+@media(max-width:380px){
+  .grid,
+  main{
+    grid-template-columns:1fr;
   }
 
-  .cartRow .qtyInput{
-    flex:0 0 48px;
+  .card{
+    height:405px;
   }
 
-  .cartRow .remove{
-    min-width:74px;
-    height:36px;
-    padding:6px 10px;
+  .photo{
+    height:220px;
   }
 }
