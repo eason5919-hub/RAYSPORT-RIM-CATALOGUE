@@ -692,14 +692,6 @@ loadProducts();
 
 setInterval(autoRefreshProducts, 60000);
 
-let lastTouchEnd = 0;
-
-document.addEventListener('touchend', function(event){
-  const now = Date.now();
-
-  if(now - lastTouchEnd <= 300){
-    event.preventDefault();
-  }
-
-  lastTouchEnd = now;
-}, false);
+document.addEventListener('dblclick', function(event){
+  event.preventDefault();
+}, { passive:false });
