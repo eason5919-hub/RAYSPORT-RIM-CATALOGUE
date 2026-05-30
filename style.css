@@ -18,6 +18,13 @@ header{
   z-index:10;
 }
 
+.topHeaderRow{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+}
+
 .headerLogo{
   display:block;
   width:100%;
@@ -27,12 +34,38 @@ header{
   object-fit:contain;
 }
 
+#refreshAppButton{
+  background:#555;
+  flex:0 0 auto;
+  padding:9px 12px;
+  font-size:13px;
+}
+
+.searchWrap{
+  position:relative;
+  width:100%;
+}
+
 #search{
   width:100%;
-  padding:12px;
+  padding:12px 44px 12px 12px;
   border-radius:10px;
   border:1px solid #ccc;
   font-size:16px;
+}
+
+#clearSearchButton{
+  position:absolute;
+  right:5px;
+  top:50%;
+  transform:translateY(-50%);
+  width:34px;
+  height:34px;
+  padding:0;
+  border-radius:8px;
+  background:#333;
+  color:white;
+  font-size:13px;
 }
 
 .headerActionRow{
@@ -250,7 +283,7 @@ button:disabled{
   border:1px solid #ccc;
   border-radius:8px;
   font-weight:bold;
-  font-size:14px;
+  font-size:16px;
 }
 
 #cartButton{
@@ -402,8 +435,13 @@ button:disabled{
   }
 
   .headerLogo{
-    max-width:280px;
+    max-width:260px;
     margin-bottom:8px;
+  }
+
+  #refreshAppButton{
+    padding:8px 10px;
+    font-size:12px;
   }
 
   .headerActionRow{
@@ -420,7 +458,7 @@ button:disabled{
   }
 
   .categoryMenu{
-    top:155px;
+    top:165px;
     gap:7px;
     padding:8px;
   }
@@ -504,7 +542,7 @@ button:disabled{
     width:48px;
     height:36px;
     padding:6px;
-    font-size:13px;
+    font-size:16px;
   }
 
   #cartButton{

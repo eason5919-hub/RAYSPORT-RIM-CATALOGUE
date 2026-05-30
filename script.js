@@ -1,6 +1,6 @@
 let products = [];
 let cart = {};
-let currentCategory = "14";
+let currentCategory = "ALL";
 let currentPcdFilter = "";
 let customerPhone = "";
 let customerName = "";
@@ -66,7 +66,7 @@ async function loadProducts(){
   products = JSON.parse(latestProductsJsonText);
 
   preloadProductImages();
-  showCategory(currentCategory);
+  showCategory("ALL");
 }
 
 async function autoRefreshProducts(){
@@ -184,9 +184,13 @@ function isValidWhatsappNumber(phone){
   return /^60\d{8,10}$/.test(phone);
 }
 
+/*
+  Stay logged in until user presses Logout.
+  Use localStorage instead of sessionStorage.
+*/
 function checkLogin(){
-  const savedPhone = sessionStorage.getItem("customerPhone");
-  const savedName = sessionStorage.getItem("customerName");
+  const savedPhone = localStorage.getItem("customerPhone");
+  const savedName = localStorage.getItem("customerName");
 
   if(
     savedPhone &&
@@ -223,19 +227,26 @@ document.getElementById('loginButton').onclick = () => {
   customerName = name;
   customerPhone = phone;
 
-  sessionStorage.setItem("customerName", name);
-  sessionStorage.setItem("customerPhone", phone);
+  localStorage.setItem("customerName", name);
+  localStorage.setItem("customerPhone", phone);
 
   cart = {};
   renderCart();
 
+  currentCategory = "ALL";
+  currentPcdFilter = "";
+  document.getElementById('search').value = "";
+
   document.getElementById('loginError').textContent = "";
   document.getElementById('loginScreen').classList.add('hidden');
+
+  updateActiveButtons();
+  showCachedCategory();
 };
 
 document.getElementById('logoutButton').onclick = () => {
-  sessionStorage.removeItem("customerName");
-  sessionStorage.removeItem("customerPhone");
+  localStorage.removeItem("customerName");
+  localStorage.removeItem("customerPhone");
 
   customerName = "";
   customerPhone = "";
@@ -257,7 +268,6 @@ document.getElementById('logoutButton').onclick = () => {
 function showCategory(category){
   if(sheetCategories.includes(category)){
     currentCategory = category;
-    currentPcdFilter = "";
   }else if(pcdCategories.includes(category)){
     if(currentPcdFilter === category){
       currentPcdFilter = "";
@@ -266,7 +276,10 @@ function showCategory(category){
     }
   }
 
-  document.getElementById('search').value = '';
+  /*
+    Search is NOT cleared here anymore.
+    Search only clears when user presses X or Refresh.
+  */
 
   updateActiveButtons();
   showCachedCategory();
@@ -353,6 +366,7 @@ function renderOrderControls(product){
           class="qtyInput"
           type="number"
           min="1"
+          inputmode="numeric"
           value="${cartQty}"
           onchange="setQtyAndUpdate('${product.sku}', this.value)"
           oninput="setQtyOnly('${product.sku}', this.value)"
@@ -425,6 +439,17 @@ function updateProductOrderArea(sku){
   orderArea.innerHTML = renderOrderControls(product);
 }
 
+function updateAllProductOrderAreas(){
+  Object.keys(cardBySku).forEach(sku => {
+    updateProductOrderArea(sku);
+  });
+}
+
+function updateCartCountOnly(){
+  const count = Object.values(cart).reduce((a,b) => a + b, 0);
+  document.getElementById('cartCount').textContent = count;
+}
+
 function changeQty(sku, delta){
   cart[sku] = (cart[sku] || 0) + delta;
 
@@ -436,6 +461,10 @@ function changeQty(sku, delta){
   updateProductOrderArea(sku);
 }
 
+/*
+  This will NOT rerender cart while typing.
+  This prevents phone keyboard from closing.
+*/
 function setQtyOnly(sku, value){
   let qty = parseInt(value, 10);
 
@@ -445,7 +474,8 @@ function setQtyOnly(sku, value){
     cart[sku] = qty;
   }
 
-  renderCart();
+  updateCartCountOnly();
+  updateProductOrderArea(sku);
 }
 
 function setQtyAndUpdate(sku, value){
@@ -460,8 +490,7 @@ function removeItem(sku){
 }
 
 function renderCart(){
-  const count = Object.values(cart).reduce((a,b) => a + b, 0);
-  document.getElementById('cartCount').textContent = count;
+  updateCartCountOnly();
 
   const box = document.getElementById('cartItems');
   box.innerHTML = '';
@@ -485,6 +514,7 @@ function renderCart(){
           class="qtyInput"
           type="number"
           min="1"
+          inputmode="numeric"
           value="${qty}"
           onchange="setQtyAndUpdate('${sku}', this.value)"
           oninput="setQtyOnly('${sku}', this.value)"
@@ -502,6 +532,25 @@ function renderCart(){
 document.getElementById('search').addEventListener('input', () => {
   showCachedCategory();
 });
+
+document.getElementById('clearSearchButton').onclick = () => {
+  document.getElementById('search').value = "";
+  showCachedCategory();
+};
+
+document.getElementById('refreshAppButton').onclick = () => {
+  cart = {};
+  currentCategory = "ALL";
+  currentPcdFilter = "";
+
+  document.getElementById('search').value = "";
+  document.getElementById('cartPanel').classList.add('hidden');
+
+  renderCart();
+  updateAllProductOrderAreas();
+  updateActiveButtons();
+  showCachedCategory();
+};
 
 document.getElementById('cartButton').onclick = () => {
   document.getElementById('cartPanel').classList.remove('hidden');
