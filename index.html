@@ -6,7 +6,7 @@
 
   <title>RAYSPORT Rim Catalogue</title>
 
-  <link rel="stylesheet" href="style.css?v=1019">
+  <link rel="stylesheet" href="style.css?v=1023">
 </head>
 
 <body>
@@ -62,26 +62,26 @@
       </div>
     </div>
 
+    <!-- MAIN CATEGORY MENU NOW INSIDE HEADER SO IT STAYS STATIONARY -->
+    <div class="categoryMenu">
+      <button onclick="showCategory('ALL')">ALL</button>
+      <button onclick="showCategory('14')">14</button>
+      <button onclick="showCategory('15X6.5')">15X6.5</button>
+      <button onclick="showCategory('15X7.0')">15X7.0</button>
+      <button onclick="showCategory('16X')">16X</button>
+      <button onclick="showCategory('17X')">17X</button>
+      <button onclick="showCategory('18X')">18X</button>
+      <button onclick="showCategory('19X')">19X</button>
+      <button onclick="showCategory('20X')">20X</button>
+      <button onclick="showCategory('4X4')">4X4</button>
+      <button onclick="showCategory('NEW ARRIVAL')">NEW ARRIVAL</button>
+      <button onclick="showCategory('FORGED')">FORGED</button>
+    </div>
+
     <button id="cartButton">
       Cart (<span id="cartCount">0</span>)
     </button>
   </header>
-
-  <!-- MAIN CATEGORY MENU -->
-  <div class="categoryMenu">
-    <button onclick="showCategory('ALL')">ALL</button>
-    <button onclick="showCategory('14')">14</button>
-    <button onclick="showCategory('15X6.5')">15X6.5</button>
-    <button onclick="showCategory('15X7.0')">15X7.0</button>
-    <button onclick="showCategory('16X')">16X</button>
-    <button onclick="showCategory('17X')">17X</button>
-    <button onclick="showCategory('18X')">18X</button>
-    <button onclick="showCategory('19X')">19X</button>
-    <button onclick="showCategory('20X')">20X</button>
-    <button onclick="showCategory('4X4')">4X4</button>
-    <button onclick="showCategory('NEW ARRIVAL')">NEW ARRIVAL</button>
-    <button onclick="showCategory('FORGED')">FORGED</button>
-  </div>
 
   <!-- PRODUCT AREA -->
   <div id="productGrid" class="grid"></div>
@@ -114,7 +114,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=1020"></script>
+  <script src="script.js?v=1021"></script>
 
 </body>
 </html>

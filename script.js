@@ -57,6 +57,14 @@ const pcdCategories = [
   "12X135/139.7"
 ];
 
+function scrollPageToTop(){
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+}
+
 async function loadProducts(){
   const res = await fetch('products.json?refresh=' + Date.now(), {
     cache: 'no-store'
@@ -238,6 +246,7 @@ document.getElementById('loginButton').onclick = () => {
 
   updateActiveButtons();
   showCachedCategory();
+  scrollPageToTop();
 };
 
 document.getElementById('logoutButton').onclick = () => {
@@ -274,6 +283,7 @@ function showCategory(category){
 
   updateActiveButtons();
   showCachedCategory();
+  scrollPageToTop();
 }
 
 function updateActiveButtons(){
@@ -560,6 +570,7 @@ document.getElementById('refreshAppButton').onclick = () => {
   renderCart();
   updateActiveButtons();
   showCachedCategory();
+  scrollPageToTop();
 };
 
 document.getElementById('cartButton').onclick = () => {

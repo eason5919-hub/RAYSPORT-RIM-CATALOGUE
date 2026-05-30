@@ -27,8 +27,8 @@ header{
   top:0;
   background:#111;
   color:white;
-  padding:12px;
-  z-index:10;
+  padding:12px 12px 0;
+  z-index:999;
 }
 
 .topHeaderRow{
@@ -121,6 +121,7 @@ header{
   color:white;
 }
 
+/* CATEGORY ROW NOW STAYS INSIDE HEADER */
 .categoryMenu{
   display:flex;
   gap:8px;
@@ -128,9 +129,9 @@ header{
   padding:10px;
   background:white;
   border-bottom:1px solid #ddd;
-  position:sticky;
-  top:165px;
-  z-index:9;
+  margin:10px -12px 0;
+  position:relative;
+  z-index:999;
 }
 
 .categoryMenu button{
@@ -303,7 +304,7 @@ button:disabled{
   position:fixed;
   right:14px;
   bottom:14px;
-  z-index:20;
+  z-index:1000;
   box-shadow:0 4px 20px #0004;
 }
 
@@ -314,7 +315,7 @@ button:disabled{
   height:100%;
   width:min(420px,100%);
   background:white;
-  z-index:30;
+  z-index:1001;
   padding:16px;
   box-shadow:-5px 0 25px #0002;
   overflow:auto;
@@ -444,7 +445,7 @@ button:disabled{
 
 @media(max-width:600px){
   header{
-    padding:10px;
+    padding:10px 10px 0;
   }
 
   .headerLogo{
@@ -471,9 +472,9 @@ button:disabled{
   }
 
   .categoryMenu{
-    top:165px;
     gap:7px;
     padding:8px;
+    margin:10px -10px 0;
   }
 
   .categoryMenu button{
