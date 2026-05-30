@@ -5,7 +5,7 @@ let currentPcdFilter = "";
 let customerPhone = "";
 let customerName = "";
 
-const imageCacheVersion = Date.now();
+let imageCacheVersion = Date.now();
 
 let categoryCardCache = {};
 let cardBySku = {};
@@ -462,10 +462,35 @@ function changeQty(sku, delta){
 }
 
 /*
-  This will NOT rerender cart while typing.
-  This prevents phone keyboard from closing.
+  IMPORTANT:
+  Do not remove item and do not rebuild the input while user is typing.
+  This prevents phone keyboard from closing when user deletes "1".
 */
 function setQtyOnly(sku, value){
+  if(value === ""){
+    updateCartCountOnly();
+    return;
+  }
+
+  let qty = parseInt(value, 10);
+
+  if(isNaN(qty) || qty <= 0){
+    updateCartCountOnly();
+    return;
+  }
+
+  cart[sku] = qty;
+  updateCartCountOnly();
+}
+
+function setQtyAndUpdate(sku, value){
+  if(value === ""){
+    delete cart[sku];
+    renderCart();
+    updateProductOrderArea(sku);
+    return;
+  }
+
   let qty = parseInt(value, 10);
 
   if(isNaN(qty) || qty <= 0){
@@ -474,12 +499,7 @@ function setQtyOnly(sku, value){
     cart[sku] = qty;
   }
 
-  updateCartCountOnly();
-  updateProductOrderArea(sku);
-}
-
-function setQtyAndUpdate(sku, value){
-  setQtyOnly(sku, value);
+  renderCart();
   updateProductOrderArea(sku);
 }
 
@@ -542,17 +562,22 @@ document.getElementById('refreshAppButton').onclick = () => {
   cart = {};
   currentCategory = "ALL";
   currentPcdFilter = "";
+  imageCacheVersion = Date.now();
+
+  categoryCardCache = {};
+  cardBySku = {};
 
   document.getElementById('search').value = "";
   document.getElementById('cartPanel').classList.add('hidden');
 
+  preloadProductImages();
   renderCart();
-  updateAllProductOrderAreas();
   updateActiveButtons();
   showCachedCategory();
 };
 
 document.getElementById('cartButton').onclick = () => {
+  renderCart();
   document.getElementById('cartPanel').classList.remove('hidden');
 };
 
