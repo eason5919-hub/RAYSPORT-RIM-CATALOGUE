@@ -184,10 +184,6 @@ function isValidWhatsappNumber(phone){
   return /^60\d{8,10}$/.test(phone);
 }
 
-/*
-  Stay logged in until user presses Logout.
-  Use localStorage instead of sessionStorage.
-*/
 function checkLogin(){
   const savedPhone = localStorage.getItem("customerPhone");
   const savedName = localStorage.getItem("customerName");
@@ -275,11 +271,6 @@ function showCategory(category){
       currentPcdFilter = category;
     }
   }
-
-  /*
-    Search is NOT cleared here anymore.
-    Search only clears when user presses X or Refresh.
-  */
 
   updateActiveButtons();
   showCachedCategory();
@@ -461,11 +452,6 @@ function changeQty(sku, delta){
   updateProductOrderArea(sku);
 }
 
-/*
-  IMPORTANT:
-  Do not remove item and do not rebuild the input while user is typing.
-  This prevents phone keyboard from closing when user deletes "1".
-*/
 function setQtyOnly(sku, value){
   if(value === ""){
     updateCartCountOnly();
@@ -705,3 +691,15 @@ checkLogin();
 loadProducts();
 
 setInterval(autoRefreshProducts, 60000);
+
+let lastTouchEnd = 0;
+
+document.addEventListener('touchend', function(event){
+  const now = Date.now();
+
+  if(now - lastTouchEnd <= 300){
+    event.preventDefault();
+  }
+
+  lastTouchEnd = now;
+}, false);
