@@ -316,7 +316,13 @@ function showCachedCategory(){
 
     categoryCardCache[currentCategory] = categoryProducts.map(p => {
       const card = createProductCard(p);
-      cardBySku[p.sku] = card;
+
+      if(!cardBySku[p.sku]){
+        cardBySku[p.sku] = [];
+      }
+
+      cardBySku[p.sku].push(card);
+
       return card;
     });
   }
@@ -431,13 +437,15 @@ function updateProductOrderArea(sku){
   const product = products.find(p => p.sku === sku);
   if(!product) return;
 
-  const card = cardBySku[sku];
-  if(!card) return;
+  const cards = cardBySku[sku];
+  if(!cards || cards.length === 0) return;
 
-  const orderArea = card.querySelector('.orderArea');
-  if(!orderArea) return;
+  cards.forEach(card => {
+    const orderArea = card.querySelector('.orderArea');
+    if(!orderArea) return;
 
-  orderArea.innerHTML = renderOrderControls(product);
+    orderArea.innerHTML = renderOrderControls(product);
+  });
 }
 
 function updateAllProductOrderAreas(){
@@ -477,6 +485,7 @@ function setQtyOnly(sku, value){
 
   cart[sku] = qty;
   updateCartCountOnly();
+  updateProductOrderArea(sku);
 }
 
 function setQtyAndUpdate(sku, value){
