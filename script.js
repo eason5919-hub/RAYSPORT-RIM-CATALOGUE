@@ -564,7 +564,7 @@ function renderCart(){
         <div class="cartProductInfo">
           <div class="cartProductDesc">${p.description || ""}</div>
 
-          <small>Order Qty:</small>
+          <small>Order Qty (Set):</small>
 
           <div class="qtyControls">
             <button onclick="changeQty('${sku}', -1)">-</button>
@@ -644,20 +644,27 @@ document.getElementById("sendWhatsapp").onclick = () => {
     return;
   }
 
+  let totalSets = 0;
+
   let msg =
     `New Rim Order%0A%0A` +
     `Customer Name: ${encodeURIComponent(customerName)}%0A` +
-    `Sales Person WhatsApp: ${encodeURIComponent(customerPhone)}%0A`;
+    `Sales Person WhatsApp: ${encodeURIComponent(customerPhone)}`;
 
   Object.entries(cart).forEach(([sku, qty], i) => {
     const p = products.find(x => x.sku === sku);
 
     if(!p) return;
 
+    totalSets += Number(qty) || 0;
+
     msg +=
-      `%0A${i + 1}. ${encodeURIComponent(p.description || "")}` +
-      `%0AOrder Qty: ${qty}`;
+      `%0A%0A${i + 1}. ${encodeURIComponent(p.description || "")}` +
+      `%0AOrder Qty (Set): ${qty}`;
   });
+
+  const setWord = totalSets === 1 ? "SET" : "SETS";
+  msg += `%0A%0ATOTAL ORDER: ${totalSets} ${setWord}`;
 
   window.open(`https://wa.me/${customerPhone}?text=${msg}`, "_blank");
 
