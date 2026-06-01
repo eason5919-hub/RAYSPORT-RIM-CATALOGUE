@@ -4,15 +4,26 @@ body{
   -webkit-text-size-adjust:100%;
 }
 
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
 button,
 input,
 .qtyControls button,
 .qtyInput{
   touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+  outline:none;
 }
 
-*{
-  box-sizing:border-box;
+button:active,
+button:focus,
+input:active,
+input:focus{
+  outline:none;
+  box-shadow:none;
 }
 
 body{
@@ -341,7 +352,6 @@ button:disabled{
   margin-top:4px;
 }
 
-/* CART WITH BIGGER FULL PHOTO */
 .cartProductLine{
   display:flex;
   gap:10px;
