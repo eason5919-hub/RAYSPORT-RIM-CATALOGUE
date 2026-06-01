@@ -6,43 +6,32 @@
 
   <title>RAYSPORT Rim Catalogue</title>
 
-  <link rel="stylesheet" href="style.css?v=1025">
+  <link rel="stylesheet" href="style.css?v=1027">
 
-  <!-- APP ICON FOR ANDROID / PWA -->
   <link rel="manifest" href="manifest.json?v=1018">
-
-  <!-- APP ICON FOR IPHONE / IPAD -->
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1018">
-
-  <!-- BROWSER TAB ICON -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1018">
-
   <meta name="theme-color" content="#111111">
 </head>
 
 <body>
 
-  <!-- LOGIN SCREEN -->
   <div id="loginScreen" class="loginScreen">
     <div class="loginBox">
       <h2>Login</h2>
       <p>Enter customer name and sales person WhatsApp number</p>
 
       <input type="text" id="loginName" placeholder="Customer Name">
-
       <input type="tel" id="loginPhone" placeholder="Sales Person WhatsApp. Example: 60123456789">
 
       <button id="loginButton">Continue</button>
-
       <small id="loginError"></small>
     </div>
   </div>
 
-  <!-- HEADER -->
   <header>
     <div class="topHeaderRow">
       <img src="logo.png?v=1006" class="headerLogo" alt="RAYSPORT">
-
       <button id="refreshAppButton" title="Refresh App">Refresh</button>
     </div>
 
@@ -51,7 +40,6 @@
       <button id="clearSearchButton" type="button">X</button>
     </div>
 
-    <!-- LOGOUT + PCD FILTER BUTTONS -->
     <div class="headerActionRow">
       <button id="logoutButton">Logout</button>
 
@@ -74,7 +62,6 @@
       </div>
     </div>
 
-    <!-- MAIN CATEGORY MENU INSIDE HEADER SO IT STAYS STATIONARY -->
     <div class="categoryMenu">
       <button onclick="showCategory('ALL')">ALL</button>
       <button onclick="showCategory('14')">14</button>
@@ -95,10 +82,8 @@
     </button>
   </header>
 
-  <!-- PRODUCT AREA -->
   <div id="productGrid" class="grid"></div>
 
-  <!-- CART PANEL -->
   <div id="cartPanel" class="hidden">
     <div class="cartHeader">
       <h2>Your Cart</h2>
@@ -106,17 +91,14 @@
     </div>
 
     <div id="cartItems"></div>
-
     <button id="sendWhatsapp">Send To WhatsApp</button>
   </div>
 
-  <!-- PHOTO VIEWER -->
   <div id="photoViewer" class="hidden photoViewer">
     <div class="photoViewerBox">
       <button class="closeViewer" onclick="closePhotoViewer()">X</button>
 
       <h3 id="viewerTitle">Front View</h3>
-
       <img id="viewerImage" src="">
 
       <div class="viewerButtons">

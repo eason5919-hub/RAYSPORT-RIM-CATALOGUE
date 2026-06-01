@@ -121,7 +121,6 @@ header{
   color:white;
 }
 
-/* CATEGORY ROW INSIDE HEADER */
 .categoryMenu{
   display:flex;
   gap:8px;
@@ -342,7 +341,7 @@ button:disabled{
   margin-top:4px;
 }
 
-/* CART WITH PHOTO */
+/* CART WITH BIGGER FULL PHOTO */
 .cartProductLine{
   display:flex;
   gap:10px;
@@ -350,8 +349,8 @@ button:disabled{
 }
 
 .cartProductThumb{
-  width:64px;
-  height:64px;
+  width:90px;
+  height:90px;
   border-radius:10px;
   background:#eee;
   flex:0 0 auto;
@@ -367,7 +366,7 @@ button:disabled{
 .cartProductThumb img{
   width:100%;
   height:100%;
-  object-fit:contain;
+  object-fit:cover;
   background:white;
 }
 
@@ -601,8 +600,8 @@ button:disabled{
   }
 
   .cartProductThumb{
-    width:58px;
-    height:58px;
+    width:85px;
+    height:85px;
   }
 
   .cartProductDesc{
