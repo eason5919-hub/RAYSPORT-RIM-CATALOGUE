@@ -6,7 +6,18 @@
 
   <title>RAYSPORT Rim Catalogue</title>
 
-  <link rel="stylesheet" href="style.css?v=1027">
+  <!-- AUTO-FORCE LATEST VERSION -->
+  <script>
+    const APP_VERSION = "1032";
+    const currentUrl = new URL(window.location.href);
+
+    if(currentUrl.searchParams.get("v") !== APP_VERSION){
+      currentUrl.searchParams.set("v", APP_VERSION);
+      window.location.replace(currentUrl.toString());
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css?v=1032">
 
   <link rel="manifest" href="manifest.json?v=1018">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1018">
@@ -108,7 +119,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=1031"></script>
+  <script src="script.js?v=1032"></script>
 
 </body>
 </html>
