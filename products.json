@@ -515,7 +515,7 @@
     "excelRow": "168",
     "description": "MDM010 15X7 4X114.3 ET35 CB73.1  HYPER BLACK (TC-X)",
     "price": "708.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -1275,23 +1275,6 @@
   }
 ,
   {
-    "sku": "16X-ROW-175",
-    "category": "16X",
-    "excelRow": "175",
-    "description": "RFF102 16X7 4X114.3 ET40 CB73.1  GREY CENTER POLISH DOUBLE LIP POLISH",
-    "price": "865.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/15Bhh077c-ohOosGZydup7rofDfpJC0qP/view",
-    "sideOriginal": "https://drive.google.com/file/d/19ZnXBy-7R4CW9aiFXj1beJZBI9mfEjO1/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=15Bhh077c-ohOosGZydup7rofDfpJC0qP&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=19ZnXBy-7R4CW9aiFXj1beJZBI9mfEjO1&sz=w1000"
-  }
-,
-  {
     "sku": "16X-ROW-191",
     "category": "16X",
     "excelRow": "191",
@@ -1819,23 +1802,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-39",
-    "category": "17X",
-    "excelRow": "39",
-    "description": "D079S (ZX862) 17X8 5X113.1 ET35  CB73.1  HYPER BLACK",
-    "price": "1,100.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1zi_zoS5LCGEomBhun-BaEG5f3lJv2lhN/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1XuxDMOs3-2CVNlhONuPFYA9hrnRuBhuo/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1zi_zoS5LCGEomBhun-BaEG5f3lJv2lhN&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1XuxDMOs3-2CVNlhONuPFYA9hrnRuBhuo&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-41",
     "category": "17X",
     "excelRow": "41",
@@ -2054,23 +2020,6 @@
     "sideOriginal": "https://drive.google.com/file/d/12w64Cs5w14rV8hlOkVrtIjcWvcPOfBac/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1gl3i2sDbQ9L6oxN9bX6wpf1HMyJdzqn-&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=12w64Cs5w14rV8hlOkVrtIjcWvcPOfBac&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-168",
-    "category": "17X",
-    "excelRow": "168",
-    "description": "D6225 17X8 4X114.3 ET35 CB73.1  ULTRA BRONZE MILLING",
-    "price": "800.00",
-    "status": "Last Set",
-    "remark": "Offer",
-    "extraInfo": "",
-    "extraInfoColor": "#C00000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1ZpkJJyaIX399KhzJ4p1bAMHWDOUrS9S4/view",
-    "sideOriginal": "https://drive.google.com/file/d/1hZmBhnADmGyR9Pcj9g4F19VR13KrlFCk/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1ZpkJJyaIX399KhzJ4p1bAMHWDOUrS9S4&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1hZmBhnADmGyR9Pcj9g4F19VR13KrlFCk&sz=w1000"
   }
 ,
   {
