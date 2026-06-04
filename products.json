@@ -5474,23 +5474,6 @@
   }
 ,
   {
-    "sku": "20X-ROW-18",
-    "category": "20X",
-    "excelRow": "18",
-    "description": "RFF108 20X8.5 5X120 ET38 CB73.1 BLACK CHROME",
-    "price": "3,000.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1W8tzjgwfPTWvY7YInRzq5hnSAf_JCnkA/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1YnhUJs1vjc4M9fZlAjhnQAcj-Mkp9DDD/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1W8tzjgwfPTWvY7YInRzq5hnSAf_JCnkA&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1YnhUJs1vjc4M9fZlAjhnQAcj-Mkp9DDD&sz=w1000"
-  }
-,
-  {
     "sku": "20X-ROW-19",
     "category": "20X",
     "excelRow": "19",
