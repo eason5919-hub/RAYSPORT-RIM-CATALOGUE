@@ -92,7 +92,7 @@
     "price": "739.00",
     "status": "Limited",
     "remark": "Flow Forming",
-    "extraInfo": "NEW",
+    "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
     "frontOriginal": "https://drive.google.com/file/d/1sp_kA3v9gsMePo0ooDlgvoqGGtQF1Zhy/view?usp=sharing",
@@ -4318,23 +4318,6 @@
   }
 ,
   {
-    "sku": "18X-ROW-234",
-    "category": "18X",
-    "excelRow": "234",
-    "description": "RFFCR 18X8.5 5X113.1 ET38  CB73.1  WHITE",
-    "price": "1,480.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1-WATNcpoZAxsQQ23dDUljaXkVFGeW230/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1-UcpxW_88G9SMyC0ouEkY7xWteFNPPFI/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1-WATNcpoZAxsQQ23dDUljaXkVFGeW230&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1-UcpxW_88G9SMyC0ouEkY7xWteFNPPFI&sz=w1000"
-  }
-,
-  {
     "sku": "18X-ROW-235",
     "category": "18X",
     "excelRow": "235",
@@ -6280,7 +6263,7 @@
     "price": "739.00",
     "status": "Limited",
     "remark": "Flow Forming",
-    "extraInfo": "NEW",
+    "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
     "frontOriginal": "https://drive.google.com/file/d/1sp_kA3v9gsMePo0ooDlgvoqGGtQF1Zhy/view?usp=sharing",
