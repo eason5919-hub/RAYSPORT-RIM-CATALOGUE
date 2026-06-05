@@ -2975,23 +2975,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-363",
-    "category": "17X",
-    "excelRow": "363",
-    "description": "SM1070 17X8 5X114.3 ET35  CB73.1  ULTRA BRONZE (NLP)",
-    "price": "1,020.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "",
-    "sideOriginal": "",
-    "frontImage": "",
-    "sideImage": ""
-  }
-,
-  {
     "sku": "17X-ROW-364",
     "category": "17X",
     "excelRow": "364",
@@ -6398,23 +6381,6 @@
     "description": "ZX840 17X8 8X100/114.3 ET38  CB73.1  GLOSS BLACK MACHINE FACE/BLACK COAT",
     "price": "1,080.00",
     "status": "Limited",
-    "remark": "",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "",
-    "sideOriginal": "",
-    "frontImage": "",
-    "sideImage": ""
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-540",
-    "category": "NEW ARRIVAL",
-    "excelRow": "540",
-    "description": "SM1070 17X8 5X114.3 ET35  CB73.1  ULTRA BRONZE (NLP)",
-    "price": "1,020.00",
-    "status": "Last Set",
     "remark": "",
     "extraInfo": "NEW",
     "extraInfoColor": "#FF0000",
