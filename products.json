@@ -56,7 +56,7 @@
     "excelRow": "86",
     "description": "RFF101-A 15X6.5 4X100 ET40  CB73.1  HYPER BLACK MILLING LIP POLISH",
     "price": "760.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -1306,23 +1306,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1FEZIG89jFgmql31WxQPDVrlOs8boFneY/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1JDOC-_t7GeJvY2TbYP6-tMTviMG4yDRd&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1FEZIG89jFgmql31WxQPDVrlOs8boFneY&sz=w1000"
-  }
-,
-  {
-    "sku": "16X-ROW-167",
-    "category": "16X",
-    "excelRow": "167",
-    "description": "RFF101 16X7 8X100/114.3 ET35  CB73.1  HYPER BLACK MILLING LIP POLISH",
-    "price": "875.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1V9C_MLBClOvaY-AZSbddS7yaZvr5EUzE/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1nwMFrKohh_0EUedDMLdKDX-3Uq7NqnCx/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1V9C_MLBClOvaY-AZSbddS7yaZvr5EUzE&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1nwMFrKohh_0EUedDMLdKDX-3Uq7NqnCx&sz=w1000"
   }
 ,
   {
