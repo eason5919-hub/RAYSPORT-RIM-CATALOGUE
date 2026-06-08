@@ -51,23 +51,6 @@
   }
 ,
   {
-    "sku": "15X6.5-ROW-86",
-    "category": "15X6.5",
-    "excelRow": "86",
-    "description": "RFF101-A 15X6.5 4X100 ET40  CB73.1  HYPER BLACK MILLING LIP POLISH",
-    "price": "760.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/15s7NFc7h22_CwqsXfA98U_lMutlvJGB8/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1vtt3u1PYeyvGum14j3CoTdhtVbuQC1n2/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=15s7NFc7h22_CwqsXfA98U_lMutlvJGB8&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1vtt3u1PYeyvGum14j3CoTdhtVbuQC1n2&sz=w1000"
-  }
-,
-  {
     "sku": "15X6.5-ROW-88",
     "category": "15X6.5",
     "excelRow": "88",
