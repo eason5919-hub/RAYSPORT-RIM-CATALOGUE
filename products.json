@@ -3315,23 +3315,6 @@
   }
 ,
   {
-    "sku": "18X-ROW-36",
-    "category": "18X",
-    "excelRow": "36",
-    "description": "5812 (T3) 18X8.5 5X114.3 ET40 CB73.1  [PRO-WHITE] WHITE",
-    "price": "1,354.00",
-    "status": "Limited",
-    "remark": "Made In Thailand",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1dniKDlfSrtCMz10iUl1vEAC4WW493YNk/view",
-    "sideOriginal": "https://drive.google.com/file/d/1UsAr_kGI-e4HtPwU6S4rr5SAGv0g_oHK/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1dniKDlfSrtCMz10iUl1vEAC4WW493YNk&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1UsAr_kGI-e4HtPwU6S4rr5SAGv0g_oHK&sz=w1000"
-  }
-,
-  {
     "sku": "18X-ROW-38",
     "category": "18X",
     "excelRow": "38",
