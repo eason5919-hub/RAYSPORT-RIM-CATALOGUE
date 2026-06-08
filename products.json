@@ -374,29 +374,12 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-131",
-    "category": "15X7.0",
-    "excelRow": "131",
-    "description": "D8890 15X7 8X100/114.3 ET38  CB73.1  ULTRA VOILET",
-    "price": "480.00",
-    "status": "Limited",
-    "remark": "(Offer)",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1kLzCCD0kG4yV3gULqpBUbnJpvyQMmw6s/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1lOSAZhqNQA9R_2InPCTu4ZAh-OYM8Ih5/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1kLzCCD0kG4yV3gULqpBUbnJpvyQMmw6s&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1lOSAZhqNQA9R_2InPCTu4ZAh-OYM8Ih5&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-132",
     "category": "15X7.0",
     "excelRow": "132",
     "description": "D8890 15X7 8X100/114.3 ET38  CB73.1  SHARK BLUE",
     "price": "480.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "(Offer)",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -6660,23 +6643,6 @@
     "frontOriginal": "https://drive.google.com/file/d/1oTaoOqfe7gYvj1cnXJoHrZOwBGC2OKQH/view?usp=sharing",
     "sideOriginal": "",
     "frontImage": "https://drive.google.com/thumbnail?id=1oTaoOqfe7gYvj1cnXJoHrZOwBGC2OKQH&sz=w1000",
-    "sideImage": ""
-  }
-,
-  {
-    "sku": "FORGED-ROW-30",
-    "category": "FORGED",
-    "excelRow": "30",
-    "description": "AT253664 20X9 5X114.3 ET35 CB73.1 GUN GREY MACHINE LIP",
-    "price": "",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1GJD1Q9fQmoE8TdIrJpQPuZ_g2fGWoFjQ/view?usp=sharing",
-    "sideOriginal": "",
-    "frontImage": "https://drive.google.com/thumbnail?id=1GJD1Q9fQmoE8TdIrJpQPuZ_g2fGWoFjQ&sz=w1000",
     "sideImage": ""
   }
 ,
