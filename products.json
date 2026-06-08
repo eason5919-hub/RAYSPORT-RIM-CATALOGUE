@@ -4114,23 +4114,6 @@
   }
 ,
   {
-    "sku": "18X-ROW-219",
-    "category": "18X",
-    "excelRow": "219",
-    "description": "RFF112 18X8.5 5X113.1 ET42  CB73.1  BRUSH GREY",
-    "price": "1,562.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1yR6OmegW3PMjv_e0PeCI7Yjyi3BFpQU8/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/14W5IJCX0WqrWz_2xnsOUmK6hJJnfn142/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1yR6OmegW3PMjv_e0PeCI7Yjyi3BFpQU8&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=14W5IJCX0WqrWz_2xnsOUmK6hJJnfn142&sz=w1000"
-  }
-,
-  {
     "sku": "18X-ROW-221",
     "category": "18X",
     "excelRow": "221",
