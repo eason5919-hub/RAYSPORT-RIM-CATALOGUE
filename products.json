@@ -2295,23 +2295,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-264",
-    "category": "17X",
-    "excelRow": "264",
-    "description": "RFF004 17X7.5 4X100 ET38 CB73.1  LIGHT GOLD",
-    "price": "1,060.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#C00000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/11tSbicfFfU1IFQWlSGM-qPkFyoWrlSbg/view",
-    "sideOriginal": "https://drive.google.com/file/d/1MIAXCrtyukFEAn8PAgNneHHEXkmQaK-X/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=11tSbicfFfU1IFQWlSGM-qPkFyoWrlSbg&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1MIAXCrtyukFEAn8PAgNneHHEXkmQaK-X&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-271",
     "category": "17X",
     "excelRow": "271",
