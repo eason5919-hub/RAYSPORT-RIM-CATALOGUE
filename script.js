@@ -1,4 +1,4 @@
-let products = [];
+﻿let products = [];
 let cart = {};
 let currentCategory = "ALL";
 let currentPcdFilter = "";
@@ -311,7 +311,7 @@ function updateActiveButtons(){
   document.querySelectorAll(".categoryMenu button").forEach(btn => {
     btn.classList.remove("active");
 
-    if(btn.textContent.trim() === currentCategory){
+    if(btn.textContent.trim() === currentCategory || btn.getAttribute("onclick") === `showCategory('${currentCategory}')`){
       btn.classList.add("active");
     }
   });
