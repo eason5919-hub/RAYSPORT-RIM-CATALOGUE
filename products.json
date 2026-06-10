@@ -272,23 +272,6 @@
   }
 ,
   {
-    "sku": "15X6.5-ROW-145",
-    "category": "15X6.5",
-    "excelRow": "145",
-    "description": "SM5599-A 15X6.5 4X100 ET38  CB73.1  HYPER SILVER",
-    "price": "688.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#C00000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1DLqtK7vvsMVkGwfHkeBQDlnmhVAQt4pU/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1Kzwx0VTyeRIU-nbzL6pMJU4Zd8Yf28-0/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1DLqtK7vvsMVkGwfHkeBQDlnmhVAQt4pU&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1Kzwx0VTyeRIU-nbzL6pMJU4Zd8Yf28-0&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-41",
     "category": "15X7.0",
     "excelRow": "41",
@@ -371,23 +354,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1vMgRGtVnXDxvqUjIxSSKfCt4X8AjU2ir/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=19V75jokcIXR-It_st6BbhRNs2c5NLVHs&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1vMgRGtVnXDxvqUjIxSSKfCt4X8AjU2ir&sz=w1000"
-  }
-,
-  {
-    "sku": "15X7.0-ROW-156",
-    "category": "15X7.0",
-    "excelRow": "156",
-    "description": "JT072 15X7 8X100/114.3 ET35  CB73.1  SUPER CHROME",
-    "price": "1,050.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/160Ffr36IAex2QlfnjmhbcTm_IxgmStfV/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1KwFDQLg-9_9XYVTIj1eR01zl-9pmxiHq/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=160Ffr36IAex2QlfnjmhbcTm_IxgmStfV&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1KwFDQLg-9_9XYVTIj1eR01zl-9pmxiHq&sz=w1000"
   }
 ,
   {
@@ -918,23 +884,6 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-293",
-    "category": "15X7.0",
-    "excelRow": "293",
-    "description": "SR5328 15X7 4X100 ET35 CB73.1  GLOSS BLACK LIP POLISH",
-    "price": "675.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1Sz_50SYTxhnpQEFooPjDkNyLu6hwztDi/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1AKkT0YvnYhkRN6jmFNy2UpzsYS4ztrZN/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1Sz_50SYTxhnpQEFooPjDkNyLu6hwztDi&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1AKkT0YvnYhkRN6jmFNy2UpzsYS4ztrZN&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-331",
     "category": "15X7.0",
     "excelRow": "331",
@@ -1399,7 +1348,7 @@
     "excelRow": "218",
     "description": "RFT57 16X7 4X100 ET38  CB73.1  HYPER BLACK",
     "price": "865.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -2283,7 +2232,7 @@
     "excelRow": "262",
     "description": "RFF004 17X7.5 4X100 ET38 CB73.1  GLOSS BLACK",
     "price": "1,060.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -2615,40 +2564,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1qBxd5EPvndJw1ESJtY3OaTPv2qw2jaLp/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=12Q0YKniKVdLmeC9AU8uHRNLuQe-qyUoJ&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1qBxd5EPvndJw1ESJtY3OaTPv2qw2jaLp&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-340",
-    "category": "17X",
-    "excelRow": "340",
-    "description": "RFF-V5 17X8 5X100 ET38  CB73.1  HYPER BLACK LIP POLISH",
-    "price": "1,100.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1moXBG5cRtg6Nys08e-aQLLjy6yaCt95Z/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1kW5qKgNgfTMJnQwUAEiZkNKTRBd4iU7m/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1moXBG5cRtg6Nys08e-aQLLjy6yaCt95Z&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1kW5qKgNgfTMJnQwUAEiZkNKTRBd4iU7m&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-341",
-    "category": "17X",
-    "excelRow": "341",
-    "description": "RFF-V5 17X8 8X100/114.3 ET38  CB73.1  GLOSS BLACK LIP POLISH",
-    "price": "1,100.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1uE1qirV04sZH54b_ugyvc7nNbTvYeEUL/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1om4Imct5FCrKiTFv0qdYgV29liwEksNF/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1uE1qirV04sZH54b_ugyvc7nNbTvYeEUL&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1om4Imct5FCrKiTFv0qdYgV29liwEksNF&sz=w1000"
   }
 ,
   {
@@ -4352,40 +4267,6 @@
   }
 ,
   {
-    "sku": "19X-ROW-45",
-    "category": "19X",
-    "excelRow": "45",
-    "description": "FBX124-9 19X8.5 5X120 ET35 CB72.6  BLACK",
-    "price": "1,980.00",
-    "status": "Last Set",
-    "remark": "Flow Forming  [Front]",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "#E7E6E6",
-    "frontOriginal": "https://drive.google.com/file/d/1KXTHLuS6gaXUd_eNobNrUKvx0-mtgUsT/view",
-    "sideOriginal": "https://drive.google.com/file/d/1X9wZl3xpL2QtbegH8XAAUmOwL6c-0E7X/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1KXTHLuS6gaXUd_eNobNrUKvx0-mtgUsT&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1X9wZl3xpL2QtbegH8XAAUmOwL6c-0E7X&sz=w1000"
-  }
-,
-  {
-    "sku": "19X-ROW-46",
-    "category": "19X",
-    "excelRow": "46",
-    "description": "FBX124-9 19X9.5 5X120 ET38 CB72.6  BLACK",
-    "price": "1,980.00",
-    "status": "Last Set",
-    "remark": "Flow Forming  [Rear]",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "#E7E6E6",
-    "frontOriginal": "https://drive.google.com/file/d/1X9wZl3xpL2QtbegH8XAAUmOwL6c-0E7X/view",
-    "sideOriginal": "https://drive.google.com/file/d/1KXTHLuS6gaXUd_eNobNrUKvx0-mtgUsT/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1X9wZl3xpL2QtbegH8XAAUmOwL6c-0E7X&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1KXTHLuS6gaXUd_eNobNrUKvx0-mtgUsT&sz=w1000"
-  }
-,
-  {
     "sku": "19X-ROW-47",
     "category": "19X",
     "excelRow": "47",
@@ -4519,23 +4400,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1PRUiuxv_JtA6Fo4RMC2IPtxxh_12PT3W/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=13BR7UvXPG9IjaBAxiwrcdSI5i6uNkOi3&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1PRUiuxv_JtA6Fo4RMC2IPtxxh_12PT3W&sz=w1000"
-  }
-,
-  {
-    "sku": "19X-ROW-58",
-    "category": "19X",
-    "excelRow": "58",
-    "description": "GL425 19X8.5 5X114.3 ET35  CB73.1 HYPER BLACK",
-    "price": "1,980.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1dBs7dt_TWD0t3BuFJDfNWY7ogeN7z5uM/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1OjhwdRAjFfESbEcNhuIWhIHC1JUkygIl/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1dBs7dt_TWD0t3BuFJDfNWY7ogeN7z5uM&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1OjhwdRAjFfESbEcNhuIWhIHC1JUkygIl&sz=w1000"
   }
 ,
   {
@@ -5173,7 +5037,7 @@
     "excelRow": "108",
     "description": "RFF101 19X8.5 5X113.1 ET30  CB73.1  HYPER BLACK / BLACK LIP POLISH",
     "price": "1,980.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming  [Front]",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -5190,7 +5054,7 @@
     "excelRow": "109",
     "description": "RFF101 19X9.5 5X113.1 ET35  CB73.1  HYPER BLACK / BLACK LIP POLISH",
     "price": "1,980.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming  [Rear]",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
