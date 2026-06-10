@@ -1411,23 +1411,6 @@
   }
 ,
   {
-    "sku": "16X-ROW-218",
-    "category": "16X",
-    "excelRow": "218",
-    "description": "RFT57 16X7 4X100 ET38  CB73.1  HYPER BLACK",
-    "price": "865.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1assudtUCDdc32SIACAnYZAwVkZV_-Tp8/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1kYCsrql5UsjvAKO2bBHI40A70m80sYSz/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1assudtUCDdc32SIACAnYZAwVkZV_-Tp8&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1kYCsrql5UsjvAKO2bBHI40A70m80sYSz&sz=w1000"
-  }
-,
-  {
     "sku": "16X-ROW-219",
     "category": "16X",
     "excelRow": "219",
@@ -2465,23 +2448,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-315",
-    "category": "17X",
-    "excelRow": "315",
-    "description": "RFF5599 17X7.5 4X100 ET38 CB73.1  GLOSS BLACK",
-    "price": "1,100.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1UzifqUot_WGyRzeYAPJm79MMXmzZKQF6/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1_uH2TivKGeK51Kyj_ls9vT62w_HzS3c-/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1UzifqUot_WGyRzeYAPJm79MMXmzZKQF6&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1_uH2TivKGeK51Kyj_ls9vT62w_HzS3c-&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-316",
     "category": "17X",
     "excelRow": "316",
@@ -2513,23 +2479,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1aP7RqSpUt1lbX6RNEJmtZs1il3sp-nMN/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=10ZIvhyxhHGnvF7IauTW9fVinrM8XPQZQ&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1aP7RqSpUt1lbX6RNEJmtZs1il3sp-nMN&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-318",
-    "category": "17X",
-    "excelRow": "318",
-    "description": "RFF5599 17X7.5 5X100 ET38 CB73.1 HYPER BLACK",
-    "price": "1,100.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1jxYky-YitN0fqpREFhYnUTj8jIPhVQmZ/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1jxYky-YitN0fqpREFhYnUTj8jIPhVQmZ/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1jxYky-YitN0fqpREFhYnUTj8jIPhVQmZ&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1jxYky-YitN0fqpREFhYnUTj8jIPhVQmZ&sz=w1000"
   }
 ,
   {
@@ -3932,7 +3881,7 @@
     "excelRow": "241",
     "description": "RFFCR 18X8.5 4X100 ET38  CB73.1  HYPER BLACK",
     "price": "1,480.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -4136,7 +4085,7 @@
     "excelRow": "265",
     "description": "RX4 18X8.5 5X100 ET42  CB73.1  HYPER BLACK LP",
     "price": "1,604.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
