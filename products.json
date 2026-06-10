@@ -22,7 +22,7 @@
     "excelRow": "79",
     "description": "RFF001-A 15X6.5 8X100/114.3 ET35  CB73.1  GLOSS BLACK MILLING RAINBOW",
     "price": "920.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -209,7 +209,7 @@
     "excelRow": "114",
     "description": "RFF-T4-A 15X6.5 4X100 ET40  CB73.1  DARK GUNMETAL LP",
     "price": "740.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -5581,7 +5581,7 @@
     "excelRow": "33",
     "description": "JT246 18X9 6X139.7 ET0  CB110.1  DARK GUNMETAL LIP POLISH MILLING",
     "price": "1,562.00",
-    "status": "Available",
+    "status": "Last Set",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -5641,23 +5641,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1XBY4P7KEGRoDQLFr0In-btn4Cdqxp_UN&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI&sz=w1000"
-  }
-,
-  {
-    "sku": "4X4-ROW-50",
-    "category": "4X4",
-    "excelRow": "50",
-    "description": "X89022-K 18X9 6X139.7 ET0  CB110.1  MATT BLACK",
-    "price": "1,562.00",
-    "status": "Available",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1Eluz9T7geP0Z1HVI130H-uu4JlzYv060/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1dtVbBjBQx2QDd9XickLvfVv-3-nQ6t7o/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1Eluz9T7geP0Z1HVI130H-uu4JlzYv060&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1dtVbBjBQx2QDd9XickLvfVv-3-nQ6t7o&sz=w1000"
   }
 ,
   {
