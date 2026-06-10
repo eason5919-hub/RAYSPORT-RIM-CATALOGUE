@@ -887,7 +887,7 @@
     "sku": "15X7.0-ROW-328",
     "category": "15X7.0",
     "excelRow": "328",
-    "description": "RFF-DR-B 15X7.5 4X100 ET25  CB73.1  GLOSS BLACK (LASER) ",
+    "description": "RFF-DR-B 15X7.5 4X100 ET25  CB73.1  GLOSS BLACK (LASER)",
     "price": "750.00",
     "status": "Limited",
     "remark": "Flow Forming  [Front]",
@@ -2033,10 +2033,10 @@
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
-    "frontOriginal": "",
-    "sideOriginal": "",
-    "frontImage": "",
-    "sideImage": ""
+    "frontOriginal": "https://drive.google.com/file/d/1CuF82bb_UK38sS3OLeZM_J72w5uq3KvM/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1ZpOY4rOHi8MmYqR39tbXcnmfkXeblYlj/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1CuF82bb_UK38sS3OLeZM_J72w5uq3KvM&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1ZpOY4rOHi8MmYqR39tbXcnmfkXeblYlj&sz=w1000"
   }
 ,
   {
