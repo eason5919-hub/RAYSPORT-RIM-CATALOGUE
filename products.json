@@ -1258,23 +1258,6 @@
   }
 ,
   {
-    "sku": "16X-ROW-57",
-    "category": "16X",
-    "excelRow": "57",
-    "description": "D1317 16X7 8X100/114.3 ET38 CB73.1  RED MACHINE LIP/MILLING",
-    "price": "550.00",
-    "status": "Last Set",
-    "remark": "(Offer)",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1coogevM1-e7gG1jWpb0s-0ZUTlACoiYc/view",
-    "sideOriginal": "https://drive.google.com/file/d/16SoGinK3GX72Y72-qbmSSRFdAElNe1H7/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1coogevM1-e7gG1jWpb0s-0ZUTlACoiYc&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=16SoGinK3GX72Y72-qbmSSRFdAElNe1H7&sz=w1000"
-  }
-,
-  {
     "sku": "16X-ROW-150",
     "category": "16X",
     "excelRow": "150",
