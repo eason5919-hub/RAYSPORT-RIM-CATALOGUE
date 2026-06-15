@@ -3927,23 +3927,6 @@
   }
 ,
   {
-    "sku": "18X-ROW-214",
-    "category": "18X",
-    "excelRow": "214",
-    "description": "RFF111 18X8.5 5X113.1 ET38  CB73.1  FLAT BLACK",
-    "price": "1,562.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1l8oBLVOnTF2BNsJs__XF0NSnz3OjhkOI/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1Ac7U_19pP1xK7kZWikGGgtyS8cTuh0Ui/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1l8oBLVOnTF2BNsJs__XF0NSnz3OjhkOI&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1Ac7U_19pP1xK7kZWikGGgtyS8cTuh0Ui&sz=w1000"
-  }
-,
-  {
     "sku": "18X-ROW-216",
     "category": "18X",
     "excelRow": "216",
