@@ -554,12 +554,16 @@ function scrollProductCardIntoView(sku){
     const visibleCard = cards.find(card => card.isConnected);
 
     if(visibleCard){
-      visibleCard.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.getBoundingClientRect().height : 0;
+      const top = visibleCard.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
+
+      window.scrollTo({
+        top: Math.max(0, top),
+        behavior: "smooth"
       });
     }
-  }, 80);
+  }, 180);
 }
 function focusCartBranchSplit(sku){
   setTimeout(() => {
