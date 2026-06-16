@@ -2839,23 +2839,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-378",
-    "category": "17X",
-    "excelRow": "378",
-    "description": "SM186 17X7.5 5X113.1 ET35 CB73.1  GLOSS BLACK",
-    "price": "1,186.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1w9dQDYFcTEAL09GHshDOAuVyWpChIyRQ/view",
-    "sideOriginal": "https://drive.google.com/file/d/1-TFCeLXBThawo_MHPt-nDXWPHdbLoS7Q/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1w9dQDYFcTEAL09GHshDOAuVyWpChIyRQ&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1-TFCeLXBThawo_MHPt-nDXWPHdbLoS7Q&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-384",
     "category": "17X",
     "excelRow": "384",
