@@ -783,3 +783,67 @@ button:disabled{
     min-height:405px;
   }
 }
+.logoutConfirmOverlay{
+  position:fixed;
+  inset:0;
+  z-index:100000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px;
+  background:rgba(0,0,0,0.56);
+}
+
+.logoutConfirmBox{
+  width:min(420px,100%);
+  background:white;
+  border-radius:16px;
+  padding:18px;
+  color:#111;
+  box-shadow:0 14px 45px rgba(0,0,0,0.28);
+}
+
+.logoutConfirmBox h3{
+  margin:3px 0 12px;
+  font-size:20px;
+  line-height:1.25;
+}
+
+.logoutConfirmBox p{
+  margin:0 0 16px;
+  color:#333;
+  font-size:14px;
+  line-height:1.45;
+}
+
+.logoutConfirmActions{
+  display:flex;
+  gap:10px;
+  margin-top:4px;
+}
+
+.logoutConfirmActions button{
+  flex:1;
+  height:41px;
+  border-radius:8px;
+  padding:0 10px;
+  font-size:14px;
+}
+
+#cancelLogoutButton{
+  background:#5d5d5d;
+}
+
+#confirmLogoutButton{
+  background:#080808;
+}
+
+@media(max-width:420px){
+  .logoutConfirmOverlay{
+    padding:22px;
+  }
+
+  .logoutConfirmBox{
+    padding:18px;
+  }
+}

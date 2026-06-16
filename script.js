@@ -391,7 +391,17 @@ document.getElementById("loginButton").onclick = () => {
   scrollFilterBarsToLeft();
 };
 
-document.getElementById("logoutButton").onclick = () => {
+function openLogoutConfirm(){
+  document.getElementById("logoutConfirmModal").classList.remove("hidden");
+}
+
+function closeLogoutConfirm(){
+  document.getElementById("logoutConfirmModal").classList.add("hidden");
+}
+
+function performLogout(){
+  closeLogoutConfirm();
+
   localStorage.removeItem("customerName");
   localStorage.removeItem("customerPhone");
   localStorage.removeItem(BRANCH_NAMES_STORAGE_KEY);
@@ -415,6 +425,18 @@ document.getElementById("logoutButton").onclick = () => {
   Object.keys(cardBySku).forEach(sku => {
     updateProductOrderArea(sku);
   });
+}
+
+document.getElementById("logoutButton").onclick = () => {
+  openLogoutConfirm();
+};
+
+document.getElementById("cancelLogoutButton").onclick = () => {
+  closeLogoutConfirm();
+};
+
+document.getElementById("confirmLogoutButton").onclick = () => {
+  performLogout();
 };
 
 function showCategory(category){
