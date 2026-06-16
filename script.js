@@ -563,7 +563,7 @@ function isCartPanelOpen(){
 }
 
 function openBranchQuantityEditor(sku){
-  if(branchNames.length === 0 || !hasBranchSplit(sku)){
+  if(branchNames.length === 0 || getCartQty(sku) <= 0){
     return false;
   }
 
@@ -770,7 +770,7 @@ function updateCartCountOnly(){
 }
 
 function changeQty(sku, delta){
-  if(delta !== 0 && hasBranchSplit(sku) && branchNames.length > 0){
+  if(delta !== 0 && branchNames.length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku);
     return;
   }
@@ -787,7 +787,7 @@ function changeQty(sku, delta){
 }
 
 function setQtyOnly(sku, value){
-  if(hasBranchSplit(sku) && branchNames.length > 0){
+  if(branchNames.length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku);
     return;
   }
@@ -810,7 +810,7 @@ function setQtyOnly(sku, value){
 }
 
 function setQtyAndUpdate(sku, value){
-  if(hasBranchSplit(sku) && branchNames.length > 0){
+  if(branchNames.length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku);
     return;
   }
@@ -992,20 +992,22 @@ function saveBranchSplit(sku){
     }
   });
 
-  const cartQty = getCartQty(sku);
-  const product = products.find(p => p.sku === sku);
-
-  if(total !== cartQty){
-    alert(`Branch total for ${product ? product.description : sku} is ${total} ${getSetWord(total)}, but cart qty is ${cartQty} ${getSetWord(cartQty)}. Please adjust before sending.`);
+  if(total <= 0){
+    delete cart[sku];
+    activeBranchSku = "";
+    renderCart();
+    updateProductOrderArea(sku);
     return;
   }
 
   const item = getCartItem(sku);
   if(!item) return;
 
+  item.qty = total;
   item.branches = branches;
   activeBranchSku = "";
   renderCart();
+  updateProductOrderArea(sku);
 }
 
 function cancelBranchSplit(sku){
