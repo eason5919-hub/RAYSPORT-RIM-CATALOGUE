@@ -306,23 +306,6 @@
   }
 ,
   {
-    "sku": "15X6.5-ROW-114",
-    "category": "15X6.5",
-    "excelRow": "114",
-    "description": "RFF-T4-A 15X6.5 4X100 ET40  CB73.1  DARK GUNMETAL LP",
-    "price": "740.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1k7SA0NO_TtJbnM3GH5Y_ioOX4lCe4hCI/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1tM0uTdql5gpJq5XmKtfck63JtVRzgAJ7/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1k7SA0NO_TtJbnM3GH5Y_ioOX4lCe4hCI&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1tM0uTdql5gpJq5XmKtfck63JtVRzgAJ7&sz=w1000"
-  }
-,
-  {
     "sku": "15X6.5-ROW-115",
     "category": "15X6.5",
     "excelRow": "115",
@@ -1433,7 +1416,7 @@
     "excelRow": "210",
     "description": "RFF-T4 16X7 4X100 ET35  CB73.1  GLOSS BLACK LP",
     "price": "865.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
