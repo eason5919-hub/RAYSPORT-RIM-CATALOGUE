@@ -510,6 +510,9 @@ function renderQuickBranchDropdown(product){
     return "";
   }
 
+  const branches = getCartBranches(product.sku);
+  const buttonLabel = getCartQty(product.sku) > 0 ? "Update Cart" : "Add to Cart";
+
   const rows = branchNames.map(name => `
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
@@ -517,7 +520,7 @@ function renderQuickBranchDropdown(product){
         type="number"
         min="0"
         inputmode="numeric"
-        value=""
+        value="${branches[name] || ""}"
         data-branch-name="${escapeHtml(name)}"
         placeholder="0"
       >
@@ -529,7 +532,7 @@ function renderQuickBranchDropdown(product){
       <h4>Branch Qty</h4>
       ${rows.join("")}
       <div class="branchEditorActions">
-        <button type="button" onclick="saveQuickBranchDropdown('${product.sku}')">Add to Cart</button>
+        <button type="button" onclick="saveQuickBranchDropdown('${product.sku}')">${buttonLabel}</button>
         <button type="button" onclick="cancelQuickBranchDropdown('${product.sku}')">Cancel</button>
       </div>
     </div>
@@ -544,6 +547,47 @@ function focusQuickBranchDropdown(sku){
       firstBranchQty.select();
     }
   }, 50);
+}
+function focusCartBranchSplit(sku){
+  setTimeout(() => {
+    const firstBranchQty = document.querySelector(`.cartRow[data-sku="${sku}"] .branchSplitPanel input[data-branch-name]`);
+    if(firstBranchQty){
+      firstBranchQty.focus();
+      firstBranchQty.select();
+    }
+  }, 50);
+}
+
+function isCartPanelOpen(){
+  return !document.getElementById("cartPanel").classList.contains("hidden");
+}
+
+function openBranchQuantityEditor(sku){
+  if(branchNames.length === 0 || !hasBranchSplit(sku)){
+    return false;
+  }
+
+  if(isCartPanelOpen()){
+    activeBranchSku = sku;
+    quickBranchSku = "";
+    branchSettingOpen = false;
+    renderCart();
+    updateProductOrderArea(sku);
+    focusCartBranchSplit(sku);
+    return true;
+  }
+
+  const previousQuickSku = quickBranchSku;
+  activeBranchSku = "";
+  quickBranchSku = sku;
+
+  if(previousQuickSku && previousQuickSku !== sku){
+    updateProductOrderArea(previousQuickSku);
+  }
+
+  updateProductOrderArea(sku);
+  focusQuickBranchDropdown(sku);
+  return true;
 }
 
 function addToCartFromProduct(sku){
@@ -586,6 +630,14 @@ function saveQuickBranchDropdown(sku){
   });
 
   if(total <= 0){
+    if(getCartQty(sku) > 0){
+      delete cart[sku];
+      quickBranchSku = "";
+      renderCart();
+      updateProductOrderArea(sku);
+      return;
+    }
+
     alert("Please enter branch quantity.");
     return;
   }
@@ -615,7 +667,7 @@ function renderOrderControls(product){
     return `<button disabled>Sold Out</button>`;
   }
 
-  if(quickBranchSku === product.sku && branchNames.length > 0 && cartQty === 0){
+  if(quickBranchSku === product.sku && branchNames.length > 0){
     return renderQuickBranchDropdown(product);
   }
 
@@ -649,7 +701,7 @@ function renderOrderControls(product){
 function createProductCard(p){
   const card = document.createElement("div");
   card.className = "card";
-  card.classList.toggle("quickBranchOpen", quickBranchSku === p.sku && branchNames.length > 0 && getCartQty(p.sku) === 0);
+  card.classList.toggle("quickBranchOpen", quickBranchSku === p.sku && branchNames.length > 0);
   card.dataset.sku = p.sku;
 
   if(p.rowColor){
@@ -700,7 +752,7 @@ function updateProductOrderArea(sku){
     const orderArea = card.querySelector(".orderArea");
     if(!orderArea) return;
 
-    const quickOpen = quickBranchSku === sku && branchNames.length > 0 && getCartQty(sku) === 0;
+    const quickOpen = quickBranchSku === sku && branchNames.length > 0;
     card.classList.toggle("quickBranchOpen", quickOpen);
     orderArea.innerHTML = renderOrderControls(product);
   });
@@ -718,6 +770,11 @@ function updateCartCountOnly(){
 }
 
 function changeQty(sku, delta){
+  if(delta !== 0 && hasBranchSplit(sku) && branchNames.length > 0){
+    openBranchQuantityEditor(sku);
+    return;
+  }
+
   if(quickBranchSku === sku){
     quickBranchSku = "";
   }
@@ -730,6 +787,11 @@ function changeQty(sku, delta){
 }
 
 function setQtyOnly(sku, value){
+  if(hasBranchSplit(sku) && branchNames.length > 0){
+    openBranchQuantityEditor(sku);
+    return;
+  }
+
   if(value === ""){
     updateCartCountOnly();
     return;
@@ -748,6 +810,11 @@ function setQtyOnly(sku, value){
 }
 
 function setQtyAndUpdate(sku, value){
+  if(hasBranchSplit(sku) && branchNames.length > 0){
+    openBranchQuantityEditor(sku);
+    return;
+  }
+
   if(value === ""){
     delete cart[sku];
     renderCart();
