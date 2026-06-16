@@ -4,6 +4,9 @@ let currentCategory = "ALL";
 let currentPcdFilter = "";
 let customerPhone = "";
 let customerName = "";
+let branchNames = [];
+let branchSettingOpen = false;
+let activeBranchSku = "";
 
 let imageCacheVersion = Date.now();
 
@@ -11,6 +14,8 @@ let categoryCardCache = {};
 let cardBySku = {};
 
 let latestProductsJsonText = "";
+
+const BRANCH_NAMES_STORAGE_KEY = "branchNames";
 
 const sheetCategories = [
   "ALL",
@@ -212,6 +217,114 @@ function isValidWhatsappNumber(phone){
   return /^60\d{8,10}$/.test(phone);
 }
 
+function getSetWord(qty){
+  return Number(qty) === 1 ? "SET" : "SETS";
+}
+
+function loadBranchNames(){
+  try{
+    const saved = JSON.parse(localStorage.getItem(BRANCH_NAMES_STORAGE_KEY) || "[]");
+    branchNames = Array.isArray(saved)
+      ? saved.map(name => String(name || "").trim()).filter(Boolean).slice(0, 10)
+      : [];
+  }catch(err){
+    branchNames = [];
+  }
+}
+
+function saveBranchNames(){
+  localStorage.setItem(BRANCH_NAMES_STORAGE_KEY, JSON.stringify(branchNames));
+}
+
+function escapeHtml(value){
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function normalizeCartItem(sku){
+  const item = cart[sku];
+
+  if(!item){
+    return null;
+  }
+
+  if(typeof item === "number"){
+    cart[sku] = {
+      qty: item,
+      branches: {}
+    };
+    return cart[sku];
+  }
+
+  if(typeof item === "object"){
+    item.qty = parseInt(item.qty, 10) || 0;
+
+    if(!item.branches || typeof item.branches !== "object"){
+      item.branches = {};
+    }
+
+    return item;
+  }
+
+  return null;
+}
+
+function getCartItem(sku){
+  return normalizeCartItem(sku);
+}
+
+function getCartQty(sku){
+  const item = getCartItem(sku);
+  return item ? item.qty : 0;
+}
+
+function getCartBranches(sku){
+  const item = getCartItem(sku);
+  return item ? item.branches : {};
+}
+
+function setCartQty(sku, qty){
+  qty = parseInt(qty, 10);
+
+  if(isNaN(qty) || qty <= 0){
+    delete cart[sku];
+
+    if(activeBranchSku === sku){
+      activeBranchSku = "";
+    }
+
+    return;
+  }
+
+  const item = getCartItem(sku) || { qty: 0, branches: {} };
+  item.qty = qty;
+  cart[sku] = item;
+}
+
+function hasBranchSplit(sku){
+  return Object.values(getCartBranches(sku)).some(qty => Number(qty) > 0);
+}
+
+function getBranchTotal(sku){
+  return Object.values(getCartBranches(sku)).reduce((sum, qty) => sum + (Number(qty) || 0), 0);
+}
+
+function getBranchPreviewHtml(sku){
+  const parts = Object.entries(getCartBranches(sku))
+    .filter(([, qty]) => Number(qty) > 0)
+    .map(([name, qty]) => `${escapeHtml(name)}: ${qty}`);
+
+  if(parts.length === 0){
+    return "";
+  }
+
+  return `<div class="branchPreview">${parts.join(" | ")}</div>`;
+}
+
 function checkLogin(){
   const savedPhone = localStorage.getItem("customerPhone");
   const savedName = localStorage.getItem("customerName");
@@ -255,6 +368,8 @@ document.getElementById("loginButton").onclick = () => {
   localStorage.setItem("customerPhone", phone);
 
   cart = {};
+  activeBranchSku = "";
+  branchSettingOpen = false;
   renderCart();
 
   currentCategory = "ALL";
@@ -273,10 +388,14 @@ document.getElementById("loginButton").onclick = () => {
 document.getElementById("logoutButton").onclick = () => {
   localStorage.removeItem("customerName");
   localStorage.removeItem("customerPhone");
+  localStorage.removeItem(BRANCH_NAMES_STORAGE_KEY);
 
   customerName = "";
   customerPhone = "";
   cart = {};
+  branchNames = [];
+  activeBranchSku = "";
+  branchSettingOpen = false;
 
   renderCart();
 
@@ -381,7 +500,7 @@ function isSoldOut(product){
 
 function renderOrderControls(product){
   const soldOut = isSoldOut(product);
-  const cartQty = cart[product.sku] || 0;
+  const cartQty = getCartQty(product.sku);
 
   if(soldOut){
     return `<button disabled>Sold Out</button>`;
@@ -431,21 +550,21 @@ function createProductCard(p){
     </div>
 
     <div class="info">
-      <div class="desc">${p.description || ""}</div>
+      <div class="desc">${escapeHtml(p.description || "")}</div>
 
       <div class="meta">
-        <span class="price">${showPrice(p.price)}</span>
+        <span class="price">${escapeHtml(showPrice(p.price))}</span>
 
         <span class="stockBox">
-          <span class="stock">${p.status || ""}</span>
+          <span class="stock">${escapeHtml(p.status || "")}</span>
 
           ${p.extraInfo
-            ? `<span class="extraInfo" style="color:${p.extraInfoColor || "red"}">${p.extraInfo}</span>`
+            ? `<span class="extraInfo" style="color:${p.extraInfoColor || "red"}">${escapeHtml(p.extraInfo)}</span>`
             : `<span class="extraInfo emptyExtra">&nbsp;</span>`}
         </span>
       </div>
 
-      <div class="remark">${p.remark || "&nbsp;"}</div>
+      <div class="remark">${p.remark ? escapeHtml(p.remark) : "&nbsp;"}</div>
 
       <div class="orderArea">
         ${renderOrderControls(p)}
@@ -478,17 +597,12 @@ function updateAllProductOrderAreas(){
 }
 
 function updateCartCountOnly(){
-  const count = Object.values(cart).reduce((a, b) => a + b, 0);
+  const count = Object.keys(cart).reduce((sum, sku) => sum + getCartQty(sku), 0);
   document.getElementById("cartCount").textContent = count;
 }
 
 function changeQty(sku, delta){
-  cart[sku] = (cart[sku] || 0) + delta;
-
-  if(cart[sku] <= 0){
-    delete cart[sku];
-  }
-
+  setCartQty(sku, getCartQty(sku) + delta);
   renderCart();
   updateProductOrderArea(sku);
 }
@@ -506,7 +620,7 @@ function setQtyOnly(sku, value){
     return;
   }
 
-  cart[sku] = qty;
+  setCartQty(sku, qty);
   updateCartCountOnly();
   updateProductOrderArea(sku);
 }
@@ -520,12 +634,7 @@ function setQtyAndUpdate(sku, value){
   }
 
   let qty = parseInt(value, 10);
-
-  if(isNaN(qty) || qty <= 0){
-    delete cart[sku];
-  }else{
-    cart[sku] = qty;
-  }
+  setCartQty(sku, qty);
 
   renderCart();
   updateProductOrderArea(sku);
@@ -533,25 +642,204 @@ function setQtyAndUpdate(sku, value){
 
 function removeItem(sku){
   delete cart[sku];
+
+  if(activeBranchSku === sku){
+    activeBranchSku = "";
+  }
+
   renderCart();
   updateProductOrderArea(sku);
 }
 
+function renderBranchSettingPanel(){
+  const panel = document.getElementById("branchSettingPanel");
+
+  if(!branchSettingOpen){
+    panel.classList.add("hidden");
+    panel.innerHTML = "";
+    return;
+  }
+
+  panel.classList.remove("hidden");
+
+  const rows = [];
+
+  for(let i = 0; i < 10; i++){
+    rows.push(`
+      <div class="branchInputRow">
+        <label>Branch ${i + 1}</label>
+        <input
+          type="text"
+          maxlength="40"
+          value="${escapeHtml(branchNames[i] || "")}" 
+          placeholder="Branch name"
+          data-branch-index="${i}"
+        >
+      </div>
+    `);
+  }
+
+  panel.innerHTML = `
+    <h3>Branch Setting</h3>
+    ${rows.join("")}
+    <div class="branchEditorActions">
+      <button type="button" onclick="saveBranchSetting()">Save Branch Names</button>
+      <button type="button" onclick="closeBranchSetting()">Cancel</button>
+    </div>
+  `;
+}
+
+function openBranchSetting(){
+  branchSettingOpen = !branchSettingOpen;
+  renderBranchSettingPanel();
+}
+
+function closeBranchSetting(){
+  branchSettingOpen = false;
+  renderBranchSettingPanel();
+}
+
+function saveBranchSetting(){
+  const inputs = document.querySelectorAll("#branchSettingPanel input[data-branch-index]");
+  const names = Array.from(inputs)
+    .map(input => input.value.trim())
+    .filter(Boolean);
+
+  const uniqueNames = [];
+
+  names.forEach(name => {
+    if(!uniqueNames.includes(name)){
+      uniqueNames.push(name);
+    }
+  });
+
+  if(uniqueNames.length > 10){
+    alert("Maximum 10 branches only.");
+    return;
+  }
+
+  branchNames = uniqueNames.slice(0, 10);
+  saveBranchNames();
+
+  Object.keys(cart).forEach(sku => {
+    const item = getCartItem(sku);
+    if(!item) return;
+
+    Object.keys(item.branches).forEach(name => {
+      if(!branchNames.includes(name)){
+        delete item.branches[name];
+      }
+    });
+  });
+
+  branchSettingOpen = false;
+  renderCart();
+}
+
+function toggleBranchSplit(sku){
+  if(branchNames.length === 0){
+    alert("Please set branch names first.");
+    return;
+  }
+
+  activeBranchSku = activeBranchSku === sku ? "" : sku;
+  renderCart();
+}
+
+function renderBranchSplitPanel(sku){
+  if(activeBranchSku !== sku || branchNames.length === 0){
+    return "";
+  }
+
+  const branches = getCartBranches(sku);
+  const rows = branchNames.map(name => `
+    <div class="branchQtyRow">
+      <label>${escapeHtml(name)}</label>
+      <input
+        type="number"
+        min="0"
+        inputmode="numeric"
+        value="${branches[name] || ""}"
+        data-branch-name="${escapeHtml(name)}"
+        placeholder="0"
+      >
+    </div>
+  `);
+
+  return `
+    <div class="branchSplitPanel">
+      <h4>Branch Split</h4>
+      ${rows.join("")}
+      <div class="branchSplitTotal">Cart Qty: ${getCartQty(sku)} ${getSetWord(getCartQty(sku))}</div>
+      <div class="branchEditorActions">
+        <button type="button" onclick="saveBranchSplit('${sku}')">Save Branch Split</button>
+        <button type="button" onclick="cancelBranchSplit('${sku}')">Cancel</button>
+      </div>
+    </div>
+  `;
+}
+
+function saveBranchSplit(sku){
+  const row = document.querySelector(`.cartRow[data-sku="${sku}"]`);
+  if(!row) return;
+
+  const inputs = row.querySelectorAll(".branchSplitPanel input[data-branch-name]");
+  const branches = {};
+  let total = 0;
+
+  inputs.forEach(input => {
+    const name = input.dataset.branchName;
+    const qty = parseInt(input.value, 10) || 0;
+
+    if(qty > 0){
+      branches[name] = qty;
+      total += qty;
+    }
+  });
+
+  const cartQty = getCartQty(sku);
+  const product = products.find(p => p.sku === sku);
+
+  if(total !== cartQty){
+    alert(`Branch total for ${product ? product.description : sku} is ${total} ${getSetWord(total)}, but cart qty is ${cartQty} ${getSetWord(cartQty)}. Please adjust before sending.`);
+    return;
+  }
+
+  const item = getCartItem(sku);
+  if(!item) return;
+
+  item.branches = branches;
+  activeBranchSku = "";
+  renderCart();
+}
+
+function cancelBranchSplit(sku){
+  if(activeBranchSku === sku){
+    activeBranchSku = "";
+  }
+
+  renderCart();
+}
+
 function renderCart(){
   updateCartCountOnly();
+  renderBranchSettingPanel();
 
   const box = document.getElementById("cartItems");
   box.innerHTML = "";
 
-  Object.entries(cart).forEach(([sku, qty]) => {
+  Object.keys(cart).forEach(sku => {
+    const item = getCartItem(sku);
     const p = products.find(x => x.sku === sku);
 
-    if(!p) return;
+    if(!item || item.qty <= 0 || !p) return;
 
     const row = document.createElement("div");
     row.className = "cartRow";
+    row.dataset.sku = sku;
 
     const imgUrl = getDriveImageUrl(p, "front");
+    const branchPreview = getBranchPreviewHtml(sku);
 
     row.innerHTML = `
       <div class="cartProductLine">
@@ -562,7 +850,7 @@ function renderCart(){
         </div>
 
         <div class="cartProductInfo">
-          <div class="cartProductDesc">${p.description || ""}</div>
+          <div class="cartProductDesc">${escapeHtml(p.description || "")}</div>
 
           <small>Order Qty (Set):</small>
 
@@ -574,14 +862,21 @@ function renderCart(){
               type="number"
               min="1"
               inputmode="numeric"
-              value="${qty}"
+              value="${item.qty}"
               onchange="setQtyAndUpdate('${sku}', this.value)"
               oninput="setQtyOnly('${sku}', this.value)"
             >
 
             <button onclick="changeQty('${sku}', 1)">+</button>
+          </div>
+
+          <div class="cartActionRow">
+            <button class="branchButton" type="button" onclick="toggleBranchSplit('${sku}')">Branch</button>
             <button class="remove" onclick="removeItem('${sku}')">Remove</button>
           </div>
+
+          ${branchPreview}
+          ${renderBranchSplitPanel(sku)}
         </div>
       </div>
     `;
@@ -601,6 +896,8 @@ document.getElementById("clearSearchButton").onclick = () => {
 
 document.getElementById("refreshAppButton").onclick = () => {
   cart = {};
+  activeBranchSku = "";
+  branchSettingOpen = false;
   currentCategory = "ALL";
   currentPcdFilter = "";
   imageCacheVersion = Date.now();
@@ -628,6 +925,10 @@ document.getElementById("closeCart").onclick = () => {
   document.getElementById("cartPanel").classList.add("hidden");
 };
 
+document.getElementById("branchSettingButton").onclick = () => {
+  openBranchSetting();
+};
+
 document.getElementById("sendWhatsapp").onclick = () => {
   if(Object.keys(cart).length === 0){
     alert("Cart is empty");
@@ -645,32 +946,52 @@ document.getElementById("sendWhatsapp").onclick = () => {
   }
 
   let totalSets = 0;
+  const lines = [
+    "New Rim Order",
+    "",
+    `Customer Name: ${customerName}`,
+    `Sales Person WhatsApp: ${customerPhone}`
+  ];
 
-  let msg =
-    `New Rim Order%0A%0A` +
-    `Customer Name: ${encodeURIComponent(customerName)}%0A` +
-    `Sales Person WhatsApp: ${encodeURIComponent(customerPhone)}`;
+  const validEntries = Object.keys(cart)
+    .map(sku => ({ sku, item: getCartItem(sku), product: products.find(p => p.sku === sku) }))
+    .filter(entry => entry.item && entry.item.qty > 0 && entry.product);
 
-  Object.entries(cart).forEach(([sku, qty], i) => {
-    const p = products.find(x => x.sku === sku);
+  for(let i = 0; i < validEntries.length; i++){
+    const { sku, item, product } = validEntries[i];
+    const branchUsed = hasBranchSplit(sku);
+    const branchTotal = getBranchTotal(sku);
 
-    if(!p) return;
+    if(branchUsed && branchTotal !== item.qty){
+      alert(`Branch total for ${product.description || sku} is ${branchTotal} ${getSetWord(branchTotal)}, but cart qty is ${item.qty} ${getSetWord(item.qty)}. Please adjust before sending.`);
+      return;
+    }
 
-    totalSets += Number(qty) || 0;
+    totalSets += item.qty;
 
-    msg +=
-      `%0A%0A${i + 1}. ${encodeURIComponent(p.description || "")}` +
-      `%0AOrder Qty (Set): ${qty}`;
-  });
+    lines.push("");
+    lines.push(`${i + 1}. ${product.description || ""}`);
 
-  const setWord = totalSets === 1 ? "SET" : "SETS";
-  msg += `%0A%0ATOTAL ORDER: ${totalSets} ${setWord}`;
+    if(branchUsed){
+      Object.entries(item.branches)
+        .filter(([, qty]) => Number(qty) > 0)
+        .forEach(([name, qty]) => {
+          lines.push(`   ${name}: ${qty} ${getSetWord(qty)}`);
+        });
+    }else{
+      lines.push(`   Order Qty (Set): ${item.qty}`);
+    }
+  }
 
-  window.open(`https://wa.me/${customerPhone}?text=${msg}`, "_blank");
+  lines.push("");
+  lines.push(`TOTAL ORDER: ${totalSets} ${getSetWord(totalSets)}`);
+
+  window.open(`https://wa.me/${customerPhone}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
 
   const oldCartSkus = Object.keys(cart);
 
   cart = {};
+  activeBranchSku = "";
 
   renderCart();
 
@@ -753,6 +1074,7 @@ function closePhotoViewer(){
   document.getElementById("photoViewer").classList.add("hidden");
 }
 
+loadBranchNames();
 checkLogin();
 loadProducts();
 

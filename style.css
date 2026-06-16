@@ -638,3 +638,113 @@ button:disabled{
     height:220px;
   }
 }
+
+#branchSettingButton{
+  width:100%;
+  margin:12px 0 8px;
+  background:#333;
+}
+
+.branchSettingPanel,
+.branchSplitPanel{
+  background:#f7f7f7;
+  border:1px solid #e0e0e0;
+  border-radius:12px;
+  padding:10px;
+  margin:8px 0;
+}
+
+.branchSettingPanel h3,
+.branchSplitPanel h4{
+  margin:0 0 10px;
+  font-size:15px;
+}
+
+.branchInputRow,
+.branchQtyRow{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:8px;
+}
+
+.branchInputRow label,
+.branchQtyRow label{
+  flex:0 0 88px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.branchInputRow input,
+.branchQtyRow input{
+  flex:1;
+  min-width:0;
+  height:40px;
+  padding:8px 10px;
+  border:1px solid #ccc;
+  border-radius:9px;
+  font-size:16px;
+}
+
+.branchQtyRow input{
+  max-width:110px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.branchEditorActions{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.branchEditorActions button{
+  flex:1;
+}
+
+.branchButton{
+  background:#333;
+}
+
+.cartActionRow{
+  display:flex;
+  gap:8px;
+  margin-top:8px;
+}
+
+.cartActionRow button{
+  flex:1;
+}
+
+.branchPreview{
+  margin-top:8px;
+  color:#333;
+  font-size:12px;
+  line-height:1.35;
+  font-weight:bold;
+}
+
+.branchSplitTotal{
+  margin-top:6px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+@media(max-width:600px){
+  .branchInputRow,
+  .branchQtyRow{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:5px;
+  }
+
+  .branchInputRow label,
+  .branchQtyRow label{
+    flex:0 0 auto;
+  }
+
+  .branchQtyRow input{
+    max-width:none;
+    width:100%;
+  }
+}

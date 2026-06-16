@@ -8,7 +8,7 @@
 
   <!-- AUTO-FORCE LATEST VERSION -->
   <script>
-    const APP_VERSION = "1036";
+    const APP_VERSION = "1037";
     const currentUrl = new URL(window.location.href);
 
     if(currentUrl.searchParams.get("v") !== APP_VERSION){
@@ -17,11 +17,11 @@
     }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=1036">
+  <link rel="stylesheet" href="style.css?v=1037">
 
-  <link rel="manifest" href="manifest.json?v=1036">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1036">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1036">
+  <link rel="manifest" href="manifest.json?v=1037">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1037">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1037">
   <meta name="theme-color" content="#111111">
 </head>
 
@@ -101,6 +101,9 @@
       <button id="closeCart">X</button>
     </div>
 
+    <button id="branchSettingButton" type="button">Branch Setting</button>
+    <div id="branchSettingPanel" class="branchSettingPanel hidden"></div>
+
     <div id="cartItems"></div>
     <button id="sendWhatsapp">Send To WhatsApp</button>
   </div>
@@ -119,10 +122,11 @@
     </div>
   </div>
 
-  <script src="script.js?v=1036"></script>
+  <script src="script.js?v=1037"></script>
 
 </body>
 </html>
+
 
 
 

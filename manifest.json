@@ -1,7 +1,7 @@
-{
+﻿{
   "name": "RAYSPORT Rim Catalogue",
   "short_name": "RAYSPORT",
-  "start_url": "./?source=pwa",
+  "start_url": "./?v=1037",
   "display": "standalone",
   "background_color": "#111111",
   "theme_color": "#111111",
