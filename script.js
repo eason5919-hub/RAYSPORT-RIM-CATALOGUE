@@ -548,6 +548,19 @@ function focusQuickBranchDropdown(sku){
     }
   }, 50);
 }
+function scrollProductCardIntoView(sku){
+  setTimeout(() => {
+    const cards = cardBySku[sku] || [];
+    const visibleCard = cards.find(card => card.isConnected);
+
+    if(visibleCard){
+      visibleCard.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+    }
+  }, 80);
+}
 function focusCartBranchSplit(sku){
   setTimeout(() => {
     const firstBranchQty = document.querySelector(`.cartRow[data-sku="${sku}"] .branchSplitPanel input[data-branch-name]`);
@@ -635,6 +648,7 @@ function saveQuickBranchDropdown(sku){
       quickBranchSku = "";
       renderCart();
       updateProductOrderArea(sku);
+      scrollProductCardIntoView(sku);
       return;
     }
 
@@ -650,6 +664,7 @@ function saveQuickBranchDropdown(sku){
   quickBranchSku = "";
   renderCart();
   updateProductOrderArea(sku);
+  scrollProductCardIntoView(sku);
 }
 
 function cancelQuickBranchDropdown(sku){
@@ -658,6 +673,7 @@ function cancelQuickBranchDropdown(sku){
   }
 
   updateProductOrderArea(sku);
+  scrollProductCardIntoView(sku);
 }
 function renderOrderControls(product){
   const soldOut = isSoldOut(product);
