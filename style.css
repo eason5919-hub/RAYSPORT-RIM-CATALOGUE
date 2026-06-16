@@ -1,4 +1,4 @@
-html,
+﻿html,
 body{
   touch-action:manipulation;
   -webkit-text-size-adjust:100%;
@@ -161,7 +161,7 @@ main{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
   gap:14px;
-  padding:14px;
+  padding:14px 14px 96px;
 }
 
 .card{
@@ -536,7 +536,7 @@ button:disabled{
   main{
     grid-template-columns:1fr 1fr;
     gap:10px;
-    padding:10px;
+    padding:10px 10px 110px;
   }
 
   .card{
