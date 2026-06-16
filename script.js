@@ -602,9 +602,28 @@ function updateCartCountOnly(){
 }
 
 function changeQty(sku, delta){
-  setCartQty(sku, getCartQty(sku) + delta);
+  const previousQty = getCartQty(sku);
+  setCartQty(sku, previousQty + delta);
+  const newQty = getCartQty(sku);
+
+  if(delta > 0 && previousQty === 0 && newQty > 0 && branchNames.length > 0){
+    activeBranchSku = sku;
+    branchSettingOpen = false;
+    document.getElementById("cartPanel").classList.remove("hidden");
+  }
+
   renderCart();
   updateProductOrderArea(sku);
+
+  if(activeBranchSku === sku){
+    setTimeout(() => {
+      const firstBranchQty = document.querySelector(`.cartRow[data-sku="${sku}"] .branchSplitPanel input[data-branch-name]`);
+      if(firstBranchQty){
+        firstBranchQty.focus();
+        firstBranchQty.select();
+      }
+    }, 50);
+  }
 }
 
 function setQtyOnly(sku, value){
@@ -1083,3 +1102,4 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
