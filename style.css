@@ -646,7 +646,8 @@ button:disabled{
 }
 
 .branchSettingPanel,
-.branchSplitPanel{
+.branchSplitPanel,
+.quickBranchDropdown{
   background:#f7f7f7;
   border:1px solid #e0e0e0;
   border-radius:12px;
@@ -655,7 +656,8 @@ button:disabled{
 }
 
 .branchSettingPanel h3,
-.branchSplitPanel h4{
+.branchSplitPanel h4,
+.quickBranchDropdown h4{
   margin:0 0 10px;
   font-size:15px;
 }
@@ -746,5 +748,38 @@ button:disabled{
   .branchQtyRow input{
     max-width:none;
     width:100%;
+  }
+}
+
+.card.quickBranchOpen{
+  height:auto;
+  min-height:385px;
+  overflow:visible;
+}
+
+.card.quickBranchOpen .orderArea{
+  display:block;
+  height:auto;
+}
+
+.quickBranchDropdown{
+  width:100%;
+  margin:0;
+}
+
+.quickBranchDropdown .branchEditorActions button{
+  padding:10px 8px;
+  font-size:12px;
+}
+
+@media(max-width:600px){
+  .card.quickBranchOpen{
+    min-height:345px;
+  }
+}
+
+@media(max-width:380px){
+  .card.quickBranchOpen{
+    min-height:405px;
   }
 }

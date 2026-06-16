@@ -7,6 +7,7 @@ let customerName = "";
 let branchNames = [];
 let branchSettingOpen = false;
 let activeBranchSku = "";
+let quickBranchSku = "";
 
 let imageCacheVersion = Date.now();
 
@@ -297,6 +298,10 @@ function setCartQty(sku, qty){
       activeBranchSku = "";
     }
 
+    if(quickBranchSku === sku){
+      quickBranchSku = "";
+    }
+
     return;
   }
 
@@ -369,6 +374,7 @@ document.getElementById("loginButton").onclick = () => {
 
   cart = {};
   activeBranchSku = "";
+  quickBranchSku = "";
   branchSettingOpen = false;
   renderCart();
 
@@ -395,6 +401,7 @@ document.getElementById("logoutButton").onclick = () => {
   cart = {};
   branchNames = [];
   activeBranchSku = "";
+  quickBranchSku = "";
   branchSettingOpen = false;
 
   renderCart();
@@ -498,12 +505,118 @@ function isSoldOut(product){
   return (product.status || "").toLowerCase().includes("sold out");
 }
 
+function renderQuickBranchDropdown(product){
+  if(quickBranchSku !== product.sku || branchNames.length === 0){
+    return "";
+  }
+
+  const rows = branchNames.map(name => `
+    <div class="branchQtyRow">
+      <label>${escapeHtml(name)}</label>
+      <input
+        type="number"
+        min="0"
+        inputmode="numeric"
+        value=""
+        data-branch-name="${escapeHtml(name)}"
+        placeholder="0"
+      >
+    </div>
+  `);
+
+  return `
+    <div class="quickBranchDropdown">
+      <h4>Branch Qty</h4>
+      ${rows.join("")}
+      <div class="branchEditorActions">
+        <button type="button" onclick="saveQuickBranchDropdown('${product.sku}')">Add to Cart</button>
+        <button type="button" onclick="cancelQuickBranchDropdown('${product.sku}')">Cancel</button>
+      </div>
+    </div>
+  `;
+}
+
+function focusQuickBranchDropdown(sku){
+  setTimeout(() => {
+    const firstBranchQty = document.querySelector(`.card[data-sku="${sku}"] .quickBranchDropdown input[data-branch-name]`);
+    if(firstBranchQty){
+      firstBranchQty.focus();
+      firstBranchQty.select();
+    }
+  }, 50);
+}
+
+function addToCartFromProduct(sku){
+  if(branchNames.length > 0 && getCartQty(sku) === 0){
+    const previousQuickSku = quickBranchSku;
+    quickBranchSku = quickBranchSku === sku ? "" : sku;
+
+    if(previousQuickSku && previousQuickSku !== sku){
+      updateProductOrderArea(previousQuickSku);
+    }
+
+    updateProductOrderArea(sku);
+
+    if(quickBranchSku === sku){
+      focusQuickBranchDropdown(sku);
+    }
+
+    return;
+  }
+
+  changeQty(sku, 1);
+}
+
+function saveQuickBranchDropdown(sku){
+  const card = (cardBySku[sku] || []).find(item => item.querySelector(".quickBranchDropdown"));
+  if(!card) return;
+
+  const inputs = card.querySelectorAll(".quickBranchDropdown input[data-branch-name]");
+  const branches = {};
+  let total = 0;
+
+  inputs.forEach(input => {
+    const name = input.dataset.branchName;
+    const qty = parseInt(input.value, 10) || 0;
+
+    if(qty > 0){
+      branches[name] = qty;
+      total += qty;
+    }
+  });
+
+  if(total <= 0){
+    alert("Please enter branch quantity.");
+    return;
+  }
+
+  cart[sku] = {
+    qty: total,
+    branches
+  };
+
+  quickBranchSku = "";
+  renderCart();
+  updateProductOrderArea(sku);
+}
+
+function cancelQuickBranchDropdown(sku){
+  if(quickBranchSku === sku){
+    quickBranchSku = "";
+  }
+
+  updateProductOrderArea(sku);
+}
 function renderOrderControls(product){
   const soldOut = isSoldOut(product);
   const cartQty = getCartQty(product.sku);
 
   if(soldOut){
     return `<button disabled>Sold Out</button>`;
+  }
+
+  if(quickBranchSku === product.sku && branchNames.length > 0 && cartQty === 0){
+    return renderQuickBranchDropdown(product);
   }
 
   if(cartQty > 0){
@@ -527,7 +640,7 @@ function renderOrderControls(product){
   }
 
   return `
-    <button onclick="changeQty('${product.sku}', 1)">
+    <button onclick="addToCartFromProduct('${product.sku}')">
       Add to Cart
     </button>
   `;
@@ -536,6 +649,7 @@ function renderOrderControls(product){
 function createProductCard(p){
   const card = document.createElement("div");
   card.className = "card";
+  card.classList.toggle("quickBranchOpen", quickBranchSku === p.sku && branchNames.length > 0 && getCartQty(p.sku) === 0);
   card.dataset.sku = p.sku;
 
   if(p.rowColor){
@@ -586,6 +700,8 @@ function updateProductOrderArea(sku){
     const orderArea = card.querySelector(".orderArea");
     if(!orderArea) return;
 
+    const quickOpen = quickBranchSku === sku && branchNames.length > 0 && getCartQty(sku) === 0;
+    card.classList.toggle("quickBranchOpen", quickOpen);
     orderArea.innerHTML = renderOrderControls(product);
   });
 }
@@ -602,28 +718,15 @@ function updateCartCountOnly(){
 }
 
 function changeQty(sku, delta){
+  if(quickBranchSku === sku){
+    quickBranchSku = "";
+  }
+
   const previousQty = getCartQty(sku);
   setCartQty(sku, previousQty + delta);
-  const newQty = getCartQty(sku);
-
-  if(delta > 0 && previousQty === 0 && newQty > 0 && branchNames.length > 0){
-    activeBranchSku = sku;
-    branchSettingOpen = false;
-    document.getElementById("cartPanel").classList.remove("hidden");
-  }
 
   renderCart();
   updateProductOrderArea(sku);
-
-  if(activeBranchSku === sku){
-    setTimeout(() => {
-      const firstBranchQty = document.querySelector(`.cartRow[data-sku="${sku}"] .branchSplitPanel input[data-branch-name]`);
-      if(firstBranchQty){
-        firstBranchQty.focus();
-        firstBranchQty.select();
-      }
-    }, 50);
-  }
 }
 
 function setQtyOnly(sku, value){
@@ -664,6 +767,10 @@ function removeItem(sku){
 
   if(activeBranchSku === sku){
     activeBranchSku = "";
+  }
+
+  if(quickBranchSku === sku){
+    quickBranchSku = "";
   }
 
   renderCart();
@@ -738,6 +845,7 @@ function saveBranchSetting(){
   }
 
   branchNames = uniqueNames.slice(0, 10);
+  quickBranchSku = "";
   saveBranchNames();
 
   Object.keys(cart).forEach(sku => {
@@ -753,6 +861,7 @@ function saveBranchSetting(){
 
   branchSettingOpen = false;
   renderCart();
+  updateAllProductOrderAreas();
 }
 
 function toggleBranchSplit(sku){
@@ -916,6 +1025,7 @@ document.getElementById("clearSearchButton").onclick = () => {
 document.getElementById("refreshAppButton").onclick = () => {
   cart = {};
   activeBranchSku = "";
+  quickBranchSku = "";
   branchSettingOpen = false;
   currentCategory = "ALL";
   currentPcdFilter = "";
@@ -1011,6 +1121,7 @@ document.getElementById("sendWhatsapp").onclick = () => {
 
   cart = {};
   activeBranchSku = "";
+  quickBranchSku = "";
 
   renderCart();
 
