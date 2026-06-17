@@ -745,24 +745,16 @@ function openBranchQuantityEditor(sku){
     return false;
   }
 
-  if(isCartPanelOpen()){
-    activeBranchSku = sku;
-    quickBranchSku = "";
-    branchSettingOpen = false;
-    renderCart();
-    updateProductOrderArea(sku);
-    focusCartBranchSplit(sku);
-    return true;
-  }
-
   const previousQuickSku = quickBranchSku;
   activeBranchSku = "";
   quickBranchSku = sku;
+  branchSettingOpen = false;
 
   if(previousQuickSku && previousQuickSku !== sku){
     updateProductOrderArea(previousQuickSku);
   }
 
+  renderCart();
   updateProductOrderArea(sku);
   focusQuickBranchDropdown(sku);
   return true;
@@ -771,10 +763,17 @@ function openBranchQuantityEditor(sku){
 function addToCartFromProduct(sku){
   if(getActiveBranchNames().length > 0 && getCartQty(sku) === 0){
     const previousQuickSku = quickBranchSku;
+    const previousActiveSku = activeBranchSku;
+    activeBranchSku = "";
+    branchSettingOpen = false;
     quickBranchSku = quickBranchSku === sku ? "" : sku;
 
     if(previousQuickSku && previousQuickSku !== sku){
       updateProductOrderArea(previousQuickSku);
+    }
+
+    if(previousActiveSku){
+      renderCart();
     }
 
     updateProductOrderArea(sku);
@@ -1179,7 +1178,14 @@ function toggleBranchSplit(sku){
     return;
   }
 
+  const previousQuickSku = quickBranchSku;
+  quickBranchSku = "";
   activeBranchSku = activeBranchSku === sku ? "" : sku;
+
+  if(previousQuickSku){
+    updateProductOrderArea(previousQuickSku);
+  }
+
   renderCart();
 }
 
@@ -1516,6 +1522,8 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
+
 
 
 
