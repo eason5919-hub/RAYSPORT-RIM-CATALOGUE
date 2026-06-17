@@ -613,6 +613,22 @@ function showCachedCategory(){
 function isSoldOut(product){
   return (product.status || "").toLowerCase().includes("sold out");
 }
+function tapChangeQty(event, sku, delta){
+  if(event){
+    event.preventDefault();
+  }
+
+  changeQty(sku, delta);
+}
+
+function tapBranchQty(event, button, delta){
+  if(event){
+    event.preventDefault();
+  }
+
+  stepBranchQty(button, delta);
+}
+
 function stepBranchQty(button, delta){
   const control = button.closest(".branchQtyControl");
   if(!control) return;
@@ -638,7 +654,7 @@ function renderQuickBranchDropdown(product){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -647,7 +663,7 @@ function renderQuickBranchDropdown(product){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -819,7 +835,7 @@ function renderOrderControls(product){
   if(cartQty > 0){
     return `
       <div class="qtyControls">
-        <button onclick="changeQty('${product.sku}', -1)">-</button>
+        <button type="button" onpointerdown="tapChangeQty(event, '${product.sku}', -1)">-</button>
 
         <input
           class="qtyInput"
@@ -831,7 +847,7 @@ function renderOrderControls(product){
           oninput="setQtyOnly('${product.sku}', this.value, true)"
         >
 
-        <button onclick="changeQty('${product.sku}', 1)">+</button>
+        <button type="button" onpointerdown="tapChangeQty(event, '${product.sku}', 1)">+</button>
       </div>
     `;
   }
@@ -949,7 +965,6 @@ function setQtyOnly(sku, value, shouldScrollAfterTyping = false){
 
   if(value === ""){
     updateCartCountOnly();
-    if(shouldScrollAfterTyping) queueTypedQtyCardScroll(sku);
     return;
   }
 
@@ -962,8 +977,6 @@ function setQtyOnly(sku, value, shouldScrollAfterTyping = false){
 
   setCartQty(sku, qty);
   updateCartCountOnly();
-  updateProductOrderArea(sku);
-  if(shouldScrollAfterTyping) queueTypedQtyCardScroll(sku);
 }
 
 function setQtyAndUpdate(sku, value, shouldScrollAfterTyping = false){
@@ -1154,7 +1167,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -1163,7 +1176,7 @@ function renderBranchSplitPanel(sku){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -1257,7 +1270,7 @@ function renderCart(){
           <small>Order Qty (Set):</small>
 
           <div class="qtyControls">
-            <button onclick="changeQty('${sku}', -1)">-</button>
+            <button type="button" onpointerdown="tapChangeQty(event, '${sku}', -1)">-</button>
 
             <input
               class="qtyInput"
@@ -1269,7 +1282,7 @@ function renderCart(){
               oninput="setQtyOnly('${sku}', this.value, true)"
             >
 
-            <button onclick="changeQty('${sku}', 1)">+</button>
+            <button type="button" onpointerdown="tapChangeQty(event, '${sku}', 1)">+</button>
           </div>
 
           <div class="cartActionRow">
@@ -1493,6 +1506,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 

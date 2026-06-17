@@ -990,3 +990,40 @@ button:disabled{
   margin-top:8px;
 }
 
+
+
+/* Keep branch stepper group centered inside the branch quantity box only. */
+@media(max-width:600px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    width:max-content;
+    max-width:100%;
+    margin:0 auto;
+    grid-template-columns:44px minmax(92px,116px) 44px;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:44px;
+    min-width:44px;
+    max-width:44px;
+    padding:0;
+  }
+}
+
+@media(max-width:380px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:40px minmax(86px,108px) 40px;
+    column-gap:8px;
+  }
+
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:40px;
+    min-width:40px;
+    max-width:40px;
+  }
+}
