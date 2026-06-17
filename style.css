@@ -963,7 +963,7 @@ button:disabled{
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
     display:grid;
-    grid-template-columns:44px 116px 44px;
+    grid-template-columns:44px 128px 44px;
     column-gap:0;
     width:100%;
     max-width:100%;
@@ -975,9 +975,9 @@ button:disabled{
 
   .quickBranchDropdown .branchQtyControl input,
   .branchSplitPanel .branchQtyControl input{
-    width:116px;
+    width:128px;
     min-width:0;
-    max-width:116px;
+    max-width:128px;
     padding-left:4px;
     padding-right:4px;
   }
@@ -995,13 +995,13 @@ button:disabled{
 @media(max-width:380px){
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
-    grid-template-columns:40px 104px 40px;
+    grid-template-columns:40px 112px 40px;
   }
 
   .quickBranchDropdown .branchQtyControl input,
   .branchSplitPanel .branchQtyControl input{
-    width:104px;
-    max-width:104px;
+    width:112px;
+    max-width:112px;
   }
 
   .quickBranchDropdown .branchQtyStepper,
