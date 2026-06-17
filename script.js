@@ -1,4 +1,4 @@
-﻿let products = [];
+let products = [];
 let cart = {};
 let currentCategory = "ALL";
 let currentPcdFilter = "";
@@ -644,9 +644,20 @@ function tapChangeQty(event, sku, delta){
 function tapBranchQty(event, button, delta){
   if(event){
     event.preventDefault();
+    event.stopPropagation();
   }
 
   stepBranchQty(button, delta);
+
+  const control = button.closest(".branchQtyControl");
+  const input = control ? control.querySelector("input[data-branch-name]") : null;
+  if(input){
+    try{
+      input.focus({ preventScroll:true });
+    } catch {
+      input.focus();
+    }
+  }
 }
 
 function stepBranchQty(button, delta){
@@ -674,7 +685,7 @@ function renderQuickBranchDropdown(product){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
         <input
           type="number"
           min="0"
@@ -683,7 +694,7 @@ function renderQuickBranchDropdown(product){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
       </div>
     </div>
   `);
@@ -862,6 +873,8 @@ function renderOrderControls(product){
           min="1"
           inputmode="numeric"
           value="${cartQty}"
+          onfocus="openBranchQuantityEditor('${product.sku}')"
+          onpointerdown="if(getActiveBranchNames().length > 0){ event.preventDefault(); openBranchQuantityEditor('${product.sku}'); }"
           onchange="finishQtyTyping('${product.sku}', this)"
           onblur="finishQtyTyping('${product.sku}', this)"
           onkeydown="if(event.key === 'Enter'){ this.blur(); }"
@@ -1199,7 +1212,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
         <input
           type="number"
           min="0"
@@ -1208,7 +1221,7 @@ function renderBranchSplitPanel(sku){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
       </div>
     </div>
   `);

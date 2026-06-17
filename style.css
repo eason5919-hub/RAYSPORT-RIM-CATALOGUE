@@ -943,7 +943,6 @@ button:disabled{
     max-width:66px;
   }
 }
-
 /* Cart qty stays left aligned; branch qty uses one clean phone layout. */
 .cartProductInfo .qtyControls{
   justify-content:flex-start;
@@ -964,21 +963,21 @@ button:disabled{
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
     display:grid;
-    grid-template-columns:44px minmax(96px,1fr) 44px;
-    column-gap:8px;
+    grid-template-columns:44px 116px 44px;
+    column-gap:0;
     width:100%;
     max-width:100%;
     margin:0;
     box-sizing:border-box;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
   }
 
   .quickBranchDropdown .branchQtyControl input,
   .branchSplitPanel .branchQtyControl input{
-    width:100%;
+    width:116px;
     min-width:0;
-    max-width:none;
+    max-width:116px;
     padding-left:4px;
     padding-right:4px;
   }
@@ -996,8 +995,13 @@ button:disabled{
 @media(max-width:380px){
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
-    grid-template-columns:40px minmax(86px,1fr) 40px;
-    column-gap:7px;
+    grid-template-columns:40px 104px 40px;
+  }
+
+  .quickBranchDropdown .branchQtyControl input,
+  .branchSplitPanel .branchQtyControl input{
+    width:104px;
+    max-width:104px;
   }
 
   .quickBranchDropdown .branchQtyStepper,
@@ -1007,7 +1011,6 @@ button:disabled{
     max-width:40px;
   }
 }
-
 /* Match the cart order label gap before the quantity stepper row. */
 .cartProductInfo > small{
   margin-bottom:8px;
