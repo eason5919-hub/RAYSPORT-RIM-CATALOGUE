@@ -613,9 +613,34 @@ function showCachedCategory(){
 function isSoldOut(product){
   return (product.status || "").toLowerCase().includes("sold out");
 }
+function closeFocusedQtyKeyboardWithoutChanging(target){
+  const active = document.activeElement;
+
+  if(!active || active.tagName !== "INPUT") return false;
+
+  const isQtyInput = active.classList.contains("qtyInput") || active.hasAttribute("data-branch-name");
+  if(!isQtyInput) return false;
+
+  const sameControl = target && active.closest(".qtyControls, .branchQtyControl") === target.closest(".qtyControls, .branchQtyControl");
+  if(!sameControl) return false;
+
+  active.blur();
+
+  const card = target.closest(".card");
+  if(card && card.dataset.sku){
+    scrollProductCardIntoView(card.dataset.sku);
+  }
+
+  return true;
+}
+
 function tapChangeQty(event, sku, delta){
   if(event){
     event.preventDefault();
+  }
+
+  if(closeFocusedQtyKeyboardWithoutChanging(event ? event.currentTarget : null)){
+    return;
   }
 
   changeQty(sku, delta);
@@ -624,6 +649,10 @@ function tapChangeQty(event, sku, delta){
 function tapBranchQty(event, button, delta){
   if(event){
     event.preventDefault();
+  }
+
+  if(closeFocusedQtyKeyboardWithoutChanging(button)){
+    return;
   }
 
   stepBranchQty(button, delta);
@@ -1496,6 +1525,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 

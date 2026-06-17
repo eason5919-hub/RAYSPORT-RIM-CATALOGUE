@@ -1027,3 +1027,58 @@ button:disabled{
     max-width:40px;
   }
 }
+
+/* Final phone branch stepper fit: keep every button fully inside the branch box. */
+@media(max-width:600px){
+  .quickBranchDropdown,
+  .branchSplitPanel{
+    padding-left:8px;
+    padding-right:8px;
+  }
+
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    display:grid;
+    grid-template-columns:34px minmax(78px,104px) 34px;
+    column-gap:8px;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .quickBranchDropdown .branchQtyControl input,
+  .branchSplitPanel .branchQtyControl input{
+    width:100%;
+    min-width:0;
+    max-width:none;
+    padding-left:4px;
+    padding-right:4px;
+  }
+
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:34px;
+    min-width:34px;
+    max-width:34px;
+    height:40px;
+    padding:0;
+  }
+}
+
+@media(max-width:380px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:32px minmax(72px,96px) 32px;
+    column-gap:7px;
+  }
+
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:32px;
+    min-width:32px;
+    max-width:32px;
+  }
+}
+
