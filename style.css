@@ -1082,3 +1082,20 @@ button:disabled{
   }
 }
 
+/* Narrow branch quantity inputs so steppers align with action buttons. */
+@media(max-width:600px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:34px minmax(56px,74px) 34px;
+    column-gap:14px;
+  }
+}
+
+@media(max-width:380px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:32px minmax(52px,68px) 32px;
+    column-gap:12px;
+  }
+}
+
