@@ -222,11 +222,13 @@ function getSetWord(qty){
   return Number(qty) === 1 ? "SET" : "SETS";
 }
 
-function normalizeBranchNameSlots(names){
+function normalizeBranchNameSlots(names, minimumSlots = 10){
+  const source = Array.isArray(names) ? names : [];
+  const slotCount = Math.max(minimumSlots, source.length);
   const slots = [];
 
-  for(let i = 0; i < 10; i++){
-    slots.push(String((names || [])[i] || "").trim());
+  for(let i = 0; i < slotCount; i++){
+    slots.push(String(source[i] || "").trim());
   }
 
   return slots;
@@ -917,6 +919,21 @@ function removeItem(sku){
   updateProductOrderArea(sku);
 }
 
+function getBranchSettingInputSlots(){
+  const inputs = document.querySelectorAll("#branchSettingPanel input[data-branch-index]");
+  const inputSlots = normalizeBranchNameSlots(branchNames);
+
+  inputs.forEach(input => {
+    const index = parseInt(input.dataset.branchIndex, 10);
+
+    if(!isNaN(index) && index >= 0){
+      inputSlots[index] = input.value.trim();
+    }
+  });
+
+  return normalizeBranchNameSlots(inputSlots);
+}
+
 function renderBranchSettingPanel(){
   const panel = document.getElementById("branchSettingPanel");
 
@@ -927,10 +944,11 @@ function renderBranchSettingPanel(){
   }
 
   panel.classList.remove("hidden");
+  branchNames = normalizeBranchNameSlots(branchNames);
 
   const rows = [];
 
-  for(let i = 0; i < 10; i++){
+  for(let i = 0; i < branchNames.length; i++){
     rows.push(`
       <div class="branchInputRow">
         <label>Branch ${i + 1}</label>
@@ -948,6 +966,7 @@ function renderBranchSettingPanel(){
   panel.innerHTML = `
     <h3>Branch Setting</h3>
     ${rows.join("")}
+    <button id="addMoreBranchButton" type="button" onclick="addMoreBranches()">Add More Branch</button>
     <div class="branchEditorActions">
       <button type="button" onclick="saveBranchSetting()">Save Branch Names</button>
       <button type="button" onclick="closeBranchSetting()">Cancel</button>
@@ -964,19 +983,25 @@ function closeBranchSetting(){
   branchSettingOpen = false;
   renderBranchSettingPanel();
 }
+function addMoreBranches(){
+  branchNames = getBranchSettingInputSlots();
+
+  for(let i = 0; i < 5; i++){
+    branchNames.push("");
+  }
+
+  renderBranchSettingPanel();
+
+  setTimeout(() => {
+    const nextInput = document.querySelector(`#branchSettingPanel input[data-branch-index="${branchNames.length - 5}"]`);
+    if(nextInput){
+      nextInput.focus();
+    }
+  }, 30);
+}
 
 function saveBranchSetting(){
-  const inputs = document.querySelectorAll("#branchSettingPanel input[data-branch-index]");
-  const names = normalizeBranchNameSlots([]);
-
-  inputs.forEach(input => {
-    const index = parseInt(input.dataset.branchIndex, 10);
-
-    if(!isNaN(index) && index >= 0 && index < 10){
-      names[index] = input.value.trim();
-    }
-  });
-
+  const names = getBranchSettingInputSlots();
   const activeNames = names.filter(Boolean);
   const duplicateName = activeNames.find((name, index) => activeNames.indexOf(name) !== index);
 
