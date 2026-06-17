@@ -754,7 +754,7 @@ button:disabled{
 .card.quickBranchOpen{
   height:auto;
   min-height:385px;
-  overflow:visible;
+  overflow:hidden;
 }
 
 .card.quickBranchOpen .orderArea{
@@ -890,3 +890,36 @@ button:disabled{
   margin:0;
   background:#111;
 }
+
+/* Keep product cards locked to their grid width when branch quantity opens. */
+.card,
+.card.quickBranchOpen{
+  min-width:0;
+  width:100%;
+  max-width:100%;
+}
+
+.card.quickBranchOpen{
+  overflow:hidden;
+}
+
+.card.quickBranchOpen .info,
+.card.quickBranchOpen .orderArea,
+.quickBranchDropdown,
+.branchQtyRow,
+.branchQtyControl{
+  min-width:0;
+  max-width:100%;
+}
+
+.quickBranchDropdown{
+  overflow:hidden;
+}
+
+@media(max-width:600px){
+  .quickBranchDropdown,
+  .branchQtyControl{
+    max-width:100%;
+  }
+}
+
