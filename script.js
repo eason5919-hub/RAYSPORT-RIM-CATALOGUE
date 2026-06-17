@@ -183,34 +183,90 @@ function showPrice(price){
   return price;
 }
 
-function getDriveImageUrl(product, type){
-  let url = "";
-
+function getDriveImageSource(product, type){
   if(type === "front"){
-    url = product.frontOriginal || product.frontImage || "";
-  }else{
-    url = product.sideOriginal || product.sideImage || "";
+    return product.frontOriginal || product.frontImage || "";
   }
 
+  return product.sideOriginal || product.sideImage || "";
+}
+
+function getDriveFileId(url){
   if(!url) return "";
 
-  let fileId = "";
-
   if(url.includes("/d/")){
-    fileId = url.split("/d/")[1].split("/")[0];
-  }else if(url.includes("id=")){
-    fileId = url.split("id=")[1].split("&")[0];
+    return url.split("/d/")[1].split("/")[0];
   }
 
-  if(fileId){
-    return "https://drive.google.com/thumbnail?id=" +
-      fileId +
-      "&sz=w1000&cache=" +
-      imageCacheVersion;
+  if(url.includes("id=")){
+    return url.split("id=")[1].split("&")[0];
   }
+
+  return "";
+}
+
+function addImageCacheParam(url){
+  if(!url) return "";
 
   const separator = url.includes("?") ? "&" : "?";
   return url + separator + "cache=" + imageCacheVersion;
+}
+
+function getDriveImageUrls(product, type){
+  const url = getDriveImageSource(product, type);
+  if(!url) return [];
+
+  const fileId = getDriveFileId(url);
+  const urls = [];
+
+  if(fileId){
+    urls.push(
+      "https://drive.google.com/thumbnail?id=" +
+      fileId +
+      "&sz=w1000&cache=" +
+      imageCacheVersion
+    );
+    urls.push("https://lh3.googleusercontent.com/d/" + fileId + "=w1000");
+    urls.push(
+      "https://drive.google.com/uc?export=view&id=" +
+      fileId +
+      "&cache=" +
+      imageCacheVersion
+    );
+  }
+
+  urls.push(addImageCacheParam(url));
+
+  return urls.filter((item, index) => item && urls.indexOf(item) === index);
+}
+
+function getDriveImageUrl(product, type){
+  const urls = getDriveImageUrls(product, type);
+  return urls[0] || "";
+}
+
+function getDriveImageTag(product, type, extraAttributes = ""){
+  const urls = getDriveImageUrls(product, type);
+  if(urls.length === 0) return "";
+
+  const fallbackUrls = urls.slice(1).map(escapeHtml).join("|");
+  const attrs = extraAttributes ? " " + extraAttributes : "";
+
+  return `<img src="${escapeHtml(urls[0])}" alt=""${attrs} onerror="handleProductImageError(this)" data-fallback-srcs="${fallbackUrls}">`;
+}
+
+function handleProductImageError(img){
+  const fallbackUrls = (img.dataset.fallbackSrcs || "").split("|").filter(Boolean);
+  const nextUrl = fallbackUrls.shift();
+
+  if(nextUrl){
+    img.dataset.fallbackSrcs = fallbackUrls.join("|");
+    img.src = nextUrl;
+    return;
+  }
+
+  img.onerror = null;
+  img.classList.add("imageFailed");
 }
 
 function isValidWhatsappNumber(phone){
@@ -799,9 +855,7 @@ function createProductCard(p){
 
   card.innerHTML = `
     <div class="photo" onclick="openPhotoViewer('${p.sku}')">
-      ${(p.frontOriginal || p.frontImage)
-        ? `<img src="${getDriveImageUrl(p, "front")}" alt="" loading="eager">`
-        : "No photo yet"}
+      ${getDriveImageTag(p, "front", 'loading="eager"') || "No photo yet"}
     </div>
 
     <div class="info">
@@ -1194,9 +1248,7 @@ function renderCart(){
     row.innerHTML = `
       <div class="cartProductLine">
         <div class="cartProductThumb">
-          ${imgUrl
-            ? `<img src="${imgUrl}" alt="">`
-            : `No photo`}
+          ${getDriveImageTag(p, "front") || `No photo`}
         </div>
 
         <div class="cartProductInfo">
@@ -1396,8 +1448,14 @@ function openPhotoViewer(sku){
 function showCurrentPhoto(){
   const photo = currentPhotos[currentPhotoIndex];
 
-  document.getElementById("viewerImage").src =
-    getDriveImageUrl(photo.product, photo.type);
+  const viewerImage = document.getElementById("viewerImage");
+  const urls = getDriveImageUrls(photo.product, photo.type);
+
+  viewerImage.dataset.fallbackSrcs = urls.slice(1).join("|");
+  viewerImage.onerror = function(){
+    handleProductImageError(this);
+  };
+  viewerImage.src = urls[0] || "";
 
   document.getElementById("viewerTitle").textContent = photo.title;
 }
@@ -1435,6 +1493,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 

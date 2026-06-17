@@ -981,3 +981,12 @@ button:disabled{
   }
 }
 
+/* Match the cart order label gap before the quantity stepper row. */
+.cartProductInfo > small{
+  margin-bottom:8px;
+}
+
+.cartProductInfo > small + .qtyControls{
+  margin-top:8px;
+}
+
