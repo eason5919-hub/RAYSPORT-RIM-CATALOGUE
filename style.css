@@ -864,23 +864,25 @@ button:disabled{
 @media(max-width:600px){
   .branchQtyControl{
     width:100%;
-    gap:8px;
+    gap:6px;
     align-items:center;
   }
 
   .branchQtyControl input{
     flex:1;
-    min-width:0;
+    min-width:76px;
+    padding-left:6px;
+    padding-right:6px;
   }
 
   .branchQtyStepper{
     display:block;
-    flex:0 0 42px;
-    width:42px;
+    flex:0 0 34px;
+    width:34px;
     height:40px;
     padding:0;
-    border-radius:9px;
-    font-size:18px;
+    border-radius:8px;
+    font-size:17px;
     line-height:40px;
   }
 }
