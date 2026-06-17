@@ -785,9 +785,24 @@ function openBranchQuantityEditor(sku){
   }
 
   const previousQuickSku = quickBranchSku;
+  quickBranchSku = "";
+  branchSettingOpen = false;
+
+  if(isCartPanelOpen()){
+    activeBranchSku = sku;
+
+    if(previousQuickSku){
+      updateProductOrderArea(previousQuickSku);
+    }
+
+    renderCart();
+    updateProductOrderArea(sku);
+    focusCartBranchSplit(sku);
+    return true;
+  }
+
   activeBranchSku = "";
   quickBranchSku = sku;
-  branchSettingOpen = false;
 
   if(previousQuickSku && previousQuickSku !== sku){
     updateProductOrderArea(previousQuickSku);
@@ -1351,6 +1366,8 @@ function renderCart(){
               min="1"
               inputmode="numeric"
               value="${item.qty}"
+              onfocus="openBranchQuantityEditor('${sku}')"
+              onpointerdown="if(getActiveBranchNames().length > 0){ event.preventDefault(); openBranchQuantityEditor('${sku}'); }"
               onchange="finishQtyTyping('${sku}', this)"
               onblur="finishQtyTyping('${sku}', this)"
               onkeydown="if(event.key === 'Enter'){ this.blur(); }"
