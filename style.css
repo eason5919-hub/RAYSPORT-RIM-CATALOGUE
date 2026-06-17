@@ -1116,3 +1116,20 @@ button:disabled{
   }
 }
 
+/* Keep stepper positions fixed while using a wider branch quantity field. */
+@media(max-width:600px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:34px 94px 34px;
+    column-gap:4px;
+  }
+}
+
+@media(max-width:380px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:32px 86px 32px;
+    column-gap:3px;
+  }
+}
+
