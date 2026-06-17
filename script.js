@@ -68,7 +68,7 @@ function scrollPageToTop(){
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "auto"
+    behavior: "smooth"
   });
 }
 
@@ -79,14 +79,14 @@ function scrollFilterBarsToLeft(){
   if(pcdMenu){
     pcdMenu.scrollTo({
       left: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
   }
 
   if(categoryMenu){
     categoryMenu.scrollTo({
       left: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
   }
 }
@@ -721,10 +721,10 @@ function scrollProductCardIntoView(sku){
 
       window.scrollTo({
         top: Math.max(0, top),
-        behavior: "auto"
+        behavior: "smooth"
       });
     }
-  }, 20);
+  }, 10);
 }
 function focusCartBranchSplit(sku){
   setTimeout(() => {
@@ -1516,6 +1516,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 
