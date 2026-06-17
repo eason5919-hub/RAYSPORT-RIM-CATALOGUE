@@ -300,10 +300,10 @@ button:disabled{
 }
 
 .qtyInput{
-  width:58px;
+  width:72px;
   height:38px;
   text-align:center;
-  padding:7px;
+  padding:7px 5px;
   border:1px solid #ccc;
   border-radius:8px;
   font-weight:bold;
@@ -593,19 +593,19 @@ button:disabled{
 
   .qtyControls{
     height:36px;
-    gap:5px;
+    gap:6px;
   }
 
   .qtyControls button{
-    padding:7px 9px;
-    min-width:30px;
+    padding:7px 8px;
+    min-width:32px;
     height:36px;
   }
 
   .qtyInput{
-    width:48px;
+    width:66px;
     height:36px;
-    padding:6px;
+    padding:6px 4px;
     font-size:16px;
   }
 
@@ -920,6 +920,27 @@ button:disabled{
   .quickBranchDropdown,
   .branchQtyControl{
     max-width:100%;
+  }
+}
+
+/* Keep 4 digit quantities readable on phone and centered between step buttons. */
+.qtyControls{
+  justify-content:center;
+}
+
+.qtyInput{
+  flex:0 0 72px;
+  max-width:72px;
+}
+
+@media(max-width:600px){
+  .qtyControls{
+    justify-content:center;
+  }
+
+  .qtyInput{
+    flex:0 0 66px;
+    max-width:66px;
   }
 }
 

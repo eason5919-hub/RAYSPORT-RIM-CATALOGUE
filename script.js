@@ -771,8 +771,8 @@ function renderOrderControls(product){
           min="1"
           inputmode="numeric"
           value="${cartQty}"
-          onchange="setQtyAndUpdate('${product.sku}', this.value)"
-          oninput="setQtyOnly('${product.sku}', this.value)"
+          onchange="setQtyAndUpdate('${product.sku}', this.value, true)"
+          oninput="setQtyOnly('${product.sku}', this.value, true)"
         >
 
         <button onclick="changeQty('${product.sku}', 1)">+</button>
@@ -858,6 +858,18 @@ function updateCartCountOnly(){
   document.getElementById("cartCount").textContent = count;
 }
 
+const qtyInputCommitTimers = {};
+
+function queueTypedQtyCardScroll(sku){
+  if(getActiveBranchNames().length > 0) return;
+
+  clearTimeout(qtyInputCommitTimers[sku]);
+  qtyInputCommitTimers[sku] = setTimeout(() => {
+    scrollProductCardIntoView(sku);
+    delete qtyInputCommitTimers[sku];
+  }, 650);
+}
+
 function changeQty(sku, delta){
   if(delta !== 0 && getActiveBranchNames().length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku);
@@ -875,7 +887,7 @@ function changeQty(sku, delta){
   updateProductOrderArea(sku);
 }
 
-function setQtyOnly(sku, value){
+function setQtyOnly(sku, value, shouldScrollAfterTyping = false){
   if(getActiveBranchNames().length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku);
     return;
@@ -883,6 +895,7 @@ function setQtyOnly(sku, value){
 
   if(value === ""){
     updateCartCountOnly();
+    if(shouldScrollAfterTyping) queueTypedQtyCardScroll(sku);
     return;
   }
 
@@ -896,9 +909,10 @@ function setQtyOnly(sku, value){
   setCartQty(sku, qty);
   updateCartCountOnly();
   updateProductOrderArea(sku);
+  if(shouldScrollAfterTyping) queueTypedQtyCardScroll(sku);
 }
 
-function setQtyAndUpdate(sku, value){
+function setQtyAndUpdate(sku, value, shouldScrollAfterTyping = false){
   if(getActiveBranchNames().length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku);
     return;
@@ -908,6 +922,7 @@ function setQtyAndUpdate(sku, value){
     delete cart[sku];
     renderCart();
     updateProductOrderArea(sku);
+    if(shouldScrollAfterTyping) queueTypedQtyCardScroll(sku);
     return;
   }
 
@@ -916,6 +931,7 @@ function setQtyAndUpdate(sku, value){
 
   renderCart();
   updateProductOrderArea(sku);
+  if(shouldScrollAfterTyping) queueTypedQtyCardScroll(sku);
 }
 
 function removeItem(sku){
@@ -1197,8 +1213,8 @@ function renderCart(){
               min="1"
               inputmode="numeric"
               value="${item.qty}"
-              onchange="setQtyAndUpdate('${sku}', this.value)"
-              oninput="setQtyOnly('${sku}', this.value)"
+              onchange="setQtyAndUpdate('${sku}', this.value, true)"
+              oninput="setQtyOnly('${sku}', this.value, true)"
             >
 
             <button onclick="changeQty('${sku}', 1)">+</button>
@@ -1419,4 +1435,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
+
+
 
