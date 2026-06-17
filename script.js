@@ -1310,26 +1310,8 @@ document.getElementById("clearSearchButton").onclick = () => {
 };
 
 document.getElementById("refreshAppButton").onclick = () => {
-  cart = {};
-  activeBranchSku = "";
-  quickBranchSku = "";
-  branchSettingOpen = false;
-  currentCategory = "ALL";
-  currentPcdFilter = "";
-  imageCacheVersion = Date.now();
-
-  categoryCardCache = {};
-  cardBySku = {};
-
-  document.getElementById("search").value = "";
-  document.getElementById("cartPanel").classList.add("hidden");
-
-  preloadProductImages();
-  renderCart();
-  updateActiveButtons();
-  showCachedCategory();
-  scrollPageToTop();
-  scrollFilterBarsToLeft();
+  const freshUrl = window.location.pathname + "?v=" + Date.now();
+  window.location.replace(freshUrl);
 };
 
 document.getElementById("cartButton").onclick = () => {
@@ -1506,6 +1488,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 
