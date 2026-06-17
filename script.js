@@ -641,23 +641,51 @@ function tapChangeQty(event, sku, delta){
   changeQty(sku, delta);
 }
 
+function focusBranchQtyInput(input){
+  if(!input) return;
+
+  try{
+    input.focus({ preventScroll:true });
+  } catch {
+    input.focus();
+  }
+}
+
 function tapBranchQty(event, button, delta){
   if(event){
+    const now = event.timeStamp || Date.now();
+    const lastStepAt = parseFloat(button.dataset.lastBranchStepAt || "0");
+    const lastTouchAt = parseFloat(button.dataset.lastBranchTouchAt || "0");
+
+    if(lastStepAt && now - lastStepAt < 80){
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    }
+
+    if(event.type !== "touchstart" && lastTouchAt && now - lastTouchAt < 700){
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    }
+
+    if(event.type === "touchstart"){
+      button.dataset.lastBranchTouchAt = String(now);
+    }
+
+    button.dataset.lastBranchStepAt = String(now);
     event.preventDefault();
     event.stopPropagation();
   }
 
-  stepBranchQty(button, delta);
-
   const control = button.closest(".branchQtyControl");
   const input = control ? control.querySelector("input[data-branch-name]") : null;
-  if(input){
-    try{
-      input.focus({ preventScroll:true });
-    } catch {
-      input.focus();
-    }
-  }
+
+  focusBranchQtyInput(input);
+  stepBranchQty(button, delta);
+  focusBranchQtyInput(input);
+  setTimeout(() => focusBranchQtyInput(input), 0);
+  return false;
 }
 
 function stepBranchQty(button, delta){
@@ -685,7 +713,7 @@ function renderQuickBranchDropdown(product){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, -1)" onmousedown="return tapBranchQty(event, this, -1)" onpointerdown="return tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
         <input
           type="number"
           min="0"
@@ -694,7 +722,7 @@ function renderQuickBranchDropdown(product){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, 1)" onmousedown="return tapBranchQty(event, this, 1)" onpointerdown="return tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
       </div>
     </div>
   `);
@@ -1212,7 +1240,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, -1)" onmousedown="return tapBranchQty(event, this, -1)" onpointerdown="return tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
         <input
           type="number"
           min="0"
@@ -1221,7 +1249,7 @@ function renderBranchSplitPanel(sku){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" tabindex="-1" onpointerdown="tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
+        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, 1)" onmousedown="return tapBranchQty(event, this, 1)" onpointerdown="return tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
       </div>
     </div>
   `);

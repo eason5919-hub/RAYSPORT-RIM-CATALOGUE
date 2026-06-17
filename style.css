@@ -964,12 +964,12 @@ button:disabled{
   .branchSplitPanel .branchQtyControl{
     display:grid;
     grid-template-columns:44px 116px 44px;
-    column-gap:12px;
-    width:max-content;
+    column-gap:0;
+    width:100%;
     max-width:100%;
-    margin:0 auto;
+    margin:0;
     box-sizing:border-box;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
   }
 
@@ -996,7 +996,6 @@ button:disabled{
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
     grid-template-columns:40px 104px 40px;
-    column-gap:10px;
   }
 
   .quickBranchDropdown .branchQtyControl input,
