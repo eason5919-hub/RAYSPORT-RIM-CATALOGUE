@@ -843,7 +843,9 @@ function renderOrderControls(product){
           min="1"
           inputmode="numeric"
           value="${cartQty}"
-          onchange="setQtyAndUpdate('${product.sku}', this.value, true)"
+          onchange="finishQtyTyping('${product.sku}', this)"
+          onblur="finishQtyTyping('${product.sku}', this)"
+          onkeydown="if(event.key === 'Enter'){ this.blur(); }"
           oninput="setQtyOnly('${product.sku}', this.value, true)"
         >
 
@@ -955,6 +957,10 @@ function changeQty(sku, delta){
 
   renderCart();
   updateProductOrderArea(sku);
+}
+
+function finishQtyTyping(sku, input){
+  setQtyAndUpdate(sku, input.value, true);
 }
 
 function setQtyOnly(sku, value, shouldScrollAfterTyping = false){
@@ -1278,7 +1284,9 @@ function renderCart(){
               min="1"
               inputmode="numeric"
               value="${item.qty}"
-              onchange="setQtyAndUpdate('${sku}', this.value, true)"
+              onchange="finishQtyTyping('${sku}', this)"
+              onblur="finishQtyTyping('${sku}', this)"
+              onkeydown="if(event.key === 'Enter'){ this.blur(); }"
               oninput="setQtyOnly('${sku}', this.value, true)"
             >
 
@@ -1488,6 +1496,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 
