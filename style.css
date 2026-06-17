@@ -1,4 +1,4 @@
-﻿html,
+html,
 body{
   touch-action:manipulation;
   -webkit-text-size-adjust:100%;
@@ -944,106 +944,32 @@ button:disabled{
   }
 }
 
-/* Align branch quantity controls cleanly on phone, and keep cart qty left aligned. */
+/* Cart qty stays left aligned; branch qty uses one clean phone layout. */
 .cartProductInfo .qtyControls{
   justify-content:flex-start;
   width:auto;
 }
 
 @media(max-width:600px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    display:grid;
-    grid-template-columns:44px minmax(92px,118px) 44px;
-    justify-content:center;
-    column-gap:10px;
-    width:100%;
-  }
-
-  .quickBranchDropdown .branchQtyControl input,
-  .branchSplitPanel .branchQtyControl input{
-    width:100%;
-    min-width:0;
-    max-width:none;
-  }
-
-  .quickBranchDropdown .branchQtyStepper,
-  .branchSplitPanel .branchQtyStepper{
-    width:44px;
-    min-width:44px;
-    max-width:44px;
-    height:40px;
-    padding:0;
-  }
-
   .cartProductInfo .qtyControls{
     justify-content:flex-start;
   }
-}
 
-/* Match the cart order label gap before the quantity stepper row. */
-.cartProductInfo > small{
-  margin-bottom:8px;
-}
-
-.cartProductInfo > small + .qtyControls{
-  margin-top:8px;
-}
-
-
-
-/* Keep branch stepper group centered inside the branch quantity box only. */
-@media(max-width:600px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    width:max-content;
-    max-width:100%;
-    margin:0 auto;
-    grid-template-columns:44px minmax(92px,116px) 44px;
-    justify-content:center;
-    align-items:center;
-  }
-
-  .quickBranchDropdown .branchQtyStepper,
-  .branchSplitPanel .branchQtyStepper{
-    width:44px;
-    min-width:44px;
-    max-width:44px;
-    padding:0;
-  }
-}
-
-@media(max-width:380px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:40px minmax(86px,108px) 40px;
-    column-gap:8px;
-  }
-
-  .quickBranchDropdown .branchQtyStepper,
-  .branchSplitPanel .branchQtyStepper{
-    width:40px;
-    min-width:40px;
-    max-width:40px;
-  }
-}
-
-/* Final phone branch stepper fit: keep every button fully inside the branch box. */
-@media(max-width:600px){
   .quickBranchDropdown,
   .branchSplitPanel{
-    padding-left:8px;
-    padding-right:8px;
+    padding-left:12px;
+    padding-right:12px;
   }
 
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
     display:grid;
-    grid-template-columns:34px minmax(78px,104px) 34px;
+    grid-template-columns:44px minmax(96px,1fr) 44px;
     column-gap:8px;
-    width:max-content;
+    width:100%;
     max-width:100%;
-    margin:0 auto;
+    margin:0;
+    box-sizing:border-box;
     justify-content:center;
     align-items:center;
   }
@@ -1059,9 +985,9 @@ button:disabled{
 
   .quickBranchDropdown .branchQtyStepper,
   .branchSplitPanel .branchQtyStepper{
-    width:34px;
-    min-width:34px;
-    max-width:34px;
+    width:44px;
+    min-width:44px;
+    max-width:44px;
     height:40px;
     padding:0;
   }
@@ -1070,66 +996,23 @@ button:disabled{
 @media(max-width:380px){
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
-    grid-template-columns:32px minmax(72px,96px) 32px;
+    grid-template-columns:40px minmax(86px,1fr) 40px;
     column-gap:7px;
   }
 
   .quickBranchDropdown .branchQtyStepper,
   .branchSplitPanel .branchQtyStepper{
-    width:32px;
-    min-width:32px;
-    max-width:32px;
+    width:40px;
+    min-width:40px;
+    max-width:40px;
   }
 }
 
-/* Narrow branch quantity inputs so steppers align with action buttons. */
-@media(max-width:600px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:34px minmax(56px,74px) 34px;
-    column-gap:14px;
-  }
+/* Match the cart order label gap before the quantity stepper row. */
+.cartProductInfo > small{
+  margin-bottom:8px;
 }
 
-@media(max-width:380px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:32px minmax(52px,68px) 32px;
-    column-gap:12px;
-  }
+.cartProductInfo > small + .qtyControls{
+  margin-top:8px;
 }
-
-/* Widen only the branch quantity field while keeping stepper positions fixed. */
-@media(max-width:600px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:34px minmax(72px,94px) 34px;
-    column-gap:10px;
-  }
-}
-
-@media(max-width:380px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:32px minmax(66px,86px) 32px;
-    column-gap:9px;
-  }
-}
-
-/* Keep stepper positions fixed while using a wider branch quantity field. */
-@media(max-width:600px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:34px 94px 34px;
-    column-gap:4px;
-  }
-}
-
-@media(max-width:380px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:32px 86px 32px;
-    column-gap:3px;
-  }
-}
-
