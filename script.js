@@ -234,6 +234,20 @@ function normalizeBranchNameSlots(names, minimumSlots = 10){
   return slots;
 }
 
+function trimEmptyExtraBranchSlots(names){
+  const slots = normalizeBranchNameSlots(names);
+  let lastNamedIndex = -1;
+
+  slots.forEach((name, index) => {
+    if(name){
+      lastNamedIndex = index;
+    }
+  });
+
+  const slotCount = Math.max(10, lastNamedIndex + 1);
+  return slots.slice(0, slotCount);
+}
+
 function getActiveBranchNames(){
   return branchNames.filter(Boolean);
 }
@@ -1002,7 +1016,7 @@ function addMoreBranches(){
 
 function saveBranchSetting(){
   const names = getBranchSettingInputSlots();
-  const activeNames = names.filter(Boolean);
+  const activeNames = trimEmptyExtraBranchSlots(names).filter(Boolean);
   const duplicateName = activeNames.find((name, index) => activeNames.indexOf(name) !== index);
 
   if(duplicateName){
@@ -1010,7 +1024,7 @@ function saveBranchSetting(){
     return;
   }
 
-  branchNames = names;
+  branchNames = trimEmptyExtraBranchSlots(names);
   quickBranchSku = "";
   saveBranchNames();
 
