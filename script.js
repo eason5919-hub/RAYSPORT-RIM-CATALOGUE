@@ -613,24 +613,18 @@ function showCachedCategory(){
 function isSoldOut(product){
   return (product.status || "").toLowerCase().includes("sold out");
 }
-function closeFocusedQtyKeyboardWithoutChanging(target){
+function updateFocusedQtyWithStepper(target, sku, delta){
   const active = document.activeElement;
 
-  if(!active || active.tagName !== "INPUT") return false;
+  if(!active || !active.classList.contains("qtyInput")) return false;
 
-  const isQtyInput = active.classList.contains("qtyInput") || active.hasAttribute("data-branch-name");
-  if(!isQtyInput) return false;
-
-  const sameControl = target && active.closest(".qtyControls, .branchQtyControl") === target.closest(".qtyControls, .branchQtyControl");
+  const sameControl = target && active.closest(".qtyControls") === target.closest(".qtyControls");
   if(!sameControl) return false;
 
-  active.blur();
-
-  const card = target.closest(".card");
-  if(card && card.dataset.sku){
-    scrollProductCardIntoView(card.dataset.sku);
-  }
-
+  const currentQty = parseInt(active.value, 10) || 0;
+  const nextQty = Math.max(1, currentQty + delta);
+  active.value = nextQty;
+  setQtyOnly(sku, nextQty, false);
   return true;
 }
 
@@ -639,7 +633,8 @@ function tapChangeQty(event, sku, delta){
     event.preventDefault();
   }
 
-  if(closeFocusedQtyKeyboardWithoutChanging(event ? event.currentTarget : null)){
+  const target = event ? event.currentTarget : null;
+  if(updateFocusedQtyWithStepper(target, sku, delta)){
     return;
   }
 
@@ -649,10 +644,6 @@ function tapChangeQty(event, sku, delta){
 function tapBranchQty(event, button, delta){
   if(event){
     event.preventDefault();
-  }
-
-  if(closeFocusedQtyKeyboardWithoutChanging(button)){
-    return;
   }
 
   stepBranchQty(button, delta);
@@ -1525,6 +1516,7 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
+
 
 
 
