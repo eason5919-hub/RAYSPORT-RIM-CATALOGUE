@@ -541,6 +541,18 @@ function showCachedCategory(){
 function isSoldOut(product){
   return (product.status || "").toLowerCase().includes("sold out");
 }
+function stepBranchQty(button, delta){
+  const control = button.closest(".branchQtyControl");
+  if(!control) return;
+
+  const input = control.querySelector("input[data-branch-name]");
+  if(!input) return;
+
+  const currentQty = parseInt(input.value, 10) || 0;
+  const nextQty = Math.max(0, currentQty + delta);
+  input.value = nextQty > 0 ? nextQty : "";
+  input.dispatchEvent(new Event("input", { bubbles:true }));
+}
 
 function renderQuickBranchDropdown(product){
   if(quickBranchSku !== product.sku || getActiveBranchNames().length === 0){
@@ -553,14 +565,18 @@ function renderQuickBranchDropdown(product){
   const rows = getActiveBranchNames().map(name => `
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
-      <input
-        type="number"
-        min="0"
-        inputmode="numeric"
-        value="${branches[name] || ""}"
-        data-branch-name="${escapeHtml(name)}"
-        placeholder="0"
-      >
+      <div class="branchQtyControl">
+        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, -1)">-</button>
+        <input
+          type="number"
+          min="0"
+          inputmode="numeric"
+          value="${branches[name] || ""}"
+          data-branch-name="${escapeHtml(name)}"
+          placeholder="0"
+        >
+        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, 1)">+</button>
+      </div>
     </div>
   `);
 
@@ -1028,14 +1044,18 @@ function renderBranchSplitPanel(sku){
   const rows = getActiveBranchNames().map(name => `
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
-      <input
-        type="number"
-        min="0"
-        inputmode="numeric"
-        value="${branches[name] || ""}"
-        data-branch-name="${escapeHtml(name)}"
-        placeholder="0"
-      >
+      <div class="branchQtyControl">
+        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, -1)">-</button>
+        <input
+          type="number"
+          min="0"
+          inputmode="numeric"
+          value="${branches[name] || ""}"
+          data-branch-name="${escapeHtml(name)}"
+          placeholder="0"
+        >
+        <button class="branchQtyStepper" type="button" onclick="stepBranchQty(this, 1)">+</button>
+      </div>
     </div>
   `);
 

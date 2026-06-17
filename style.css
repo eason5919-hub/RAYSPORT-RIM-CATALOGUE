@@ -847,3 +847,40 @@ button:disabled{
     padding:18px;
   }
 }
+.branchQtyControl{
+  flex:1;
+  min-width:0;
+  display:flex;
+}
+
+.branchQtyControl input{
+  width:100%;
+}
+
+.branchQtyStepper{
+  display:none;
+}
+
+@media(max-width:600px){
+  .branchQtyControl{
+    width:100%;
+    gap:8px;
+    align-items:center;
+  }
+
+  .branchQtyControl input{
+    flex:1;
+    min-width:0;
+  }
+
+  .branchQtyStepper{
+    display:block;
+    flex:0 0 42px;
+    width:42px;
+    height:40px;
+    padding:0;
+    border-radius:9px;
+    font-size:18px;
+    line-height:40px;
+  }
+}
