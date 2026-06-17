@@ -944,3 +944,40 @@ button:disabled{
   }
 }
 
+/* Align branch quantity controls cleanly on phone, and keep cart qty left aligned. */
+.cartProductInfo .qtyControls{
+  justify-content:flex-start;
+  width:auto;
+}
+
+@media(max-width:600px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    display:grid;
+    grid-template-columns:44px minmax(92px,118px) 44px;
+    justify-content:center;
+    column-gap:10px;
+    width:100%;
+  }
+
+  .quickBranchDropdown .branchQtyControl input,
+  .branchSplitPanel .branchQtyControl input{
+    width:100%;
+    min-width:0;
+    max-width:none;
+  }
+
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:44px;
+    min-width:44px;
+    max-width:44px;
+    height:40px;
+    padding:0;
+  }
+
+  .cartProductInfo .qtyControls{
+    justify-content:flex-start;
+  }
+}
+
