@@ -494,18 +494,6 @@ button:disabled{
 }
 
 @media(max-width:600px){
-  html{
-    height:100%;
-    overflow:hidden;
-  }
-
-  body{
-    height:100%;
-    overflow-y:scroll;
-    overscroll-behavior-y:none;
-    -webkit-overflow-scrolling:auto;
-  }
-
   header{
     padding:10px 10px 0;
   }

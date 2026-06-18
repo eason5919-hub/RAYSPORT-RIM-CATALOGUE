@@ -64,33 +64,11 @@ const pcdCategories = [
   "12X135/139.7"
 ];
 
-function getPageScrollTop(){
-  return isPhoneLayout() ? document.body.scrollTop : window.pageYOffset;
-}
-
-function setPageScrollTop(top){
-  if(isPhoneLayout()){
-    document.body.scrollTop = top;
-    return;
-  }
-
-  window.scrollTo(0, top);
-}
-
 function scrollPageToTop(){
-  if(isPhoneLayout()){
-    document.body.scrollTo({
-      top:0,
-      left:0,
-      behavior:"auto"
-    });
-    return;
-  }
-
   window.scrollTo({
-    top:0,
-    left:0,
-    behavior:"auto"
+    top: 0,
+    left: 0,
+    behavior: "auto"
   });
 }
 
@@ -781,11 +759,11 @@ function focusQuickBranchDropdown(sku){
   }, 50);
 }
 function fastSmoothScrollTo(top, duration = 180, onComplete){
-  const startTop = getPageScrollTop();
+  const startTop = window.pageYOffset;
   const distance = top - startTop;
 
   if(Math.abs(distance) < 1){
-    setPageScrollTop(top);
+    window.scrollTo(0, top);
     if(typeof onComplete === "function") onComplete();
     return;
   }
@@ -794,12 +772,12 @@ function fastSmoothScrollTo(top, duration = 180, onComplete){
   const animate = now => {
     const progress = Math.min(1, (now - startedAt) / duration);
     const eased = 1 - Math.pow(1 - progress, 3);
-    setPageScrollTop(startTop + (distance * eased));
+    window.scrollTo(0, startTop + (distance * eased));
 
     if(progress < 1){
       requestAnimationFrame(animate);
     }else{
-      setPageScrollTop(top);
+      window.scrollTo(0, top);
       if(typeof onComplete === "function") onComplete();
     }
   };
@@ -815,7 +793,7 @@ function scrollProductCardIntoView(sku){
     if(visibleCard){
       const header = document.querySelector("header");
       const headerHeight = header ? header.getBoundingClientRect().height : 0;
-      const top = visibleCard.getBoundingClientRect().top + getPageScrollTop() - headerHeight - 12;
+      const top = visibleCard.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
 
       fastSmoothScrollTo(Math.max(0, top));
     }
