@@ -631,7 +631,7 @@ function acceptImmediatePress(event){
     : (event.target && event.target.dataset ? event.target : null);
   const now = Date.now();
 
-  if(event.type === "mousedown" && target && now - (Number(target.dataset.lastTouchPress) || 0) < 800){
+  if(event.type === "click" && target && now - (Number(target.dataset.lastTouchPress) || 0) < 800){
     return false;
   }
 
@@ -745,7 +745,7 @@ function renderQuickBranchDropdown(product){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, -1)" onmousedown="tapBranchQty(event, this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, -1)" onclick="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -754,7 +754,7 @@ function renderQuickBranchDropdown(product){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, 1)" onmousedown="tapBranchQty(event, this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, 1)" onclick="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -764,7 +764,7 @@ function renderQuickBranchDropdown(product){
       <h4>Branch Qty</h4>
       ${rows.join("")}
       <div class="branchEditorActions">
-        <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapSaveQuickBranchDropdown(event, '${product.sku}')" onmousedown="tapSaveQuickBranchDropdown(event, '${product.sku}')">${buttonLabel}</button>
+        <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapSaveQuickBranchDropdown(event, '${product.sku}')" onclick="tapSaveQuickBranchDropdown(event, '${product.sku}')">${buttonLabel}</button>
         <button type="button" onclick="cancelQuickBranchDropdown('${product.sku}')">Cancel</button>
       </div>
     </div>
@@ -971,7 +971,7 @@ function renderOrderControls(product){
   if(cartQty > 0){
     return `
       <div class="qtyControls">
-        <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${product.sku}', -1, 'product')" onmousedown="tapChangeQty(event, '${product.sku}', -1, 'product')">-</button>
+        <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${product.sku}', -1, 'product')" onclick="tapChangeQty(event, '${product.sku}', -1, 'product')">-</button>
 
         <input
           class="qtyInput"
@@ -981,7 +981,7 @@ function renderOrderControls(product){
           value="${cartQty}"
           ontouchstart="rememberControlTouch(event)"
           ontouchend="tapOpenBranchEditor(event, '${product.sku}', 'product')"
-          onmousedown="tapOpenBranchEditor(event, '${product.sku}', 'product')"
+          onclick="tapOpenBranchEditor(event, '${product.sku}', 'product')"
           onfocus="if(getActiveBranchNames().length > 0){ openBranchQuantityEditor('${product.sku}', 'product'); }"
           onchange="finishQtyTyping('${product.sku}', this, 'product')"
           onblur="finishQtyTyping('${product.sku}', this, 'product')"
@@ -989,13 +989,13 @@ function renderOrderControls(product){
           oninput="setQtyOnly('${product.sku}', this.value, true, 'product')"
         >
 
-        <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${product.sku}', 1, 'product')" onmousedown="tapChangeQty(event, '${product.sku}', 1, 'product')">+</button>
+        <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${product.sku}', 1, 'product')" onclick="tapChangeQty(event, '${product.sku}', 1, 'product')">+</button>
       </div>
     `;
   }
 
   return `
-    <button ontouchstart="rememberControlTouch(event)" ontouchend="tapAddToCartFromProduct(event, '${product.sku}')" onmousedown="tapAddToCartFromProduct(event, '${product.sku}')">
+    <button ontouchstart="rememberControlTouch(event)" ontouchend="tapAddToCartFromProduct(event, '${product.sku}')" onclick="tapAddToCartFromProduct(event, '${product.sku}')">
       Add to Cart
     </button>
   `;
@@ -1320,7 +1320,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, -1)" onmousedown="tapBranchQty(event, this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, -1)" onclick="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -1329,7 +1329,7 @@ function renderBranchSplitPanel(sku){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, 1)" onmousedown="tapBranchQty(event, this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, 1)" onclick="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -1423,7 +1423,7 @@ function renderCart(){
           <small>Order Qty (Set):</small>
 
           <div class="qtyControls">
-            <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${sku}', -1, 'cart')" onmousedown="tapChangeQty(event, '${sku}', -1, 'cart')">-</button>
+            <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${sku}', -1, 'cart')" onclick="tapChangeQty(event, '${sku}', -1, 'cart')">-</button>
 
             <input
               class="qtyInput"
@@ -1433,7 +1433,7 @@ function renderCart(){
               value="${item.qty}"
               ontouchstart="rememberControlTouch(event)"
               ontouchend="tapOpenBranchEditor(event, '${sku}', 'cart')"
-              onmousedown="tapOpenBranchEditor(event, '${sku}', 'cart')"
+              onclick="tapOpenBranchEditor(event, '${sku}', 'cart')"
               onfocus="if(getActiveBranchNames().length > 0){ openBranchQuantityEditor('${sku}', 'cart'); }"
               onchange="finishQtyTyping('${sku}', this, 'cart')"
               onblur="finishQtyTyping('${sku}', this, 'cart')"
@@ -1441,7 +1441,7 @@ function renderCart(){
               oninput="setQtyOnly('${sku}', this.value, true, 'cart')"
             >
 
-            <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${sku}', 1, 'cart')" onmousedown="tapChangeQty(event, '${sku}', 1, 'cart')">+</button>
+            <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${sku}', 1, 'cart')" onclick="tapChangeQty(event, '${sku}', 1, 'cart')">+</button>
           </div>
 
           <div class="cartActionRow">
