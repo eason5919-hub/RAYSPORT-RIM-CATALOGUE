@@ -3,6 +3,7 @@ let fitmentDatabasePromise = null;
 let fitmentPageScrollTop = 0;
 let fitmentRecommendationRows = [];
 let fitmentRecommendationLimit = 6;
+let fitmentRecommendationDiameter = "";
 
 const FITMENT_MANUAL_STORAGE_KEY = "rimFitmentManualSpecs";
 const FITMENT_DISCLAIMER = "Fitment and tyre size result is an estimate only. Please confirm with salesperson before purchase.";
@@ -507,9 +508,13 @@ function recommendationForProduct(product, car){
 
 function renderFitmentRecommendations(){
   const result = document.getElementById("fitmentResult");
-  const visible = fitmentRecommendationRows.slice(0, fitmentRecommendationLimit);
+  const availableDiameters = [...new Set(fitmentRecommendationRows.map(item => item.specs.diameter).filter(Boolean))].sort((a, b) => a - b);
+  const filteredRows = fitmentRecommendationDiameter
+    ? fitmentRecommendationRows.filter(item => String(item.specs.diameter) === fitmentRecommendationDiameter)
+    : fitmentRecommendationRows;
+  const visible = filteredRows.slice(0, fitmentRecommendationLimit);
 
-  if(visible.length === 0){
+  if(fitmentRecommendationRows.length === 0){
     result.innerHTML = `
       <div class="fitmentOverall warn">Recommended Rim Products From Catalogue</div>
       <div class="fitmentNotice">No suitable rim product found in current catalogue. Please confirm with salesperson.</div>
@@ -521,33 +526,54 @@ function renderFitmentRecommendations(){
 
   const cards = visible.map(item => {
     const specs = item.specs;
+    const photo = getDriveImageTag(item.product, "front", 'loading="lazy" decoding="async"') || '<span>No photo</span>';
     const reason = item.aggressive
       ? "Possible fit, but aggressive. Please confirm with salesperson."
       : "Recommended because PCD matches, width is safe, and ET is within range.";
+    const cartButtonLabel = getCartQty(item.product.sku) > 0 ? "Update Cart" : "Add to Cart";
     return `
       <article class="fitmentProductCard">
-        <h5>${escapeHtml(item.product.description || item.product.sku)}</h5>
-        <div class="fitmentProductSpecs">
-          <span class="fitmentBadge good">${escapeHtml(specs.pcdText)}</span>
-          <span class="fitmentBadge ${item.aggressive ? "warn" : "good"}">${specs.diameter || "?"}X${specs.width || "?"}</span>
-          <span class="fitmentBadge ${item.aggressive ? "warn" : "good"}">ET${specs.et ?? "?"}</span>
-          <span class="fitmentBadge good">CB${specs.cb ?? "?"}</span>
+        <div class="fitmentProductMain">
+          <div class="fitmentProductPhoto">${photo}</div>
+          <div class="fitmentProductBody">
+            <h5>${escapeHtml(item.product.description || item.product.sku)}</h5>
+            <div class="fitmentProductSpecs">
+              <span class="fitmentBadge good">${escapeHtml(specs.pcdText)}</span>
+              <span class="fitmentBadge ${item.aggressive ? "warn" : "good"}">${specs.diameter || "?"}X${specs.width || "?"}</span>
+              <span class="fitmentBadge ${item.aggressive ? "warn" : "good"}">ET${specs.et ?? "?"}</span>
+              <span class="fitmentBadge good">CB${specs.cb ?? "?"}</span>
+            </div>
+            <p class="fitmentProductReason">${escapeHtml(reason)}</p>
+            ${item.aggressive ? '<p class="fitmentProductWarning">Aggressive fitment. Check clearance.</p>' : ""}
+          </div>
         </div>
-        <p class="fitmentProductReason">${escapeHtml(reason)}</p>
-        ${item.aggressive ? '<p class="fitmentProductWarning">Aggressive fitment. Check clearance.</p>' : ""}
         <div class="fitmentProductActions">
           <button type="button" data-fitment-open="${escapeHtml(item.product.sku)}">Open Product</button>
-          <button type="button" data-fitment-add="${escapeHtml(item.product.sku)}">Add to Cart</button>
+          <button type="button" data-fitment-add="${escapeHtml(item.product.sku)}">${cartButtonLabel}</button>
         </div>
       </article>
     `;
   }).join("");
 
+  const filterOptions = availableDiameters
+    .map(size => `<option value="${size}"${fitmentRecommendationDiameter === String(size) ? " selected" : ""}>${size} inch</option>`)
+    .join("");
+  const emptyFilterMessage = visible.length === 0
+    ? '<div class="fitmentNotice">No suitable rim product found for this inch. Try another inch or All Inch.</div>'
+    : "";
+
   result.innerHTML = `
     <div class="fitmentOverall good">Recommended Rim Products From Catalogue</div>
-    <p>Showing ${visible.length} of ${fitmentRecommendationRows.length} likely suitable catalogue products.</p>
+    <label class="fitmentInchFilter">Filter Inch
+      <select data-fitment-inch-filter>
+        <option value="">All Inch</option>
+        ${filterOptions}
+      </select>
+    </label>
+    <p>Showing ${visible.length} of ${filteredRows.length} likely suitable catalogue products.</p>
+    ${emptyFilterMessage}
     <div class="fitmentRecommendations">${cards}</div>
-    ${fitmentRecommendationRows.length > fitmentRecommendationLimit ? '<button class="fitmentShowMoreButton" type="button" data-fitment-show-more>Show More</button>' : ""}
+    ${filteredRows.length > fitmentRecommendationLimit ? '<button class="fitmentShowMoreButton" type="button" data-fitment-show-more>Show More</button>' : ""}
     <p class="fitmentDisclaimer">${escapeHtml(FITMENT_DISCLAIMER)}</p>
   `;
   result.classList.remove("hidden");
@@ -592,6 +618,7 @@ async function findSuitableRims(){
     .filter(Boolean)
     .sort((a, b) => b.score - a.score || String(a.product.description).localeCompare(String(b.product.description)));
   fitmentRecommendationLimit = 6;
+  fitmentRecommendationDiameter = "";
   renderFitmentRecommendations();
 }
 
@@ -636,6 +663,24 @@ function closeFitmentModal(){
   window.scrollTo(0, fitmentPageScrollTop);
 }
 
+function resetFitmentState(){
+  ["fitmentCar", "fitmentYear", "fitmentTyre", "fitmentNote"].forEach(id => {
+    document.getElementById(id).value = "";
+  });
+  document.getElementById("fitmentProduct").value = "";
+  document.querySelectorAll("#manualFitmentForm input, #manualFitmentForm textarea").forEach(field => {
+    field.value = "";
+  });
+  document.getElementById("manualFitmentForm").classList.add("hidden");
+  document.getElementById("showManualFitmentButton").classList.add("hidden");
+  document.getElementById("fitmentResult").innerHTML = "";
+  document.getElementById("fitmentResult").classList.add("hidden");
+  hideFitmentMatchChooser();
+  fitmentRecommendationRows = [];
+  fitmentRecommendationLimit = 6;
+  fitmentRecommendationDiameter = "";
+}
+
 document.getElementById("aiFitmentButton").onclick = () => openFitmentModal();
 document.getElementById("closeFitmentButton").onclick = closeFitmentModal;
 document.getElementById("cancelFitmentButton").onclick = closeFitmentModal;
@@ -646,6 +691,13 @@ document.getElementById("runManualFitmentButton").onclick = runManualFitmentChec
 document.getElementById("clearManualFitmentButton").onclick = clearManualFitmentSpecs;
 document.getElementById("fitmentCar").addEventListener("input", hideFitmentMatchChooser);
 document.getElementById("fitmentYear").addEventListener("input", hideFitmentMatchChooser);
+document.getElementById("fitmentResult").addEventListener("change", event => {
+  if(event.target.matches("[data-fitment-inch-filter]")){
+    fitmentRecommendationDiameter = event.target.value;
+    fitmentRecommendationLimit = 6;
+    renderFitmentRecommendations();
+  }
+});
 document.getElementById("fitmentModal").addEventListener("click", event => {
   if(event.target.id === "fitmentModal") closeFitmentModal();
 

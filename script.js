@@ -9,7 +9,7 @@ let branchSettingOpen = false;
 let activeBranchSku = "";
 let quickBranchSku = "";
 
-let imageCacheVersion = Date.now();
+let imageCacheVersion = "1094";
 
 let categoryCardCache = {};
 let cardBySku = {};
@@ -99,7 +99,6 @@ async function loadProducts(){
   latestProductsJsonText = await res.text();
   products = JSON.parse(latestProductsJsonText);
 
-  preloadProductImages();
   showCategory("ALL");
   populateFitmentProductOptions();
 }
@@ -130,7 +129,6 @@ async function autoRefreshProducts(){
       }
     });
 
-    preloadProductImages();
     renderCart();
     showCachedCategory();
 
@@ -139,20 +137,6 @@ async function autoRefreshProducts(){
   }catch(err){
     console.log("Auto refresh failed:", err);
   }
-}
-
-function preloadProductImages(){
-  products.forEach(p => {
-    if(p.frontOriginal || p.frontImage){
-      const img = new Image();
-      img.src = getDriveImageUrl(p, "front");
-    }
-
-    if(p.sideOriginal || p.sideImage){
-      const img = new Image();
-      img.src = getDriveImageUrl(p, "side");
-    }
-  });
 }
 
 function normalizeText(text){
@@ -213,7 +197,7 @@ function addImageCacheParam(url){
   return url + separator + "cache=" + imageCacheVersion;
 }
 
-function getDriveImageUrls(product, type){
+function getDriveImageUrls(product, type, size = 1000){
   const url = getDriveImageSource(product, type);
   if(!url) return [];
 
@@ -224,10 +208,10 @@ function getDriveImageUrls(product, type){
     urls.push(
       "https://drive.google.com/thumbnail?id=" +
       fileId +
-      "&sz=w1000&cache=" +
+      "&sz=w" + size + "&cache=" +
       imageCacheVersion
     );
-    urls.push("https://lh3.googleusercontent.com/d/" + fileId + "=w1000");
+    urls.push("https://lh3.googleusercontent.com/d/" + fileId + "=w" + size);
     urls.push(
       "https://drive.google.com/uc?export=view&id=" +
       fileId +
@@ -247,7 +231,7 @@ function getDriveImageUrl(product, type){
 }
 
 function getDriveImageTag(product, type, extraAttributes = ""){
-  const urls = getDriveImageUrls(product, type);
+  const urls = getDriveImageUrls(product, type, 500);
   if(urls.length === 0) return "";
 
   const fallbackUrls = urls.slice(1).map(escapeHtml).join("|");
@@ -1015,7 +999,7 @@ function createProductCard(p){
 
   card.innerHTML = `
     <div class="photo" onclick="openPhotoViewer('${p.sku}')">
-      ${getDriveImageTag(p, "front", 'loading="eager"') || "No photo yet"}
+      ${getDriveImageTag(p, "front", 'loading="lazy" decoding="async"') || "No photo yet"}
     </div>
 
     <div class="info">
@@ -1510,7 +1494,9 @@ document.getElementById("refreshAppButton").onclick = () => {
   document.getElementById("search").value = "";
   document.getElementById("cartPanel").classList.add("hidden");
 
-  preloadProductImages();
+  if(typeof resetFitmentState === "function"){
+    resetFitmentState();
+  }
   renderCart();
   updateActiveButtons();
   showCachedCategory();
