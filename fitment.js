@@ -4,6 +4,19 @@ let fitmentPageScrollTop = 0;
 let fitmentRecommendationRows = [];
 let fitmentRecommendationLimit = 6;
 let fitmentRecommendationDiameter = "";
+let fitmentOrderSku = "";
+
+const FITMENT_SIZE_CATEGORIES = ["14", "15X6.5", "15X7.0", "16X", "17X", "18X", "19X", "20X"];
+const FITMENT_SIZE_LABELS = {
+  "14":"14",
+  "15X6.5":"15X6.5",
+  "15X7.0":"15X7 / 7.5 / 8",
+  "16X":"16X",
+  "17X":"17X",
+  "18X":"18X",
+  "19X":"19X",
+  "20X":"20X"
+};
 
 const FITMENT_MANUAL_STORAGE_KEY = "rimFitmentManualSpecs";
 const FITMENT_DISCLAIMER = "Fitment and tyre size result is an estimate only. Please confirm with salesperson before purchase.";
@@ -506,11 +519,107 @@ function recommendationForProduct(product, car){
   return { product, specs, aggressive, score };
 }
 
+function getFitmentSizeCategory(item){
+  if(FITMENT_SIZE_CATEGORIES.includes(item.product.category)) return item.product.category;
+
+  const diameter = Number(item.specs.diameter);
+  const width = Number(item.specs.width);
+  if(diameter === 14) return "14";
+  if(diameter === 15) return width <= 6.5 ? "15X6.5" : "15X7.0";
+  if(diameter >= 16 && diameter <= 20) return `${diameter}X`;
+  return "";
+}
+
+function dedupeFitmentRecommendations(rows){
+  const uniqueRows = new Map();
+
+  rows.forEach(item => {
+    const key = String(item.product.description || item.product.sku)
+      .trim()
+      .replace(/\s+/g, " ")
+      .toUpperCase();
+    const existing = uniqueRows.get(key);
+    const itemIsSizeCategory = FITMENT_SIZE_CATEGORIES.includes(item.product.category);
+    const existingIsSizeCategory = existing && FITMENT_SIZE_CATEGORIES.includes(existing.product.category);
+
+    if(!existing || (itemIsSizeCategory && !existingIsSizeCategory)){
+      uniqueRows.set(key, item);
+    }
+  });
+
+  return [...uniqueRows.values()];
+}
+
+function scrollFitmentProductIntoView(sku, focusBranchInput = false){
+  setTimeout(() => {
+    const card = document.querySelector(`.fitmentProductCard[data-fitment-sku="${sku}"]`);
+    if(!card) return;
+
+    card.scrollIntoView({ behavior:"smooth", block:"center" });
+
+    if(focusBranchInput){
+      const input = card.querySelector("input[data-fitment-branch-name]");
+      if(input){
+        input.focus();
+        input.select();
+      }
+    }
+  }, 50);
+}
+
+function renderFitmentOrderControls(product){
+  const sku = escapeHtml(product.sku);
+  const cartQty = getCartQty(product.sku);
+
+  if(fitmentOrderSku === product.sku && getActiveBranchNames().length > 0){
+    const branches = getCartBranches(product.sku);
+    const rows = getActiveBranchNames().map(name => `
+      <div class="fitmentBranchQtyRow">
+        <label>${escapeHtml(name)}</label>
+        <div class="fitmentQtyControls">
+          <button type="button" data-fitment-branch-step="-1">-</button>
+          <input type="number" min="0" inputmode="numeric" value="${branches[name] || ""}" data-fitment-branch-name="${escapeHtml(name)}" placeholder="0">
+          <button type="button" data-fitment-branch-step="1">+</button>
+        </div>
+      </div>
+    `).join("");
+
+    return `
+      <div class="fitmentBranchEditor">
+        <h6>Branch Qty</h6>
+        ${rows}
+        <div class="fitmentBranchActions">
+          <button type="button" data-fitment-save-order="${sku}">Update Cart</button>
+          <button type="button" data-fitment-cancel-order="${sku}">Cancel</button>
+        </div>
+      </div>
+    `;
+  }
+
+  if(cartQty > 0){
+    if(getActiveBranchNames().length > 0){
+      return `<button type="button" data-fitment-start-order="${sku}">Update Cart</button>`;
+    }
+
+    return `
+      <div class="fitmentQtyControls">
+        <button type="button" data-fitment-qty-step="-1" data-fitment-sku="${sku}">-</button>
+        <input type="number" min="1" inputmode="numeric" value="${cartQty}" data-fitment-qty-input="${sku}">
+        <button type="button" data-fitment-qty-step="1" data-fitment-sku="${sku}">+</button>
+      </div>
+    `;
+  }
+
+  return `<button type="button" data-fitment-start-order="${sku}">Add to Cart</button>`;
+}
+
 function renderFitmentRecommendations(){
   const result = document.getElementById("fitmentResult");
-  const availableDiameters = [...new Set(fitmentRecommendationRows.map(item => item.specs.diameter).filter(Boolean))].sort((a, b) => a - b);
+  const availableCategories = FITMENT_SIZE_CATEGORIES.filter(category =>
+    fitmentRecommendationRows.some(item => getFitmentSizeCategory(item) === category)
+  );
   const filteredRows = fitmentRecommendationDiameter
-    ? fitmentRecommendationRows.filter(item => String(item.specs.diameter) === fitmentRecommendationDiameter)
+    ? fitmentRecommendationRows.filter(item => getFitmentSizeCategory(item) === fitmentRecommendationDiameter)
     : fitmentRecommendationRows;
   const visible = filteredRows.slice(0, fitmentRecommendationLimit);
 
@@ -530,9 +639,8 @@ function renderFitmentRecommendations(){
     const reason = item.aggressive
       ? "Possible fit, but aggressive. Please confirm with salesperson."
       : "Recommended because PCD matches, width is safe, and ET is within range.";
-    const cartButtonLabel = getCartQty(item.product.sku) > 0 ? "Update Cart" : "Add to Cart";
     return `
-      <article class="fitmentProductCard">
+      <article class="fitmentProductCard" data-fitment-sku="${escapeHtml(item.product.sku)}">
         <div class="fitmentProductMain">
           <div class="fitmentProductPhoto">${photo}</div>
           <div class="fitmentProductBody">
@@ -547,16 +655,16 @@ function renderFitmentRecommendations(){
             ${item.aggressive ? '<p class="fitmentProductWarning">Aggressive fitment. Check clearance.</p>' : ""}
           </div>
         </div>
-        <div class="fitmentProductActions">
+        <div class="fitmentProductActions${fitmentOrderSku === item.product.sku ? " fitmentOrderOpen" : ""}">
           <button type="button" data-fitment-open="${escapeHtml(item.product.sku)}">Open Product</button>
-          <button type="button" data-fitment-add="${escapeHtml(item.product.sku)}">${cartButtonLabel}</button>
+          <div class="fitmentProductOrder">${renderFitmentOrderControls(item.product)}</div>
         </div>
       </article>
     `;
   }).join("");
 
-  const filterOptions = availableDiameters
-    .map(size => `<option value="${size}"${fitmentRecommendationDiameter === String(size) ? " selected" : ""}>${size} inch</option>`)
+  const filterOptions = availableCategories
+    .map(category => `<option value="${category}"${fitmentRecommendationDiameter === category ? " selected" : ""}>${FITMENT_SIZE_LABELS[category]}</option>`)
     .join("");
   const emptyFilterMessage = visible.length === 0
     ? '<div class="fitmentNotice">No suitable rim product found for this inch. Try another inch or All Inch.</div>'
@@ -566,7 +674,7 @@ function renderFitmentRecommendations(){
     <div class="fitmentOverall good">Recommended Rim Products From Catalogue</div>
     <label class="fitmentInchFilter">Filter Inch
       <select data-fitment-inch-filter>
-        <option value="">All Inch</option>
+        <option value="">ALL</option>
         ${filterOptions}
       </select>
     </label>
@@ -612,10 +720,10 @@ async function findSuitableRims(){
   }
 
   if(manualMode) saveManualFitmentSpecs(car);
-  fitmentRecommendationRows = products
+  fitmentRecommendationRows = dedupeFitmentRecommendations(products
     .filter(product => !isSoldOut(product))
     .map(product => recommendationForProduct(product, car))
-    .filter(Boolean)
+    .filter(Boolean))
     .sort((a, b) =>
       (a.specs.diameter ?? Infinity) - (b.specs.diameter ?? Infinity) ||
       (a.specs.width ?? Infinity) - (b.specs.width ?? Infinity) ||
@@ -624,6 +732,7 @@ async function findSuitableRims(){
     );
   fitmentRecommendationLimit = 6;
   fitmentRecommendationDiameter = "";
+  fitmentOrderSku = "";
   renderFitmentRecommendations();
 }
 
@@ -684,6 +793,7 @@ function resetFitmentState(){
   fitmentRecommendationRows = [];
   fitmentRecommendationLimit = 6;
   fitmentRecommendationDiameter = "";
+  fitmentOrderSku = "";
 }
 
 document.getElementById("aiFitmentButton").onclick = () => openFitmentModal();
@@ -701,6 +811,16 @@ document.getElementById("fitmentResult").addEventListener("change", event => {
     fitmentRecommendationDiameter = event.target.value;
     fitmentRecommendationLimit = 6;
     renderFitmentRecommendations();
+    return;
+  }
+
+  if(event.target.matches("[data-fitment-qty-input]")){
+    const sku = event.target.dataset.fitmentQtyInput;
+    setCartQty(sku, event.target.value);
+    renderCart();
+    updateProductOrderArea(sku);
+    renderFitmentRecommendations();
+    scrollFitmentProductIntoView(sku);
   }
 });
 document.getElementById("fitmentModal").addEventListener("click", event => {
@@ -714,12 +834,83 @@ document.getElementById("fitmentModal").addEventListener("click", event => {
     return;
   }
 
-  const addButton = event.target.closest("[data-fitment-add]");
-  if(addButton){
-    const sku = addButton.dataset.fitmentAdd;
-    closeFitmentModal();
-    revealFitmentProduct(sku, false);
-    setTimeout(() => addToCartFromProduct(sku), 220);
+  const startOrderButton = event.target.closest("[data-fitment-start-order]");
+  if(startOrderButton){
+    const sku = startOrderButton.dataset.fitmentStartOrder;
+    if(getActiveBranchNames().length > 0){
+      fitmentOrderSku = sku;
+      renderFitmentRecommendations();
+      scrollFitmentProductIntoView(sku, true);
+    }else{
+      setCartQty(sku, 1);
+      renderCart();
+      updateProductOrderArea(sku);
+      renderFitmentRecommendations();
+      scrollFitmentProductIntoView(sku);
+    }
+    return;
+  }
+
+  const qtyStepButton = event.target.closest("[data-fitment-qty-step]");
+  if(qtyStepButton){
+    const sku = qtyStepButton.dataset.fitmentSku;
+    const delta = Number(qtyStepButton.dataset.fitmentQtyStep) || 0;
+    if(getActiveBranchNames().length > 0){
+      fitmentOrderSku = sku;
+      renderFitmentRecommendations();
+      scrollFitmentProductIntoView(sku, true);
+    }else{
+      setCartQty(sku, getCartQty(sku) + delta);
+      renderCart();
+      updateProductOrderArea(sku);
+      renderFitmentRecommendations();
+      scrollFitmentProductIntoView(sku);
+    }
+    return;
+  }
+
+  const branchStepButton = event.target.closest("[data-fitment-branch-step]");
+  if(branchStepButton){
+    const input = branchStepButton.parentElement.querySelector("input[data-fitment-branch-name]");
+    const nextQty = Math.max(0, (parseInt(input.value, 10) || 0) + (Number(branchStepButton.dataset.fitmentBranchStep) || 0));
+    input.value = nextQty > 0 ? nextQty : "";
+    return;
+  }
+
+  const saveOrderButton = event.target.closest("[data-fitment-save-order]");
+  if(saveOrderButton){
+    const sku = saveOrderButton.dataset.fitmentSaveOrder;
+    const card = saveOrderButton.closest(".fitmentProductCard");
+    const branches = {};
+    let total = 0;
+    card.querySelectorAll("input[data-fitment-branch-name]").forEach(input => {
+      const qty = parseInt(input.value, 10) || 0;
+      if(qty > 0){
+        branches[input.dataset.fitmentBranchName] = qty;
+        total += qty;
+      }
+    });
+
+    if(total <= 0){
+      alert("Please enter branch quantity.");
+      return;
+    }
+
+    cart[sku] = { qty:total, branches };
+    fitmentOrderSku = "";
+    renderCart();
+    updateProductOrderArea(sku);
+    renderFitmentRecommendations();
+    scrollFitmentProductIntoView(sku);
+    return;
+  }
+
+  const cancelOrderButton = event.target.closest("[data-fitment-cancel-order]");
+  if(cancelOrderButton){
+    const sku = cancelOrderButton.dataset.fitmentCancelOrder;
+    fitmentOrderSku = "";
+    renderFitmentRecommendations();
+    scrollFitmentProductIntoView(sku);
     return;
   }
 

@@ -1189,6 +1189,11 @@ button:disabled{
   grid-template-columns:1fr 1fr;
   gap:6px;
   margin-top:9px;
+  align-items:start;
+}
+
+.fitmentProductActions.fitmentOrderOpen{
+  grid-template-columns:1fr;
 }
 
 .fitmentProductActions button,
@@ -1196,6 +1201,53 @@ button:disabled{
   min-height:40px;
   padding:7px;
   font-size:12px;
+}
+
+.fitmentProductOrder,
+.fitmentProductOrder > button{
+  width:100%;
+}
+
+.fitmentQtyControls{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr) 42px;
+  gap:4px;
+  align-items:center;
+}
+
+.fitmentBox .fitmentQtyControls button,
+.fitmentBox .fitmentQtyControls input{
+  width:100%;
+  min-width:0;
+  min-height:40px;
+  margin:0;
+  padding:6px;
+  text-align:center;
+}
+
+.fitmentBranchEditor{
+  grid-column:1 / -1;
+  padding:8px;
+  border:1px solid #bbb;
+  border-radius:7px;
+  background:#f7f7f7;
+}
+
+.fitmentBranchEditor h6{
+  margin:0 0 8px;
+  font-size:13px;
+}
+
+.fitmentBox .fitmentBranchQtyRow > label{
+  margin:7px 0 4px;
+  font-size:12px;
+}
+
+.fitmentBranchActions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+  margin-top:8px;
 }
 
 .fitmentShowMoreButton{
