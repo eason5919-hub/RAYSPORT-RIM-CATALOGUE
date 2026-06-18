@@ -616,7 +616,12 @@ async function findSuitableRims(){
     .filter(product => !isSoldOut(product))
     .map(product => recommendationForProduct(product, car))
     .filter(Boolean)
-    .sort((a, b) => b.score - a.score || String(a.product.description).localeCompare(String(b.product.description)));
+    .sort((a, b) =>
+      (a.specs.diameter ?? Infinity) - (b.specs.diameter ?? Infinity) ||
+      (a.specs.width ?? Infinity) - (b.specs.width ?? Infinity) ||
+      b.score - a.score ||
+      String(a.product.description).localeCompare(String(b.product.description))
+    );
   fitmentRecommendationLimit = 6;
   fitmentRecommendationDiameter = "";
   renderFitmentRecommendations();
