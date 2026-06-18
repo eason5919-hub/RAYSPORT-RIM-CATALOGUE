@@ -1208,13 +1208,6 @@ button:disabled{
   width:100%;
 }
 
-.fitmentOrderQty{
-  margin:0 0 5px;
-  font-size:12px;
-  font-weight:bold;
-  text-align:left;
-}
-
 .fitmentQtyControls{
   display:grid;
   grid-template-columns:42px minmax(0,1fr) 42px;

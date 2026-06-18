@@ -570,7 +570,6 @@ function scrollFitmentProductIntoView(sku, focusBranchInput = false){
 function renderFitmentOrderControls(product){
   const sku = escapeHtml(product.sku);
   const cartQty = getCartQty(product.sku);
-  const qtySummary = `<div class="fitmentOrderQty">Order Qty (Set): <strong data-fitment-order-total>${cartQty}</strong></div>`;
 
   if(fitmentOrderSku === product.sku && getActiveBranchNames().length > 0){
     const branches = getCartBranches(product.sku);
@@ -586,7 +585,6 @@ function renderFitmentOrderControls(product){
     `).join("");
 
     return `
-      ${qtySummary}
       <div class="fitmentBranchEditor">
         <h6>Branch Qty</h6>
         ${rows}
@@ -600,11 +598,10 @@ function renderFitmentOrderControls(product){
 
   if(cartQty > 0){
     if(getActiveBranchNames().length > 0){
-      return `${qtySummary}<button type="button" data-fitment-start-order="${sku}">Update Cart</button>`;
+      return `<button type="button" data-fitment-start-order="${sku}">Update Cart</button>`;
     }
 
     return `
-      ${qtySummary}
       <div class="fitmentQtyControls">
         <button type="button" data-fitment-qty-step="-1" data-fitment-sku="${sku}">-</button>
         <input type="number" min="1" inputmode="numeric" value="${cartQty}" data-fitment-qty-input="${sku}">
@@ -613,16 +610,7 @@ function renderFitmentOrderControls(product){
     `;
   }
 
-  return `${qtySummary}<button type="button" data-fitment-start-order="${sku}">Add to Cart</button>`;
-}
-
-function updateFitmentBranchOrderTotal(card){
-  if(!card) return;
-
-  const total = [...card.querySelectorAll("input[data-fitment-branch-name]")]
-    .reduce((sum, input) => sum + (parseInt(input.value, 10) || 0), 0);
-  const totalBox = card.querySelector("[data-fitment-order-total]");
-  if(totalBox) totalBox.textContent = total;
+  return `<button type="button" data-fitment-start-order="${sku}">Add to Cart</button>`;
 }
 
 function renderFitmentRecommendations(){
@@ -835,11 +823,6 @@ document.getElementById("fitmentResult").addEventListener("change", event => {
     scrollFitmentProductIntoView(sku);
   }
 });
-document.getElementById("fitmentResult").addEventListener("input", event => {
-  if(event.target.matches("input[data-fitment-branch-name]")){
-    updateFitmentBranchOrderTotal(event.target.closest(".fitmentProductCard"));
-  }
-});
 document.getElementById("fitmentModal").addEventListener("click", event => {
   if(event.target.id === "fitmentModal") closeFitmentModal();
 
@@ -891,7 +874,6 @@ document.getElementById("fitmentModal").addEventListener("click", event => {
     const input = branchStepButton.parentElement.querySelector("input[data-fitment-branch-name]");
     const nextQty = Math.max(0, (parseInt(input.value, 10) || 0) + (Number(branchStepButton.dataset.fitmentBranchStep) || 0));
     input.value = nextQty > 0 ? nextQty : "";
-    updateFitmentBranchOrderTotal(branchStepButton.closest(".fitmentProductCard"));
     return;
   }
 
