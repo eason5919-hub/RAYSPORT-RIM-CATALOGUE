@@ -6,13 +6,13 @@
 
   <title>RAYSPORT Rim Catalogue</title>
 
-  <!-- APP VERSION: 1091 -->
+  <!-- APP VERSION: 1092 -->
 
-  <link rel="stylesheet" href="style.css?v=1091">
+  <link rel="stylesheet" href="style.css?v=1092">
 
-  <link rel="manifest" href="manifest.json?v=1091">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1091">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1091">
+  <link rel="manifest" href="manifest.json?v=1092">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1092">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1092">
   <meta name="theme-color" content="#111111">
 </head>
 
@@ -105,6 +105,8 @@
       <button class="closeViewer" onclick="closePhotoViewer()">X</button>
 
       <h3 id="viewerTitle">Front View</h3>
+      <div id="viewerProductDetails" class="viewerProductDetails"></div>
+      <button id="viewerFitmentButton" class="viewerFitmentButton" type="button">Check Fitment</button>
       <img id="viewerImage" src="">
 
       <div class="viewerButtons">
@@ -125,20 +127,8 @@
       <select id="fitmentProduct"></select>
 
       <label for="fitmentCar">Car Model</label>
-      <input id="fitmentCar" type="text" list="fitmentCarModels" placeholder="Example: Myvi" autocomplete="off">
-      <datalist id="fitmentCarModels">
-        <option value="Perodua Myvi"></option>
-        <option value="Perodua Axia"></option>
-        <option value="Perodua Bezza"></option>
-        <option value="Perodua Alza"></option>
-        <option value="Toyota Vios"></option>
-        <option value="Toyota Yaris"></option>
-        <option value="Honda City"></option>
-        <option value="Honda Civic FC"></option>
-        <option value="Proton Saga"></option>
-        <option value="Proton Persona"></option>
-        <option value="Proton X50"></option>
-      </datalist>
+      <input id="fitmentCar" type="text" list="fitmentCarModels" placeholder="Example: Myvi, Civic FC, BMW 320i" autocomplete="off">
+      <datalist id="fitmentCarModels"></datalist>
 
       <div class="fitmentFieldGrid">
         <div>
@@ -152,11 +142,64 @@
       </div>
 
       <label for="fitmentNote">Note (Optional)</label>
-      <textarea id="fitmentNote" rows="2" placeholder="Lowered car, want flush fitment, daily use"></textarea>
+      <textarea id="fitmentNote" rows="2" placeholder="Lowered car, want flush fitment, daily use, big brake"></textarea>
+
+      <div id="fitmentMatchChooser" class="fitmentMatchChooser hidden">
+        <label for="fitmentMatchSelect">Choose Car Generation / Year</label>
+        <select id="fitmentMatchSelect"></select>
+      </div>
 
       <div class="fitmentActions">
-        <button id="runFitmentButton" type="button">Check</button>
+        <button id="runFitmentButton" type="button">Check This Rim</button>
+        <button id="findFitmentProductsButton" type="button">Find Suitable Rims</button>
         <button id="cancelFitmentButton" type="button">Close</button>
+      </div>
+
+      <button id="showManualFitmentButton" class="manualFitmentButton hidden" type="button">Enter Manual Specs</button>
+
+      <div id="manualFitmentForm" class="manualFitmentForm hidden">
+        <h4>Manual Fitment Specs</h4>
+        <div class="manualFitmentGrid">
+          <div>
+            <label for="manualPcd">Car PCD</label>
+            <input id="manualPcd" type="text" placeholder="4x100, 5x114.3, 5x112">
+          </div>
+          <div>
+            <label for="manualCenterBore">Car Center Bore / CB</label>
+            <input id="manualCenterBore" type="number" inputmode="decimal" step="0.1" placeholder="54.1, 56.1, 64.1, 66.6">
+          </div>
+          <div>
+            <label for="manualDiameters">Safe Rim Diameter</label>
+            <input id="manualDiameters" type="text" placeholder="15, 16, 17, 18">
+          </div>
+          <div>
+            <label for="manualWidthMin">Safe Rim Width Min</label>
+            <input id="manualWidthMin" type="number" inputmode="decimal" step="0.1" placeholder="6.0">
+          </div>
+          <div>
+            <label for="manualWidthMax">Safe Rim Width Max</label>
+            <input id="manualWidthMax" type="number" inputmode="decimal" step="0.1" placeholder="8.5">
+          </div>
+          <div>
+            <label for="manualOffsetMin">Safe Offset Min</label>
+            <input id="manualOffsetMin" type="number" inputmode="numeric" placeholder="35">
+          </div>
+          <div>
+            <label for="manualOffsetMax">Safe Offset Max</label>
+            <input id="manualOffsetMax" type="number" inputmode="numeric" placeholder="45">
+          </div>
+        </div>
+
+        <label for="manualTyreSizes">Recommended Tyre Sizes</label>
+        <input id="manualTyreSizes" type="text" placeholder="195/50R16, 205/45R16">
+
+        <label for="manualNotes">Notes</label>
+        <textarea id="manualNotes" rows="2" placeholder="Lowered car, big brake, stock suspension"></textarea>
+
+        <div class="manualFitmentActions">
+          <button id="runManualFitmentButton" type="button">Check Manual Specs</button>
+          <button id="clearManualFitmentButton" type="button">Clear Manual Specs</button>
+        </div>
       </div>
 
       <div id="fitmentResult" class="fitmentResult hidden" aria-live="polite"></div>
@@ -176,7 +219,8 @@
       </div>
     </div>
   </div>
-  <script src="script.js?v=1091"></script>
+  <script src="script.js?v=1092"></script>
+  <script src="fitment.js?v=1092"></script>
 
 </body>
 </html>

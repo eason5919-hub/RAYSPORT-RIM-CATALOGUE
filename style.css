@@ -1026,6 +1026,166 @@ button:disabled{
   }
 }
 
+/* AI Fitment Check v1092 */
+.viewerProductDetails{
+  margin:0 0 10px;
+  font-size:14px;
+  line-height:1.35;
+  font-weight:bold;
+}
+
+.viewerFitmentButton{
+  width:100%;
+  margin:0 0 10px;
+}
+
+.fitmentActions{
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.fitmentMatchChooser{
+  margin-top:10px;
+  padding:10px;
+  border:1px solid #d7b65b;
+  border-radius:7px;
+  background:#fff8df;
+}
+
+.fitmentMatchChooser label{
+  margin-top:0;
+}
+
+.manualFitmentButton{
+  width:100%;
+  margin-top:10px;
+  background:#333;
+}
+
+.manualFitmentForm{
+  margin-top:12px;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  background:#f7f7f7;
+}
+
+.manualFitmentForm h4{
+  margin:0 0 4px;
+  font-size:16px;
+}
+
+.manualFitmentGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 10px;
+}
+
+.manualFitmentActions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-top:12px;
+}
+
+#clearManualFitmentButton{
+  background:#555;
+}
+
+.fitmentNotice{
+  margin:10px 0;
+  padding:10px;
+  border-radius:7px;
+  background:#fff4cf;
+  color:#5e4300;
+  font-size:13px;
+  line-height:1.4;
+  font-weight:bold;
+}
+
+.fitmentBadge{
+  display:inline-block;
+  margin:2px 4px 2px 0;
+  padding:4px 7px;
+  border-radius:999px;
+  background:#eee;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.fitmentBadge.good{background:#dff6e9;color:#08733f;}
+.fitmentBadge.warn{background:#fff0c2;color:#785000;}
+.fitmentBadge.bad{background:#fde3e7;color:#a0001d;}
+
+.fitmentRecommendations{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:10px;
+}
+
+.fitmentProductCard{
+  min-width:0;
+  padding:11px;
+  border:1px solid #d8d8d8;
+  border-radius:8px;
+  background:#fff;
+}
+
+.fitmentProductCard h5{
+  margin:0 0 7px;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.fitmentProductSpecs,
+.fitmentProductReason,
+.fitmentProductWarning{
+  margin:6px 0;
+  font-size:12px;
+  line-height:1.4;
+}
+
+.fitmentProductWarning{
+  color:#785000;
+  font-weight:bold;
+}
+
+.fitmentProductActions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin-top:9px;
+}
+
+.fitmentProductActions button,
+.fitmentShowMoreButton{
+  min-height:40px;
+  padding:7px;
+  font-size:12px;
+}
+
+.fitmentShowMoreButton{
+  width:100%;
+  margin-top:10px;
+  background:#333;
+}
+
+@media(max-width:600px){
+  .fitmentActions,
+  .manualFitmentGrid,
+  .fitmentRecommendations{
+    grid-template-columns:1fr;
+  }
+
+  .fitmentActions button{
+    min-height:48px;
+  }
+
+  .manualFitmentActions{
+    grid-template-columns:1fr;
+  }
+}
+
 @media(max-width:380px){
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
@@ -1287,6 +1447,16 @@ body.fitmentModalOpen{
   .branchSplitPanel .branchQtyControl{
     grid-template-columns:32px minmax(52px,68px) 32px;
     column-gap:12px;
+  }
+}
+
+.fitmentActions{
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+@media(max-width:600px){
+  .fitmentActions{
+    grid-template-columns:1fr;
   }
 }
 

@@ -1,0 +1,3426 @@
+[
+  {
+    "brand": "Audi",
+    "model": "A3",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "a3",
+      "audi a3"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "a4",
+      "audi a4"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Audi",
+    "model": "A5",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "a5",
+      "audi a5"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Audi",
+    "model": "A6",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "a6",
+      "audi a6"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Audi",
+    "model": "Q3",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "q3",
+      "audi q3"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Audi",
+    "model": "Q5",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "q5",
+      "audi q5"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Audi",
+    "model": "Q7",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "q7",
+      "audi q7"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "1 Series",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "1 series",
+      "bmw 1 series"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "2 Series",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "2 series",
+      "bmw 2 series"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "3 Series",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "bmw 3 series",
+      "bmw 320i",
+      "320i",
+      "bmw 330i",
+      "330i"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "4 Series",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "4 series",
+      "bmw 4 series"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "5 series",
+      "bmw 5 series"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "7 Series",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "7 series",
+      "bmw 7 series"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "X1",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x1",
+      "bmw x1"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x3",
+      "bmw x3"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "X4",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x4",
+      "bmw x4"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x5",
+      "bmw x5"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "BMW",
+    "model": "X6",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x6",
+      "bmw x6"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Ford",
+    "model": "Everest",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "everest",
+      "ford everest"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Ford",
+    "model": "Fiesta",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "fiesta",
+      "ford fiesta"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Ford",
+    "model": "Focus",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "focus",
+      "ford focus"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Ford",
+    "model": "Ranger",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "ranger",
+      "ford ranger"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "Accord",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "accord",
+      "honda accord"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "BR-V",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "br-v",
+      "honda br-v"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "City",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "city",
+      "honda city"
+    ],
+    "pcd": "4x100",
+    "centerBore": 56.1,
+    "safeRimDiameter": [
+      15,
+      16,
+      17
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "15": [
+        "185/55R15",
+        "195/55R15"
+      ],
+      "16": [
+        "195/50R16",
+        "205/45R16"
+      ],
+      "17": [
+        "205/45R17",
+        "215/45R17"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "civic",
+      "honda civic"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic FC",
+    "generation": "FC",
+    "yearFrom": 2016,
+    "yearTo": 2021,
+    "aliases": [
+      "civic fc",
+      "honda civic fc",
+      "civic 2018",
+      "civic 2020"
+    ],
+    "pcd": "5x114.3",
+    "centerBore": 64.1,
+    "safeRimDiameter": [
+      17,
+      18
+    ],
+    "safeWidthMin": 7,
+    "safeWidthMax": 8.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "17": [
+        "215/50R17",
+        "225/45R17"
+      ],
+      "18": [
+        "225/40R18",
+        "235/40R18"
+      ]
+    },
+    "needsConfirmation": false
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic FD",
+    "generation": "FD",
+    "yearFrom": 2006,
+    "yearTo": 2011,
+    "aliases": [
+      "civic fd",
+      "honda civic fd",
+      "civic 2008"
+    ],
+    "pcd": "5x114.3",
+    "centerBore": 64.1,
+    "safeRimDiameter": [
+      16,
+      17,
+      18
+    ],
+    "safeWidthMin": 6.5,
+    "safeWidthMax": 8,
+    "safeOffsetMin": 38,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "16": [
+        "205/55R16"
+      ],
+      "17": [
+        "215/45R17"
+      ],
+      "18": [
+        "225/40R18"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic FE",
+    "generation": "FE",
+    "yearFrom": 2022,
+    "yearTo": 2026,
+    "aliases": [
+      "civic fe",
+      "honda civic fe",
+      "civic 2023"
+    ],
+    "pcd": "5x114.3",
+    "centerBore": 64.1,
+    "safeRimDiameter": [
+      17,
+      18,
+      19
+    ],
+    "safeWidthMin": 7,
+    "safeWidthMax": 8.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "17": [
+        "215/50R17",
+        "225/45R17"
+      ],
+      "18": [
+        "225/40R18",
+        "235/40R18"
+      ],
+      "19": [
+        "235/35R19"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "CR-V",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cr-v",
+      "honda cr-v"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "HR-V",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "hr-v",
+      "honda hr-v"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "Jazz",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "jazz",
+      "honda jazz"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "Odyssey",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "odyssey",
+      "honda odyssey"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Honda",
+    "model": "WR-V",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "wr-v",
+      "honda wr-v"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "elantra",
+      "hyundai elantra"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santa Fe",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "santa fe",
+      "hyundai santa fe"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Sonata",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "sonata",
+      "hyundai sonata"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Starex",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "starex",
+      "hyundai starex"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "tucson",
+      "hyundai tucson"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Isuzu",
+    "model": "D-Max",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "d-max",
+      "isuzu d-max"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Isuzu",
+    "model": "MU-X",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "mu-x",
+      "isuzu mu-x"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Kia",
+    "model": "Carnival",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "carnival",
+      "kia carnival"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Kia",
+    "model": "Cerato",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cerato",
+      "kia cerato"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Kia",
+    "model": "Optima",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "optima",
+      "kia optima"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Kia",
+    "model": "Sorento",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "sorento",
+      "kia sorento"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Kia",
+    "model": "Sportage",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "sportage",
+      "kia sportage"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Discovery Sport",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "discovery sport",
+      "land rover discovery sport"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Evoque",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "evoque",
+      "land rover evoque"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Sport",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "range rover sport",
+      "land rover sport"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Velar",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "velar",
+      "land rover velar"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Vogue",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "range rover vogue",
+      "land rover vogue"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Lexus",
+    "model": "ES",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "es",
+      "lexus es"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Lexus",
+    "model": "GS",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "gs",
+      "lexus gs"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Lexus",
+    "model": "IS",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "is",
+      "lexus is"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Lexus",
+    "model": "NX",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "nx",
+      "lexus nx"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Lexus",
+    "model": "RX",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "rx",
+      "lexus rx"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Lexus",
+    "model": "UX",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "ux",
+      "lexus ux"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "BT-50",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "bt-50",
+      "mazda bt-50"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-3",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cx-3",
+      "mazda cx-3"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-30",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cx-30",
+      "mazda cx-30"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cx-5",
+      "mazda cx-5"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-8",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cx-8",
+      "mazda cx-8"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "Mazda 2",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "mazda 2",
+      "mazda mazda 2"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "Mazda 3",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "mazda 3",
+      "mazda mazda 3"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "Mazda 6",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "mazda 6",
+      "mazda mazda 6"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "A-Class",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "a-class",
+      "mercedes-benz a-class"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "mercedes c class",
+      "mercedes c200",
+      "c200",
+      "mercedes c250",
+      "c250",
+      "mercedes c300",
+      "c300"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "CLA",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cla",
+      "mercedes-benz cla"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "e-class",
+      "mercedes-benz e-class"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLA",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "gla",
+      "mercedes-benz gla"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLC",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "glc",
+      "mercedes-benz glc"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLE",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "gle",
+      "mercedes-benz gle"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "S-Class",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "s-class",
+      "mercedes-benz s-class"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "MINI",
+    "model": "Clubman",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "clubman",
+      "mini clubman"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "MINI",
+    "model": "Cooper",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cooper",
+      "mini cooper"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "MINI",
+    "model": "Countryman",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "countryman",
+      "mini countryman"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "ASX",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "asx",
+      "mitsubishi asx"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Lancer",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "lancer",
+      "mitsubishi lancer"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Pajero",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "pajero",
+      "mitsubishi pajero"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Triton",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "triton",
+      "mitsubishi triton"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Xpander",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "xpander",
+      "mitsubishi xpander"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Almera",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "almera",
+      "nissan almera"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Grand Livina",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "grand livina",
+      "nissan grand livina"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Latio",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "latio",
+      "nissan latio"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Navara",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "navara",
+      "nissan navara"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Serena",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "serena",
+      "nissan serena"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Sylphy",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "sylphy",
+      "nissan sylphy"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "Teana",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "teana",
+      "nissan teana"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Nissan",
+    "model": "X-Trail",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x-trail",
+      "nissan x-trail"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Alza",
+    "generation": "2nd Gen",
+    "yearFrom": 2022,
+    "yearTo": 2026,
+    "aliases": [
+      "alza",
+      "perodua alza",
+      "alza 2022"
+    ],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      15,
+      16,
+      17
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "15": [
+        "185/55R15",
+        "195/55R15"
+      ],
+      "16": [
+        "195/50R16",
+        "205/45R16"
+      ],
+      "17": [
+        "205/45R17",
+        "215/45R17"
+      ]
+    },
+    "needsConfirmation": false
+  },
+  {
+    "brand": "Perodua",
+    "model": "Aruz",
+    "generation": "Common Malaysia spec",
+    "yearFrom": 2019,
+    "yearTo": 2026,
+    "aliases": [
+      "aruz",
+      "perodua aruz"
+    ],
+    "pcd": "5x114.3",
+    "centerBore": 60.1,
+    "safeRimDiameter": [
+      16,
+      17
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "16": [
+        "215/65R16"
+      ],
+      "17": [
+        "215/60R17"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Ativa",
+    "generation": "Common Malaysia spec",
+    "yearFrom": 2021,
+    "yearTo": 2026,
+    "aliases": [
+      "ativa",
+      "perodua ativa"
+    ],
+    "pcd": "5x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      16,
+      17,
+      18
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "16": [
+        "205/65R16"
+      ],
+      "17": [
+        "205/60R17"
+      ],
+      "18": [
+        "215/55R18"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Axia",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "axia",
+      "perodua axia"
+    ],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      14,
+      15
+    ],
+    "safeWidthMin": 5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "14": [
+        "175/65R14",
+        "185/60R14"
+      ],
+      "15": [
+        "185/55R15",
+        "195/50R15"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Bezza",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "bezza",
+      "perodua bezza"
+    ],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      14,
+      15,
+      16
+    ],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 7,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "14": [
+        "175/65R14",
+        "185/60R14"
+      ],
+      "15": [
+        "185/55R15",
+        "195/50R15"
+      ],
+      "16": [
+        "195/45R16",
+        "205/45R16"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Kancil",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "kancil",
+      "perodua kancil"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Kelisa",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "kelisa",
+      "perodua kelisa"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Kenari",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "kenari",
+      "perodua kenari"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Perodua",
+    "model": "Myvi",
+    "generation": "3rd Gen",
+    "yearFrom": 2018,
+    "yearTo": 2026,
+    "aliases": [
+      "myvi",
+      "perodua myvi",
+      "myvi gen 3",
+      "myvi 2018",
+      "myvi 2022"
+    ],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      14,
+      15,
+      16
+    ],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 7,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "14": [
+        "175/65R14",
+        "185/60R14"
+      ],
+      "15": [
+        "185/55R15",
+        "195/50R15"
+      ],
+      "16": [
+        "195/45R16",
+        "205/45R16"
+      ]
+    },
+    "needsConfirmation": false
+  },
+  {
+    "brand": "Perodua",
+    "model": "Viva",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "viva",
+      "perodua viva"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Peugeot",
+    "model": "208",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "208",
+      "peugeot 208"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Peugeot",
+    "model": "3008",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "3008",
+      "peugeot 3008"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Peugeot",
+    "model": "308",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "308",
+      "peugeot 308"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Peugeot",
+    "model": "5008",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "5008",
+      "peugeot 5008"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Porsche",
+    "model": "911",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "911",
+      "porsche 911"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Porsche",
+    "model": "Boxster",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "boxster",
+      "porsche boxster"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Porsche",
+    "model": "Cayenne",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cayenne",
+      "porsche cayenne"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Porsche",
+    "model": "Cayman",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "cayman",
+      "porsche cayman"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Porsche",
+    "model": "Macan",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "macan",
+      "porsche macan"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Porsche",
+    "model": "Panamera",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "panamera",
+      "porsche panamera"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Exora",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "exora",
+      "proton exora"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Gen2",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "gen2",
+      "proton gen2"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Inspira",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "inspira",
+      "proton inspira"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Iriz",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "iriz",
+      "proton iriz"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Persona",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "persona",
+      "proton persona"
+    ],
+    "pcd": "4x100",
+    "centerBore": 56.6,
+    "safeRimDiameter": [
+      15,
+      16,
+      17
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "15": [
+        "185/55R15",
+        "195/55R15"
+      ],
+      "16": [
+        "195/50R16",
+        "205/45R16"
+      ],
+      "17": [
+        "205/45R17",
+        "215/45R17"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Preve",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "preve",
+      "proton preve"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "saga",
+      "proton saga"
+    ],
+    "pcd": "4x100",
+    "centerBore": 56.6,
+    "safeRimDiameter": [
+      14,
+      15,
+      16
+    ],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 7,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "14": [
+        "175/65R14",
+        "185/60R14"
+      ],
+      "15": [
+        "185/55R15",
+        "195/50R15"
+      ],
+      "16": [
+        "195/45R16",
+        "205/45R16"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Satria",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "satria",
+      "proton satria"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Waja",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "waja",
+      "proton waja"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "Wira",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "wira",
+      "proton wira"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "X50",
+    "generation": "Common Malaysia spec",
+    "yearFrom": 2020,
+    "yearTo": 2026,
+    "aliases": [
+      "x50",
+      "proton x50",
+      "x50 2023"
+    ],
+    "pcd": "5x114.3",
+    "centerBore": 56.6,
+    "safeRimDiameter": [
+      18,
+      19
+    ],
+    "safeWidthMin": 7,
+    "safeWidthMax": 8.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "18": [
+        "215/55R18",
+        "225/50R18"
+      ],
+      "19": [
+        "225/45R19",
+        "235/45R19"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "X70",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x70",
+      "proton x70"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Proton",
+    "model": "X90",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "x90",
+      "proton x90"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Renault",
+    "model": "Captur",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "captur",
+      "renault captur"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Renault",
+    "model": "Koleos",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "koleos",
+      "renault koleos"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Renault",
+    "model": "Megane",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "megane",
+      "renault megane"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Subaru",
+    "model": "BRZ",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "brz",
+      "subaru brz"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Subaru",
+    "model": "Forester",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "forester",
+      "subaru forester"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Subaru",
+    "model": "WRX",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "wrx",
+      "subaru wrx"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Subaru",
+    "model": "XV",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "xv",
+      "subaru xv"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Jimny",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "jimny",
+      "suzuki jimny"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Swift",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "swift",
+      "suzuki swift"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Swift Sport",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "swift sport",
+      "suzuki swift sport"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Vitara",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "vitara",
+      "suzuki vitara"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Alphard",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "alphard",
+      "toyota alphard"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Avanza",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "avanza",
+      "toyota avanza"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "camry",
+      "toyota camry"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Corolla Altis",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "corolla altis",
+      "toyota altis",
+      "altis"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Estima",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "estima",
+      "toyota estima"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "fortuner",
+      "toyota fortuner"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Harrier",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "harrier",
+      "toyota harrier"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hiace",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "hiace",
+      "toyota hiace"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hilux",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "hilux",
+      "toyota hilux"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "innova",
+      "toyota innova"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Rush",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "rush",
+      "toyota rush"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Vellfire",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "vellfire",
+      "toyota vellfire"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Vios",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "vios",
+      "toyota vios"
+    ],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      15,
+      16,
+      17
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "15": [
+        "185/60R15",
+        "195/55R15"
+      ],
+      "16": [
+        "195/50R16",
+        "205/45R16"
+      ],
+      "17": [
+        "205/45R17",
+        "215/45R17"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Wish",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "wish",
+      "toyota wish"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "Yaris",
+    "generation": "Common Malaysia spec",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "yaris",
+      "toyota yaris"
+    ],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [
+      15,
+      16,
+      17
+    ],
+    "safeWidthMin": 6,
+    "safeWidthMax": 7.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 45,
+    "tyreSizes": {
+      "15": [
+        "185/60R15",
+        "195/55R15"
+      ],
+      "16": [
+        "195/50R16",
+        "205/45R16"
+      ],
+      "17": [
+        "205/45R17",
+        "215/45R17"
+      ]
+    },
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "golf",
+      "volkswagen golf"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Jetta",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "jetta",
+      "volkswagen jetta"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "passat",
+      "volkswagen passat"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "polo",
+      "volkswagen polo"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Tiguan",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "tiguan",
+      "volkswagen tiguan"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Touareg",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "touareg",
+      "volkswagen touareg"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volvo",
+    "model": "S60",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "s60",
+      "volvo s60"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volvo",
+    "model": "S90",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "s90",
+      "volvo s90"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC40",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "xc40",
+      "volvo xc40"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC60",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "xc60",
+      "volvo xc60"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC90",
+    "generation": "Multiple generations - confirm",
+    "yearFrom": null,
+    "yearTo": null,
+    "aliases": [
+      "xc90",
+      "volvo xc90"
+    ],
+    "pcd": null,
+    "centerBore": null,
+    "safeRimDiameter": [],
+    "safeWidthMin": null,
+    "safeWidthMax": null,
+    "safeOffsetMin": null,
+    "safeOffsetMax": null,
+    "tyreSizes": {},
+    "needsConfirmation": true
+  }
+]
