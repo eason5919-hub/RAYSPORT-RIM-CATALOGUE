@@ -1087,3 +1087,61 @@ button:disabled{
   }
 }
 /* End exact branch quantity panel v1075 */
+
+/* Phone quick dropdown layout. */
+@media(max-width:600px){
+  .quickBranchDropdown{
+    padding:16px 12px 15px;
+    border-radius:16px;
+  }
+
+  .quickBranchDropdown h4{
+    margin-bottom:18px;
+    font-size:23px;
+  }
+
+  .quickBranchDropdown .branchQtyRow{
+    gap:7px;
+    margin-bottom:14px;
+  }
+
+  .quickBranchDropdown .branchQtyRow label{
+    font-size:20px;
+    line-height:1.2;
+  }
+
+  .quickBranchDropdown .branchQtyControl{
+    grid-template-columns:52px 84px 52px;
+  }
+
+  .quickBranchDropdown .branchQtyControl input{
+    width:84px;
+    max-width:84px;
+    height:60px;
+    border-radius:12px;
+    font-size:24px;
+  }
+
+  .quickBranchDropdown .branchQtyStepper{
+    width:52px;
+    min-width:52px;
+    max-width:52px;
+    height:60px;
+    border-radius:13px;
+    font-size:24px;
+    line-height:60px;
+  }
+
+  .quickBranchDropdown .branchEditorActions{
+    gap:12px;
+    margin-top:2px;
+  }
+
+  .quickBranchDropdown .branchEditorActions button{
+    min-height:74px;
+    padding:10px;
+    border-radius:14px;
+    font-size:20px;
+    line-height:1.25;
+  }
+}
