@@ -68,7 +68,7 @@ function scrollPageToTop(){
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "auto"
+    behavior: "smooth"
   });
 }
 
@@ -79,14 +79,14 @@ function scrollFilterBarsToLeft(){
   if(pcdMenu){
     pcdMenu.scrollTo({
       left: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
   }
 
   if(categoryMenu){
     categoryMenu.scrollTo({
       left: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
   }
 }
@@ -780,33 +780,6 @@ function focusQuickBranchDropdown(sku){
     }
   }, 50);
 }
-function fastSmoothScrollTo(top, duration = 180, onComplete){
-  const startTop = window.pageYOffset;
-  const distance = top - startTop;
-
-  if(Math.abs(distance) < 1){
-    window.scrollTo(0, top);
-    if(typeof onComplete === "function") onComplete();
-    return;
-  }
-
-  const startedAt = performance.now();
-  const animate = now => {
-    const progress = Math.min(1, (now - startedAt) / duration);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    window.scrollTo(0, startTop + (distance * eased));
-
-    if(progress < 1){
-      requestAnimationFrame(animate);
-    }else{
-      window.scrollTo(0, top);
-      if(typeof onComplete === "function") onComplete();
-    }
-  };
-
-  requestAnimationFrame(animate);
-}
-
 function scrollProductCardIntoView(sku){
   setTimeout(() => {
     const cards = cardBySku[sku] || [];
@@ -817,9 +790,12 @@ function scrollProductCardIntoView(sku){
       const headerHeight = header ? header.getBoundingClientRect().height : 0;
       const top = visibleCard.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
 
-      fastSmoothScrollTo(Math.max(0, top));
+      window.scrollTo({
+        top: Math.max(0, top),
+        behavior: "smooth"
+      });
     }
-  }, 20);
+  }, 180);
 }
 function focusCartBranchSplit(sku){
   setTimeout(() => {
@@ -1493,8 +1469,26 @@ document.getElementById("clearSearchButton").onclick = () => {
 };
 
 document.getElementById("refreshAppButton").onclick = () => {
-  const freshUrl = window.location.pathname + "?v=" + Date.now();
-  window.location.replace(freshUrl);
+  cart = {};
+  activeBranchSku = "";
+  quickBranchSku = "";
+  branchSettingOpen = false;
+  currentCategory = "ALL";
+  currentPcdFilter = "";
+  imageCacheVersion = Date.now();
+
+  categoryCardCache = {};
+  cardBySku = {};
+
+  document.getElementById("search").value = "";
+  document.getElementById("cartPanel").classList.add("hidden");
+
+  preloadProductImages();
+  renderCart();
+  updateActiveButtons();
+  showCachedCategory();
+  scrollPageToTop();
+  scrollFilterBarsToLeft();
 };
 
 document.getElementById("cartButton").onclick = () => {
