@@ -717,7 +717,7 @@ function renderQuickBranchDropdown(product){
   }
 
   const branches = getCartBranches(product.sku);
-  const buttonLabel = isPhoneLayout() || getCartQty(product.sku) > 0 ? "Update Cart" : "Add to Cart";
+  const buttonLabel = "Update Cart";
 
   const rows = getActiveBranchNames().map(name => `
     <div class="branchQtyRow">
@@ -1468,47 +1468,10 @@ document.getElementById("clearSearchButton").onclick = () => {
   showCachedCategory();
 };
 
-const refreshAppButton = document.getElementById("refreshAppButton");
-let refreshStarting = false;
-
-function runPcStyleRefresh(){
-  if(refreshStarting) return;
-  refreshStarting = true;
-
+document.getElementById("refreshAppButton").onclick = () => {
   const freshUrl = window.location.pathname + "?v=" + Date.now();
   window.location.replace(freshUrl);
-}
-
-function getRefreshPressPoint(event){
-  if(event.touches && event.touches.length > 0) return event.touches[0];
-  if(event.changedTouches && event.changedTouches.length > 0) return event.changedTouches[0];
-  return event;
-}
-
-function isRefreshPress(event){
-  const point = getRefreshPressPoint(event);
-  if(!point || typeof point.clientX !== "number" || typeof point.clientY !== "number") return false;
-
-  const rect = refreshAppButton.getBoundingClientRect();
-  return point.clientX >= rect.left && point.clientX <= rect.right &&
-    point.clientY >= rect.top && point.clientY <= rect.bottom;
-}
-
-function capturePhoneRefresh(event){
-  if(!isPhoneLayout() || !isRefreshPress(event)) return;
-
-  if(event.cancelable) event.preventDefault();
-  event.stopPropagation();
-  window.scrollTo(window.pageXOffset, window.pageYOffset);
-  runPcStyleRefresh();
-}
-
-refreshAppButton.onclick = runPcStyleRefresh;
-
-window.addEventListener("touchstart", capturePhoneRefresh, { passive:false, capture:true });
-window.addEventListener("touchend", capturePhoneRefresh, { passive:false, capture:true });
-window.addEventListener("pointerdown", capturePhoneRefresh, { capture:true });
-window.addEventListener("pointerup", capturePhoneRefresh, { capture:true });
+};
 
 document.getElementById("cartButton").onclick = () => {
   const productBranchSku = quickBranchSku;
