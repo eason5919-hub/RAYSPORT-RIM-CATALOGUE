@@ -623,7 +623,9 @@ function isSoldOut(product){
 function acceptImmediatePress(event){
   if(!event) return true;
 
-  const target = event.currentTarget;
+  const target = event.currentTarget && event.currentTarget.dataset
+    ? event.currentTarget
+    : (event.target && event.target.dataset ? event.target : null);
   const now = Date.now();
 
   if(event.type === "mousedown" && target && now - (Number(target.dataset.lastTouchPress) || 0) < 800){
@@ -762,11 +764,15 @@ function focusQuickBranchDropdown(sku){
     }
   }, 50);
 }
-function fastSmoothScrollTo(top, duration = 180){
+function fastSmoothScrollTo(top, duration = 180, onComplete){
   const startTop = window.pageYOffset;
   const distance = top - startTop;
 
-  if(Math.abs(distance) < 1) return;
+  if(Math.abs(distance) < 1){
+    window.scrollTo(0, top);
+    if(typeof onComplete === "function") onComplete();
+    return;
+  }
 
   const startedAt = performance.now();
   const animate = now => {
@@ -776,6 +782,9 @@ function fastSmoothScrollTo(top, duration = 180){
 
     if(progress < 1){
       requestAnimationFrame(animate);
+    }else{
+      window.scrollTo(0, top);
+      if(typeof onComplete === "function") onComplete();
     }
   };
 
@@ -1479,11 +1488,12 @@ function restoreRefreshScrollPosition(){
   window.scrollTo(0, Math.min(startTop, maxTop));
 
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => fastSmoothScrollTo(0, 180));
-  });
-
-  [240, 500, 900].forEach(delay => {
-    setTimeout(() => window.scrollTo(0, 0), delay);
+    requestAnimationFrame(() => {
+      fastSmoothScrollTo(0, 180, () => {
+        window.scrollTo(0, 0);
+        setTimeout(() => window.scrollTo(0, 0), 700);
+      });
+    });
   });
 }
 
@@ -1496,18 +1506,33 @@ function tapRefreshApp(event){
   }
 
   sessionStorage.setItem(REFRESH_SCROLL_KEY, String(window.pageYOffset));
-  const freshUrl = window.location.pathname + "?v=1078&refresh=" + Date.now();
+  const freshUrl = window.location.pathname + "?v=1079&refresh=" + Date.now();
   window.location.replace(freshUrl);
 }
 
 const refreshAppButton = document.getElementById("refreshAppButton");
-refreshAppButton.addEventListener("touchstart", tapRefreshApp, {
+
+function pressIsInsideRefreshButton(event){
+  const point = event.touches && event.touches.length > 0 ? event.touches[0] : event;
+  if(!point || typeof point.clientX !== "number" || typeof point.clientY !== "number") return false;
+
+  const rect = refreshAppButton.getBoundingClientRect();
+  return point.clientX >= rect.left && point.clientX <= rect.right &&
+    point.clientY >= rect.top && point.clientY <= rect.bottom;
+}
+
+function captureRefreshPress(event){
+  if(!pressIsInsideRefreshButton(event)) return;
+  tapRefreshApp(event);
+}
+
+document.addEventListener("touchstart", captureRefreshPress, {
   passive:false,
   capture:true
 });
-refreshAppButton.addEventListener("pointerdown", event => {
+document.addEventListener("pointerdown", event => {
   if(event.pointerType === "touch") return;
-  tapRefreshApp(event);
+  captureRefreshPress(event);
 }, { capture:true });
 
 document.getElementById("cartButton").onclick = () => {
