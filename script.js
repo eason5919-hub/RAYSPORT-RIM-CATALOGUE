@@ -834,6 +834,7 @@ function openBranchQuantityEditor(sku, source = "product"){
 
     renderCart();
     updateProductOrderArea(sku);
+    scrollCartProductIntoView(sku);
     focusCartBranchSplit(sku);
     return true;
   }
@@ -1299,15 +1300,38 @@ function toggleBranchSplit(sku){
     return;
   }
 
+  if(activeBranchSku === sku){
+    return;
+  }
+
   const previousQuickSku = quickBranchSku;
   quickBranchSku = "";
-  activeBranchSku = activeBranchSku === sku ? "" : sku;
+  activeBranchSku = sku;
 
   if(previousQuickSku){
     updateProductOrderArea(previousQuickSku);
   }
 
   renderCart();
+  scrollCartProductIntoView(sku);
+}
+
+function scrollCartProductIntoView(sku){
+  setTimeout(() => {
+    const panel = document.getElementById("cartPanel");
+    const row = panel ? panel.querySelector(`.cartRow[data-sku="${sku}"]`) : null;
+    if(!panel || !row) return;
+
+    const header = panel.querySelector(".cartHeader");
+    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+    const panelTop = panel.getBoundingClientRect().top;
+    const targetTop = panel.scrollTop + row.getBoundingClientRect().top - panelTop - headerHeight - 12;
+
+    panel.scrollTo({
+      top:Math.max(0, targetTop),
+      behavior:"smooth"
+    });
+  }, 50);
 }
 
 function renderBranchSplitPanel(sku){
@@ -1381,6 +1405,7 @@ function saveBranchSplit(sku){
   activeBranchSku = "";
   renderCart();
   updateProductOrderArea(sku);
+  scrollCartProductIntoView(sku);
 }
 
 function cancelBranchSplit(sku){
@@ -1389,6 +1414,7 @@ function cancelBranchSplit(sku){
   }
 
   renderCart();
+  scrollCartProductIntoView(sku);
 }
 
 function renderCart(){
