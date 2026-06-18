@@ -721,7 +721,7 @@ function renderQuickBranchDropdown(product){
   }
 
   const branches = getCartBranches(product.sku);
-  const buttonLabel = getCartQty(product.sku) > 0 ? "Update Cart" : "Add to Cart";
+  const buttonLabel = isPhoneLayout() || getCartQty(product.sku) > 0 ? "Update Cart" : "Add to Cart";
 
   const rows = getActiveBranchNames().map(name => `
     <div class="branchQtyRow">
@@ -1466,15 +1466,24 @@ document.getElementById("clearSearchButton").onclick = () => {
 };
 
 function restoreRefreshScrollPosition(){
-  const savedTop = parseInt(sessionStorage.getItem(REFRESH_SCROLL_KEY), 10);
-  if(!Number.isFinite(savedTop)) return;
+  const savedValue = sessionStorage.getItem(REFRESH_SCROLL_KEY);
+  const isRefreshNavigation = new URLSearchParams(window.location.search).has("refresh");
+
+  if(savedValue === null && !isRefreshNavigation) return;
+
+  const savedTop = parseInt(savedValue, 10);
+  const startTop = Number.isFinite(savedTop) ? savedTop : window.pageYOffset;
 
   sessionStorage.removeItem(REFRESH_SCROLL_KEY);
   const maxTop = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-  window.scrollTo(0, Math.min(savedTop, maxTop));
+  window.scrollTo(0, Math.min(startTop, maxTop));
 
   requestAnimationFrame(() => {
     requestAnimationFrame(() => fastSmoothScrollTo(0, 180));
+  });
+
+  [240, 500, 900].forEach(delay => {
+    setTimeout(() => window.scrollTo(0, 0), delay);
   });
 }
 
@@ -1487,13 +1496,19 @@ function tapRefreshApp(event){
   }
 
   sessionStorage.setItem(REFRESH_SCROLL_KEY, String(window.pageYOffset));
-  const freshUrl = window.location.pathname + "?v=1077&refresh=" + Date.now();
+  const freshUrl = window.location.pathname + "?v=1078&refresh=" + Date.now();
   window.location.replace(freshUrl);
 }
 
 const refreshAppButton = document.getElementById("refreshAppButton");
-refreshAppButton.ontouchstart = tapRefreshApp;
-refreshAppButton.onmousedown = tapRefreshApp;
+refreshAppButton.addEventListener("touchstart", tapRefreshApp, {
+  passive:false,
+  capture:true
+});
+refreshAppButton.addEventListener("pointerdown", event => {
+  if(event.pointerType === "touch") return;
+  tapRefreshApp(event);
+}, { capture:true });
 
 document.getElementById("cartButton").onclick = () => {
   const productBranchSku = quickBranchSku;
