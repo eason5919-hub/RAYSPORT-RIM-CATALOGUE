@@ -59,7 +59,6 @@ header{
 }
 
 #refreshAppButton{
-  touch-action:none;
   background:#555;
   flex:0 0 auto;
   padding:9px 12px;

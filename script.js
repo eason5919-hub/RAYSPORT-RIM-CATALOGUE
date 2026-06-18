@@ -17,11 +17,6 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const BRANCH_NAMES_STORAGE_KEY = "branchNames";
-const REFRESH_SCROLL_KEY = "raysportRefreshScrollTop";
-
-if("scrollRestoration" in history){
-  history.scrollRestoration = "manual";
-}
 
 const sheetCategories = [
   "ALL",
@@ -106,7 +101,6 @@ async function loadProducts(){
 
   preloadProductImages();
   showCategory("ALL");
-  restoreRefreshScrollPosition();
 }
 
 async function autoRefreshProducts(){
@@ -1474,66 +1468,10 @@ document.getElementById("clearSearchButton").onclick = () => {
   showCachedCategory();
 };
 
-function restoreRefreshScrollPosition(){
-  const savedValue = sessionStorage.getItem(REFRESH_SCROLL_KEY);
-  const isRefreshNavigation = new URLSearchParams(window.location.search).has("refresh");
-
-  if(savedValue === null && !isRefreshNavigation) return;
-
-  const savedTop = parseInt(savedValue, 10);
-  const startTop = Number.isFinite(savedTop) ? savedTop : window.pageYOffset;
-
-  sessionStorage.removeItem(REFRESH_SCROLL_KEY);
-  const maxTop = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-  window.scrollTo(0, Math.min(startTop, maxTop));
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      fastSmoothScrollTo(0, 180, () => {
-        window.scrollTo(0, 0);
-        setTimeout(() => window.scrollTo(0, 0), 700);
-      });
-    });
-  });
-}
-
-function tapRefreshApp(event){
-  if(!acceptImmediatePress(event)) return;
-
-  const active = document.activeElement;
-  if(active && typeof active.blur === "function"){
-    active.blur();
-  }
-
-  sessionStorage.setItem(REFRESH_SCROLL_KEY, String(window.pageYOffset));
-  const freshUrl = window.location.pathname + "?v=1079&refresh=" + Date.now();
+document.getElementById("refreshAppButton").onclick = () => {
+  const freshUrl = window.location.pathname + "?v=" + Date.now();
   window.location.replace(freshUrl);
-}
-
-const refreshAppButton = document.getElementById("refreshAppButton");
-
-function pressIsInsideRefreshButton(event){
-  const point = event.touches && event.touches.length > 0 ? event.touches[0] : event;
-  if(!point || typeof point.clientX !== "number" || typeof point.clientY !== "number") return false;
-
-  const rect = refreshAppButton.getBoundingClientRect();
-  return point.clientX >= rect.left && point.clientX <= rect.right &&
-    point.clientY >= rect.top && point.clientY <= rect.bottom;
-}
-
-function captureRefreshPress(event){
-  if(!pressIsInsideRefreshButton(event)) return;
-  tapRefreshApp(event);
-}
-
-document.addEventListener("touchstart", captureRefreshPress, {
-  passive:false,
-  capture:true
-});
-document.addEventListener("pointerdown", event => {
-  if(event.pointerType === "touch") return;
-  captureRefreshPress(event);
-}, { capture:true });
+};
 
 document.getElementById("cartButton").onclick = () => {
   const productBranchSku = quickBranchSku;
