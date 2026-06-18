@@ -6,13 +6,13 @@
 
   <title>RAYSPORT Rim Catalogue</title>
 
-  <!-- APP VERSION: 1089 -->
+  <!-- APP VERSION: 1090 -->
 
-  <link rel="stylesheet" href="style.css?v=1089">
+  <link rel="stylesheet" href="style.css?v=1090">
 
-  <link rel="manifest" href="manifest.json?v=1089">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1089">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1089">
+  <link rel="manifest" href="manifest.json?v=1090">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1090">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1090">
   <meta name="theme-color" content="#111111">
 </head>
 
@@ -39,6 +39,7 @@
 
     <div class="searchWrap">
       <input type="text" id="search" placeholder="Search rim...">
+      <button id="aiFitmentButton" type="button" title="AI Fitment Check" aria-label="AI Fitment Check">AI</button>
       <button id="clearSearchButton" type="button">X</button>
     </div>
 
@@ -113,6 +114,55 @@
     </div>
   </div>
 
+  <div id="fitmentModal" class="hidden fitmentOverlay" role="dialog" aria-modal="true" aria-labelledby="fitmentTitle">
+    <div class="fitmentBox">
+      <div class="fitmentHeader">
+        <h3 id="fitmentTitle">AI Fitment Check</h3>
+        <button id="closeFitmentButton" type="button" aria-label="Close AI Fitment Check">X</button>
+      </div>
+
+      <label for="fitmentProduct">Rim Product</label>
+      <select id="fitmentProduct"></select>
+
+      <label for="fitmentCar">Car Model</label>
+      <input id="fitmentCar" type="text" list="fitmentCarModels" placeholder="Example: Myvi" autocomplete="off">
+      <datalist id="fitmentCarModels">
+        <option value="Perodua Myvi"></option>
+        <option value="Perodua Axia"></option>
+        <option value="Perodua Bezza"></option>
+        <option value="Perodua Alza"></option>
+        <option value="Toyota Vios"></option>
+        <option value="Toyota Yaris"></option>
+        <option value="Honda City"></option>
+        <option value="Honda Civic FC"></option>
+        <option value="Proton Saga"></option>
+        <option value="Proton Persona"></option>
+        <option value="Proton X50"></option>
+      </datalist>
+
+      <div class="fitmentFieldGrid">
+        <div>
+          <label for="fitmentYear">Car Year</label>
+          <input id="fitmentYear" type="number" inputmode="numeric" min="1980" max="2035" placeholder="2024">
+        </div>
+        <div>
+          <label for="fitmentTyre">Tyre Size (Optional)</label>
+          <input id="fitmentTyre" type="text" placeholder="195/50R15" autocomplete="off">
+        </div>
+      </div>
+
+      <label for="fitmentNote">Note (Optional)</label>
+      <textarea id="fitmentNote" rows="2" placeholder="Lowered car, want flush fitment, daily use"></textarea>
+
+      <div class="fitmentActions">
+        <button id="runFitmentButton" type="button">Check</button>
+        <button id="cancelFitmentButton" type="button">Close</button>
+      </div>
+
+      <div id="fitmentResult" class="fitmentResult hidden" aria-live="polite"></div>
+    </div>
+  </div>
+
 
   <div id="logoutConfirmModal" class="hidden logoutConfirmOverlay">
     <div class="logoutConfirmBox">
@@ -126,7 +176,7 @@
       </div>
     </div>
   </div>
-  <script src="script.js?v=1089"></script>
+  <script src="script.js?v=1090"></script>
 
 </body>
 </html>

@@ -101,6 +101,7 @@ async function loadProducts(){
 
   preloadProductImages();
   showCategory("ALL");
+  populateFitmentProductOptions();
 }
 
 async function autoRefreshProducts(){
@@ -1695,6 +1696,357 @@ function prevPhoto(){
 function closePhotoViewer(){
   document.getElementById("photoViewer").classList.add("hidden");
 }
+
+const FITMENT_DATABASE = [
+  {
+    name:"Perodua Myvi",
+    aliases:["myvi", "perodua myvi"],
+    years:[2018, 2026], pcd:"4x100", cb:54.1,
+    diameter:[14, 16], width:[5.5, 7], offset:[35, 45],
+    tyres:{14:["175/65R14", "185/60R14"], 15:["185/55R15", "195/50R15"], 16:["195/45R16", "205/45R16"]}
+  },
+  {
+    name:"Perodua Axia",
+    aliases:["axia", "perodua axia"],
+    pcd:"4x100", cb:54.1,
+    diameter:[14, 15], width:[5, 6.5], offset:[35, 45],
+    tyres:{14:["175/65R14", "185/60R14"], 15:["185/55R15", "195/50R15"]}
+  },
+  {
+    name:"Perodua Bezza",
+    aliases:["bezza", "perodua bezza"],
+    pcd:"4x100", cb:54.1,
+    diameter:[14, 16], width:[5.5, 7], offset:[35, 45],
+    tyres:{14:["175/65R14", "185/60R14"], 15:["185/55R15", "195/50R15"], 16:["195/45R16", "205/45R16"]}
+  },
+  {
+    name:"Perodua Alza",
+    aliases:["alza", "perodua alza"],
+    years:[2022, 2026], pcd:"4x100", cb:54.1,
+    diameter:[15, 17], width:[6, 7.5], offset:[35, 45],
+    tyres:{15:["185/55R15", "195/55R15"], 16:["195/50R16", "205/45R16"], 17:["205/45R17", "215/45R17"]}
+  },
+  {
+    name:"Toyota Vios",
+    aliases:["vios", "toyota vios"],
+    pcd:"4x100", cb:54.1,
+    diameter:[15, 17], width:[6, 7.5], offset:[35, 45],
+    tyres:{15:["185/60R15", "195/55R15"], 16:["195/50R16", "205/45R16"], 17:["205/45R17", "215/45R17"]}
+  },
+  {
+    name:"Toyota Yaris",
+    aliases:["yaris", "toyota yaris"],
+    pcd:"4x100", cb:54.1,
+    diameter:[15, 17], width:[6, 7.5], offset:[35, 45],
+    tyres:{15:["185/60R15", "195/55R15"], 16:["195/50R16", "205/45R16"], 17:["205/45R17", "215/45R17"]}
+  },
+  {
+    name:"Honda City",
+    aliases:["city", "honda city"],
+    pcd:"4x100", cb:56.1,
+    diameter:[15, 17], width:[6, 7.5], offset:[35, 45],
+    tyres:{15:["185/55R15", "195/55R15"], 16:["195/50R16", "205/45R16"], 17:["205/45R17", "215/45R17"]}
+  },
+  {
+    name:"Honda Civic FC",
+    aliases:["civic fc", "honda civic fc", "civicfc"],
+    pcd:"5x114.3", cb:64.1,
+    diameter:[17, 18], width:[7, 8.5], offset:[35, 45],
+    tyres:{17:["215/50R17", "225/45R17"], 18:["225/40R18", "235/40R18"]}
+  },
+  {
+    name:"Proton Saga",
+    aliases:["saga", "proton saga"],
+    pcd:"4x100", cb:56.6,
+    diameter:[14, 16], width:[5.5, 7], offset:[35, 45],
+    tyres:{14:["175/65R14", "185/60R14"], 15:["185/55R15", "195/50R15"], 16:["195/45R16", "205/45R16"]}
+  },
+  {
+    name:"Proton Persona",
+    aliases:["persona", "proton persona"],
+    pcd:"4x100", cb:56.6,
+    diameter:[15, 17], width:[6, 7.5], offset:[35, 45],
+    tyres:{15:["185/55R15", "195/55R15"], 16:["195/50R16", "205/45R16"], 17:["205/45R17", "215/45R17"]}
+  },
+  {
+    name:"Proton X50",
+    aliases:["x50", "proton x50"],
+    pcd:"5x114.3", cb:56.6,
+    diameter:[18, 19], width:[7, 8.5], offset:[35, 45],
+    tyres:{18:["215/55R18", "225/50R18"], 19:["225/45R19", "235/45R19"]}
+  }
+];
+
+let fitmentPageScrollTop = 0;
+
+function normalizeFitmentKey(value){
+  return String(value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function findFitmentCar(value){
+  const key = normalizeFitmentKey(value);
+  if(!key) return null;
+
+  return FITMENT_DATABASE.find(car => {
+    const names = [car.name].concat(car.aliases || []);
+    return names.some(name => {
+      const alias = normalizeFitmentKey(name);
+      return key === alias || key.includes(alias);
+    });
+  }) || null;
+}
+
+function parseRimSpecs(description){
+  const text = String(description || "").toUpperCase();
+  const sizeMatch = text.match(/\b(1[3-9]|2[0-4])\s*X\s*(\d(?:\.\d+)?)\b/);
+  const etMatch = text.match(/\bET\s*(-?\d+(?:\.\d+)?)\b/);
+  const cbMatch = text.match(/\bCB\s*(\d{2,3}(?:\.\d+)?)\b/);
+  const pcdMatch = text.match(/\b(4|5|6|8|10|12)\s*X\s*(\d{3}(?:\.\d+)?)(?:\s*\/\s*(\d{3}(?:\.\d+)?))?\b/);
+  const pcds = [];
+
+  if(pcdMatch){
+    const holes = Number(pcdMatch[1]);
+    const dualDrill = Boolean(pcdMatch[3]);
+    const effectiveHoles = dualDrill && holes >= 8 ? holes / 2 : holes;
+    pcds.push(`${effectiveHoles}x${Number(pcdMatch[2])}`);
+    if(pcdMatch[3]) pcds.push(`${effectiveHoles}x${Number(pcdMatch[3])}`);
+  }
+
+  return {
+    diameter:sizeMatch ? Number(sizeMatch[1]) : null,
+    width:sizeMatch ? Number(sizeMatch[2]) : null,
+    pcds,
+    pcdText:pcdMatch ? pcdMatch[0].replace(/\s+/g, "") : "",
+    et:etMatch ? Number(etMatch[1]) : null,
+    cb:cbMatch ? Number(cbMatch[1]) : null
+  };
+}
+
+function fitmentRangeResult(value, range, aggressiveMargin){
+  if(value === null) return {label:"Cannot detect", level:"unknown"};
+  if(value >= range[0] && value <= range[1]) return {label:"Safe", level:"safe"};
+  if(value >= range[0] - aggressiveMargin && value <= range[1] + aggressiveMargin){
+    return {label:"Aggressive - need confirmation", level:"warn"};
+  }
+  return {label:"Risky", level:"bad"};
+}
+
+function normalizeTyreSize(value){
+  return String(value || "").toUpperCase().replace(/\s+/g, "");
+}
+
+function populateFitmentProductOptions(){
+  const select = document.getElementById("fitmentProduct");
+  if(!select) return;
+
+  const previousValue = select.value;
+  select.innerHTML = '<option value="">Select rim product</option>';
+
+  products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.sku;
+    option.textContent = product.description || product.sku;
+    select.appendChild(option);
+  });
+
+  if(previousValue && products.some(product => product.sku === previousValue)){
+    select.value = previousValue;
+  }
+}
+
+function openFitmentModal(){
+  populateFitmentProductOptions();
+
+  const visibleCard = document.querySelector('#productGrid .card[data-sku]');
+  if(visibleCard){
+    document.getElementById("fitmentProduct").value = visibleCard.dataset.sku;
+  }
+
+  fitmentPageScrollTop = window.pageYOffset;
+  document.body.style.top = `-${fitmentPageScrollTop}px`;
+  document.body.classList.add("fitmentModalOpen");
+  document.getElementById("fitmentModal").classList.remove("hidden");
+  document.getElementById("fitmentResult").classList.add("hidden");
+  document.getElementById("fitmentCar").focus();
+}
+
+function closeFitmentModal(){
+  document.getElementById("fitmentModal").classList.add("hidden");
+  document.body.classList.remove("fitmentModalOpen");
+  document.body.style.top = "";
+  window.scrollTo(0, fitmentPageScrollTop);
+}
+
+function renderFitmentMessage(message){
+  const result = document.getElementById("fitmentResult");
+  result.innerHTML = `
+    <div class="fitmentOverall warn">Need salesperson confirmation</div>
+    <div class="fitmentSection">${escapeHtml(message)}</div>
+    <p class="fitmentDisclaimer">Fitment and tyre size result is an estimate only. Please confirm with salesperson before purchase.</p>
+  `;
+  result.classList.remove("hidden");
+}
+
+function runFitmentCheck(){
+  const productSku = document.getElementById("fitmentProduct").value;
+  const product = products.find(item => item.sku === productSku);
+  const car = findFitmentCar(document.getElementById("fitmentCar").value);
+  const year = Number(document.getElementById("fitmentYear").value) || null;
+  const enteredTyre = normalizeTyreSize(document.getElementById("fitmentTyre").value);
+  const note = document.getElementById("fitmentNote").value.trim();
+
+  if(!product){
+    renderFitmentMessage("Please select a rim product.");
+    return;
+  }
+
+  if(!car){
+    renderFitmentMessage("Car model not found in fitment database. Please try another model or confirm with salesperson.");
+    return;
+  }
+
+  const specs = parseRimSpecs(product.description || "");
+  const warnings = [];
+  const missing = [];
+
+  let pcdResult = "Cannot detect PCD";
+  let pcdLevel = "unknown";
+  if(specs.pcds.length > 0){
+    if(specs.pcds.includes(car.pcd)){
+      pcdResult = `Match (${specs.pcdText})`;
+      pcdLevel = "safe";
+    }else{
+      pcdResult = `Not match (${specs.pcdText} vs ${car.pcd})`;
+      pcdLevel = "bad";
+    }
+  }else{
+    missing.push("PCD");
+  }
+
+  let cbResult = "Cannot detect CB";
+  let cbLevel = "unknown";
+  if(specs.cb !== null){
+    if(specs.cb + 0.05 < car.cb){
+      cbResult = `Rim CB ${specs.cb} is smaller than car CB ${car.cb} - not suitable unless machine bore`;
+      cbLevel = "bad";
+    }else if(Math.abs(specs.cb - car.cb) <= 0.15){
+      cbResult = `Match (${specs.cb})`;
+      cbLevel = "safe";
+    }else{
+      cbResult = `Rim CB ${specs.cb} is bigger - hub ring needed for ${car.cb}`;
+      cbLevel = "safe";
+      warnings.push("Need hub ring.");
+    }
+  }else{
+    missing.push("CB");
+  }
+
+  const offset = fitmentRangeResult(specs.et, car.offset, 5);
+  const width = fitmentRangeResult(specs.width, car.width, 0.5);
+  const diameter = fitmentRangeResult(specs.diameter, car.diameter, 0);
+
+  if(specs.et === null) missing.push("ET");
+  if(specs.width === null) missing.push("width");
+  if(specs.diameter === null) missing.push("diameter");
+
+  if(offset.level === "warn") warnings.push("Offset is aggressive; check fender clearance.");
+  if(offset.level === "bad") warnings.push("Offset is risky; check brake and fender clearance.");
+  if(width.level === "warn") warnings.push("Rim width is aggressive; check fender clearance.");
+  if(width.level === "bad") warnings.push("Rim width is risky.");
+  if(diameter.level === "bad") warnings.push("Rim diameter is outside the safe range.");
+  if(/lowered/i.test(note)) warnings.push("May rub if lowered.");
+
+  const recommendations = specs.diameter !== null ? (car.tyres[specs.diameter] || []) : [];
+  const bestTyre = recommendations.length > 1 ? recommendations[1] : (recommendations[0] || "");
+  let enteredTyreResult = "Not entered";
+  let tyreLevel = "safe";
+
+  if(enteredTyre){
+    if(recommendations.map(normalizeTyreSize).includes(enteredTyre)){
+      enteredTyreResult = "Recommended";
+    }else{
+      const tyreDiameter = enteredTyre.match(/R(\d{2})$/);
+      if(tyreDiameter && specs.diameter !== null && Number(tyreDiameter[1]) === specs.diameter){
+        enteredTyreResult = "Usable but check clearance";
+        tyreLevel = "warn";
+        warnings.push("Customer tyre size needs clearance confirmation.");
+      }else{
+        enteredTyreResult = "Not recommended";
+        tyreLevel = "bad";
+      }
+    }
+  }
+
+  if(recommendations.length === 0){
+    warnings.push("No tyre size recommendation found for this rim diameter. Please confirm with salesperson.");
+  }
+
+  let yearWarning = false;
+  if(year && car.years && (year < car.years[0] || year > car.years[1])){
+    yearWarning = true;
+    warnings.push(`Car year is outside the listed ${car.years[0]}-${car.years[1]} range.`);
+  }
+
+  if(missing.length > 0){
+    warnings.push("Some rim specs cannot be detected from this product description. Please confirm with salesperson.");
+  }
+
+  const hardFailure = pcdLevel === "bad" || cbLevel === "bad" || diameter.level === "bad" || width.level === "bad";
+  const needsConfirmation = missing.length > 0 || offset.level !== "safe" || width.level === "warn" || tyreLevel !== "safe" || yearWarning;
+  let overall = "Likely suitable";
+  let overallClass = "good";
+
+  if(hardFailure){
+    overall = "Not suitable";
+    overallClass = "bad";
+  }else if(needsConfirmation){
+    overall = "Need salesperson confirmation";
+    overallClass = "warn";
+  }
+
+  warnings.push("Final confirmation by salesperson required.");
+  const uniqueWarnings = [...new Set(warnings)];
+  const result = document.getElementById("fitmentResult");
+  const tyreList = recommendations.length > 0
+    ? `<ul>${recommendations.map(size => `<li>${escapeHtml(size)}</li>`).join("")}</ul>`
+    : "<p>No tyre size recommendation found for this rim diameter. Please confirm with salesperson.</p>";
+
+  result.innerHTML = `
+    <div class="fitmentOverall ${overallClass}">Estimated result: ${escapeHtml(overall)}</div>
+    <div class="fitmentCheckRow"><strong>Rim</strong><span>${escapeHtml(product.description || product.sku)}</span></div>
+    <div class="fitmentCheckRow"><strong>Car</strong><span>${escapeHtml(car.name)}${year ? ` (${year})` : ""}</span></div>
+    <div class="fitmentCheckRow"><strong>PCD</strong><span>${escapeHtml(pcdResult)}</span></div>
+    <div class="fitmentCheckRow"><strong>Center Bore</strong><span>${escapeHtml(cbResult)}</span></div>
+    <div class="fitmentCheckRow"><strong>Offset</strong><span>${escapeHtml(offset.label)}${specs.et !== null ? ` (ET${specs.et})` : ""}</span></div>
+    <div class="fitmentCheckRow"><strong>Rim Width</strong><span>${escapeHtml(width.label)}${specs.width !== null ? ` (${specs.width} inch)` : ""}</span></div>
+    <div class="fitmentCheckRow"><strong>Rim Size</strong><span>${escapeHtml(diameter.label)}${specs.diameter !== null ? ` (${specs.diameter} inch)` : ""}</span></div>
+    <div class="fitmentCheckRow"><strong>Tyre Entered</strong><span>${escapeHtml(enteredTyreResult)}</span></div>
+    <div class="fitmentSection">
+      <h4>Recommended tyre sizes for ${escapeHtml(car.name)}${specs.diameter !== null ? ` with ${specs.diameter} inch rim` : ""}</h4>
+      ${tyreList}
+      ${bestTyre ? `<p><strong>Best common size:</strong> ${escapeHtml(bestTyre)}</p>` : ""}
+    </div>
+    <div class="fitmentSection">
+      <h4>Warning Notes</h4>
+      <ul>${uniqueWarnings.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+    </div>
+    <p class="fitmentDisclaimer">Fitment and tyre size result is an estimate only. Please confirm with salesperson before purchase.</p>
+  `;
+  result.classList.remove("hidden");
+}
+
+document.getElementById("aiFitmentButton").onclick = openFitmentModal;
+document.getElementById("closeFitmentButton").onclick = closeFitmentModal;
+document.getElementById("cancelFitmentButton").onclick = closeFitmentModal;
+document.getElementById("runFitmentButton").onclick = runFitmentCheck;
+document.getElementById("fitmentModal").addEventListener("click", event => {
+  if(event.target.id === "fitmentModal") closeFitmentModal();
+});
+document.addEventListener("keydown", event => {
+  if(event.key === "Escape" && !document.getElementById("fitmentModal").classList.contains("hidden")){
+    closeFitmentModal();
+  }
+});
 
 loadBranchNames();
 checkLogin();

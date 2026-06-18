@@ -72,7 +72,7 @@ header{
 
 #search{
   width:100%;
-  padding:12px 44px 12px 12px;
+  padding:12px 96px 12px 12px;
   border-radius:10px;
   border:1px solid #ccc;
   font-size:16px;
@@ -645,6 +645,19 @@ button:disabled{
   background:#333;
 }
 
+#aiFitmentButton{
+  position:absolute;
+  right:44px;
+  top:50%;
+  transform:translateY(-50%);
+  width:42px;
+  height:34px;
+  padding:0;
+  border-radius:8px;
+  background:#0b6bcb;
+  font-size:13px;
+}
+
 .branchSettingPanel,
 .branchSplitPanel,
 .quickBranchDropdown{
@@ -1064,6 +1077,184 @@ button:disabled{
     max-width:34px;
     height:40px;
     padding:0;
+  }
+}
+
+.fitmentOverlay{
+  position:fixed;
+  inset:0;
+  z-index:10020;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+  background:rgba(0,0,0,.58);
+}
+
+.fitmentBox{
+  width:min(620px,100%);
+  max-height:calc(100vh - 28px);
+  max-height:calc(100dvh - 28px);
+  overflow:auto;
+  background:#fff;
+  color:#111;
+  border-radius:8px;
+  padding:16px;
+  box-shadow:0 18px 55px rgba(0,0,0,.32);
+}
+
+.fitmentHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.fitmentHeader h3{
+  margin:0;
+  font-size:20px;
+}
+
+.fitmentHeader button{
+  width:38px;
+  height:38px;
+  padding:0;
+  flex:0 0 38px;
+}
+
+.fitmentBox label{
+  display:block;
+  margin:12px 0 5px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.fitmentBox select,
+.fitmentBox input,
+.fitmentBox textarea{
+  display:block;
+  width:100%;
+  min-height:44px;
+  padding:10px 11px;
+  border:1px solid #bbb;
+  border-radius:7px;
+  background:#fff;
+  color:#111;
+  font:16px Arial,sans-serif;
+  letter-spacing:0;
+}
+
+.fitmentBox textarea{
+  min-height:70px;
+  resize:vertical;
+}
+
+.fitmentFieldGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.fitmentActions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-top:14px;
+}
+
+.fitmentActions button{
+  min-height:44px;
+}
+
+#cancelFitmentButton{
+  background:#555;
+}
+
+.fitmentResult{
+  margin-top:16px;
+  border-top:2px solid #111;
+}
+
+.fitmentOverall{
+  padding:12px 0;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.fitmentOverall.good{color:#08733f;}
+.fitmentOverall.bad{color:#b00020;}
+.fitmentOverall.warn{color:#8a5600;}
+
+.fitmentCheckRow{
+  display:grid;
+  grid-template-columns:minmax(105px,145px) 1fr;
+  gap:10px;
+  padding:9px 0;
+  border-top:1px solid #ddd;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.fitmentCheckRow strong{
+  font-size:14px;
+}
+
+.fitmentSection{
+  padding:11px 0 2px;
+  border-top:1px solid #ddd;
+}
+
+.fitmentSection h4{
+  margin:0 0 7px;
+  font-size:15px;
+}
+
+.fitmentSection ul{
+  margin:0 0 8px 20px;
+  padding:0;
+}
+
+.fitmentSection li{
+  margin:4px 0;
+}
+
+.fitmentDisclaimer{
+  margin:12px 0 0;
+  padding-top:10px;
+  border-top:1px solid #bbb;
+  color:#555;
+  font-size:12px;
+  line-height:1.4;
+}
+
+body.fitmentModalOpen{
+  position:fixed;
+  width:100%;
+  overflow:hidden;
+}
+
+@media(max-width:600px){
+  .fitmentOverlay{
+    align-items:flex-start;
+    padding:8px;
+  }
+
+  .fitmentBox{
+    width:100%;
+    max-height:calc(100vh - 16px);
+    max-height:calc(100dvh - 16px);
+    padding:14px;
+  }
+
+  .fitmentFieldGrid{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  .fitmentCheckRow{
+    grid-template-columns:100px 1fr;
+    gap:8px;
   }
 }
 
