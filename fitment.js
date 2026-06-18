@@ -269,7 +269,7 @@ function evaluateFitment(product, car, enteredTyre, note, manualMode = false){
   if(manualMode) warnings.push("This result is based on the specs entered by customer. Please confirm with salesperson before purchase.");
 
   const recommendations = getCarTyreSizes(car, specs.diameter).map(normalizeTyreSize);
-  const bestTyre = recommendations[0] || "";
+  const bestTyre = recommendations.length > 1 ? recommendations[1] : (recommendations[0] || "");
   let tyre = { label:enteredTyre ? "Cannot check" : "Not entered", level:"unknown" };
 
   if(enteredTyre){
