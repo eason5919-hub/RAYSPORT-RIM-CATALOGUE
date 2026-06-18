@@ -17,6 +17,11 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const BRANCH_NAMES_STORAGE_KEY = "branchNames";
+const REFRESH_SCROLL_KEY = "raysportRefreshScrollTop";
+
+if("scrollRestoration" in history){
+  history.scrollRestoration = "manual";
+}
 
 const sheetCategories = [
   "ALL",
@@ -101,6 +106,7 @@ async function loadProducts(){
 
   preloadProductImages();
   showCategory("ALL");
+  restoreRefreshScrollPosition();
 }
 
 async function autoRefreshProducts(){
@@ -613,6 +619,26 @@ function showCachedCategory(){
 function isSoldOut(product){
   return (product.status || "").toLowerCase().includes("sold out");
 }
+
+function acceptImmediatePress(event){
+  if(!event) return true;
+
+  const target = event.currentTarget;
+  const now = Date.now();
+
+  if(event.type === "mousedown" && target && now - (Number(target.dataset.lastTouchPress) || 0) < 800){
+    return false;
+  }
+
+  if(event.type === "touchstart" && target){
+    target.dataset.lastTouchPress = String(now);
+  }
+
+  event.preventDefault();
+  event.stopPropagation();
+  return true;
+}
+
 function updateFocusedQtyWithStepper(target, sku, delta, source = "product"){
   const active = document.activeElement;
 
@@ -640,9 +666,7 @@ function updateFocusedQtyWithStepper(target, sku, delta, source = "product"){
 }
 
 function tapChangeQty(event, sku, delta, source = "product"){
-  if(event){
-    event.preventDefault();
-  }
+  if(!acceptImmediatePress(event)) return;
 
   const target = event ? event.currentTarget : null;
   if(updateFocusedQtyWithStepper(target, sku, delta, source)){
@@ -657,10 +681,7 @@ function tapBranchQty(event, button, delta){
   const input = control ? control.querySelector("input[data-branch-name]") : null;
   const keepKeyboardOpen = input && document.activeElement === input;
 
-  if(event){
-    event.preventDefault();
-    event.stopPropagation();
-  }
+  if(!acceptImmediatePress(event)) return;
 
   stepBranchQty(button, delta);
 
@@ -673,6 +694,12 @@ function tapBranchQty(event, button, delta){
       }
     });
   }
+}
+
+function tapOpenBranchEditor(event, sku, source){
+  if(getActiveBranchNames().length === 0) return;
+  if(!acceptImmediatePress(event)) return;
+  openBranchQuantityEditor(sku, source);
 }
 
 function stepBranchQty(button, delta){
@@ -700,7 +727,7 @@ function renderQuickBranchDropdown(product){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="tapBranchQty(event, this, -1)" onmousedown="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -709,7 +736,7 @@ function renderQuickBranchDropdown(product){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="tapBranchQty(event, this, 1)" onmousedown="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -719,7 +746,7 @@ function renderQuickBranchDropdown(product){
       <h4>Branch Qty</h4>
       ${rows.join("")}
       <div class="branchEditorActions">
-        <button type="button" onclick="saveQuickBranchDropdown('${product.sku}')">${buttonLabel}</button>
+        <button type="button" ontouchstart="tapSaveQuickBranchDropdown(event, '${product.sku}')" onmousedown="tapSaveQuickBranchDropdown(event, '${product.sku}')">${buttonLabel}</button>
         <button type="button" onclick="cancelQuickBranchDropdown('${product.sku}')">Cancel</button>
       </div>
     </div>
@@ -855,6 +882,28 @@ function addToCartFromProduct(sku){
   changeQty(sku, 1, "product");
 }
 
+function tapAddToCartFromProduct(event, sku){
+  if(!acceptImmediatePress(event)) return;
+
+  const active = document.activeElement;
+  if(active && typeof active.blur === "function"){
+    active.blur();
+  }
+
+  addToCartFromProduct(sku);
+}
+
+function tapSaveQuickBranchDropdown(event, sku){
+  if(!acceptImmediatePress(event)) return;
+
+  const active = document.activeElement;
+  if(active && typeof active.blur === "function"){
+    active.blur();
+  }
+
+  saveQuickBranchDropdown(sku);
+}
+
 function saveQuickBranchDropdown(sku){
   const card = (cardBySku[sku] || []).find(item => item.querySelector(".quickBranchDropdown"));
   if(!card) return;
@@ -921,7 +970,7 @@ function renderOrderControls(product){
   if(cartQty > 0){
     return `
       <div class="qtyControls">
-        <button type="button" onpointerdown="tapChangeQty(event, '${product.sku}', -1, 'product')">-</button>
+        <button type="button" ontouchstart="tapChangeQty(event, '${product.sku}', -1, 'product')" onmousedown="tapChangeQty(event, '${product.sku}', -1, 'product')">-</button>
 
         <input
           class="qtyInput"
@@ -929,7 +978,8 @@ function renderOrderControls(product){
           min="1"
           inputmode="numeric"
           value="${cartQty}"
-          onpointerdown="if(getActiveBranchNames().length > 0){ event.preventDefault(); openBranchQuantityEditor('${product.sku}', 'product'); }"
+          ontouchstart="tapOpenBranchEditor(event, '${product.sku}', 'product')"
+          onmousedown="tapOpenBranchEditor(event, '${product.sku}', 'product')"
           onfocus="if(getActiveBranchNames().length > 0){ openBranchQuantityEditor('${product.sku}', 'product'); }"
           onchange="finishQtyTyping('${product.sku}', this, 'product')"
           onblur="finishQtyTyping('${product.sku}', this, 'product')"
@@ -937,13 +987,13 @@ function renderOrderControls(product){
           oninput="setQtyOnly('${product.sku}', this.value, true, 'product')"
         >
 
-        <button type="button" onpointerdown="tapChangeQty(event, '${product.sku}', 1, 'product')">+</button>
+        <button type="button" ontouchstart="tapChangeQty(event, '${product.sku}', 1, 'product')" onmousedown="tapChangeQty(event, '${product.sku}', 1, 'product')">+</button>
       </div>
     `;
   }
 
   return `
-    <button onclick="addToCartFromProduct('${product.sku}')">
+    <button ontouchstart="tapAddToCartFromProduct(event, '${product.sku}')" onmousedown="tapAddToCartFromProduct(event, '${product.sku}')">
       Add to Cart
     </button>
   `;
@@ -1268,7 +1318,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="tapBranchQty(event, this, -1)" onmousedown="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -1277,7 +1327,7 @@ function renderBranchSplitPanel(sku){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
+        <button class="branchQtyStepper" type="button" ontouchstart="tapBranchQty(event, this, 1)" onmousedown="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -1371,7 +1421,7 @@ function renderCart(){
           <small>Order Qty (Set):</small>
 
           <div class="qtyControls">
-            <button type="button" onpointerdown="tapChangeQty(event, '${sku}', -1, 'cart')">-</button>
+            <button type="button" ontouchstart="tapChangeQty(event, '${sku}', -1, 'cart')" onmousedown="tapChangeQty(event, '${sku}', -1, 'cart')">-</button>
 
             <input
               class="qtyInput"
@@ -1379,7 +1429,8 @@ function renderCart(){
               min="1"
               inputmode="numeric"
               value="${item.qty}"
-              onpointerdown="if(getActiveBranchNames().length > 0){ event.preventDefault(); openBranchQuantityEditor('${sku}', 'cart'); }"
+              ontouchstart="tapOpenBranchEditor(event, '${sku}', 'cart')"
+              onmousedown="tapOpenBranchEditor(event, '${sku}', 'cart')"
               onfocus="if(getActiveBranchNames().length > 0){ openBranchQuantityEditor('${sku}', 'cart'); }"
               onchange="finishQtyTyping('${sku}', this, 'cart')"
               onblur="finishQtyTyping('${sku}', this, 'cart')"
@@ -1387,7 +1438,7 @@ function renderCart(){
               oninput="setQtyOnly('${sku}', this.value, true, 'cart')"
             >
 
-            <button type="button" onpointerdown="tapChangeQty(event, '${sku}', 1, 'cart')">+</button>
+            <button type="button" ontouchstart="tapChangeQty(event, '${sku}', 1, 'cart')" onmousedown="tapChangeQty(event, '${sku}', 1, 'cart')">+</button>
           </div>
 
           <div class="cartActionRow">
@@ -1414,10 +1465,35 @@ document.getElementById("clearSearchButton").onclick = () => {
   showCachedCategory();
 };
 
-document.getElementById("refreshAppButton").onclick = () => {
-  const freshUrl = window.location.pathname + "?v=" + Date.now();
+function restoreRefreshScrollPosition(){
+  const savedTop = parseInt(sessionStorage.getItem(REFRESH_SCROLL_KEY), 10);
+  if(!Number.isFinite(savedTop)) return;
+
+  sessionStorage.removeItem(REFRESH_SCROLL_KEY);
+  const maxTop = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+  window.scrollTo(0, Math.min(savedTop, maxTop));
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => fastSmoothScrollTo(0, 180));
+  });
+}
+
+function tapRefreshApp(event){
+  if(!acceptImmediatePress(event)) return;
+
+  const active = document.activeElement;
+  if(active && typeof active.blur === "function"){
+    active.blur();
+  }
+
+  sessionStorage.setItem(REFRESH_SCROLL_KEY, String(window.pageYOffset));
+  const freshUrl = window.location.pathname + "?v=1077&refresh=" + Date.now();
   window.location.replace(freshUrl);
-};
+}
+
+const refreshAppButton = document.getElementById("refreshAppButton");
+refreshAppButton.ontouchstart = tapRefreshApp;
+refreshAppButton.onmousedown = tapRefreshApp;
 
 document.getElementById("cartButton").onclick = () => {
   const productBranchSku = quickBranchSku;
