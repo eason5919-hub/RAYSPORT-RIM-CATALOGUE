@@ -1,4 +1,4 @@
-﻿let products = [];
+let products = [];
 let cart = {};
 let currentCategory = "ALL";
 let currentPcdFilter = "";
