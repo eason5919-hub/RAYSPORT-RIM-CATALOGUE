@@ -1,4 +1,4 @@
-let products = [];
+﻿let products = [];
 let cart = {};
 let currentCategory = "ALL";
 let currentPcdFilter = "";
@@ -68,7 +68,7 @@ function scrollPageToTop(){
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "smooth"
+    behavior: "auto"
   });
 }
 
@@ -79,14 +79,14 @@ function scrollFilterBarsToLeft(){
   if(pcdMenu){
     pcdMenu.scrollTo({
       left: 0,
-      behavior: "smooth"
+      behavior: "auto"
     });
   }
 
   if(categoryMenu){
     categoryMenu.scrollTo({
       left: 0,
-      behavior: "smooth"
+      behavior: "auto"
     });
   }
 }
@@ -641,51 +641,12 @@ function tapChangeQty(event, sku, delta){
   changeQty(sku, delta);
 }
 
-function focusBranchQtyInput(input){
-  if(!input) return;
-
-  try{
-    input.focus({ preventScroll:true });
-  } catch {
-    input.focus();
-  }
-}
-
 function tapBranchQty(event, button, delta){
   if(event){
-    const now = event.timeStamp || Date.now();
-    const lastStepAt = parseFloat(button.dataset.lastBranchStepAt || "0");
-    const lastTouchAt = parseFloat(button.dataset.lastBranchTouchAt || "0");
-
-    if(lastStepAt && now - lastStepAt < 80){
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
-    }
-
-    if(event.type !== "touchstart" && lastTouchAt && now - lastTouchAt < 700){
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
-    }
-
-    if(event.type === "touchstart"){
-      button.dataset.lastBranchTouchAt = String(now);
-    }
-
-    button.dataset.lastBranchStepAt = String(now);
     event.preventDefault();
-    event.stopPropagation();
   }
 
-  const control = button.closest(".branchQtyControl");
-  const input = control ? control.querySelector("input[data-branch-name]") : null;
-
-  focusBranchQtyInput(input);
   stepBranchQty(button, delta);
-  focusBranchQtyInput(input);
-  setTimeout(() => focusBranchQtyInput(input), 0);
-  return false;
 }
 
 function stepBranchQty(button, delta){
@@ -713,7 +674,7 @@ function renderQuickBranchDropdown(product){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, -1)" onmousedown="return tapBranchQty(event, this, -1)" onpointerdown="return tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -722,7 +683,7 @@ function renderQuickBranchDropdown(product){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, 1)" onmousedown="return tapBranchQty(event, this, 1)" onpointerdown="return tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -760,10 +721,10 @@ function scrollProductCardIntoView(sku){
 
       window.scrollTo({
         top: Math.max(0, top),
-        behavior: "smooth"
+        behavior: "auto"
       });
     }
-  }, 10);
+  }, 20);
 }
 function focusCartBranchSplit(sku){
   setTimeout(() => {
@@ -784,23 +745,17 @@ function openBranchQuantityEditor(sku){
     return false;
   }
 
-  const previousQuickSku = quickBranchSku;
-  quickBranchSku = "";
-  branchSettingOpen = false;
-
   if(isCartPanelOpen()){
     activeBranchSku = sku;
-
-    if(previousQuickSku){
-      updateProductOrderArea(previousQuickSku);
-    }
-
+    quickBranchSku = "";
+    branchSettingOpen = false;
     renderCart();
     updateProductOrderArea(sku);
     focusCartBranchSplit(sku);
     return true;
   }
 
+  const previousQuickSku = quickBranchSku;
   activeBranchSku = "";
   quickBranchSku = sku;
 
@@ -808,7 +763,6 @@ function openBranchQuantityEditor(sku){
     updateProductOrderArea(previousQuickSku);
   }
 
-  renderCart();
   updateProductOrderArea(sku);
   focusQuickBranchDropdown(sku);
   return true;
@@ -817,17 +771,10 @@ function openBranchQuantityEditor(sku){
 function addToCartFromProduct(sku){
   if(getActiveBranchNames().length > 0 && getCartQty(sku) === 0){
     const previousQuickSku = quickBranchSku;
-    const previousActiveSku = activeBranchSku;
-    activeBranchSku = "";
-    branchSettingOpen = false;
     quickBranchSku = quickBranchSku === sku ? "" : sku;
 
     if(previousQuickSku && previousQuickSku !== sku){
       updateProductOrderArea(previousQuickSku);
-    }
-
-    if(previousActiveSku){
-      renderCart();
     }
 
     updateProductOrderArea(sku);
@@ -916,8 +863,6 @@ function renderOrderControls(product){
           min="1"
           inputmode="numeric"
           value="${cartQty}"
-          onfocus="openBranchQuantityEditor('${product.sku}')"
-          onpointerdown="if(getActiveBranchNames().length > 0){ event.preventDefault(); openBranchQuantityEditor('${product.sku}'); }"
           onchange="finishQtyTyping('${product.sku}', this)"
           onblur="finishQtyTyping('${product.sku}', this)"
           onkeydown="if(event.key === 'Enter'){ this.blur(); }"
@@ -1234,14 +1179,7 @@ function toggleBranchSplit(sku){
     return;
   }
 
-  const previousQuickSku = quickBranchSku;
-  quickBranchSku = "";
   activeBranchSku = activeBranchSku === sku ? "" : sku;
-
-  if(previousQuickSku){
-    updateProductOrderArea(previousQuickSku);
-  }
-
   renderCart();
 }
 
@@ -1255,7 +1193,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
       <div class="branchQtyControl">
-        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, -1)" onmousedown="return tapBranchQty(event, this, -1)" onpointerdown="return tapBranchQty(event, this, -1)" onclick="event.preventDefault()">-</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, -1)">-</button>
         <input
           type="number"
           min="0"
@@ -1264,7 +1202,7 @@ function renderBranchSplitPanel(sku){
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
         >
-        <button class="branchQtyStepper" type="button" tabindex="-1" ontouchstart="return tapBranchQty(event, this, 1)" onmousedown="return tapBranchQty(event, this, 1)" onpointerdown="return tapBranchQty(event, this, 1)" onclick="event.preventDefault()">+</button>
+        <button class="branchQtyStepper" type="button" onpointerdown="tapBranchQty(event, this, 1)">+</button>
       </div>
     </div>
   `);
@@ -1366,8 +1304,6 @@ function renderCart(){
               min="1"
               inputmode="numeric"
               value="${item.qty}"
-              onfocus="openBranchQuantityEditor('${sku}')"
-              onpointerdown="if(getActiveBranchNames().length > 0){ event.preventDefault(); openBranchQuantityEditor('${sku}'); }"
               onchange="finishQtyTyping('${sku}', this)"
               onblur="finishQtyTyping('${sku}', this)"
               onkeydown="if(event.key === 'Enter'){ this.blur(); }"
@@ -1580,9 +1516,6 @@ setInterval(autoRefreshProducts, 60000);
 document.addEventListener("dblclick", function(event){
   event.preventDefault();
 }, { passive:false });
-
-
-
 
 
 

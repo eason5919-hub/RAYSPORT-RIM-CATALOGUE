@@ -1,4 +1,4 @@
-html,
+﻿html,
 body{
   touch-action:manipulation;
   -webkit-text-size-adjust:100%;
@@ -943,43 +943,28 @@ button:disabled{
     max-width:66px;
   }
 }
-/* Cart qty stays left aligned; branch qty uses one clean phone layout. */
+
+/* Align branch quantity controls cleanly on phone, and keep cart qty left aligned. */
 .cartProductInfo .qtyControls{
   justify-content:flex-start;
   width:auto;
 }
 
 @media(max-width:600px){
-  .cartProductInfo .qtyControls{
-    justify-content:flex-start;
-  }
-
-  .quickBranchDropdown,
-  .branchSplitPanel{
-    padding-left:12px;
-    padding-right:12px;
-  }
-
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
     display:grid;
-    grid-template-columns:44px 116px 44px;
-    column-gap:0;
+    grid-template-columns:44px minmax(92px,118px) 44px;
+    justify-content:center;
+    column-gap:10px;
     width:100%;
-    max-width:100%;
-    margin:0;
-    box-sizing:border-box;
-    justify-content:space-between;
-    align-items:center;
   }
 
   .quickBranchDropdown .branchQtyControl input,
   .branchSplitPanel .branchQtyControl input{
-    width:116px;
+    width:100%;
     min-width:0;
-    max-width:116px;
-    padding-left:4px;
-    padding-right:4px;
+    max-width:none;
   }
 
   .quickBranchDropdown .branchQtyStepper,
@@ -990,27 +975,12 @@ button:disabled{
     height:40px;
     padding:0;
   }
-}
 
-@media(max-width:380px){
-  .quickBranchDropdown .branchQtyControl,
-  .branchSplitPanel .branchQtyControl{
-    grid-template-columns:40px 104px 40px;
-  }
-
-  .quickBranchDropdown .branchQtyControl input,
-  .branchSplitPanel .branchQtyControl input{
-    width:104px;
-    max-width:104px;
-  }
-
-  .quickBranchDropdown .branchQtyStepper,
-  .branchSplitPanel .branchQtyStepper{
-    width:40px;
-    min-width:40px;
-    max-width:40px;
+  .cartProductInfo .qtyControls{
+    justify-content:flex-start;
   }
 }
+
 /* Match the cart order label gap before the quantity stepper row. */
 .cartProductInfo > small{
   margin-bottom:8px;
@@ -1020,29 +990,18 @@ button:disabled{
   margin-top:8px;
 }
 
-/* Exact branch quantity panel v1075 */
+
+
+/* Keep branch stepper group centered inside the branch quantity box only. */
 @media(max-width:600px){
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
-    display:grid;
-    grid-template-columns:44px 116px 44px;
-    justify-content:space-between;
-    align-items:center;
-    column-gap:0;
-    width:100%;
+    width:max-content;
     max-width:100%;
-    margin:0;
-    box-sizing:border-box;
-  }
-
-  .quickBranchDropdown .branchQtyControl input,
-  .branchSplitPanel .branchQtyControl input{
-    width:116px;
-    min-width:0;
-    max-width:116px;
-    padding-left:4px;
-    padding-right:4px;
-    text-align:center;
+    margin:0 auto;
+    grid-template-columns:44px minmax(92px,116px) 44px;
+    justify-content:center;
+    align-items:center;
   }
 
   .quickBranchDropdown .branchQtyStepper,
@@ -1050,33 +1009,15 @@ button:disabled{
     width:44px;
     min-width:44px;
     max-width:44px;
-    height:40px;
     padding:0;
-  }
-
-  .quickBranchDropdown .branchEditorActions,
-  .branchSplitPanel .branchEditorActions{
-    display:flex;
-    gap:8px;
-    margin-top:10px;
-  }
-
-  .quickBranchDropdown .branchEditorActions button,
-  .branchSplitPanel .branchEditorActions button{
-    flex:1 1 0;
   }
 }
 
 @media(max-width:380px){
   .quickBranchDropdown .branchQtyControl,
   .branchSplitPanel .branchQtyControl{
-    grid-template-columns:40px 104px 40px;
-  }
-
-  .quickBranchDropdown .branchQtyControl input,
-  .branchSplitPanel .branchQtyControl input{
-    width:104px;
-    max-width:104px;
+    grid-template-columns:40px minmax(86px,108px) 40px;
+    column-gap:8px;
   }
 
   .quickBranchDropdown .branchQtyStepper,
@@ -1086,62 +1027,75 @@ button:disabled{
     max-width:40px;
   }
 }
-/* End exact branch quantity panel v1075 */
 
-/* Phone quick dropdown layout. */
+/* Final phone branch stepper fit: keep every button fully inside the branch box. */
 @media(max-width:600px){
-  .quickBranchDropdown{
-    padding:16px 12px 15px;
-    border-radius:16px;
+  .quickBranchDropdown,
+  .branchSplitPanel{
+    padding-left:8px;
+    padding-right:8px;
   }
 
-  .quickBranchDropdown h4{
-    margin-bottom:18px;
-    font-size:23px;
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    display:grid;
+    grid-template-columns:34px minmax(78px,104px) 34px;
+    column-gap:8px;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto;
+    justify-content:center;
+    align-items:center;
   }
 
-  .quickBranchDropdown .branchQtyRow{
-    gap:7px;
-    margin-bottom:14px;
+  .quickBranchDropdown .branchQtyControl input,
+  .branchSplitPanel .branchQtyControl input{
+    width:100%;
+    min-width:0;
+    max-width:none;
+    padding-left:4px;
+    padding-right:4px;
   }
 
-  .quickBranchDropdown .branchQtyRow label{
-    font-size:20px;
-    line-height:1.2;
-  }
-
-  .quickBranchDropdown .branchQtyControl{
-    grid-template-columns:52px 84px 52px;
-  }
-
-  .quickBranchDropdown .branchQtyControl input{
-    width:84px;
-    max-width:84px;
-    height:60px;
-    border-radius:12px;
-    font-size:24px;
-  }
-
-  .quickBranchDropdown .branchQtyStepper{
-    width:52px;
-    min-width:52px;
-    max-width:52px;
-    height:60px;
-    border-radius:13px;
-    font-size:24px;
-    line-height:60px;
-  }
-
-  .quickBranchDropdown .branchEditorActions{
-    gap:12px;
-    margin-top:2px;
-  }
-
-  .quickBranchDropdown .branchEditorActions button{
-    min-height:74px;
-    padding:10px;
-    border-radius:14px;
-    font-size:20px;
-    line-height:1.25;
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:34px;
+    min-width:34px;
+    max-width:34px;
+    height:40px;
+    padding:0;
   }
 }
+
+@media(max-width:380px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:32px minmax(72px,96px) 32px;
+    column-gap:7px;
+  }
+
+  .quickBranchDropdown .branchQtyStepper,
+  .branchSplitPanel .branchQtyStepper{
+    width:32px;
+    min-width:32px;
+    max-width:32px;
+  }
+}
+
+/* Narrow branch quantity inputs so steppers align with action buttons. */
+@media(max-width:600px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:34px minmax(56px,74px) 34px;
+    column-gap:14px;
+  }
+}
+
+@media(max-width:380px){
+  .quickBranchDropdown .branchQtyControl,
+  .branchSplitPanel .branchQtyControl{
+    grid-template-columns:32px minmax(52px,68px) 32px;
+    column-gap:12px;
+  }
+}
+
