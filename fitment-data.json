@@ -1853,40 +1853,89 @@
   {
     "brand": "Perodua",
     "model": "Alza",
-    "generation": "2nd Gen",
-    "yearFrom": 2022,
-    "yearTo": 2026,
-    "aliases": [
-      "alza",
-      "perodua alza",
-      "alza 2022"
-    ],
+    "generation": "I (M500)",
+    "yearFrom": 2009,
+    "yearTo": 2013,
+    "aliases": ["alza", "perodua alza", "alza m500"],
     "pcd": "4x100",
     "centerBore": 54.1,
-    "safeRimDiameter": [
-      15,
-      16,
-      17
-    ],
-    "safeWidthMin": 6,
-    "safeWidthMax": 7.5,
-    "safeOffsetMin": 35,
-    "safeOffsetMax": 45,
+    "safeRimDiameter": [14, 15, 16],
+    "safeWidthMin": 5,
+    "safeWidthMax": 6,
+    "safeOffsetMin": 38,
+    "safeOffsetMax": 47,
     "tyreSizes": {
-      "15": [
-        "185/55R15",
-        "195/55R15"
-      ],
-      "16": [
-        "195/50R16",
-        "205/45R16"
-      ],
-      "17": [
-        "205/45R17",
-        "215/45R17"
-      ]
+      "14": ["175/65R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
     },
-    "needsConfirmation": false
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/alza/m500-2009-2013/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Alza",
+    "generation": "I (M500) Facelift I",
+    "yearFrom": 2014,
+    "yearTo": 2018,
+    "aliases": ["alza", "perodua alza", "alza m500", "alza facelift"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [14, 15, 16],
+    "safeWidthMin": 5,
+    "safeWidthMax": 6,
+    "safeOffsetMin": 38,
+    "safeOffsetMax": 47,
+    "tyreSizes": {
+      "14": ["175/65R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/alza/m500-2014-2018/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Alza",
+    "generation": "I (M500) Facelift II",
+    "yearFrom": 2018,
+    "yearTo": 2022,
+    "aliases": ["alza", "perodua alza", "alza m500", "alza facelift"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [15, 16],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 6,
+    "safeOffsetMin": 43,
+    "safeOffsetMax": 47,
+    "tyreSizes": {
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/alza/m500-2018-2022/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Alza",
+    "generation": "II (W150)",
+    "yearFrom": 2022,
+    "yearTo": 2027,
+    "aliases": ["alza", "perodua alza", "alza w150", "new alza"],
+    "pcd": "5x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [15, 16, 17],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 43,
+    "safeOffsetMax": 47,
+    "tyreSizes": {
+      "15": ["185/65R15"],
+      "16": ["195/60R16"],
+      "17": ["205/50R17"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/alza/w150-2022-now/"
   },
   {
     "brand": "Perodua",
@@ -1961,34 +2010,90 @@
   {
     "brand": "Perodua",
     "model": "Axia",
-    "generation": "Common Malaysia spec",
-    "yearFrom": null,
-    "yearTo": null,
-    "aliases": [
-      "axia",
-      "perodua axia"
-    ],
+    "generation": "B200",
+    "yearFrom": 2014,
+    "yearTo": 2016,
+    "aliases": ["axia", "perodua axia", "axia b200"],
     "pcd": "4x100",
     "centerBore": 54.1,
-    "safeRimDiameter": [
-      14,
-      15
-    ],
-    "safeWidthMin": 5,
-    "safeWidthMax": 6.5,
-    "safeOffsetMin": 35,
-    "safeOffsetMax": 45,
+    "safeRimDiameter": [13, 14, 15],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5.5,
+    "safeOffsetMin": 43,
+    "safeOffsetMax": 47,
     "tyreSizes": {
-      "14": [
-        "175/65R14",
-        "185/60R14"
-      ],
-      "15": [
-        "185/55R15",
-        "195/50R15"
-      ]
+      "13": ["155/80R13"],
+      "14": ["165/65R14", "175/65R14"],
+      "15": ["175/60R15", "185/55R15"]
     },
-    "needsConfirmation": true
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/axia/b200-2014-2016/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Axia",
+    "generation": "B200 Facelift I",
+    "yearFrom": 2017,
+    "yearTo": 2019,
+    "aliases": ["axia", "perodua axia", "axia b200", "axia facelift"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [13, 14, 15],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5.5,
+    "safeOffsetMin": 43,
+    "safeOffsetMax": 47,
+    "tyreSizes": {
+      "13": ["155/80R13"],
+      "14": ["165/65R14", "175/65R14"],
+      "15": ["175/60R15", "185/55R15"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/axia/b200-2017-2019/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Axia",
+    "generation": "B200 Facelift II",
+    "yearFrom": 2019,
+    "yearTo": 2023,
+    "aliases": ["axia", "perodua axia", "axia b200", "axia facelift"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [13, 14, 15],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5.5,
+    "safeOffsetMin": 43,
+    "safeOffsetMax": 47,
+    "tyreSizes": {
+      "13": ["155/80R13"],
+      "14": ["165/65R14", "175/65R14"],
+      "15": ["175/60R15", "185/55R15"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/axia/b200-2019-2023/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Axia",
+    "generation": "B300",
+    "yearFrom": 2023,
+    "yearTo": 2027,
+    "aliases": ["axia", "perodua axia", "axia b300", "new axia"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [13, 14, 15],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5.5,
+    "safeOffsetMin": 43,
+    "safeOffsetMax": 47,
+    "tyreSizes": {
+      "13": ["155/80R13"],
+      "14": ["175/65R14"],
+      "15": ["175/60R15", "185/55R15"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/axia/b300-2023-now/"
   },
   {
     "brand": "Perodua",
@@ -2030,62 +2135,109 @@
   {
     "brand": "Perodua",
     "model": "Kancil",
-    "generation": "Multiple generations - confirm",
-    "yearFrom": null,
-    "yearTo": null,
-    "aliases": [
-      "kancil",
-      "perodua kancil"
-    ],
-    "pcd": null,
-    "centerBore": null,
-    "safeRimDiameter": [],
-    "safeWidthMin": null,
-    "safeWidthMax": null,
-    "safeOffsetMin": null,
-    "safeOffsetMax": null,
-    "tyreSizes": {},
-    "needsConfirmation": true
+    "generation": "L200",
+    "yearFrom": 1994,
+    "yearTo": 2002,
+    "aliases": ["kancil", "perodua kancil", "kancil l200"],
+    "pcd": "4x110",
+    "centerBore": 66.1,
+    "safeRimDiameter": [12, 13, 14],
+    "safeWidthMin": 4,
+    "safeWidthMax": 4.5,
+    "safeOffsetMin": 33,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "12": ["145/70R12", "155/70R12"],
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/kancil/l200-1994-2002/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Kancil",
+    "generation": "L200 Facelift",
+    "yearFrom": 2002,
+    "yearTo": 2009,
+    "aliases": ["kancil", "perodua kancil", "kancil l200", "kancil facelift"],
+    "pcd": "4x110",
+    "centerBore": 66.1,
+    "safeRimDiameter": [12, 13, 14],
+    "safeWidthMin": 4,
+    "safeWidthMax": 4.5,
+    "safeOffsetMin": 33,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "12": ["145/70R12", "155/70R12"],
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/kancil/l200-2002-2009/"
   },
   {
     "brand": "Perodua",
     "model": "Kelisa",
-    "generation": "Multiple generations - confirm",
-    "yearFrom": null,
-    "yearTo": null,
-    "aliases": [
-      "kelisa",
-      "perodua kelisa"
-    ],
-    "pcd": null,
-    "centerBore": null,
-    "safeRimDiameter": [],
-    "safeWidthMin": null,
-    "safeWidthMax": null,
-    "safeOffsetMin": null,
-    "safeOffsetMax": null,
-    "tyreSizes": {},
-    "needsConfirmation": true
+    "generation": "L700",
+    "yearFrom": 2001,
+    "yearTo": 2005,
+    "aliases": ["kelisa", "perodua kelisa", "kelisa l700"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [13, 14],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5,
+    "safeOffsetMin": 37,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/kelisa/l700-2001-2005/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Kelisa",
+    "generation": "L700 Facelift",
+    "yearFrom": 2005,
+    "yearTo": 2007,
+    "aliases": ["kelisa", "perodua kelisa", "kelisa l700", "kelisa facelift"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [13, 14],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5,
+    "safeOffsetMin": 37,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/kelisa/l700-2005-2007/"
   },
   {
     "brand": "Perodua",
     "model": "Kenari",
-    "generation": "Multiple generations - confirm",
-    "yearFrom": null,
-    "yearTo": null,
-    "aliases": [
-      "kenari",
-      "perodua kenari"
-    ],
-    "pcd": null,
-    "centerBore": null,
-    "safeRimDiameter": [],
-    "safeWidthMin": null,
-    "safeWidthMax": null,
-    "safeOffsetMin": null,
-    "safeOffsetMax": null,
-    "tyreSizes": {},
-    "needsConfirmation": true
+    "generation": "L900",
+    "yearFrom": 2000,
+    "yearTo": 2009,
+    "aliases": ["kenari", "perodua kenari", "kenari l900"],
+    "pcd": "4x100",
+    "centerBore": 56.1,
+    "safeRimDiameter": [13, 14],
+    "safeWidthMin": 4.5,
+    "safeWidthMax": 5,
+    "safeOffsetMin": 37,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/kenari/l900-2000-2009/"
   },
   {
     "brand": "Perodua",
@@ -2130,22 +2282,46 @@
   {
     "brand": "Perodua",
     "model": "Viva",
-    "generation": "Multiple generations - confirm",
-    "yearFrom": null,
-    "yearTo": null,
-    "aliases": [
-      "viva",
-      "perodua viva"
-    ],
-    "pcd": null,
-    "centerBore": null,
-    "safeRimDiameter": [],
-    "safeWidthMin": null,
-    "safeWidthMax": null,
-    "safeOffsetMin": null,
-    "safeOffsetMax": null,
-    "tyreSizes": {},
-    "needsConfirmation": true
+    "generation": "L250",
+    "yearFrom": 2007,
+    "yearTo": 2011,
+    "aliases": ["viva", "perodua viva", "viva l250"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [12, 13, 14],
+    "safeWidthMin": 4,
+    "safeWidthMax": 4.5,
+    "safeOffsetMin": 33,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "12": ["155/70R12"],
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/viva/l250-2007-2011/"
+  },
+  {
+    "brand": "Perodua",
+    "model": "Viva",
+    "generation": "L250 Facelift",
+    "yearFrom": 2011,
+    "yearTo": 2014,
+    "aliases": ["viva", "perodua viva", "viva l250", "viva facelift"],
+    "pcd": "4x100",
+    "centerBore": 54.1,
+    "safeRimDiameter": [12, 13, 14],
+    "safeWidthMin": 4,
+    "safeWidthMax": 4.5,
+    "safeOffsetMin": 33,
+    "safeOffsetMax": 41,
+    "tyreSizes": {
+      "12": ["155/70R12"],
+      "13": ["155/65R13"],
+      "14": ["165/55R14"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/perodua/viva/l250-2011-2014/"
   },
   {
     "brand": "Peugeot",
