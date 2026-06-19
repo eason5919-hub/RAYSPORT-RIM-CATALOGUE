@@ -160,6 +160,19 @@ function getFitmentMatches(value, enteredYear){
   return scored.filter(item => item.score >= minimumScore);
 }
 
+function getFitmentBrandMatches(value, enteredYear){
+  const raw = String(value || "").trim();
+  const queryYearMatch = raw.match(/\b(19|20)\d{2}\b/);
+  const year = Number(enteredYear) || (queryYearMatch ? Number(queryYearMatch[0]) : null);
+  const query = normalizeFitmentKey(raw.replace(/\b(19|20)\d{2}\b/g, ""));
+  if(!query) return [];
+
+  return fitmentDatabase.filter(car => {
+    if(normalizeFitmentKey(car.brand) !== query) return false;
+    return !year || ((!car.yearFrom || year >= car.yearFrom) && (!car.yearTo || year <= car.yearTo));
+  });
+}
+
 function hideFitmentMatchChooser(){
   document.getElementById("fitmentMatchChooser").classList.add("hidden");
   document.getElementById("fitmentMatchSelect").innerHTML = "";
@@ -516,7 +529,24 @@ function recommendationForProduct(product, car){
 
   const aggressive = [diameter.level, width.level, offset.level].includes("warn");
   const score = (diameter.level === "safe" ? 4 : 2) + (width.level === "safe" ? 4 : 2) + (offset.level === "safe" ? 4 : 2) + (specs.cb === Number(car.centerBore) ? 2 : 1);
-  return { product, specs, aggressive, score };
+  return { product, specs, aggressive, score, car };
+}
+
+function recommendationsForCars(cars){
+  return products
+    .filter(product => !isSoldOut(product))
+    .map(product => {
+      const matches = cars
+        .map(car => recommendationForProduct(product, car))
+        .filter(Boolean)
+        .sort((a, b) => Number(a.aggressive) - Number(b.aggressive) || b.score - a.score);
+      if(matches.length === 0) return null;
+
+      const uniqueCars = new Map();
+      matches.forEach(match => uniqueCars.set(carDisplayName(match.car), match.car));
+      return { ...matches[0], fitmentCars:[...uniqueCars.values()] };
+    })
+    .filter(Boolean);
 }
 
 function getFitmentSizeCategory(item){
@@ -652,6 +682,10 @@ function renderFitmentRecommendations(){
               <span class="fitmentBadge good">CB${specs.cb ?? "?"}</span>
             </div>
             <p class="fitmentProductReason">${escapeHtml(reason)}</p>
+            <div class="fitmentVehicleMatches">
+              <strong>Likely vehicle applications:</strong>
+              <ul>${(item.fitmentCars || [item.car]).map(car => `<li>${escapeHtml(carDisplayName(car))}</li>`).join("")}</ul>
+            </div>
             ${item.aggressive ? '<p class="fitmentProductWarning">Aggressive fitment. Check clearance.</p>' : ""}
           </div>
         </div>
@@ -696,10 +730,18 @@ async function findSuitableRims(){
   }
 
   let car = null;
+  let cars = [];
   let manualMode = false;
+  const brandCars = getFitmentBrandMatches(
+    document.getElementById("fitmentCar").value,
+    document.getElementById("fitmentYear").value
+  );
   const resolved = resolveFitmentCar();
 
-  if(resolved.status === "found"){
+  if(brandCars.length > 1){
+    cars = brandCars;
+    hideFitmentMatchChooser();
+  }else if(resolved.status === "found"){
     car = resolved.car;
   }else if(!document.getElementById("manualFitmentForm").classList.contains("hidden")){
     car = readManualFitmentForm();
@@ -712,7 +754,9 @@ async function findSuitableRims(){
     return;
   }
 
-  if(!normalizePcd(car.pcd)){
+  if(cars.length === 0) cars = [car];
+
+  if(cars.every(item => !normalizePcd(item.pcd))){
     renderFitmentMessage(manualMode
       ? "Please enter valid manual fitment specs before searching the catalogue."
       : "Fitment data for this car is incomplete. Enter manual specs or confirm with salesperson.", true);
@@ -720,10 +764,7 @@ async function findSuitableRims(){
   }
 
   if(manualMode) saveManualFitmentSpecs(car);
-  fitmentRecommendationRows = dedupeFitmentRecommendations(products
-    .filter(product => !isSoldOut(product))
-    .map(product => recommendationForProduct(product, car))
-    .filter(Boolean))
+  fitmentRecommendationRows = dedupeFitmentRecommendations(recommendationsForCars(cars))
     .sort((a, b) =>
       (a.specs.diameter ?? Infinity) - (b.specs.diameter ?? Infinity) ||
       (a.specs.width ?? Infinity) - (b.specs.width ?? Infinity) ||
