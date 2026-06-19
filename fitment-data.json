@@ -2487,25 +2487,30 @@
   {
     "brand": "Proton",
     "model": "Saga",
-    "generation": "Common Malaysia spec",
-    "yearFrom": null,
-    "yearTo": null,
+    "generation": "I (C20)",
+    "yearFrom": 1985,
+    "yearTo": 2008,
     "aliases": [
       "saga",
-      "proton saga"
+      "proton saga",
+      "saga c20",
+      "proton saga c20",
+      "saga iswara"
     ],
-    "pcd": "4x100",
-    "centerBore": 56.6,
+    "pcd": "4x114.3",
+    "centerBore": 67.1,
     "safeRimDiameter": [
+      13,
       14,
       15,
       16
     ],
-    "safeWidthMin": 5.5,
+    "safeWidthMin": 5,
     "safeWidthMax": 7,
     "safeOffsetMin": 35,
     "safeOffsetMax": 45,
     "tyreSizes": {
+      "13": ["175/70R13"],
       "14": [
         "175/65R14",
         "185/60R14"
@@ -2519,7 +2524,144 @@
         "205/45R16"
       ]
     },
-    "needsConfirmation": true
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/c20-1985-2008/"
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "II (BT)",
+    "yearFrom": 2008,
+    "yearTo": 2010,
+    "aliases": ["saga", "proton saga", "saga bt", "proton saga bt"],
+    "pcd": "4x100",
+    "centerBore": 57.1,
+    "safeRimDiameter": [13, 14, 15, 16],
+    "safeWidthMin": 5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 46,
+    "tyreSizes": {
+      "13": ["175/70R13"],
+      "14": ["185/60R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/bt-2008-2010/"
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "II (BT) FL",
+    "yearFrom": 2010,
+    "yearTo": 2011,
+    "aliases": ["saga", "proton saga", "saga bt fl", "saga facelift"],
+    "pcd": "4x100",
+    "centerBore": 57.1,
+    "safeRimDiameter": [13, 14, 15, 16],
+    "safeWidthMin": 5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 46,
+    "tyreSizes": {
+      "13": ["175/70R13"],
+      "14": ["185/60R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/bt-fl-2010-2011/"
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "II (BT) FLX",
+    "yearFrom": 2011,
+    "yearTo": 2016,
+    "aliases": ["saga", "proton saga", "saga flx", "proton saga flx"],
+    "pcd": "4x100",
+    "centerBore": 57.1,
+    "safeRimDiameter": [13, 14, 15, 16],
+    "safeWidthMin": 5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 35,
+    "safeOffsetMax": 46,
+    "tyreSizes": {
+      "13": ["175/70R13"],
+      "14": ["185/60R14"],
+      "15": ["185/55R15", "195/50R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/bt-flx-2011-2016/"
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "III (BT)",
+    "yearFrom": 2016,
+    "yearTo": 2019,
+    "aliases": ["saga", "proton saga", "saga vvt", "proton saga vvt"],
+    "pcd": "4x100",
+    "centerBore": 57.1,
+    "safeRimDiameter": [13, 14, 15, 16],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 38,
+    "safeOffsetMax": 48,
+    "tyreSizes": {
+      "13": ["175/70R13"],
+      "14": ["175/65R14", "185/60R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/bt-2016-2019/"
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "III (BT) Facelift",
+    "yearFrom": 2019,
+    "yearTo": 2025,
+    "aliases": ["saga", "proton saga", "saga mc2", "saga facelift"],
+    "pcd": "4x114.3",
+    "centerBore": 67.1,
+    "safeRimDiameter": [14, 15, 16],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 38,
+    "safeOffsetMax": 42,
+    "tyreSizes": {
+      "14": ["175/65R14", "185/60R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/bt-2019-2025/"
+  },
+  {
+    "brand": "Proton",
+    "model": "Saga",
+    "generation": "III (MC3) Facelift",
+    "yearFrom": 2025,
+    "yearTo": 2027,
+    "aliases": ["saga", "proton saga", "saga mc3", "proton saga mc3", "new saga"],
+    "pcd": "4x114.3",
+    "centerBore": 67.1,
+    "safeRimDiameter": [14, 15, 16],
+    "safeWidthMin": 5.5,
+    "safeWidthMax": 6.5,
+    "safeOffsetMin": 38,
+    "safeOffsetMax": 42,
+    "tyreSizes": {
+      "14": ["175/65R14", "185/60R14"],
+      "15": ["185/55R15"],
+      "16": ["195/45R16"]
+    },
+    "needsConfirmation": true,
+    "sourceUrl": "https://www.wheel-size.com/size/proton/saga/mc3-2025-now/"
   },
   {
     "brand": "Proton",
