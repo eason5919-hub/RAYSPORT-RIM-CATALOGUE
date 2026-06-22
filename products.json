@@ -2244,6 +2244,23 @@
   }
 ,
   {
+    "sku": "17X-ROW-227",
+    "category": "17X",
+    "excelRow": "227",
+    "description": "MDM010 17X7.5 4X100 ET38 CB73.1  HYPER BLACK (TC-X)",
+    "price": "1,100.00",
+    "status": "Last Set",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
     "sku": "17X-ROW-240",
     "category": "17X",
     "excelRow": "240",
@@ -2547,23 +2564,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1aP7RqSpUt1lbX6RNEJmtZs1il3sp-nMN/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=10ZIvhyxhHGnvF7IauTW9fVinrM8XPQZQ&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1aP7RqSpUt1lbX6RNEJmtZs1il3sp-nMN&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-321",
-    "category": "17X",
-    "excelRow": "321",
-    "description": "RFF5599 17X7.5 5X113.1 ET35  CB73.1  MATT BRONZE",
-    "price": "1,100.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1Au60VTfvrhelscHnnRI5dGb3g9BMUF1q/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1mdSHJoDo8jkP8ARDnnafQ-kaFTytA66X/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1Au60VTfvrhelscHnnRI5dGb3g9BMUF1q&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1mdSHJoDo8jkP8ARDnnafQ-kaFTytA66X&sz=w1000"
   }
 ,
   {
