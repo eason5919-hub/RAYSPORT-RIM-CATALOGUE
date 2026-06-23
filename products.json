@@ -1156,6 +1156,40 @@
   }
 ,
   {
+    "sku": "16X-ROW-131",
+    "category": "16X",
+    "excelRow": "131",
+    "description": "JT219 16X7 8X100/114.3 ET35  CB73.1  GLOSS BLACK LIP POLISH",
+    "price": "865.00",
+    "status": "Limited",
+    "remark": "",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1vrnwoatvhA968yKfGBFkyYMHi6qnEJ4d/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1wvvPWl9U8j0C4CZGBFMNwR3KuZ4DtLmv/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1vrnwoatvhA968yKfGBFkyYMHi6qnEJ4d&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1wvvPWl9U8j0C4CZGBFMNwR3KuZ4DtLmv&sz=w1000"
+  }
+,
+  {
+    "sku": "16X-ROW-132",
+    "category": "16X",
+    "excelRow": "132",
+    "description": "JT219 16X7 8X100/114.3 ET35  CB73.1  HYPER BLACK LIP POLISH",
+    "price": "865.00",
+    "status": "Limited",
+    "remark": "",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1BuFj9DEynpMg0dl6mqxjFfJfwIbqhbD0/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1pMYc0BNHm0WqJlnPBlar_vNEKzj6mRAY/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1BuFj9DEynpMg0dl6mqxjFfJfwIbqhbD0&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1pMYc0BNHm0WqJlnPBlar_vNEKzj6mRAY&sz=w1000"
+  }
+,
+  {
     "sku": "16X-ROW-150",
     "category": "16X",
     "excelRow": "150",
@@ -2096,7 +2130,7 @@
     "excelRow": "203",
     "description": "JT219 17X8 5X113.1 ET35  CB73.1  GLOSS BLACK LIP POLISH",
     "price": "1,080.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -2113,7 +2147,7 @@
     "excelRow": "204",
     "description": "JT219 17X8 5X113.1 ET35  CB73.1  WHITE LIP POLISH",
     "price": "1,080.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -2159,6 +2193,23 @@
   }
 ,
   {
+    "sku": "17X-ROW-210",
+    "category": "17X",
+    "excelRow": "210",
+    "description": "JT219 17X8 10X100/114.3 ET35  CB73.1  SUPER CHROME",
+    "price": "1,416.00",
+    "status": "Limited",
+    "remark": "",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1efTKhFrIUHCxF0lbcfD-ytPcsl__E1Yb/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1RyLjyfWFGdXT13WG5nsvlQFv4n3Zsbp1/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1efTKhFrIUHCxF0lbcfD-ytPcsl__E1Yb&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1RyLjyfWFGdXT13WG5nsvlQFv4n3Zsbp1&sz=w1000"
+  }
+,
+  {
     "sku": "17X-ROW-217",
     "category": "17X",
     "excelRow": "217",
@@ -2181,7 +2232,7 @@
     "excelRow": "218",
     "description": "MDM010 17X8 4X114.3 ET35 CB73.1  HYPER BLACK (TC-X)",
     "price": "1,100.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -2237,10 +2288,44 @@
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
-    "frontOriginal": "",
-    "sideOriginal": "",
-    "frontImage": "",
-    "sideImage": ""
+    "frontOriginal": "https://drive.google.com/file/d/1Xn1dmjRfXHkncWpDRrRQXeh-KpYlN5js/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1bXMkQ7rmS-sugBoHbum7Vh9cThhVhlKD/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1Xn1dmjRfXHkncWpDRrRQXeh-KpYlN5js&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1bXMkQ7rmS-sugBoHbum7Vh9cThhVhlKD&sz=w1000"
+  }
+,
+  {
+    "sku": "17X-ROW-228",
+    "category": "17X",
+    "excelRow": "228",
+    "description": "MDM012 17X8 5X113.1 ET35  CB73.1  LIGHT GOLD (C)",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#C00000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1VP2tUiC86L8-3WN0b0KCfsfw8u0qFWMR/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1EHAWS3tFCJeYarRPtPodpXDxZPZoA0Ss/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1VP2tUiC86L8-3WN0b0KCfsfw8u0qFWMR&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1EHAWS3tFCJeYarRPtPodpXDxZPZoA0Ss&sz=w1000"
+  }
+,
+  {
+    "sku": "17X-ROW-237",
+    "category": "17X",
+    "excelRow": "237",
+    "description": "MDM012 17X8 4X114.3 ET35  CB73.1  LIGHT GOLD",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#C00000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1lP1VaVPVNf8OTJ2vZbL6__X9vcYBVgHT/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1smAHntzrwTMzx-fo0qz7iueATcN_RLWX/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1lP1VaVPVNf8OTJ2vZbL6__X9vcYBVgHT&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1smAHntzrwTMzx-fo0qz7iueATcN_RLWX&sz=w1000"
   }
 ,
   {
@@ -2363,9 +2448,43 @@
   }
 ,
   {
-    "sku": "17X-ROW-271",
+    "sku": "17X-ROW-252",
     "category": "17X",
-    "excelRow": "271",
+    "excelRow": "252",
+    "description": "MDM106 17X7.5 5X113.1 ET35 CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1OjiCfTquD_9AAU47rNaLetNUrsxQuk16/view",
+    "sideOriginal": "https://drive.google.com/file/d/1At_91SYHGgXCAno9qwLIk_MmyzToSC7y/view",
+    "frontImage": "https://drive.google.com/thumbnail?id=1OjiCfTquD_9AAU47rNaLetNUrsxQuk16&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1At_91SYHGgXCAno9qwLIk_MmyzToSC7y&sz=w1000"
+  }
+,
+  {
+    "sku": "17X-ROW-253",
+    "category": "17X",
+    "excelRow": "253",
+    "description": "MDM106 17X7.5 8X100/114.3 ET38  CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "NEW",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
+    "sku": "17X-ROW-272",
+    "category": "17X",
+    "excelRow": "272",
     "description": "RFF021 17X7.5 4X100 ET35 CB73.1  ULTRA BRONZE",
     "price": "1,060.00",
     "status": "Limited",
@@ -2380,9 +2499,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-272",
+    "sku": "17X-ROW-273",
     "category": "17X",
-    "excelRow": "272",
+    "excelRow": "273",
     "description": "RFF021 17X7.5 4X100 ET35 CB73.1  GLOSS BLACK LIP BLACK COAT",
     "price": "1,060.00",
     "status": "Limited",
@@ -2397,9 +2516,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-273",
+    "sku": "17X-ROW-274",
     "category": "17X",
-    "excelRow": "273",
+    "excelRow": "274",
     "description": "RFF021 17X7.5 5X113.1 ET35 CB73.1  ULTRA BRONZE",
     "price": "1,060.00",
     "status": "Limited",
@@ -2414,9 +2533,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-274",
+    "sku": "17X-ROW-275",
     "category": "17X",
-    "excelRow": "274",
+    "excelRow": "275",
     "description": "RFF021 17X7.5 5X113.1 ET35 CB73.1  GLOSS BLACK LIP BLACK COAT",
     "price": "1,060.00",
     "status": "Limited",
@@ -2431,9 +2550,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-277",
+    "sku": "17X-ROW-278",
     "category": "17X",
-    "excelRow": "277",
+    "excelRow": "278",
     "description": "RFF101 17X7.5 4X100 ET40 CB73.1  CANDY RED MILLING",
     "price": "1,100.00",
     "status": "Limited",
@@ -2448,9 +2567,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-278",
+    "sku": "17X-ROW-279",
     "category": "17X",
-    "excelRow": "278",
+    "excelRow": "279",
     "description": "RFF101 17X7.5 4X100 ET40  CB73.1  GLOSS BLACK MILLING",
     "price": "1,100.00",
     "status": "Available",
@@ -2465,9 +2584,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-279",
+    "sku": "17X-ROW-280",
     "category": "17X",
-    "excelRow": "279",
+    "excelRow": "280",
     "description": "RFF101 17X7.5 4X100 ET40  CB73.1  HYPER BLACK MILLING LIP POLISH",
     "price": "1,100.00",
     "status": "Limited",
@@ -2482,9 +2601,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-311",
+    "sku": "17X-ROW-312",
     "category": "17X",
-    "excelRow": "311",
+    "excelRow": "312",
     "description": "RFF105 17X7.5 5X113.1 ET35 CB73.1  CANDY RED LIP POLISH",
     "price": "1,060.00",
     "status": "Limited",
@@ -2499,9 +2618,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-314",
+    "sku": "17X-ROW-315",
     "category": "17X",
-    "excelRow": "314",
+    "excelRow": "315",
     "description": "RFF5599 17X8 5X108 ET38 CB73.1  GLOSS BLACK",
     "price": "1,100.00",
     "status": "Limited",
@@ -2516,9 +2635,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-316",
+    "sku": "17X-ROW-317",
     "category": "17X",
-    "excelRow": "316",
+    "excelRow": "317",
     "description": "RFF5599 17X7.5 4X100 ET38 CB73.1  HYPER BLACK",
     "price": "1,100.00",
     "status": "Limited",
@@ -2533,9 +2652,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-317",
+    "sku": "17X-ROW-318",
     "category": "17X",
-    "excelRow": "317",
+    "excelRow": "318",
     "description": "RFF5599 17X7.5 5X100 ET38 CB73.1  GLOSS BLACK",
     "price": "1,100.00",
     "status": "Limited",
@@ -2550,9 +2669,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-333",
+    "sku": "17X-ROW-334",
     "category": "17X",
-    "excelRow": "333",
+    "excelRow": "334",
     "description": "RFF-T4 17X7.5 4X100 ET40  CB73.1  GLOSS BLACK LP",
     "price": "1,100.00",
     "status": "Limited",
@@ -2567,9 +2686,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-334",
+    "sku": "17X-ROW-335",
     "category": "17X",
-    "excelRow": "334",
+    "excelRow": "335",
     "description": "RFF-T4 17X7.5 4X100 ET40  CB73.1  MAG BLUE LP",
     "price": "1,100.00",
     "status": "Limited",
@@ -2584,9 +2703,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-337",
+    "sku": "17X-ROW-338",
     "category": "17X",
-    "excelRow": "337",
+    "excelRow": "338",
     "description": "RFF-V5 17X8 5X113.1 ET35  CB73.1  HYPER SILVER LIP POLISH",
     "price": "1,100.00",
     "status": "Limited",
@@ -2601,9 +2720,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-338",
+    "sku": "17X-ROW-339",
     "category": "17X",
-    "excelRow": "338",
+    "excelRow": "339",
     "description": "RFF-V5 17X8 5X113.1 ET35  CB73.1  WHITE CHROME",
     "price": "1,456.00",
     "status": "Limited",
@@ -2618,9 +2737,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-339",
+    "sku": "17X-ROW-340",
     "category": "17X",
-    "excelRow": "339",
+    "excelRow": "340",
     "description": "RFF-V5 17X8 5X100 ET38  CB73.1  GLOSS BLACK LIP POLISH",
     "price": "1,100.00",
     "status": "Limited",
@@ -2635,9 +2754,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-343",
+    "sku": "17X-ROW-344",
     "category": "17X",
-    "excelRow": "343",
+    "excelRow": "344",
     "description": "RFF-V5 17X8 8X100/114.3 ET38  CB73.1  HYPER SILVER LIP POLISH",
     "price": "1,100.00",
     "status": "Limited",
@@ -2652,9 +2771,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-348",
+    "sku": "17X-ROW-349",
     "category": "17X",
-    "excelRow": "348",
+    "excelRow": "349",
     "description": "RX028 17X8 5X113.1 ET40 CB73.1 NARDO GREY MILLING",
     "price": "1,060.00",
     "status": "Limited",
@@ -2669,9 +2788,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-352",
+    "sku": "17X-ROW-353",
     "category": "17X",
-    "excelRow": "352",
+    "excelRow": "353",
     "description": "RX4 17X7.5 4X100 ET38  CB73.1  BRONZE LP",
     "price": "1,060.00",
     "status": "Limited",
@@ -2686,9 +2805,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-353",
+    "sku": "17X-ROW-354",
     "category": "17X",
-    "excelRow": "353",
+    "excelRow": "354",
     "description": "RX4 17X8 5X100 ET38  CB73.1  GLOSS BLACK LP (C)",
     "price": "1,060.00",
     "status": "Last Set",
@@ -2703,9 +2822,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-355",
+    "sku": "17X-ROW-356",
     "category": "17X",
-    "excelRow": "355",
+    "excelRow": "356",
     "description": "RX4 17X8 5X113.1 ET38  CB73.1  GLOSS BLACK LP (C)",
     "price": "1,060.00",
     "status": "Limited",
@@ -2720,9 +2839,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-364",
+    "sku": "17X-ROW-365",
     "category": "17X",
-    "excelRow": "364",
+    "excelRow": "365",
     "description": "SM1070 17X8 5X114.3 ET35 CB73.1  WHITE",
     "price": "1,020.00",
     "status": "Limited",
@@ -2737,9 +2856,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-366",
+    "sku": "17X-ROW-367",
     "category": "17X",
-    "excelRow": "366",
+    "excelRow": "367",
     "description": "SM1070 17X8 5X114.3 ET35 CB73.1  SILVER",
     "price": "1,020.00",
     "status": "Limited",
@@ -2754,9 +2873,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-368",
+    "sku": "17X-ROW-369",
     "category": "17X",
-    "excelRow": "368",
+    "excelRow": "369",
     "description": "SM1070 17X8 8X100/114.3 ET38  CB73.1  ULTRA BRONZE (NLP)",
     "price": "1,020.00",
     "status": "Limited",
@@ -2771,9 +2890,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-384",
+    "sku": "17X-ROW-385",
     "category": "17X",
-    "excelRow": "384",
+    "excelRow": "385",
     "description": "SM502 17X7.5 5X113.1 ET38 CB73.1  WHITE BLUE LINE",
     "price": "1,100.00",
     "status": "Limited",
@@ -2788,9 +2907,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-387",
+    "sku": "17X-ROW-388",
     "category": "17X",
-    "excelRow": "387",
+    "excelRow": "388",
     "description": "SM5489 (B383) 17X8 4X100 ET38 CB73.1  SILVER",
     "price": "1,000.00",
     "status": "Limited",
@@ -2805,9 +2924,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-390",
+    "sku": "17X-ROW-391",
     "category": "17X",
-    "excelRow": "390",
+    "excelRow": "391",
     "description": "SM5489 (B383) 17X8 5X114.3 ET38 CB73.1  WHITE",
     "price": "1,000.00",
     "status": "Last Set",
@@ -2822,9 +2941,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-400",
+    "sku": "17X-ROW-401",
     "category": "17X",
-    "excelRow": "400",
+    "excelRow": "401",
     "description": "SM5599 17X8 4X114.3 ET35 C73.1  HYPER SILVER",
     "price": "1,040.00",
     "status": "Limited",
@@ -2839,9 +2958,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-405",
+    "sku": "17X-ROW-406",
     "category": "17X",
-    "excelRow": "405",
+    "excelRow": "406",
     "description": "SM6087 17X8 4X100 ET40  CB73.1  HYPER SILVER",
     "price": "1,040.00",
     "status": "Limited",
@@ -2856,9 +2975,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-406",
+    "sku": "17X-ROW-407",
     "category": "17X",
-    "excelRow": "406",
+    "excelRow": "407",
     "description": "SM6087 17X8 4X100 ET40  CB73.1  GLOSS BLACK",
     "price": "1,040.00",
     "status": "Limited",
@@ -2873,9 +2992,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-407",
+    "sku": "17X-ROW-408",
     "category": "17X",
-    "excelRow": "407",
+    "excelRow": "408",
     "description": "SM6087 17X8 5X113.1 ET40  CB73.1  GLOSS BLACK",
     "price": "1,040.00",
     "status": "Limited",
@@ -2890,9 +3009,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-408",
+    "sku": "17X-ROW-409",
     "category": "17X",
-    "excelRow": "408",
+    "excelRow": "409",
     "description": "SR7011 17X8 4X100 ET35 CB73.1 ULTRA BRONZE",
     "price": "1,000.00",
     "status": "Limited",
@@ -2907,9 +3026,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-409",
+    "sku": "17X-ROW-410",
     "category": "17X",
-    "excelRow": "409",
+    "excelRow": "410",
     "description": "SR7011 17X8 5X114.3 ET35 CB73.1 ULTRA BRONZE",
     "price": "1,000.00",
     "status": "Limited",
@@ -2924,9 +3043,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-410",
+    "sku": "17X-ROW-411",
     "category": "17X",
-    "excelRow": "410",
+    "excelRow": "411",
     "description": "SR7011 17X8 5X114.3 ET35 CB73.1 KGR7 GUNMETAL",
     "price": "1,000.00",
     "status": "Limited",
@@ -2941,9 +3060,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-411",
+    "sku": "17X-ROW-412",
     "category": "17X",
-    "excelRow": "411",
+    "excelRow": "412",
     "description": "SR7011 17X8 5X114.3 ET35 CB73.1 SILVER",
     "price": "1,000.00",
     "status": "Limited",
@@ -2958,9 +3077,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-412",
+    "sku": "17X-ROW-413",
     "category": "17X",
-    "excelRow": "412",
+    "excelRow": "413",
     "description": "SR7011 17X8 5X114.3 ET35 CB73.1 GLOSS BLACK",
     "price": "1,000.00",
     "status": "Limited",
@@ -2975,9 +3094,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-414",
+    "sku": "17X-ROW-415",
     "category": "17X",
-    "excelRow": "414",
+    "excelRow": "415",
     "description": "SR7011 17X8 5X114.3 ET35 CB73.1 CANDY RED",
     "price": "1,000.00",
     "status": "Limited",
@@ -2992,9 +3111,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-415",
+    "sku": "17X-ROW-416",
     "category": "17X",
-    "excelRow": "415",
+    "excelRow": "416",
     "description": "ZX840 17X8 5X113.1 ET35 CB73.1 GLOSS BLACK MACHINE FACE",
     "price": "1,080.00",
     "status": "Limited",
@@ -3009,9 +3128,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-417",
+    "sku": "17X-ROW-418",
     "category": "17X",
-    "excelRow": "417",
+    "excelRow": "418",
     "description": "ZX840 17X8 5X113.1 ET35 CB73.1  CHROME SILVER",
     "price": "1,120.00",
     "status": "Limited",
@@ -3026,9 +3145,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-422",
+    "sku": "17X-ROW-423",
     "category": "17X",
-    "excelRow": "422",
+    "excelRow": "423",
     "description": "ZX840 17X8 5X100 ET38  CB73.1  GLOSS BLACK",
     "price": "1,080.00",
     "status": "Limited",
@@ -3043,9 +3162,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-425",
+    "sku": "17X-ROW-426",
     "category": "17X",
-    "excelRow": "425",
+    "excelRow": "426",
     "description": "ZX840 17X8 8X100/114.3 ET38 CB73.1  CHROME SILVER",
     "price": "1,120.00",
     "status": "Limited",
@@ -3060,9 +3179,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-426",
+    "sku": "17X-ROW-427",
     "category": "17X",
-    "excelRow": "426",
+    "excelRow": "427",
     "description": "ZX840 17X8 8X100/114.3 ET38 CB73.1 GLOSS BLACK",
     "price": "1,080.00",
     "status": "Limited",
@@ -3077,9 +3196,9 @@
   }
 ,
   {
-    "sku": "17X-ROW-428",
+    "sku": "17X-ROW-429",
     "category": "17X",
-    "excelRow": "428",
+    "excelRow": "429",
     "description": "ZX840 17X8 8X100/114.3 ET38  CB73.1  GLOSS BLACK MACHINE FACE/BLACK COAT",
     "price": "1,080.00",
     "status": "Limited",
@@ -3298,6 +3417,40 @@
   }
 ,
   {
+    "sku": "18X-ROW-117",
+    "category": "18X",
+    "excelRow": "117",
+    "description": "MDM029 18X8.5 5X113.1 ET40 CB73.1  GLOSS BLACK MILLING",
+    "price": "1,562.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#000000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1YO5czp05fj1TljYSZgfvsYyNqqibxxJY/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1m9t_Zgv3YPOCQ5hhOHSe2NUfhGP5L_ac/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1YO5czp05fj1TljYSZgfvsYyNqqibxxJY&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1m9t_Zgv3YPOCQ5hhOHSe2NUfhGP5L_ac&sz=w1000"
+  }
+,
+  {
+    "sku": "18X-ROW-118",
+    "category": "18X",
+    "excelRow": "118",
+    "description": "MDM029 18X8.5 5X113.1 ET40 CB73.1  HYPER BLACK MILLING",
+    "price": "1,562.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#000000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1s1MA6fCBL0TwJf1tQCJH99HCJMxh1nke/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1upjk_POioKkHuHRWR1PqxbQ5TS-FNks5/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1s1MA6fCBL0TwJf1tQCJH99HCJMxh1nke&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1upjk_POioKkHuHRWR1PqxbQ5TS-FNks5&sz=w1000"
+  }
+,
+  {
     "sku": "18X-ROW-120",
     "category": "18X",
     "excelRow": "120",
@@ -3448,6 +3601,57 @@
     "sideOriginal": "https://drive.google.com/file/d/1VfryiVvdxKXJcpTQL10-9q8aIxqCEZpB/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1VfryiVvdxKXJcpTQL10-9q8aIxqCEZpB&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1VfryiVvdxKXJcpTQL10-9q8aIxqCEZpB&sz=w1000"
+  }
+,
+  {
+    "sku": "18X-ROW-136",
+    "category": "18X",
+    "excelRow": "136",
+    "description": "MDM106 18X8 5X113.1 ET35 CB73.1  GLOSS BLACK",
+    "price": "1,416.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1dGn822eCRD9glnYW-sluTAc5WV86kXhf/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1eanjsnhqGnSaj_DarObTxmyf4Nz6qeG3/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1dGn822eCRD9glnYW-sluTAc5WV86kXhf&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1eanjsnhqGnSaj_DarObTxmyf4Nz6qeG3&sz=w1000"
+  }
+,
+  {
+    "sku": "18X-ROW-144",
+    "category": "18X",
+    "excelRow": "144",
+    "description": "MDM159 18X8 5X114.3 ET35  CB60.1  HYPER BLACK",
+    "price": "1,416.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/14ABlwF4xwQvrw22jlfyhQxkbre5aIzLA/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1XHRDAJWMm0Q994mnOmTT3rSPsRiGx6xV/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=14ABlwF4xwQvrw22jlfyhQxkbre5aIzLA&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1XHRDAJWMm0Q994mnOmTT3rSPsRiGx6xV&sz=w1000"
+  }
+,
+  {
+    "sku": "18X-ROW-145",
+    "category": "18X",
+    "excelRow": "145",
+    "description": "MDM159 18X8 5X120 ET35 CB60.1  GLOSS BLACK MACHINE FACE",
+    "price": "1,416.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#000000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1hcpyVyeSuB64rBIJ-Xcc_PsodHOsP5x-/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1dhZHjKm6qB3xG3FypdFZIqHePUUnMMVm/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1hcpyVyeSuB64rBIJ-Xcc_PsodHOsP5x-&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1dhZHjKm6qB3xG3FypdFZIqHePUUnMMVm&sz=w1000"
   }
 ,
   {
@@ -4627,6 +4831,23 @@
     "sku": "19X-ROW-70",
     "category": "19X",
     "excelRow": "70",
+    "description": "MDM084 19X8.5 5X113.1 ET42  CB73.1  HYPER BLACK",
+    "price": "1,980.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1l-B8wNe_kso2ghh2saeA2JgnxTOxo4Kg/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1MR0ipNIiW1sHmFrsitv72jjRf-VvrbkX/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1l-B8wNe_kso2ghh2saeA2JgnxTOxo4Kg&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1MR0ipNIiW1sHmFrsitv72jjRf-VvrbkX&sz=w1000"
+  }
+,
+  {
+    "sku": "19X-ROW-71",
+    "category": "19X",
+    "excelRow": "71",
     "description": "MDM084 19X8.5 5X113.1 ET42  CB73.1  MATT BRONZE",
     "price": "1,980.00",
     "status": "Available",
@@ -4641,9 +4862,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-71",
+    "sku": "19X-ROW-72",
     "category": "19X",
-    "excelRow": "71",
+    "excelRow": "72",
     "description": "MDM084 19X8.5 5X120 ET35 CB73.1 GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4658,9 +4879,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-72",
+    "sku": "19X-ROW-73",
     "category": "19X",
-    "excelRow": "72",
+    "excelRow": "73",
     "description": "MDM084 19X8.5 5X120 ET35 CB73.1 HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4675,9 +4896,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-73",
+    "sku": "19X-ROW-74",
     "category": "19X",
-    "excelRow": "73",
+    "excelRow": "74",
     "description": "MDM106 19X8.5 5X108 ET38  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4692,9 +4913,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-74",
+    "sku": "19X-ROW-75",
     "category": "19X",
-    "excelRow": "74",
+    "excelRow": "75",
     "description": "MDM106 19X8.5 5X113.1 ET40 CB73.1 GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4709,9 +4930,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-75",
+    "sku": "19X-ROW-76",
     "category": "19X",
-    "excelRow": "75",
+    "excelRow": "76",
     "description": "MDM106 19X8.5 5X113.1 ET40 CB73.1 HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4726,9 +4947,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-77",
+    "sku": "19X-ROW-78",
     "category": "19X",
-    "excelRow": "77",
+    "excelRow": "78",
     "description": "MDM114 19X8.5 5X113.1 ET40 CB73.1 GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4743,9 +4964,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-78",
+    "sku": "19X-ROW-79",
     "category": "19X",
-    "excelRow": "78",
+    "excelRow": "79",
     "description": "MDM114 19X8.5 5X113.1 ET40 CB73.1 HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4760,9 +4981,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-79",
+    "sku": "19X-ROW-80",
     "category": "19X",
-    "excelRow": "79",
+    "excelRow": "80",
     "description": "MDM114 19X8.5 5X120 ET32  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4777,9 +4998,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-80",
+    "sku": "19X-ROW-81",
     "category": "19X",
-    "excelRow": "80",
+    "excelRow": "81",
     "description": "MDM114 19X9.5 5X120 ET38  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4794,9 +5015,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-81",
+    "sku": "19X-ROW-82",
     "category": "19X",
-    "excelRow": "81",
+    "excelRow": "82",
     "description": "MDM114 19X8.5 5X113.1 ET32  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4811,9 +5032,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-82",
+    "sku": "19X-ROW-83",
     "category": "19X",
-    "excelRow": "82",
+    "excelRow": "83",
     "description": "MDM114 19X9.5 5X113.1 ET38  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4828,9 +5049,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-83",
+    "sku": "19X-ROW-84",
     "category": "19X",
-    "excelRow": "83",
+    "excelRow": "84",
     "description": "MDM114 19X8.5 5X113.1 ET32  CB73.1  HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4845,9 +5066,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-84",
+    "sku": "19X-ROW-85",
     "category": "19X",
-    "excelRow": "84",
+    "excelRow": "85",
     "description": "MDM114 19X9.5 5X113.1 ET38  CB73.1  HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4862,9 +5083,43 @@
   }
 ,
   {
+    "sku": "19X-ROW-88",
+    "category": "19X",
+    "excelRow": "88",
+    "description": "MDM159 19X8.5 5X114.3 ET38 CB60.1  GLOSS BLACK MACHINE FACE",
+    "price": "1,980.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV&sz=w1000"
+  }
+,
+  {
     "sku": "19X-ROW-89",
     "category": "19X",
     "excelRow": "89",
+    "description": "MDM159 19X8.5 5X120 ET38 CB60.1  GLOSS BLACK MACHINE FACE",
+    "price": "1,980.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV&sz=w1000"
+  }
+,
+  {
+    "sku": "19X-ROW-90",
+    "category": "19X",
+    "excelRow": "90",
     "description": "MDM159 19X8.5 5X120 ET38 CB60.1 HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4879,9 +5134,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-90",
+    "sku": "19X-ROW-91",
     "category": "19X",
-    "excelRow": "90",
+    "excelRow": "91",
     "description": "MDM159 19X8.5 5X120 ET42  CB60.1  BLACK CHROME",
     "price": "2,500.00",
     "status": "Limited",
@@ -4896,9 +5151,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-91",
+    "sku": "19X-ROW-92",
     "category": "19X",
-    "excelRow": "91",
+    "excelRow": "92",
     "description": "MDM193 19X8.5 5X113.1 ET40  CB73.1 GLOSS BLACK",
     "price": "1,980.00",
     "status": "Limited",
@@ -4913,9 +5168,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-93",
+    "sku": "19X-ROW-94",
     "category": "19X",
-    "excelRow": "93",
+    "excelRow": "94",
     "description": "MDM193 19X8.5 5X120 ET38 CB73.1 HYPER BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4930,9 +5185,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-94",
+    "sku": "19X-ROW-95",
     "category": "19X",
-    "excelRow": "94",
+    "excelRow": "95",
     "description": "MDM193 19X8.5 5X108 ET38  CB73.1  GLOSS BLACK ",
     "price": "1,980.00",
     "status": "Limited",
@@ -4947,9 +5202,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-102",
+    "sku": "19X-ROW-103",
     "category": "19X",
-    "excelRow": "102",
+    "excelRow": "103",
     "description": "RFF101 19X8.5 5X113.1 ET40  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4964,9 +5219,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-103",
+    "sku": "19X-ROW-104",
     "category": "19X",
-    "excelRow": "103",
+    "excelRow": "104",
     "description": "RFF101 19X9.5 5X113.1 ET40 CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -4981,9 +5236,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-104",
+    "sku": "19X-ROW-105",
     "category": "19X",
-    "excelRow": "104",
+    "excelRow": "105",
     "description": "RFF101 19X8.5 5X113.1 ET40  CB73.1  HYPER BLACK /BLACK LIP POLISH",
     "price": "1,980.00",
     "status": "Available",
@@ -4998,9 +5253,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-105",
+    "sku": "19X-ROW-106",
     "category": "19X",
-    "excelRow": "105",
+    "excelRow": "106",
     "description": "RFF101 19X9.5 5X113.1 ET40  CB73.1  HYPER BLACK /BLACK LIP POLISH",
     "price": "1,980.00",
     "status": "Available",
@@ -5015,9 +5270,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-106",
+    "sku": "19X-ROW-107",
     "category": "19X",
-    "excelRow": "106",
+    "excelRow": "107",
     "description": "RFF101 19X8.5 5X113.1 ET30  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -5032,9 +5287,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-107",
+    "sku": "19X-ROW-108",
     "category": "19X",
-    "excelRow": "107",
+    "excelRow": "108",
     "description": "RFF101 19X9.5 5X113.1 ET35  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -5049,9 +5304,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-108",
+    "sku": "19X-ROW-109",
     "category": "19X",
-    "excelRow": "108",
+    "excelRow": "109",
     "description": "RFF101 19X8.5 5X113.1 ET30  CB73.1  HYPER BLACK / BLACK LIP POLISH",
     "price": "1,980.00",
     "status": "Limited",
@@ -5066,9 +5321,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-109",
+    "sku": "19X-ROW-110",
     "category": "19X",
-    "excelRow": "109",
+    "excelRow": "110",
     "description": "RFF101 19X9.5 5X113.1 ET35  CB73.1  HYPER BLACK / BLACK LIP POLISH",
     "price": "1,980.00",
     "status": "Limited",
@@ -5083,9 +5338,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-110",
+    "sku": "19X-ROW-111",
     "category": "19X",
-    "excelRow": "110",
+    "excelRow": "111",
     "description": "RFF101 19X8.5 5X120 ET35 CB73.1 HYPER BLACK /BLACK LIP POLISH",
     "price": "1,980.00",
     "status": "Available",
@@ -5100,9 +5355,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-111",
+    "sku": "19X-ROW-112",
     "category": "19X",
-    "excelRow": "111",
+    "excelRow": "112",
     "description": "RFF101 19X9.5 5X120 ET38 CB73.1 HYPER BLACK /BLACK LIP POLISH",
     "price": "1,980.00",
     "status": "Available",
@@ -5117,9 +5372,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-112",
+    "sku": "19X-ROW-113",
     "category": "19X",
-    "excelRow": "112",
+    "excelRow": "113",
     "description": "RFF101 19X8.5 5X120 ET35  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -5134,9 +5389,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-113",
+    "sku": "19X-ROW-114",
     "category": "19X",
-    "excelRow": "113",
+    "excelRow": "114",
     "description": "RFF101 19X9.5 5X120 ET38  CB73.1  GLOSS BLACK",
     "price": "1,980.00",
     "status": "Available",
@@ -5151,9 +5406,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-114",
+    "sku": "19X-ROW-115",
     "category": "19X",
-    "excelRow": "114",
+    "excelRow": "115",
     "description": "RFT6082-D 19X8.5 5X113.1 ET40  CB73.1  HBP3 MILLING",
     "price": "1,980.00",
     "status": "Available",
@@ -5168,9 +5423,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-115",
+    "sku": "19X-ROW-116",
     "category": "19X",
-    "excelRow": "115",
+    "excelRow": "116",
     "description": "RFT6082-E 19X8.5 5X113.1 ET40 CB73.1  GLOSS BLACK MILLING",
     "price": "1,980.00",
     "status": "Available",
@@ -5185,9 +5440,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-116",
+    "sku": "19X-ROW-117",
     "category": "19X",
-    "excelRow": "116",
+    "excelRow": "117",
     "description": "RFT6082-F 19X8.5 5X120 ET32  CB72.6  GLOSS BLACK MILLING",
     "price": "1,980.00",
     "status": "Available",
@@ -5202,9 +5457,9 @@
   }
 ,
   {
-    "sku": "19X-ROW-117",
+    "sku": "19X-ROW-118",
     "category": "19X",
-    "excelRow": "117",
+    "excelRow": "118",
     "description": "RFT6082-G 19X9.5 5X120 ET35  CB72.6  GLOSS BLACK MILLING",
     "price": "1,980.00",
     "status": "Available",
@@ -5610,241 +5865,241 @@
   }
 ,
   {
-    "sku": "NEW ARRIVAL-ROW-42",
+    "sku": "NEW ARRIVAL-ROW-277",
     "category": "NEW ARRIVAL",
-    "excelRow": "42",
-    "description": "SM1338 14X6 8X100/110 ET38 CB73.1 GLOSS BLACK G1",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/12LFOPZWqyif1GTG7PBAuz0HG1cyVsJ-V/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1YMHmR1MlncsePWWaR2mP4_DKoe8DmhMG/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=12LFOPZWqyif1GTG7PBAuz0HG1cyVsJ-V&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1YMHmR1MlncsePWWaR2mP4_DKoe8DmhMG&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-43",
-    "category": "NEW ARRIVAL",
-    "excelRow": "43",
-    "description": "SM1338 14X6 8X100/110 ET38 CB73.1 SILVER G1",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1B6pkEl2xrbH-YWkBRiFe38tIqE5xyTdn/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/178yN8bRVye8Sud4tR_Z7aRSsRTK0yVnS/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1B6pkEl2xrbH-YWkBRiFe38tIqE5xyTdn&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=178yN8bRVye8Sud4tR_Z7aRSsRTK0yVnS&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-44",
-    "category": "NEW ARRIVAL",
-    "excelRow": "44",
-    "description": "SM1338 14X6 8X100/110 ET38  CB73.1  HYPER BLACK",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/119y-YN2vBqb1TCVCAx6xuYwY4AK3O-7j/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1mH285VV70XNIfDfpbHCOotM5szFihlX3/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=119y-YN2vBqb1TCVCAx6xuYwY4AK3O-7j&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1mH285VV70XNIfDfpbHCOotM5szFihlX3&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-45",
-    "category": "NEW ARRIVAL",
-    "excelRow": "45",
-    "description": "SM5599 14X5.5 8X100/110 ET38 CB73.1 GLOSS BLACK",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1Vc2IbPvp14UeKCjmStFd8UyjMWBa9lMp/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1P3CjEV2qbG4s3GNvHZodIG4Tlqy1W372/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1Vc2IbPvp14UeKCjmStFd8UyjMWBa9lMp&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1P3CjEV2qbG4s3GNvHZodIG4Tlqy1W372&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-46",
-    "category": "NEW ARRIVAL",
-    "excelRow": "46",
-    "description": "SM5599 14X5.5 8X100/110 ET38 CB73.1 HYPER BLACK",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1eDRk4cLhkGwBxB1D0W8FVJsldFpATJqv/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1XgxuKShLgRBYZhrRcgYroHXtpMR0sZRK/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1eDRk4cLhkGwBxB1D0W8FVJsldFpATJqv&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1XgxuKShLgRBYZhrRcgYroHXtpMR0sZRK&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-47",
-    "category": "NEW ARRIVAL",
-    "excelRow": "47",
-    "description": "SM5599 14X5.5 8X100/110 ET38 CB73.1 SILVER",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-192",
-    "category": "NEW ARRIVAL",
-    "excelRow": "192",
-    "description": "SM5599 (ZX842) 15X7 4X100 ET38 CB73.1 GLOSS BLACK",
-    "price": "725.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1Pmfned1-3PFjf_4pd9h-0PvGw5SSCDB5/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1IP-jwBjuQSnwK4hIgcA9BxusmI-kQj38/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1Pmfned1-3PFjf_4pd9h-0PvGw5SSCDB5&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1IP-jwBjuQSnwK4hIgcA9BxusmI-kQj38&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-193",
-    "category": "NEW ARRIVAL",
-    "excelRow": "193",
-    "description": "SM5599 (ZX842) 15X7 4X100 ET38  CB73.1  HYPER BLACK",
-    "price": "725.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1v0uokwqWHf-35_ZxhW6OVCUZ35ZFgVvx/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1v0uokwqWHf-35_ZxhW6OVCUZ35ZFgVvx/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1v0uokwqWHf-35_ZxhW6OVCUZ35ZFgVvx&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1v0uokwqWHf-35_ZxhW6OVCUZ35ZFgVvx&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-195",
-    "category": "NEW ARRIVAL",
-    "excelRow": "195",
-    "description": "SM5599 15X7 4X100 ET38  CB73.1  CANDY RED",
-    "price": "725.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1IJ8VPnaXOHJLYVTiDei3N1CXFJjfipRS/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/114NgJmnV5H1CHDbJip0atqgpaka8P88k/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1IJ8VPnaXOHJLYVTiDei3N1CXFJjfipRS&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=114NgJmnV5H1CHDbJip0atqgpaka8P88k&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-350",
-    "category": "NEW ARRIVAL",
-    "excelRow": "350",
-    "description": "SM5599 (ZX842) 16X7 4X100 ET38  CB73.1  GLOSS BLACK",
+    "excelRow": "277",
+    "description": "JT219 16X7 8X100/114.3 ET35  CB73.1  GLOSS BLACK LIP POLISH",
     "price": "865.00",
     "status": "Limited",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1gpk85R38hJ1QIdYNUAdyRbwmko5BOfUF/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1bVB-YBt17i_fKBlruH78d44DxvPFPhdS/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1gpk85R38hJ1QIdYNUAdyRbwmko5BOfUF&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1bVB-YBt17i_fKBlruH78d44DxvPFPhdS&sz=w1000"
+    "frontOriginal": "https://drive.google.com/file/d/1vrnwoatvhA968yKfGBFkyYMHi6qnEJ4d/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1wvvPWl9U8j0C4CZGBFMNwR3KuZ4DtLmv/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1vrnwoatvhA968yKfGBFkyYMHi6qnEJ4d&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1wvvPWl9U8j0C4CZGBFMNwR3KuZ4DtLmv&sz=w1000"
   }
 ,
   {
-    "sku": "NEW ARRIVAL-ROW-351",
+    "sku": "NEW ARRIVAL-ROW-278",
     "category": "NEW ARRIVAL",
-    "excelRow": "351",
-    "description": "SM5599 (ZX842) 16X7 4X100 ET38  CB73.1  HYPER BLACK",
+    "excelRow": "278",
+    "description": "JT219 16X7 8X100/114.3 ET35  CB73.1  HYPER BLACK LIP POLISH",
     "price": "865.00",
     "status": "Limited",
     "remark": "",
     "extraInfo": "",
-    "extraInfoColor": "#000000",
+    "extraInfoColor": "#FF0000",
     "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1NDz7lYDCDCFWifMMaD96DXGKcgRwlxqt/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1FWpyBim3azfmawFE7vutIrIsOXtnomVS/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1NDz7lYDCDCFWifMMaD96DXGKcgRwlxqt&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1FWpyBim3azfmawFE7vutIrIsOXtnomVS&sz=w1000"
+    "frontOriginal": "https://drive.google.com/file/d/1BuFj9DEynpMg0dl6mqxjFfJfwIbqhbD0/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1pMYc0BNHm0WqJlnPBlar_vNEKzj6mRAY/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1BuFj9DEynpMg0dl6mqxjFfJfwIbqhbD0&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1pMYc0BNHm0WqJlnPBlar_vNEKzj6mRAY&sz=w1000"
   }
 ,
   {
-    "sku": "NEW ARRIVAL-ROW-558",
+    "sku": "NEW ARRIVAL-ROW-420",
     "category": "NEW ARRIVAL",
-    "excelRow": "558",
-    "description": "SM6087 17X8 4X100 ET40  CB73.1  HYPER SILVER",
-    "price": "1,040.00",
+    "excelRow": "420",
+    "description": "JT219 17X8 10X100/114.3 ET35  CB73.1  SUPER CHROME",
+    "price": "1,416.00",
     "status": "Limited",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/199S4g8lBTVA4OGFW0wBzLCeTPDmX5qN9/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/13rKR4T_c68hKQ2GIfjqCg58qt0LiJ7VS/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=199S4g8lBTVA4OGFW0wBzLCeTPDmX5qN9&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=13rKR4T_c68hKQ2GIfjqCg58qt0LiJ7VS&sz=w1000"
+    "frontOriginal": "https://drive.google.com/file/d/1efTKhFrIUHCxF0lbcfD-ytPcsl__E1Yb/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1RyLjyfWFGdXT13WG5nsvlQFv4n3Zsbp1/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1efTKhFrIUHCxF0lbcfD-ytPcsl__E1Yb&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1RyLjyfWFGdXT13WG5nsvlQFv4n3Zsbp1&sz=w1000"
   }
 ,
   {
-    "sku": "NEW ARRIVAL-ROW-559",
+    "sku": "NEW ARRIVAL-ROW-430",
     "category": "NEW ARRIVAL",
-    "excelRow": "559",
-    "description": "SM6087 17X8 4X100 ET40  CB73.1  GLOSS BLACK",
-    "price": "1,040.00",
+    "excelRow": "430",
+    "description": "MDM012 17X8 5X113.1 ET35  CB73.1  LIGHT GOLD (C)",
+    "price": "1,100.00",
     "status": "Limited",
-    "remark": "",
+    "remark": "Flow Forming",
     "extraInfo": "",
-    "extraInfoColor": "#FF0000",
+    "extraInfoColor": "#C00000",
     "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1vh3TZ39Achw3KtFXU7EW5Mzj9cDD3bXR/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1k1evCntqX0z_n-n2tKzRFFNe7J6nUB4m/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1vh3TZ39Achw3KtFXU7EW5Mzj9cDD3bXR&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1k1evCntqX0z_n-n2tKzRFFNe7J6nUB4m&sz=w1000"
+    "frontOriginal": "https://drive.google.com/file/d/1VP2tUiC86L8-3WN0b0KCfsfw8u0qFWMR/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1EHAWS3tFCJeYarRPtPodpXDxZPZoA0Ss/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1VP2tUiC86L8-3WN0b0KCfsfw8u0qFWMR&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1EHAWS3tFCJeYarRPtPodpXDxZPZoA0Ss&sz=w1000"
   }
 ,
   {
-    "sku": "NEW ARRIVAL-ROW-560",
+    "sku": "NEW ARRIVAL-ROW-431",
     "category": "NEW ARRIVAL",
-    "excelRow": "560",
-    "description": "SM6087 17X8 5X113.1 ET40  CB73.1  GLOSS BLACK",
-    "price": "1,040.00",
+    "excelRow": "431",
+    "description": "MDM012 17X8 4X114.3 ET35  CB73.1  LIGHT GOLD",
+    "price": "1,100.00",
     "status": "Limited",
-    "remark": "",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#C00000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1lP1VaVPVNf8OTJ2vZbL6__X9vcYBVgHT/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1smAHntzrwTMzx-fo0qz7iueATcN_RLWX/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1lP1VaVPVNf8OTJ2vZbL6__X9vcYBVgHT&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1smAHntzrwTMzx-fo0qz7iueATcN_RLWX&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-438",
+    "category": "NEW ARRIVAL",
+    "excelRow": "438",
+    "description": "MDM106 17X7.5 5X113.1 ET35 CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1XAEHvdpMMOtwwRjcMasw_bYFaF89MbI9/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1CXEvjwelKpMzLORYV8Ya2vMkCjZdCv7r/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1XAEHvdpMMOtwwRjcMasw_bYFaF89MbI9&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1CXEvjwelKpMzLORYV8Ya2vMkCjZdCv7r&sz=w1000"
+    "frontOriginal": "https://drive.google.com/file/d/1OjiCfTquD_9AAU47rNaLetNUrsxQuk16/view",
+    "sideOriginal": "https://drive.google.com/file/d/1At_91SYHGgXCAno9qwLIk_MmyzToSC7y/view",
+    "frontImage": "https://drive.google.com/thumbnail?id=1OjiCfTquD_9AAU47rNaLetNUrsxQuk16&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1At_91SYHGgXCAno9qwLIk_MmyzToSC7y&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-439",
+    "category": "NEW ARRIVAL",
+    "excelRow": "439",
+    "description": "MDM106 17X7.5 8X100/114.3 ET38  CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "NEW",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-604",
+    "category": "NEW ARRIVAL",
+    "excelRow": "604",
+    "description": "MDM029 18X8.5 5X113.1 ET40 CB73.1  GLOSS BLACK MILLING",
+    "price": "1,562.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1YO5czp05fj1TljYSZgfvsYyNqqibxxJY/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1m9t_Zgv3YPOCQ5hhOHSe2NUfhGP5L_ac/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1YO5czp05fj1TljYSZgfvsYyNqqibxxJY&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1m9t_Zgv3YPOCQ5hhOHSe2NUfhGP5L_ac&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-605",
+    "category": "NEW ARRIVAL",
+    "excelRow": "605",
+    "description": "MDM029 18X8.5 5X113.1 ET40 CB73.1  HYPER BLACK MILLING",
+    "price": "1,562.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1s1MA6fCBL0TwJf1tQCJH99HCJMxh1nke/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1upjk_POioKkHuHRWR1PqxbQ5TS-FNks5/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1s1MA6fCBL0TwJf1tQCJH99HCJMxh1nke&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1upjk_POioKkHuHRWR1PqxbQ5TS-FNks5&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-612",
+    "category": "NEW ARRIVAL",
+    "excelRow": "612",
+    "description": "MDM106 18X8 5X113.1 ET35 CB73.1  GLOSS BLACK",
+    "price": "1,416.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1dGn822eCRD9glnYW-sluTAc5WV86kXhf/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1eanjsnhqGnSaj_DarObTxmyf4Nz6qeG3/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1dGn822eCRD9glnYW-sluTAc5WV86kXhf&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1eanjsnhqGnSaj_DarObTxmyf4Nz6qeG3&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-682",
+    "category": "NEW ARRIVAL",
+    "excelRow": "682",
+    "description": "MDM159 18X8 5X114.3 ET35  CB60.1  HYPER BLACK",
+    "price": "1,416.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/14ABlwF4xwQvrw22jlfyhQxkbre5aIzLA/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1XHRDAJWMm0Q994mnOmTT3rSPsRiGx6xV/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=14ABlwF4xwQvrw22jlfyhQxkbre5aIzLA&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1XHRDAJWMm0Q994mnOmTT3rSPsRiGx6xV&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-683",
+    "category": "NEW ARRIVAL",
+    "excelRow": "683",
+    "description": "MDM159 18X8 5X120 ET35 CB60.1  GLOSS BLACK MACHINE FACE",
+    "price": "1,416.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1hcpyVyeSuB64rBIJ-Xcc_PsodHOsP5x-/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1dhZHjKm6qB3xG3FypdFZIqHePUUnMMVm/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1hcpyVyeSuB64rBIJ-Xcc_PsodHOsP5x-&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1dhZHjKm6qB3xG3FypdFZIqHePUUnMMVm&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-709",
+    "category": "NEW ARRIVAL",
+    "excelRow": "709",
+    "description": "MDM159 19X8.5 5X120 ET38 CB60.1  GLOSS BLACK MACHINE FACE",
+    "price": "1,980.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV&sz=w1000"
+  }
+,
+  {
+    "sku": "NEW ARRIVAL-ROW-712",
+    "category": "NEW ARRIVAL",
+    "excelRow": "712",
+    "description": "MDM159 19X8.5 5X114.3 ET38 CB60.1  GLOSS BLACK MACHINE FACE",
+    "price": "1,980.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV&sz=w1000"
   }
 ,
   {
