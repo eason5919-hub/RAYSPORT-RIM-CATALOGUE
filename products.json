@@ -1156,23 +1156,6 @@
   }
 ,
   {
-    "sku": "16X-ROW-47",
-    "category": "16X",
-    "excelRow": "47",
-    "description": "D1317 16X7 8X100/114.3 ET38 CB73.1  MAG BLUE",
-    "price": "550.00",
-    "status": "Last Set",
-    "remark": "(Offer)",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1ixs_1KKeRbXWETMB3NSSy0-qL-pA1mJn/view",
-    "sideOriginal": "https://drive.google.com/file/d/1zGXAO8CJveH75PiR5IlcKxFAJ0mt4Pmc/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1ixs_1KKeRbXWETMB3NSSy0-qL-pA1mJn&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1zGXAO8CJveH75PiR5IlcKxFAJ0mt4Pmc&sz=w1000"
-  }
-,
-  {
     "sku": "16X-ROW-150",
     "category": "16X",
     "excelRow": "150",
