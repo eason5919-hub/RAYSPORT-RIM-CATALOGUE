@@ -811,6 +811,17 @@ function updateFocusedQtyWithStepper(target, sku, delta, source = "product"){
   if(!sameControl) return false;
 
   const currentQty = parseInt(active.value, 10) || 0;
+  if(delta < 0 && currentQty <= 1){
+    if(typeof active.blur === "function"){
+      active.blur();
+    }
+
+    setCartQty(sku, 0);
+    renderCart();
+    updateProductOrderArea(sku);
+    return true;
+  }
+
   const nextQty = Math.max(1, currentQty + delta);
   setQtyOnly(sku, nextQty, false, source, active);
 
