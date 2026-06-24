@@ -192,7 +192,7 @@
     "excelRow": "92",
     "description": "RFF105-A 15X6.5 4X100 ET40  CB73.1  HYPER BLACK LIP POLISH",
     "price": "708.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -201,23 +201,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1SfkSJ21Qn00-QWLdwIAoGsy2GHRBJFss/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=11NdJERiSvgI1nnyFPUbDtvdHE-QuzagX&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1SfkSJ21Qn00-QWLdwIAoGsy2GHRBJFss&sz=w1000"
-  }
-,
-  {
-    "sku": "15X6.5-ROW-93",
-    "category": "15X6.5",
-    "excelRow": "93",
-    "description": "RFF105-A 15X6.5 4X100 ET40  CB73.1  GLOSS BLACK LIP POLISH",
-    "price": "708.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1tCuf1BXi1lSdGk41jbs56_G-hjdaIKYL/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/16vI9ONedk-kJdzSHXbawS3KqOcWgU8Kx/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1tCuf1BXi1lSdGk41jbs56_G-hjdaIKYL&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=16vI9ONedk-kJdzSHXbawS3KqOcWgU8Kx&sz=w1000"
   }
 ,
   {
@@ -2275,23 +2258,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1UVnId8MAFv4X7o1SBu7gqYXnloJaVFWA/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1_JuvqF3nJGsZY0xp_sLiiG6bWUsV7PpC&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1UVnId8MAFv4X7o1SBu7gqYXnloJaVFWA&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-227",
-    "category": "17X",
-    "excelRow": "227",
-    "description": "MDM010 17X7.5 4X100 ET38 CB73.1  HYPER BLACK (TC-X)",
-    "price": "1,100.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1Xn1dmjRfXHkncWpDRrRQXeh-KpYlN5js/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1bXMkQ7rmS-sugBoHbum7Vh9cThhVhlKD/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1Xn1dmjRfXHkncWpDRrRQXeh-KpYlN5js&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1bXMkQ7rmS-sugBoHbum7Vh9cThhVhlKD&sz=w1000"
   }
 ,
   {
