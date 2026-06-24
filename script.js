@@ -263,6 +263,82 @@ function getSetWord(qty){
   return Number(qty) === 1 ? "SET" : "SETS";
 }
 
+function getProductBySku(sku){
+  return products.find(product => product.sku === sku) || null;
+}
+
+function getOrderMaxQty(product){
+  const status = String(product && product.status ? product.status : "").trim().toLowerCase();
+
+  if(status === "last set"){
+    return 1;
+  }
+
+  if(status === "limited"){
+    return 24;
+  }
+
+  return Infinity;
+}
+
+function getOrderLimitNotice(product, maxQty){
+  const status = String(product && product.status ? product.status : "This item").trim();
+  const setWord = getSetWord(maxQty).toLowerCase();
+
+  return `${status} can order maximum ${maxQty} ${setWord}.`;
+}
+
+let orderLimitNoticeTimer = null;
+
+function showOrderLimitNotification(message){
+  if(!message) return;
+
+  let notice = document.getElementById("orderLimitNotice");
+
+  if(!notice){
+    notice = document.createElement("div");
+    notice.id = "orderLimitNotice";
+    notice.className = "orderLimitNotice";
+    notice.setAttribute("role", "status");
+    notice.setAttribute("aria-live", "polite");
+    document.body.appendChild(notice);
+  }
+
+  notice.textContent = message;
+  notice.classList.add("show");
+
+  clearTimeout(orderLimitNoticeTimer);
+  orderLimitNoticeTimer = setTimeout(() => {
+    notice.classList.remove("show");
+  }, 2600);
+}
+
+function clampOrderQtyForSku(sku, qty, notify = true){
+  const numericQty = parseInt(qty, 10);
+
+  if(isNaN(numericQty) || numericQty <= 0){
+    return { qty:numericQty, clamped:false };
+  }
+
+  const product = getProductBySku(sku);
+  const maxQty = getOrderMaxQty(product);
+
+  if(Number.isFinite(maxQty) && numericQty > maxQty){
+    if(notify){
+      showOrderLimitNotification(getOrderLimitNotice(product, maxQty));
+    }
+
+    return { qty:maxQty, clamped:true };
+  }
+
+  return { qty:numericQty, clamped:false };
+}
+
+function getOrderLimitInputAttributes(product){
+  const maxQty = getOrderMaxQty(product);
+  return Number.isFinite(maxQty) ? ` max="${maxQty}"` : "";
+}
+
 function normalizeBranchNameSlots(names, minimumSlots = 10){
   const source = Array.isArray(names) ? names : [];
   const slotCount = Math.max(minimumSlots, source.length);
@@ -361,7 +437,8 @@ function getCartBranches(sku){
 }
 
 function setCartQty(sku, qty){
-  qty = parseInt(qty, 10);
+  const limitedQty = clampOrderQtyForSku(sku, qty);
+  qty = limitedQty.qty;
 
   if(isNaN(qty) || qty <= 0){
     delete cart[sku];
@@ -380,6 +457,89 @@ function setCartQty(sku, qty){
   const item = getCartItem(sku) || { qty: 0, branches: {} };
   item.qty = qty;
   cart[sku] = item;
+}
+
+function getBranchEditorRoot(input){
+  return input.closest(".quickBranchDropdown, .branchSplitPanel, .fitmentBranchEditor");
+}
+
+function getSkuFromBranchInput(input){
+  const productCard = input.closest(".card[data-sku]");
+  if(productCard) return productCard.dataset.sku;
+
+  const cartRow = input.closest(".cartRow[data-sku]");
+  if(cartRow) return cartRow.dataset.sku;
+
+  const fitmentCard = input.closest(".fitmentProductCard[data-fitment-sku]");
+  if(fitmentCard) return fitmentCard.dataset.fitmentSku;
+
+  return "";
+}
+
+function enforceBranchQtyInput(input){
+  if(!input) return;
+
+  const sku = getSkuFromBranchInput(input);
+  const product = getProductBySku(sku);
+  const maxQty = getOrderMaxQty(product);
+  const qty = parseInt(input.value, 10) || 0;
+
+  if(qty <= 0){
+    input.value = "";
+    return;
+  }
+
+  if(!Number.isFinite(maxQty)){
+    input.value = qty;
+    return;
+  }
+
+  const root = getBranchEditorRoot(input);
+  const otherTotal = root
+    ? [...root.querySelectorAll("input[data-branch-name], input[data-fitment-branch-name]")]
+        .filter(item => item !== input)
+        .reduce((sum, item) => sum + (parseInt(item.value, 10) || 0), 0)
+    : 0;
+  const allowedQty = Math.max(0, maxQty - otherTotal);
+  const nextQty = Math.min(qty, allowedQty);
+
+  if(nextQty !== qty){
+    showOrderLimitNotification(getOrderLimitNotice(product, maxQty));
+  }
+
+  input.value = nextQty > 0 ? nextQty : "";
+}
+
+function sanitizeBranchQuantitiesForSku(sku, branches, notify = true){
+  const product = getProductBySku(sku);
+  const maxQty = getOrderMaxQty(product);
+  const cleaned = {};
+  let total = 0;
+  let clamped = false;
+  let remaining = Number.isFinite(maxQty) ? maxQty : Infinity;
+
+  Object.entries(branches || {}).forEach(([name, value]) => {
+    const qty = parseInt(value, 10) || 0;
+    if(qty <= 0 || remaining <= 0) {
+      if(qty > 0) clamped = true;
+      return;
+    }
+
+    const allowedQty = Math.min(qty, remaining);
+    if(allowedQty !== qty){
+      clamped = true;
+    }
+
+    cleaned[name] = allowedQty;
+    total += allowedQty;
+    remaining -= allowedQty;
+  });
+
+  if(clamped && notify){
+    showOrderLimitNotification(getOrderLimitNotice(product, maxQty));
+  }
+
+  return { branches:cleaned, total, clamped };
 }
 
 function hasBranchSplit(sku){
@@ -652,8 +812,7 @@ function updateFocusedQtyWithStepper(target, sku, delta, source = "product"){
 
   const currentQty = parseInt(active.value, 10) || 0;
   const nextQty = Math.max(1, currentQty + delta);
-  active.value = nextQty;
-  setQtyOnly(sku, nextQty, false, source);
+  setQtyOnly(sku, nextQty, false, source, active);
 
   requestAnimationFrame(() => {
     if(active.isConnected){
@@ -715,7 +874,7 @@ function stepBranchQty(button, delta){
   const currentQty = parseInt(input.value, 10) || 0;
   const nextQty = Math.max(0, currentQty + delta);
   input.value = nextQty > 0 ? nextQty : "";
-  input.dispatchEvent(new Event("input", { bubbles:true }));
+  enforceBranchQtyInput(input);
 }
 
 function renderQuickBranchDropdown(product){
@@ -725,6 +884,7 @@ function renderQuickBranchDropdown(product){
 
   const branches = getCartBranches(product.sku);
   const buttonLabel = "Update Cart";
+  const limitAttrs = getOrderLimitInputAttributes(product);
 
   const rows = getActiveBranchNames().map(name => `
     <div class="branchQtyRow">
@@ -734,10 +894,13 @@ function renderQuickBranchDropdown(product){
         <input
           type="number"
           min="0"
+          ${limitAttrs}
           inputmode="numeric"
           value="${branches[name] || ""}"
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
+          oninput="enforceBranchQtyInput(this)"
+          onchange="enforceBranchQtyInput(this)"
         >
         <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, 1)" onclick="tapBranchQty(event, this, 1)">+</button>
       </div>
@@ -900,6 +1063,7 @@ function saveQuickBranchDropdown(sku){
   let total = 0;
 
   inputs.forEach(input => {
+    enforceBranchQtyInput(input);
     const name = input.dataset.branchName;
     const qty = parseInt(input.value, 10) || 0;
 
@@ -923,9 +1087,11 @@ function saveQuickBranchDropdown(sku){
     return;
   }
 
+  const limited = sanitizeBranchQuantitiesForSku(sku, branches);
+
   cart[sku] = {
-    qty: total,
-    branches
+    qty: limited.total,
+    branches: limited.branches
   };
 
   quickBranchSku = "";
@@ -945,6 +1111,7 @@ function cancelQuickBranchDropdown(sku){
 function renderOrderControls(product){
   const soldOut = isSoldOut(product);
   const cartQty = getCartQty(product.sku);
+  const limitAttrs = getOrderLimitInputAttributes(product);
 
   if(soldOut){
     return `<button disabled>Sold Out</button>`;
@@ -963,6 +1130,7 @@ function renderOrderControls(product){
           class="qtyInput"
           type="number"
           min="1"
+          ${limitAttrs}
           inputmode="numeric"
           value="${cartQty}"
           ontouchstart="rememberControlTouch(event)"
@@ -972,7 +1140,7 @@ function renderOrderControls(product){
           onchange="finishQtyTyping('${product.sku}', this, 'product')"
           onblur="finishQtyTyping('${product.sku}', this, 'product')"
           onkeydown="if(event.key === 'Enter'){ this.blur(); }"
-          oninput="setQtyOnly('${product.sku}', this.value, true, 'product')"
+          oninput="setQtyOnly('${product.sku}', this, true, 'product')"
         >
 
         <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${product.sku}', 1, 'product')" onclick="tapChangeQty(event, '${product.sku}', 1, 'product')">+</button>
@@ -1086,14 +1254,17 @@ function changeQty(sku, delta, source = "product"){
 }
 
 function finishQtyTyping(sku, input, source = "product"){
-  setQtyAndUpdate(sku, input.value, true, source);
+  setQtyAndUpdate(sku, input, true, source);
 }
 
-function setQtyOnly(sku, value, shouldScrollAfterTyping = false, source = "product"){
+function setQtyOnly(sku, value, shouldScrollAfterTyping = false, source = "product", inputOverride = null){
   if(getActiveBranchNames().length > 0 && getCartQty(sku) > 0){
     openBranchQuantityEditor(sku, source);
     return;
   }
+
+  const input = inputOverride || (value && typeof value === "object" && "value" in value ? value : null);
+  value = inputOverride ? value : (input ? input.value : value);
 
   if(value === ""){
     updateCartCountOnly();
@@ -1108,6 +1279,10 @@ function setQtyOnly(sku, value, shouldScrollAfterTyping = false, source = "produ
   }
 
   setCartQty(sku, qty);
+  const cartQty = getCartQty(sku);
+  if(input && cartQty > 0 && String(input.value) !== String(cartQty)){
+    input.value = cartQty;
+  }
   updateCartCountOnly();
 }
 
@@ -1116,6 +1291,9 @@ function setQtyAndUpdate(sku, value, shouldScrollAfterTyping = false, source = "
     openBranchQuantityEditor(sku, source);
     return;
   }
+
+  const input = value && typeof value === "object" && "value" in value ? value : null;
+  value = input ? input.value : value;
 
   if(value === ""){
     delete cart[sku];
@@ -1127,6 +1305,10 @@ function setQtyAndUpdate(sku, value, shouldScrollAfterTyping = false, source = "
 
   let qty = parseInt(value, 10);
   setCartQty(sku, qty);
+  const cartQty = getCartQty(sku);
+  if(input && cartQty > 0 && String(input.value) !== String(cartQty)){
+    input.value = cartQty;
+  }
 
   renderCart();
   updateProductOrderArea(sku);
@@ -1259,7 +1441,9 @@ function saveBranchSetting(){
       const total = Object.values(item.branches).reduce((sum, qty) => sum + (Number(qty) || 0), 0);
 
       if(total > 0){
-        item.qty = total;
+        const limited = sanitizeBranchQuantitiesForSku(sku, item.branches, false);
+        item.branches = limited.branches;
+        item.qty = limited.total;
       }else{
         delete cart[sku];
 
@@ -1325,6 +1509,8 @@ function renderBranchSplitPanel(sku){
   }
 
   const branches = getCartBranches(sku);
+  const product = getProductBySku(sku);
+  const limitAttrs = getOrderLimitInputAttributes(product);
   const rows = getActiveBranchNames().map(name => `
     <div class="branchQtyRow">
       <label>${escapeHtml(name)}</label>
@@ -1333,10 +1519,13 @@ function renderBranchSplitPanel(sku){
         <input
           type="number"
           min="0"
+          ${limitAttrs}
           inputmode="numeric"
           value="${branches[name] || ""}"
           data-branch-name="${escapeHtml(name)}"
           placeholder="0"
+          oninput="enforceBranchQtyInput(this)"
+          onchange="enforceBranchQtyInput(this)"
         >
         <button class="branchQtyStepper" type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapBranchQty(event, this, 1)" onclick="tapBranchQty(event, this, 1)">+</button>
       </div>
@@ -1365,6 +1554,7 @@ function saveBranchSplit(sku){
   let total = 0;
 
   inputs.forEach(input => {
+    enforceBranchQtyInput(input);
     const name = input.dataset.branchName;
     const qty = parseInt(input.value, 10) || 0;
 
@@ -1384,9 +1574,10 @@ function saveBranchSplit(sku){
 
   const item = getCartItem(sku);
   if(!item) return;
+  const limited = sanitizeBranchQuantitiesForSku(sku, branches);
 
-  item.qty = total;
-  item.branches = branches;
+  item.qty = limited.total;
+  item.branches = limited.branches;
   activeBranchSku = "";
   renderCart();
   updateProductOrderArea(sku);
@@ -1421,6 +1612,7 @@ function renderCart(){
 
     const imgUrl = getDriveImageUrl(p, "front");
     const branchPreview = getBranchPreviewHtml(sku);
+    const limitAttrs = getOrderLimitInputAttributes(p);
 
     row.innerHTML = `
       <div class="cartProductLine">
@@ -1440,6 +1632,7 @@ function renderCart(){
               class="qtyInput"
               type="number"
               min="1"
+              ${limitAttrs}
               inputmode="numeric"
               value="${item.qty}"
               ontouchstart="rememberControlTouch(event)"
@@ -1449,7 +1642,7 @@ function renderCart(){
               onchange="finishQtyTyping('${sku}', this, 'cart')"
               onblur="finishQtyTyping('${sku}', this, 'cart')"
               onkeydown="if(event.key === 'Enter'){ this.blur(); }"
-              oninput="setQtyOnly('${sku}', this.value, true, 'cart')"
+              oninput="setQtyOnly('${sku}', this, true, 'cart')"
             >
 
             <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${sku}', 1, 'cart')" onclick="tapChangeQty(event, '${sku}', 1, 'cart')">+</button>

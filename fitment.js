@@ -600,6 +600,7 @@ function scrollFitmentProductIntoView(sku, focusBranchInput = false){
 function renderFitmentOrderControls(product){
   const sku = escapeHtml(product.sku);
   const cartQty = getCartQty(product.sku);
+  const limitAttrs = getOrderLimitInputAttributes(product);
 
   if(fitmentOrderSku === product.sku && getActiveBranchNames().length > 0){
     const branches = getCartBranches(product.sku);
@@ -608,7 +609,7 @@ function renderFitmentOrderControls(product){
         <label>${escapeHtml(name)}</label>
         <div class="fitmentQtyControls">
           <button type="button" data-fitment-branch-step="-1">-</button>
-          <input type="number" min="0" inputmode="numeric" value="${branches[name] || ""}" data-fitment-branch-name="${escapeHtml(name)}" placeholder="0">
+          <input type="number" min="0"${limitAttrs} inputmode="numeric" value="${branches[name] || ""}" data-fitment-branch-name="${escapeHtml(name)}" placeholder="0">
           <button type="button" data-fitment-branch-step="1">+</button>
         </div>
       </div>
@@ -634,7 +635,7 @@ function renderFitmentOrderControls(product){
     return `
       <div class="fitmentQtyControls">
         <button type="button" data-fitment-qty-step="-1" data-fitment-sku="${sku}">-</button>
-        <input type="number" min="1" inputmode="numeric" value="${cartQty}" data-fitment-qty-input="${sku}">
+        <input type="number" min="1"${limitAttrs} inputmode="numeric" value="${cartQty}" data-fitment-qty-input="${sku}">
         <button type="button" data-fitment-qty-step="1" data-fitment-sku="${sku}">+</button>
       </div>
     `;
@@ -847,6 +848,19 @@ document.getElementById("runManualFitmentButton").onclick = runManualFitmentChec
 document.getElementById("clearManualFitmentButton").onclick = clearManualFitmentSpecs;
 document.getElementById("fitmentCar").addEventListener("input", hideFitmentMatchChooser);
 document.getElementById("fitmentYear").addEventListener("input", hideFitmentMatchChooser);
+document.getElementById("fitmentResult").addEventListener("input", event => {
+  if(event.target.matches("[data-fitment-qty-input]")){
+    const sku = event.target.dataset.fitmentQtyInput;
+    setQtyOnly(sku, event.target, false, "fitment");
+    renderCart();
+    updateProductOrderArea(sku);
+    return;
+  }
+
+  if(event.target.matches("[data-fitment-branch-name]")){
+    enforceBranchQtyInput(event.target);
+  }
+});
 document.getElementById("fitmentResult").addEventListener("change", event => {
   if(event.target.matches("[data-fitment-inch-filter]")){
     fitmentRecommendationDiameter = event.target.value;
@@ -857,7 +871,7 @@ document.getElementById("fitmentResult").addEventListener("change", event => {
 
   if(event.target.matches("[data-fitment-qty-input]")){
     const sku = event.target.dataset.fitmentQtyInput;
-    setCartQty(sku, event.target.value);
+    setQtyAndUpdate(sku, event.target, false, "fitment");
     renderCart();
     updateProductOrderArea(sku);
     renderFitmentRecommendations();
@@ -915,6 +929,7 @@ document.getElementById("fitmentModal").addEventListener("click", event => {
     const input = branchStepButton.parentElement.querySelector("input[data-fitment-branch-name]");
     const nextQty = Math.max(0, (parseInt(input.value, 10) || 0) + (Number(branchStepButton.dataset.fitmentBranchStep) || 0));
     input.value = nextQty > 0 ? nextQty : "";
+    enforceBranchQtyInput(input);
     return;
   }
 
@@ -925,6 +940,7 @@ document.getElementById("fitmentModal").addEventListener("click", event => {
     const branches = {};
     let total = 0;
     card.querySelectorAll("input[data-fitment-branch-name]").forEach(input => {
+      enforceBranchQtyInput(input);
       const qty = parseInt(input.value, 10) || 0;
       if(qty > 0){
         branches[input.dataset.fitmentBranchName] = qty;
@@ -937,7 +953,8 @@ document.getElementById("fitmentModal").addEventListener("click", event => {
       return;
     }
 
-    cart[sku] = { qty:total, branches };
+    const limited = sanitizeBranchQuantitiesForSku(sku, branches);
+    cart[sku] = { qty:limited.total, branches:limited.branches };
     fitmentOrderSku = "";
     renderCart();
     updateProductOrderArea(sku);
