@@ -4573,23 +4573,6 @@
   }
 ,
   {
-    "sku": "19X-ROW-55",
-    "category": "19X",
-    "excelRow": "55",
-    "description": "GL414 19X8.5 5X114.3 ET35  CB73.1  BLACK",
-    "price": "1,562.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/14uya2FQnCj_7CA_611FQIBKKHLhgbq37/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1ms6sf0kvcYptUvemsb2ruFX7hDgTXUXd/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=14uya2FQnCj_7CA_611FQIBKKHLhgbq37&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1ms6sf0kvcYptUvemsb2ruFX7hDgTXUXd&sz=w1000"
-  }
-,
-  {
     "sku": "19X-ROW-56",
     "category": "19X",
     "excelRow": "56",
