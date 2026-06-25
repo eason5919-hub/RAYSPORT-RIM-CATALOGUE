@@ -652,15 +652,15 @@ button:disabled{
 @media(max-width:380px){
   .grid,
   main{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
   }
 
   .card{
-    height:405px;
+    height:345px;
   }
 
   .photo{
-    height:220px;
+    height:145px;
   }
 }
 
