@@ -5015,23 +5015,6 @@
   }
 ,
   {
-    "sku": "19X-ROW-88",
-    "category": "19X",
-    "excelRow": "88",
-    "description": "MDM159 19X8.5 5X114.3 ET38 CB60.1  GLOSS BLACK MACHINE FACE",
-    "price": "1,980.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1CTOT7RFFm5rdqiHhRW1Z9-ym0zbpbhLb&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV&sz=w1000"
-  }
-,
-  {
     "sku": "19X-ROW-89",
     "category": "19X",
     "excelRow": "89",
@@ -6023,7 +6006,7 @@
     "excelRow": "712",
     "description": "MDM159 19X8.5 5X114.3 ET38 CB60.1  GLOSS BLACK MACHINE FACE",
     "price": "1,980.00",
-    "status": "Limited",
+    "status": "Sold Out",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
