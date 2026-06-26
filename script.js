@@ -230,6 +230,45 @@ function getDriveImageUrl(product, type){
   return urls[0] || "";
 }
 
+function getDriveViewerImageUrls(product, type, size = 1600){
+  const url = getDriveImageSource(product, type);
+  if(!url) return [];
+
+  const fileId = getDriveFileId(url);
+  const urls = [];
+
+  if(fileId){
+    urls.push("https://lh3.googleusercontent.com/d/" + fileId + "=w" + size);
+    urls.push(
+      "https://drive.google.com/uc?export=view&id=" +
+      fileId +
+      "&cache=" +
+      imageCacheVersion
+    );
+    urls.push(
+      "https://drive.google.com/thumbnail?id=" +
+      fileId +
+      "&sz=w" + size + "&cache=" +
+      imageCacheVersion
+    );
+  }
+
+  urls.push(addImageCacheParam(url));
+
+  return urls.filter((item, index) => item && urls.indexOf(item) === index);
+}
+
+function getDriveDownloadUrl(product, type){
+  const url = getDriveImageSource(product, type);
+  const fileId = getDriveFileId(url);
+
+  if(fileId){
+    return "https://drive.google.com/uc?export=download&id=" + encodeURIComponent(fileId);
+  }
+
+  return getDriveImageUrl(product, type);
+}
+
 function getDriveImageTag(product, type, extraAttributes = ""){
   const urls = getDriveImageUrls(product, type, 500);
   if(urls.length === 0) return "";
@@ -1860,7 +1899,8 @@ function showCurrentPhoto(){
   const photo = currentPhotos[currentPhotoIndex];
 
   const viewerImage = document.getElementById("viewerImage");
-  const urls = getDriveImageUrls(photo.product, photo.type);
+  const saveButton = document.getElementById("savePhotoButton");
+  const urls = getDriveViewerImageUrls(photo.product, photo.type);
 
   viewerImage.dataset.fallbackSrcs = urls.slice(1).join("|");
   viewerImage.onerror = function(){
@@ -1868,7 +1908,32 @@ function showCurrentPhoto(){
   };
   viewerImage.src = urls[0] || "";
 
+  if(saveButton){
+    saveButton.disabled = !getDriveDownloadUrl(photo.product, photo.type);
+  }
+
   document.getElementById("viewerTitle").textContent = photo.title;
+}
+
+function saveCurrentPhoto(){
+  const photo = currentPhotos[currentPhotoIndex];
+  if(!photo) return;
+
+  const url = getDriveDownloadUrl(photo.product, photo.type);
+  if(!url){
+    alert("No photo available");
+    return;
+  }
+
+  const safeSku = String(photo.product.sku || "raysport-photo").replace(/[^a-z0-9_-]+/gi, "-");
+  const link = document.createElement("a");
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.download = `${safeSku}-${photo.type}.jpg`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 }
 
 function nextPhoto(){

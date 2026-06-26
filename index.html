@@ -6,13 +6,13 @@
 
   <title>RAYSPORT Rim Catalogue</title>
 
-  <!-- APP VERSION: 1106 -->
+  <!-- APP VERSION: 1108 -->
 
-  <link rel="stylesheet" href="style.css?v=1106">
+  <link rel="stylesheet" href="style.css?v=1108">
 
-  <link rel="manifest" href="manifest.json?v=1106">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1106">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1106">
+  <link rel="manifest" href="manifest.json?v=1108">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1108">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1108">
   <meta name="theme-color" content="#111111">
 </head>
 
@@ -107,10 +107,11 @@
       <h3 id="viewerTitle">Front View</h3>
       <div id="viewerProductDetails" class="viewerProductDetails"></div>
       <button id="viewerFitmentButton" class="viewerFitmentButton" type="button">Check Fitment</button>
-      <img id="viewerImage" src="">
+      <img id="viewerImage" src="" alt="" draggable="true">
 
       <div class="viewerButtons">
         <button onclick="prevPhoto()">Previous</button>
+        <button id="savePhotoButton" type="button" onclick="saveCurrentPhoto()">Save Photo</button>
         <button onclick="nextPhoto()">Next</button>
       </div>
     </div>
@@ -219,8 +220,8 @@
       </div>
     </div>
   </div>
-  <script src="script.js?v=1106"></script>
-  <script src="fitment.js?v=1106"></script>
+  <script src="script.js?v=1108"></script>
+  <script src="fitment.js?v=1108"></script>
 
 </body>
 </html>
