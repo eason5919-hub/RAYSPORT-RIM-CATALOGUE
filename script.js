@@ -258,17 +258,6 @@ function getDriveViewerImageUrls(product, type, size = 1600){
   return urls.filter((item, index) => item && urls.indexOf(item) === index);
 }
 
-function getDriveDownloadUrl(product, type){
-  const url = getDriveImageSource(product, type);
-  const fileId = getDriveFileId(url);
-
-  if(fileId){
-    return "https://drive.google.com/uc?export=download&id=" + encodeURIComponent(fileId);
-  }
-
-  return getDriveImageUrl(product, type);
-}
-
 function getDriveImageTag(product, type, extraAttributes = ""){
   const urls = getDriveImageUrls(product, type, 500);
   if(urls.length === 0) return "";
@@ -1906,34 +1895,148 @@ function showCurrentPhoto(){
   viewerImage.onerror = function(){
     handleProductImageError(this);
   };
+  viewerImage.crossOrigin = "anonymous";
   viewerImage.src = urls[0] || "";
 
   if(saveButton){
-    saveButton.disabled = !getDriveDownloadUrl(photo.product, photo.type);
+    saveButton.disabled = urls.length === 0;
   }
 
   document.getElementById("viewerTitle").textContent = photo.title;
 }
 
-function saveCurrentPhoto(){
+function getPhotoFileName(photo, blob){
+  const safeSku = String(photo.product.sku || "raysport-photo").replace(/[^a-z0-9_-]+/gi, "-");
+  const mime = String(blob && blob.type ? blob.type : "").toLowerCase();
+  const extension = mime.includes("png") ? "png" : mime.includes("webp") ? "webp" : "jpg";
+
+  return `${safeSku}-${photo.type}.${extension}`;
+}
+
+function getDriveFileDownloadUrl(product, type){
+  const url = getDriveImageSource(product, type);
+  const fileId = getDriveFileId(url);
+
+  if(fileId){
+    return "https://drive.google.com/uc?export=download&id=" + encodeURIComponent(fileId);
+  }
+
+  return "";
+}
+
+function downloadPhotoBlob(blob, filename){
+  const link = document.createElement("a");
+  const objectUrl = URL.createObjectURL(blob);
+
+  link.href = objectUrl;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+}
+
+function startHiddenPhotoDownload(url){
+  if(!url) return false;
+
+  const iframe = document.createElement("iframe");
+  iframe.src = url;
+  iframe.style.display = "none";
+  document.body.appendChild(iframe);
+
+  setTimeout(() => iframe.remove(), 15000);
+  return true;
+}
+
+async function fetchPhotoBlob(urls){
+  let lastError = null;
+
+  for(const url of urls){
+    try{
+      const response = await fetch(url, { cache:"no-store", mode:"cors" });
+      if(!response.ok) throw new Error("Photo request failed");
+
+      const blob = await response.blob();
+      if(blob && blob.size > 0) return blob;
+    }catch(error){
+      lastError = error;
+    }
+  }
+
+  throw lastError || new Error("Photo download failed");
+}
+
+function getLoadedViewerPhotoBlob(viewerImage){
+  return new Promise((resolve, reject) => {
+    try{
+      if(!viewerImage.complete || !viewerImage.naturalWidth){
+        reject(new Error("Photo is not ready yet"));
+        return;
+      }
+
+      const canvas = document.createElement("canvas");
+      canvas.width = viewerImage.naturalWidth;
+      canvas.height = viewerImage.naturalHeight;
+
+      const context = canvas.getContext("2d");
+      context.drawImage(viewerImage, 0, 0);
+
+      canvas.toBlob(blob => {
+        if(blob && blob.size > 0){
+          resolve(blob);
+        }else{
+          reject(new Error("Photo save failed"));
+        }
+      }, "image/jpeg", 0.95);
+    }catch(error){
+      reject(error);
+    }
+  });
+}
+
+async function saveCurrentPhoto(){
   const photo = currentPhotos[currentPhotoIndex];
   if(!photo) return;
 
-  const url = getDriveDownloadUrl(photo.product, photo.type);
-  if(!url){
+  const urls = getDriveViewerImageUrls(photo.product, photo.type);
+  if(urls.length === 0){
     alert("No photo available");
     return;
   }
 
-  const safeSku = String(photo.product.sku || "raysport-photo").replace(/[^a-z0-9_-]+/gi, "-");
-  const link = document.createElement("a");
-  link.href = url;
-  link.target = "_blank";
-  link.rel = "noopener";
-  link.download = `${safeSku}-${photo.type}.jpg`;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
+  const saveButton = document.getElementById("savePhotoButton");
+  const viewerImage = document.getElementById("viewerImage");
+  const originalText = saveButton ? saveButton.textContent : "";
+
+  if(saveButton){
+    saveButton.disabled = true;
+    saveButton.textContent = "Saving...";
+  }
+
+  try{
+    let blob;
+
+    try{
+      blob = await fetchPhotoBlob(urls);
+    }catch(error){
+      blob = await getLoadedViewerPhotoBlob(viewerImage);
+    }
+
+    downloadPhotoBlob(blob, getPhotoFileName(photo, blob));
+    showOrderLimitNotification("Photo saved.");
+  }catch(error){
+    if(startHiddenPhotoDownload(getDriveFileDownloadUrl(photo.product, photo.type))){
+      showOrderLimitNotification("Photo saved.");
+    }else{
+      alert("Photo save was blocked by this browser. Please long press the photo and choose Save image.");
+    }
+  }finally{
+    if(saveButton){
+      saveButton.disabled = false;
+      saveButton.textContent = originalText || "Save Photo";
+    }
+  }
 }
 
 function nextPhoto(){
