@@ -34,23 +34,6 @@
   }
 ,
   {
-    "sku": "14-ROW-41",
-    "category": "14",
-    "excelRow": "41",
-    "description": "SM1338 14X6 8X100/110 ET38  CB73.1  HYPER BLACK",
-    "price": "598.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/119y-YN2vBqb1TCVCAx6xuYwY4AK3O-7j/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1mH285VV70XNIfDfpbHCOotM5szFihlX3/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=119y-YN2vBqb1TCVCAx6xuYwY4AK3O-7j&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1mH285VV70XNIfDfpbHCOotM5szFihlX3&sz=w1000"
-  }
-,
-  {
     "sku": "14-ROW-50",
     "category": "14",
     "excelRow": "50",
@@ -2193,23 +2176,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-210",
-    "category": "17X",
-    "excelRow": "210",
-    "description": "JT219 17X8 10X100/114.3 ET35  CB73.1  SUPER CHROME",
-    "price": "1,416.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1efTKhFrIUHCxF0lbcfD-ytPcsl__E1Yb/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1RyLjyfWFGdXT13WG5nsvlQFv4n3Zsbp1/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1efTKhFrIUHCxF0lbcfD-ytPcsl__E1Yb&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1RyLjyfWFGdXT13WG5nsvlQFv4n3Zsbp1&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-217",
     "category": "17X",
     "excelRow": "217",
@@ -3601,23 +3567,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1eanjsnhqGnSaj_DarObTxmyf4Nz6qeG3/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1dGn822eCRD9glnYW-sluTAc5WV86kXhf&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1eanjsnhqGnSaj_DarObTxmyf4Nz6qeG3&sz=w1000"
-  }
-,
-  {
-    "sku": "18X-ROW-145",
-    "category": "18X",
-    "excelRow": "145",
-    "description": "MDM159 18X8 5X120 ET35 CB60.1  GLOSS BLACK MACHINE FACE",
-    "price": "1,416.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1hcpyVyeSuB64rBIJ-Xcc_PsodHOsP5x-/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1dhZHjKm6qB3xG3FypdFZIqHePUUnMMVm/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1hcpyVyeSuB64rBIJ-Xcc_PsodHOsP5x-&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1dhZHjKm6qB3xG3FypdFZIqHePUUnMMVm&sz=w1000"
   }
 ,
   {
@@ -5661,23 +5610,6 @@
   }
 ,
   {
-    "sku": "4X4-ROW-29",
-    "category": "4X4",
-    "excelRow": "29",
-    "description": "1892 20X9.5 12X135/139.7 ET-18 CB106.1 XB",
-    "price": "2,800.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1uhOLl9YbTRd6Kh7B2b_H1ehAgn7cqQ_Q/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1KUFroYXNJUavW3_eoeEw-FNxiBBzJm6F/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1uhOLl9YbTRd6Kh7B2b_H1ehAgn7cqQ_Q&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1KUFroYXNJUavW3_eoeEw-FNxiBBzJm6F&sz=w1000"
-  }
-,
-  {
     "sku": "4X4-ROW-31",
     "category": "4X4",
     "excelRow": "31",
@@ -5819,7 +5751,7 @@
     "excelRow": "420",
     "description": "JT219 17X8 10X100/114.3 ET35  CB73.1  SUPER CHROME",
     "price": "1,416.00",
-    "status": "Last Set",
+    "status": "Sold Out",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -5921,7 +5853,7 @@
     "excelRow": "605",
     "description": "MDM029 18X8.5 5X113.1 ET40 CB73.1  HYPER BLACK MILLING",
     "price": "1,562.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -5972,7 +5904,7 @@
     "excelRow": "683",
     "description": "MDM159 18X8 5X120 ET35 CB60.1  GLOSS BLACK MACHINE FACE",
     "price": "1,416.00",
-    "status": "Limited",
+    "status": "Sold Out",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
