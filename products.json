@@ -1377,23 +1377,6 @@
   }
 ,
   {
-    "sku": "16X-ROW-167",
-    "category": "16X",
-    "excelRow": "167",
-    "description": "RFF101 16X7 8X100/114.3 ET35  CB73.1  HYPER BLACK MILLING LIP POLISH",
-    "price": "875.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1V9C_MLBClOvaY-AZSbddS7yaZvr5EUzE/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1nwMFrKohh_0EUedDMLdKDX-3Uq7NqnCx/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1V9C_MLBClOvaY-AZSbddS7yaZvr5EUzE&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1nwMFrKohh_0EUedDMLdKDX-3Uq7NqnCx&sz=w1000"
-  }
-,
-  {
     "sku": "16X-ROW-193",
     "category": "16X",
     "excelRow": "193",
@@ -2929,7 +2912,7 @@
     "excelRow": "330",
     "description": "RFF-CR 17X8 5X113.1 ET38  CB73.1  HYPER BLACK",
     "price": "1,100.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
