@@ -6409,23 +6409,6 @@
   }
 ,
   {
-    "sku": "4X4-ROW-32",
-    "category": "4X4",
-    "excelRow": "32",
-    "description": "JT246 18X9 6X139.7 ET0  CB110.1  FLAT BLACK MILLING",
-    "price": "1,562.00",
-    "status": "Available",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1SMjJqgdpb0bKZ_VcDXxGTmMSLNr3pO1G/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1Nz834JXBF5gyTJkxT2D9xxkh3zCiehzM/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1SMjJqgdpb0bKZ_VcDXxGTmMSLNr3pO1G&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1Nz834JXBF5gyTJkxT2D9xxkh3zCiehzM&sz=w1000"
-  }
-,
-  {
     "sku": "4X4-ROW-33",
     "category": "4X4",
     "excelRow": "33",
