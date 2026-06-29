@@ -1894,7 +1894,6 @@ function showCurrentPhoto(){
   viewerImage.onerror = function(){
     handleProductImageError(this);
   };
-  viewerImage.crossOrigin = "anonymous";
   viewerImage.src = urls[0] || "";
 
   document.getElementById("viewerTitle").textContent = photo.title;
