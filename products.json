@@ -374,23 +374,6 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-41",
-    "category": "15X7.0",
-    "excelRow": "41",
-    "description": "D079S (ZX862) 15X7 8X100/114.3 ET38 CB73.1  HYPER SILVER",
-    "price": "725.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1yhavqpoo1q0br6Tj9Jdp6IJepD3n9r0U/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1OUnHrpm2CHEvJkQ9ssjav-Oab2NsufGP/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1yhavqpoo1q0br6Tj9Jdp6IJepD3n9r0U&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1OUnHrpm2CHEvJkQ9ssjav-Oab2NsufGP&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-58",
     "category": "15X7.0",
     "excelRow": "58",
