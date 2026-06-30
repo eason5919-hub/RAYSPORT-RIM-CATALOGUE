@@ -1054,23 +1054,6 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-265",
-    "category": "15X7.0",
-    "excelRow": "265",
-    "description": "RFT6082 15X7 4X100 ET38  CB73.1  SILVER",
-    "price": "688.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1ciThvqMGJeYLX86I0iFWGlh7gBMoyMGJ/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1fOu-zZDYgs9ylkPPs-TS-YkONR11KtuL/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1ciThvqMGJeYLX86I0iFWGlh7gBMoyMGJ&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1fOu-zZDYgs9ylkPPs-TS-YkONR11KtuL&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-294",
     "category": "15X7.0",
     "excelRow": "294",
@@ -1731,23 +1714,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1PPZ617vcQtrKuc6qkiH1QTXJzEoghTnk/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1UEen_GROOQmApmONvb089yMXodLrAprS&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1PPZ617vcQtrKuc6qkiH1QTXJzEoghTnk&sz=w1000"
-  }
-,
-  {
-    "sku": "16X-ROW-220",
-    "category": "16X",
-    "excelRow": "220",
-    "description": "RFT57 16X7 4X100 ET38  CB73.1  MATT BRONZE",
-    "price": "865.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#CE0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/12VnQ5wHGCnNj7z_qnwxqVVUo01wuL3yR/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/10S3Ht5FHs4da4T_0H7YmXhu5IYIA0xv3/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=12VnQ5wHGCnNj7z_qnwxqVVUo01wuL3yR&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=10S3Ht5FHs4da4T_0H7YmXhu5IYIA0xv3&sz=w1000"
   }
 ,
   {
@@ -2929,7 +2895,7 @@
     "excelRow": "287",
     "description": "RFF101 17X7.5 5X113.1 ET35  CB73.1  WHITE CHROME",
     "price": "1,456.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "NEW",
     "extraInfoColor": "#FF0000",
@@ -6686,7 +6652,7 @@
     "excelRow": "464",
     "description": "RFF101 17X7.5 5X113.1 ET35  CB73.1  WHITE CHROME",
     "price": "1,456.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "NEW",
     "extraInfoColor": "#FF0000",
