@@ -816,23 +816,6 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-222",
-    "category": "15X7.0",
-    "excelRow": "222",
-    "description": "RFF101 15X7 4X100 ET38  CB73.1  HYPER BLACK MILLING LIP POLISH",
-    "price": "780.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1uMjvWafXr44yl0b1KaljiJb2_1AXirIV/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/19QJIHzGlxQ7moExv0GaMeAhwhwrzJLiB/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1uMjvWafXr44yl0b1KaljiJb2_1AXirIV&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=19QJIHzGlxQ7moExv0GaMeAhwhwrzJLiB&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-238",
     "category": "15X7.0",
     "excelRow": "238",
