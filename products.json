@@ -56,7 +56,7 @@
     "excelRow": "51",
     "description": "SM5599 14X5.5 8X100/110 ET38  CB73.1  HYPER BLACK",
     "price": "598.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#000000",
@@ -362,7 +362,7 @@
     "excelRow": "10",
     "description": "54004-G 15X7 4X100 ET35 CB73.1  SILVER LIP POLISH",
     "price": "688.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#000000",
@@ -371,6 +371,23 @@
     "sideOriginal": "https://drive.google.com/file/d/1D_lqq51wtG0WnroUELOxl_2H2yRR9qQd/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=199TX0PBdBPyn5vlltaiVdOZIm0avZrEa&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1D_lqq51wtG0WnroUELOxl_2H2yRR9qQd&sz=w1000"
+  }
+,
+  {
+    "sku": "15X7.0-ROW-14",
+    "category": "15X7.0",
+    "excelRow": "14",
+    "description": "55412-G 15X7 4X100 ET35 CB73.1  GLOSS BLACK MILLING LIP POLISH",
+    "price": "860.00",
+    "status": "Available",
+    "remark": "",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
   }
 ,
   {
@@ -991,7 +1008,7 @@
     "excelRow": "255",
     "description": "RFF-T4 15X7 4X100 ET38  CB73.1  HYPER BLACK LP",
     "price": "760.00",
-    "status": "Last Set",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -1297,7 +1314,7 @@
     "excelRow": "132",
     "description": "JT219 16X7 8X100/114.3 ET35  CB73.1  HYPER BLACK LIP POLISH",
     "price": "865.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -2975,6 +2992,40 @@
   }
 ,
   {
+    "sku": "17X-ROW-327",
+    "category": "17X",
+    "excelRow": "327",
+    "description": "RFF-CR 17X7.5 4X100 ET40  CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
+    "sku": "17X-ROW-328",
+    "category": "17X",
+    "excelRow": "328",
+    "description": "RFFCR 17X7.5 4X100 ET40  CB73.1  HYPER BLACK",
+    "price": "1,100.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
     "sku": "17X-ROW-330",
     "category": "17X",
     "excelRow": "330",
@@ -2983,6 +3034,23 @@
     "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "NEW",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
+    "sku": "17X-ROW-331",
+    "category": "17X",
+    "excelRow": "331",
+    "description": "RFF-CR 17X7.5 5X100 ET40  CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
     "extraInfoColor": "#FF0000",
     "rowColor": "",
     "frontOriginal": "",
@@ -3009,6 +3077,23 @@
   }
 ,
   {
+    "sku": "17X-ROW-333",
+    "category": "17X",
+    "excelRow": "333",
+    "description": "RFF-CR 17X8 5X113.1 ET38  CB73.1  GLOSS BLACK",
+    "price": "1,100.00",
+    "status": "Available",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
     "sku": "17X-ROW-334",
     "category": "17X",
     "excelRow": "334",
@@ -3026,6 +3111,23 @@
   }
 ,
   {
+    "sku": "17X-ROW-335",
+    "category": "17X",
+    "excelRow": "335",
+    "description": "RFF-CR 17X8 5X113.1 ET38 CB73.1  WHITE",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
     "sku": "17X-ROW-336",
     "category": "17X",
     "excelRow": "336",
@@ -3040,6 +3142,40 @@
     "sideOriginal": "https://drive.google.com/file/d/1reuENtS_xql05FMDC9hWf-iDSsJxdwRa/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1su75_vbmVnEJTwO-NvoXBC8bioZ3f92K&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1reuENtS_xql05FMDC9hWf-iDSsJxdwRa&sz=w1000"
+  }
+,
+  {
+    "sku": "17X-ROW-337",
+    "category": "17X",
+    "excelRow": "337",
+    "description": "RFF-CR 17X8 5X113.1 ET38  CB73.1  FLAT GUNMETAL",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
+  }
+,
+  {
+    "sku": "17X-ROW-338",
+    "category": "17X",
+    "excelRow": "338",
+    "description": "RFFCR 17X8 5X113.1 ET38  CB73.1  CANDY RED",
+    "price": "1,100.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "",
+    "sideOriginal": "",
+    "frontImage": "",
+    "sideImage": ""
   }
 ,
   {
@@ -3218,7 +3354,7 @@
     "excelRow": "354",
     "description": "RFF-V5 17X8 8X100/114.3 ET38  CB73.1  WHITE CHROME",
     "price": "1,456.00",
-    "status": "Last Set",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -3686,23 +3822,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1pnQSXYZ_RBl1Gw0HEc6HC2cLY0FZW4sZ/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1uo0Nv3oNtYh9e1d08c8ONRR1KGBPkXCx&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1pnQSXYZ_RBl1Gw0HEc6HC2cLY0FZW4sZ&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-441",
-    "category": "17X",
-    "excelRow": "441",
-    "description": "RFF-T4-B 17X8.5 5X113.1 ET40  CB73.1  HYPER BLACK LP",
-    "price": "1,140.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1GwlZe2l5eH_HnDDDoHO0e8ldaF-5SfdA/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1DUP2VTTWpnuNtcpCM1zvt7PkL5K3cvJr/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1GwlZe2l5eH_HnDDDoHO0e8ldaF-5SfdA&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1DUP2VTTWpnuNtcpCM1zvt7PkL5K3cvJr&sz=w1000"
   }
 ,
   {
@@ -4408,7 +4527,7 @@
     "excelRow": "202",
     "description": "RFF101 18X8.5 5X113.1 ET42  CB73.1  HYPER BLACK MILLING LIP POLISH",
     "price": "1,604.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -4726,23 +4845,6 @@
   }
 ,
   {
-    "sku": "18X-ROW-249",
-    "category": "18X",
-    "excelRow": "249",
-    "description": "RFF-PF10 18X8.5 5X113.1 ET40  CB73.1  MATT BRONZE MILLING",
-    "price": "1,562.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1TRJAiJ1Y6FSM_qXV5dkOuTFOsaMus_Yh/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1TRJAiJ1Y6FSM_qXV5dkOuTFOsaMus_Yh/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1TRJAiJ1Y6FSM_qXV5dkOuTFOsaMus_Yh&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1TRJAiJ1Y6FSM_qXV5dkOuTFOsaMus_Yh&sz=w1000"
-  }
-,
-  {
     "sku": "18X-ROW-250",
     "category": "18X",
     "excelRow": "250",
@@ -4765,7 +4867,7 @@
     "excelRow": "251",
     "description": "RFF-T4 18X8.5 5X113.1 ET42  CB73.1  CANDY RED LP",
     "price": "1,604.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -4782,7 +4884,7 @@
     "excelRow": "252",
     "description": "RFF-T4 18X8.5 5X113.1 ET42  CB73.1  HYPER BLACK LP",
     "price": "1,604.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -4799,7 +4901,7 @@
     "excelRow": "253",
     "description": "RFF-T4 18X8.5 5X113.1 ET42  CB73.1  WHITE LP",
     "price": "1,604.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -6380,7 +6482,7 @@
     "excelRow": "110",
     "description": "54004-G 15X7 4X100 ET35 CB73.1  SILVER LIP POLISH",
     "price": "688.00",
-    "status": "Limited",
+    "status": "Available",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#000000",
@@ -6720,7 +6822,7 @@
     "excelRow": "674",
     "description": "RFF101 18X8.5 5X113.1 ET42  CB73.1  HYPER BLACK MILLING LIP POLISH",
     "price": "1,604.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -6754,7 +6856,7 @@
     "excelRow": "698",
     "description": "RFF-PF10 18X8.5 5X113.1 ET40  CB73.1  MATT BRONZE MILLING",
     "price": "1,562.00",
-    "status": "Limited",
+    "status": "Sold Out",
     "remark": "Flow Forming",
     "extraInfo": "NEW",
     "extraInfoColor": "#FF0000",
