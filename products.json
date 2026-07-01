@@ -3808,23 +3808,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-440",
-    "category": "17X",
-    "excelRow": "440",
-    "description": "RFF-T4-B 17X8.5 5X113.1 ET40  CB73.1  CANDY RED LP",
-    "price": "1,140.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1uo0Nv3oNtYh9e1d08c8ONRR1KGBPkXCx/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1pnQSXYZ_RBl1Gw0HEc6HC2cLY0FZW4sZ/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1uo0Nv3oNtYh9e1d08c8ONRR1KGBPkXCx&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1pnQSXYZ_RBl1Gw0HEc6HC2cLY0FZW4sZ&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-442",
     "category": "17X",
     "excelRow": "442",
@@ -3847,7 +3830,7 @@
     "excelRow": "443",
     "description": "RFF-T4-B 17X8.5 5X100 ET40  CB73.1  HYPER BLACK LP",
     "price": "1,140.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
