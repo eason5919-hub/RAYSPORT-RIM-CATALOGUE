@@ -734,6 +734,16 @@ button:disabled{
   line-height:20px;
 }
 
+.branchInputRow input{
+  line-height:normal;
+  padding-top:0;
+  padding-bottom:0;
+  overflow:hidden;
+  -webkit-appearance:none;
+  appearance:none;
+  background:#fff;
+}
+
 .branchQtyRow input{
   max-width:110px;
   text-align:center;
