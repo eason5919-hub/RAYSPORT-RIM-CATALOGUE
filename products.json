@@ -850,23 +850,6 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-237",
-    "category": "15X7.0",
-    "excelRow": "237",
-    "description": "RFF202 15X7 4X100 ET35  CB73.1  GLOSS BLACK MILLING",
-    "price": "760.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "",
-    "sideOriginal": "",
-    "frontImage": "",
-    "sideImage": ""
-  }
-,
-  {
     "sku": "15X7.0-ROW-239",
     "category": "15X7.0",
     "excelRow": "239",
