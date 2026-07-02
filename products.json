@@ -1989,23 +1989,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-13",
-    "category": "17X",
-    "excelRow": "13",
-    "description": "L2-237998 17X7.5 5X113.1 ET35 CB73.1  SILVER",
-    "price": "600.00",
-    "status": "Limited",
-    "remark": "Flow Forming  (Offer)",
-    "extraInfo": "",
-    "extraInfoColor": "#C00000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1MWU02dhtScROh7Z4uCpj6ubu-h_oRG1u/view",
-    "sideOriginal": "https://drive.google.com/file/d/17Zfd_Bb6iScRW2ebYHqyMsm_bqvblKDy/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1MWU02dhtScROh7Z4uCpj6ubu-h_oRG1u&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=17Zfd_Bb6iScRW2ebYHqyMsm_bqvblKDy&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-15",
     "category": "17X",
     "excelRow": "15",
