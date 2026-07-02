@@ -51,23 +51,6 @@
   }
 ,
   {
-    "sku": "14-ROW-52",
-    "category": "14",
-    "excelRow": "52",
-    "description": "SM5599 14X5.5 8X100/110 ET38  CB73.1  SILVER",
-    "price": "598.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R&sz=w1000"
-  }
-,
-  {
     "sku": "15X6.5-ROW-78",
     "category": "15X6.5",
     "excelRow": "78",
@@ -915,6 +898,23 @@
     "sideOriginal": "https://drive.google.com/file/d/1NrqG2_TTXLaGiBYy6hwQOh4C4yEm9s0A/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1k4nbRHJdBdePeu4cGO8QWdmlyQVa5Sm2&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1NrqG2_TTXLaGiBYy6hwQOh4C4yEm9s0A&sz=w1000"
+  }
+,
+  {
+    "sku": "15X7.0-ROW-237",
+    "category": "15X7.0",
+    "excelRow": "237",
+    "description": "RFF202 15X7 4X100 ET35  CB73.1  GLOSS BLACK MILLING",
+    "price": "760.00",
+    "status": "Limited",
+    "remark": "Flow Forming",
+    "extraInfo": "",
+    "extraInfoColor": "#FF0000",
+    "rowColor": "",
+    "frontOriginal": "https://drive.google.com/file/d/14vYKekTfTzk6SmJpWbMgS8kVvHpmwX_R/view?usp=sharing",
+    "sideOriginal": "https://drive.google.com/file/d/1H-5pxKrW6ghpTISEstcTPuMQffi86-h9/view?usp=sharing",
+    "frontImage": "https://drive.google.com/thumbnail?id=14vYKekTfTzk6SmJpWbMgS8kVvHpmwX_R&sz=w1000",
+    "sideImage": "https://drive.google.com/thumbnail?id=1H-5pxKrW6ghpTISEstcTPuMQffi86-h9&sz=w1000"
   }
 ,
   {
