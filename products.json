@@ -2453,7 +2453,7 @@
     "excelRow": "220",
     "description": "MDM010 17X8 5X113.1 ET35 CB73.1  HYPER BLACK (TC-X)",
     "price": "1,100.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -6865,23 +6865,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1ir2eQVxw_8-f2otBy6DAem9hHePuR8BX/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1Rh5lRcmJa0nuljkCLwIpfHsYONE0a9Z_&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1ir2eQVxw_8-f2otBy6DAem9hHePuR8BX&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-634",
-    "category": "NEW ARRIVAL",
-    "excelRow": "634",
-    "description": "RFF037 18X8.5 5X113.1 ET38  CB73.1  GLOSS BLACK MILLING",
-    "price": "1,562.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1ZmQoVCqQdwGV6slyKD_cBdyZrqs-uAOV/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1TPdEjHuZEHjSuHg4MuVI6vqNCYK-02TV/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1ZmQoVCqQdwGV6slyKD_cBdyZrqs-uAOV&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1TPdEjHuZEHjSuHg4MuVI6vqNCYK-02TV&sz=w1000"
   }
 ,
   {
