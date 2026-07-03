@@ -3065,7 +3065,7 @@
     "excelRow": "331",
     "description": "RFFCR 17X7.5 4X100 ET40  CB73.1  HYPER BLACK",
     "price": "1,100.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -5916,23 +5916,6 @@
   }
 ,
   {
-    "sku": "19X-ROW-95",
-    "category": "19X",
-    "excelRow": "95",
-    "description": "MDM193 19X8.5 5X108 ET38  CB73.1  GLOSS BLACK ",
-    "price": "1,980.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1kCPCs-Ad-6HvwaSSzE9Dy1-rCcg45hdw/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1lul0uX1a9-NqfHkzel51ekhAdQ_QqQ8t/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1kCPCs-Ad-6HvwaSSzE9Dy1-rCcg45hdw&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1lul0uX1a9-NqfHkzel51ekhAdQ_QqQ8t&sz=w1000"
-  }
-,
-  {
     "sku": "19X-ROW-103",
     "category": "19X",
     "excelRow": "103",
@@ -6720,7 +6703,7 @@
     "excelRow": "422",
     "description": "RFFCR 17X7.5 4X100 ET40  CB73.1  HYPER BLACK",
     "price": "1,100.00",
-    "status": "Available",
+    "status": "Limited",
     "remark": "Flow Forming",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
