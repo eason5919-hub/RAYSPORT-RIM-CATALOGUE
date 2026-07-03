@@ -735,13 +735,9 @@ button:disabled{
 }
 
 .branchInputRow input{
-  line-height:normal;
-  padding-top:0;
-  padding-bottom:0;
   overflow:hidden;
-  -webkit-appearance:none;
-  appearance:none;
-  background:#fff;
+  contain:paint;
+  clip-path:inset(0 round 9px);
 }
 
 .branchQtyRow input{
