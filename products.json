@@ -1229,7 +1229,7 @@
     "excelRow": "300",
     "description": "SM5599 (ZX842) 15X7 4X114.3 ET38  CB73.1  HYPER BLACK",
     "price": "725.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#FF0000",
@@ -3026,23 +3026,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-329",
-    "category": "17X",
-    "excelRow": "329",
-    "description": "RFF5599 17X7.5 5X113.1 ET35  CB73.1  WHITE CHROME",
-    "price": "1,476.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1KoiX25FlKAT-DjjUxaolgCL8nhBNRvRJ/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1DO_EaaSuG2JrKOdNzq6jySnJh0f6sE5S/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1KoiX25FlKAT-DjjUxaolgCL8nhBNRvRJ&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1DO_EaaSuG2JrKOdNzq6jySnJh0f6sE5S&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-330",
     "category": "17X",
     "excelRow": "330",
@@ -4553,23 +4536,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1ZmQoVCqQdwGV6slyKD_cBdyZrqs-uAOV/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1ZmQoVCqQdwGV6slyKD_cBdyZrqs-uAOV&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1ZmQoVCqQdwGV6slyKD_cBdyZrqs-uAOV&sz=w1000"
-  }
-,
-  {
-    "sku": "18X-ROW-195",
-    "category": "18X",
-    "excelRow": "195",
-    "description": "RFF101 18X8.5 5X113.1 ET42 CB73.1  GLOSS BLACK MILLING",
-    "price": "1,604.00",
-    "status": "Available",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1A_5AXeASlrRb5OqGJhn8hilSKqj7mWQt/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1azYu6EbyOVeucGNizSN8fKFuXcsR1aJU/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1A_5AXeASlrRb5OqGJhn8hilSKqj7mWQt&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1azYu6EbyOVeucGNizSN8fKFuXcsR1aJU&sz=w1000"
   }
 ,
   {
@@ -6664,23 +6630,6 @@
   }
 ,
   {
-    "sku": "NEW ARRIVAL-ROW-420",
-    "category": "NEW ARRIVAL",
-    "excelRow": "420",
-    "description": "RFF5599 17X7.5 5X113.1 ET35  CB73.1  WHITE CHROME",
-    "price": "1,476.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "NEW",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1KoiX25FlKAT-DjjUxaolgCL8nhBNRvRJ/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1DO_EaaSuG2JrKOdNzq6jySnJh0f6sE5S/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1KoiX25FlKAT-DjjUxaolgCL8nhBNRvRJ&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1DO_EaaSuG2JrKOdNzq6jySnJh0f6sE5S&sz=w1000"
-  }
-,
-  {
     "sku": "NEW ARRIVAL-ROW-421",
     "category": "NEW ARRIVAL",
     "excelRow": "421",
@@ -6780,23 +6729,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1EtHQvhkU0u6p2cc7gY03rL92EtokRJ6Q/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1ZSxUkrP6PJywDcqWn5owktahUXSCX1R4&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1EtHQvhkU0u6p2cc7gY03rL92EtokRJ6Q&sz=w1000"
-  }
-,
-  {
-    "sku": "NEW ARRIVAL-ROW-544",
-    "category": "NEW ARRIVAL",
-    "excelRow": "544",
-    "description": "RFF101 18X8.5 5X113.1 ET42  CB73.1  GLOSS BLACK MILLING",
-    "price": "1,604.00",
-    "status": "Limited",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1A_5AXeASlrRb5OqGJhn8hilSKqj7mWQt/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1azYu6EbyOVeucGNizSN8fKFuXcsR1aJU/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1A_5AXeASlrRb5OqGJhn8hilSKqj7mWQt&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1azYu6EbyOVeucGNizSN8fKFuXcsR1aJU&sz=w1000"
   }
 ,
   {
