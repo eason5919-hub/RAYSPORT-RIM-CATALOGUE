@@ -1241,23 +1241,6 @@
   }
 ,
   {
-    "sku": "15X7.0-ROW-341",
-    "category": "15X7.0",
-    "excelRow": "341",
-    "description": "D5836 15X8 4X100 ET25 CB73.1 ULTRA BRONZE MILLING",
-    "price": "460.00",
-    "status": "Last Set",
-    "remark": "(Offer)",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1PeqVtidQ5fXE1T857e-UmK3KjMnrpEj9/view",
-    "sideOriginal": "https://drive.google.com/file/d/1S9ZADchf7bxGDwIvXwPzLpxzmflGR3mg/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1PeqVtidQ5fXE1T857e-UmK3KjMnrpEj9&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1S9ZADchf7bxGDwIvXwPzLpxzmflGR3mg&sz=w1000"
-  }
-,
-  {
     "sku": "15X7.0-ROW-342",
     "category": "15X7.0",
     "excelRow": "342",
