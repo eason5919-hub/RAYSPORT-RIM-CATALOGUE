@@ -3791,23 +3791,6 @@
   }
 ,
   {
-    "sku": "17X-ROW-444",
-    "category": "17X",
-    "excelRow": "444",
-    "description": "RFF-T4-B 17X8.5 5X113.1 ET40  CB73.1  HYPER BLACK LP",
-    "price": "1,140.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1GwlZe2l5eH_HnDDDoHO0e8ldaF-5SfdA/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1DUP2VTTWpnuNtcpCM1zvt7PkL5K3cvJr/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1GwlZe2l5eH_HnDDDoHO0e8ldaF-5SfdA&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1DUP2VTTWpnuNtcpCM1zvt7PkL5K3cvJr&sz=w1000"
-  }
-,
-  {
     "sku": "17X-ROW-445",
     "category": "17X",
     "excelRow": "445",
