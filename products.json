@@ -1,22 +1,5 @@
 [
   {
-    "sku": "14-ROW-39",
-    "category": "14",
-    "excelRow": "39",
-    "description": "SM1338 14X6 8X100/110 ET38 CB73.1 GLOSS BLACK G1",
-    "price": "598.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#000000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/12LFOPZWqyif1GTG7PBAuz0HG1cyVsJ-V/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1YMHmR1MlncsePWWaR2mP4_DKoe8DmhMG/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=12LFOPZWqyif1GTG7PBAuz0HG1cyVsJ-V&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1YMHmR1MlncsePWWaR2mP4_DKoe8DmhMG&sz=w1000"
-  }
-,
-  {
     "sku": "14-ROW-40",
     "category": "14",
     "excelRow": "40",
@@ -1212,7 +1195,7 @@
     "excelRow": "299",
     "description": "SM5599 (ZX842) 15X7 4X114.3 ET35  CB73.1  GLOSS BLACK",
     "price": "725.00",
-    "status": "Limited",
+    "status": "Last Set",
     "remark": "",
     "extraInfo": "",
     "extraInfoColor": "#000000",
@@ -1221,23 +1204,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1IP-jwBjuQSnwK4hIgcA9BxusmI-kQj38/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1Pmfned1-3PFjf_4pd9h-0PvGw5SSCDB5&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1IP-jwBjuQSnwK4hIgcA9BxusmI-kQj38&sz=w1000"
-  }
-,
-  {
-    "sku": "15X7.0-ROW-300",
-    "category": "15X7.0",
-    "excelRow": "300",
-    "description": "SM5599 (ZX842) 15X7 4X114.3 ET38  CB73.1  HYPER BLACK",
-    "price": "725.00",
-    "status": "Last Set",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1v0uokwqWHf-35_ZxhW6OVCUZ35ZFgVvx/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1lVTftZNi6fXz_dtS9P1HbV0FEDp1d5ET/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1v0uokwqWHf-35_ZxhW6OVCUZ35ZFgVvx&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1lVTftZNi6fXz_dtS9P1HbV0FEDp1d5ET&sz=w1000"
   }
 ,
   {
@@ -1785,23 +1751,6 @@
   }
 ,
   {
-    "sku": "16X-ROW-224",
-    "category": "16X",
-    "excelRow": "224",
-    "description": "RFT57 16X7 5X114.3 ET38  CB73.1  GLOSS BLACK",
-    "price": "865.00",
-    "status": "Last Set",
-    "remark": "Flow Forming",
-    "extraInfo": "",
-    "extraInfoColor": "#FF0000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1_xgZnPGnFONuxcrqj9gthKtVwat-kz3q/view?usp=sharing",
-    "sideOriginal": "https://drive.google.com/file/d/1-dCT6IU3fk3aqJDN74veipX2DJ8pFnAc/view?usp=sharing",
-    "frontImage": "https://drive.google.com/thumbnail?id=1_xgZnPGnFONuxcrqj9gthKtVwat-kz3q&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1-dCT6IU3fk3aqJDN74veipX2DJ8pFnAc&sz=w1000"
-  }
-,
-  {
     "sku": "16X-ROW-232",
     "category": "16X",
     "excelRow": "232",
@@ -2037,23 +1986,6 @@
     "sideOriginal": "https://drive.google.com/file/d/1Etbs6_qpxsWFrkWerUM2r8DuYL_Q15EM/view?usp=sharing",
     "frontImage": "https://drive.google.com/thumbnail?id=1ZYmCygWJcFkxkSN1e4YaBiQfnIw3YxHn&sz=w1000",
     "sideImage": "https://drive.google.com/thumbnail?id=1Etbs6_qpxsWFrkWerUM2r8DuYL_Q15EM&sz=w1000"
-  }
-,
-  {
-    "sku": "17X-ROW-38",
-    "category": "17X",
-    "excelRow": "38",
-    "description": "D079S (ZX862) 17X8 4X100 ET38 CB73.1  GLOSS BLACK",
-    "price": "1,100.00",
-    "status": "Limited",
-    "remark": "",
-    "extraInfo": "",
-    "extraInfoColor": "#C00000",
-    "rowColor": "",
-    "frontOriginal": "https://drive.google.com/file/d/1dGxJTltIA7fjhNfIJcx1Cg3PUCRbcWH3/view",
-    "sideOriginal": "https://drive.google.com/file/d/1PgpmNEmDeYcLW8syo117GeJypOVtsS9Z/view",
-    "frontImage": "https://drive.google.com/thumbnail?id=1dGxJTltIA7fjhNfIJcx1Cg3PUCRbcWH3&sz=w1000",
-    "sideImage": "https://drive.google.com/thumbnail?id=1PgpmNEmDeYcLW8syo117GeJypOVtsS9Z&sz=w1000"
   }
 ,
   {
