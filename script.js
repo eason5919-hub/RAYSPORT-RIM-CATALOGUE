@@ -150,7 +150,6 @@ function normalizeText(text){
 }
 
 function productMatchesPcd(product, pcd){
-  if(isTyreProduct(product)) return true;
   if(!pcd) return true;
 
   const normalizedPcd = normalizeText(pcd);
