@@ -17,7 +17,7 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const BRANCH_NAMES_STORAGE_KEY = "branchNames";
-const RAYSPORT_TYRE_BANNER_SRC = "images/raysport-tyre-banner.png?v=1121";
+const RAYSPORT_TYRE_BANNER_SRC = "images/raysport-tyre-banner.png?v=1122";
 
 const sheetCategories = [
   "ALL",
@@ -150,6 +150,7 @@ function normalizeText(text){
 }
 
 function productMatchesPcd(product, pcd){
+  if(isTyreProduct(product)) return true;
   if(!pcd) return true;
 
   const normalizedPcd = normalizeText(pcd);
