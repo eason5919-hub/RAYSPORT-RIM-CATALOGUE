@@ -1861,7 +1861,7 @@ document.getElementById("sendWhatsapp").onclick = () => {
     totalParts.push(`${totalSets} ${getSetWord(totalSets)}`);
   }
   if(totalPcs > 0){
-    totalParts.push(`${totalPcs} Pcs`);
+    totalParts.push(`${totalPcs} PCS`);
   }
   lines.push(`TOTAL ORDER: ${totalParts.join(" / ")}`);
 
