@@ -17,7 +17,7 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const BRANCH_NAMES_STORAGE_KEY = "branchNames";
-const RAYSPORT_TYRE_BANNER_SRC = "images/raysport-tyre-banner.png";
+const RAYSPORT_TYRE_BANNER_SRC = "raysport-tyre-banner.png";
 
 const sheetCategories = [
   "ALL",
