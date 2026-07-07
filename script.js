@@ -17,7 +17,8 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const BRANCH_NAMES_STORAGE_KEY = "branchNames";
-const RAYSPORT_TYRE_BANNER_SRC = "images/raysport-tyre-banner.png?v=1122";
+const RAYSPORT_TYRE_BANNER_SRC = "images/raysport-tyre-banner.png?v=1123";
+const RAYSPORT_TYRE_BANNER_FALLBACK_SRC = "images/raysport-tyre-banner.jpg?v=1123";
 
 const sheetCategories = [
   "ALL",
@@ -757,10 +758,7 @@ function showCachedCategory(){
   }
 
   if(currentCategory === "RAYSPORT TYRE"){
-    const banner = document.createElement("div");
-    banner.className = "tyreCategoryBanner";
-    banner.innerHTML = `<img src="${RAYSPORT_TYRE_BANNER_SRC}" alt="RAYSPORT TYRE">`;
-    grid.appendChild(banner);
+    grid.appendChild(createTyreCategoryBanner());
   }
 
   if(!categoryCardCache[currentCategory]){
@@ -804,6 +802,38 @@ function showCachedCategory(){
       grid.appendChild(card);
     }
   });
+}
+
+function createTyreCategoryBanner(){
+  const banner = document.createElement("div");
+  banner.className = "tyreCategoryBanner";
+
+  const img = document.createElement("img");
+  img.alt = "RAYSPORT TYRE";
+  img.src = RAYSPORT_TYRE_BANNER_SRC;
+
+  img.onload = () => {
+    banner.classList.remove("tyreCategoryBannerTextOnly");
+  };
+
+  img.onerror = () => {
+    if(img.dataset.fallbackTried !== "1"){
+      img.dataset.fallbackTried = "1";
+      img.src = RAYSPORT_TYRE_BANNER_FALLBACK_SRC;
+      return;
+    }
+
+    banner.classList.add("tyreCategoryBannerTextOnly");
+  };
+
+  const fallback = document.createElement("div");
+  fallback.className = "tyreCategoryBannerFallback";
+  fallback.textContent = "RAYSPORT TYRE";
+
+  banner.appendChild(img);
+  banner.appendChild(fallback);
+
+  return banner;
 }
 
 function isSoldOut(product){

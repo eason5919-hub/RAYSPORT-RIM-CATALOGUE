@@ -196,10 +196,14 @@ main{
 .tyreCategoryBanner{
   grid-column:1 / -1;
   width:100%;
+  min-height:56px;
   background:transparent;
   border:0;
   box-shadow:none;
   overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .tyreCategoryBanner img{
@@ -209,6 +213,30 @@ main{
   object-fit:contain;
   border:0;
   background:transparent;
+}
+
+.tyreCategoryBannerFallback{
+  display:none;
+  width:100%;
+  min-height:56px;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  background:#c91616;
+  color:#ffffff;
+  font-weight:800;
+  font-size:28px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  box-sizing:border-box;
+}
+
+.tyreCategoryBannerTextOnly img{
+  display:none;
+}
+
+.tyreCategoryBannerTextOnly .tyreCategoryBannerFallback{
+  display:flex;
 }
 
 .info{
