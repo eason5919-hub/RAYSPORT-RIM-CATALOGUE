@@ -1,5 +1,21 @@
 [
     {
+        "sku":  "14-ROW-12",
+        "category":  "14",
+        "excelRow":  "12",
+        "description":  "1245(G) 14X6 8X100/110 ET38 CB73.1 ULTRA BRONZE",
+        "price":  "619.00",
+        "status":  "Limited",
+        "remark":  "",
+        "extraInfo":  "",
+        "extraInfoColor":  "#000000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "14-ROW-40",
         "category":  "14",
         "excelRow":  "40",
@@ -158,22 +174,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1ZJXmscqvPI1PG3a_HPrJigy5itc_rHx1/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1TUbjeSVQeAjghQJgfglHNqr9pyTvAeb4\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1ZJXmscqvPI1PG3a_HPrJigy5itc_rHx1\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X6.5-ROW-103",
-        "category":  "15X6.5",
-        "excelRow":  "103",
-        "description":  "RFF202 15X6.5 4X100 ET38  CB73.1  CANDY RED MILLING",
-        "price":  "800.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1YlGdaRy_5Q85tkZDMkGSLpCGLFPehK83/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/16XZuSRbLKxWfLx3OcLerhT-LHNY9pmRJ/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1YlGdaRy_5Q85tkZDMkGSLpCGLFPehK83\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=16XZuSRbLKxWfLx3OcLerhT-LHNY9pmRJ\u0026sz=w1000"
     },
     {
         "sku":  "15X6.5-ROW-110",
@@ -448,22 +448,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=13gIsPv_k8dpXK6LbAkuAQDCD4ENgqtuE\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-130",
-        "category":  "15X7.0",
-        "excelRow":  "130",
-        "description":  "D8890 15X7 8X100/114.3 ET38  CB73.1  RACING YELLOW",
-        "price":  "480.00",
-        "status":  "Limited",
-        "remark":  "(Offer)",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/12pTCbmc6hbgdxpjOzRKV5GBmNnBkqFQX/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1Yud0yt7fJOBh21YCBhETrVuPqehVuIEZ/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=12pTCbmc6hbgdxpjOzRKV5GBmNnBkqFQX\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1Yud0yt7fJOBh21YCBhETrVuPqehVuIEZ\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-148",
         "category":  "15X7.0",
         "excelRow":  "148",
@@ -517,7 +501,7 @@
         "excelRow":  "170",
         "description":  "MDM010 15X7 5X114.3 ET35  CB73.1  HYPER BLACK",
         "price":  "708.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -1189,7 +1173,7 @@
         "excelRow":  "300",
         "description":  "SM5599 (ZX842) 15X7 4X114.3 ET38  CB73.1  HYPER BLACK",
         "price":  "725.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -3198,22 +3182,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1qBxd5EPvndJw1ESJtY3OaTPv2qw2jaLp/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=12Q0YKniKVdLmeC9AU8uHRNLuQe-qyUoJ\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1qBxd5EPvndJw1ESJtY3OaTPv2qw2jaLp\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-359",
-        "category":  "17X",
-        "excelRow":  "359",
-        "description":  "RFF-V5 17X8 8X100/114.3 ET38  CB73.1  WHITE CHROME",
-        "price":  "1,456.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Xxy8_3qz9uSeQ5KaaRQZKHtHVapzxRHS/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1g2SFRVwzcNIBM5D3fN2r26jP_bIQm2Cw/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Xxy8_3qz9uSeQ5KaaRQZKHtHVapzxRHS\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1g2SFRVwzcNIBM5D3fN2r26jP_bIQm2Cw\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-363",
