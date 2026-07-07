@@ -300,11 +300,11 @@ function isTyreProduct(product){
 }
 
 function getProductQtyWord(product, qty){
-  return isTyreProduct(product) ? "PCS" : getSetWord(qty);
+  return isTyreProduct(product) ? "Pcs" : getSetWord(qty);
 }
 
 function getOrderQtyLabel(product){
-  return isTyreProduct(product) ? "Order Qty (PCS):" : "Order Qty (Set):";
+  return isTyreProduct(product) ? "Order Qty (Pcs):" : "Order Qty (Set):";
 }
 
 function getProductBySku(sku){
@@ -1861,7 +1861,7 @@ document.getElementById("sendWhatsapp").onclick = () => {
     totalParts.push(`${totalSets} ${getSetWord(totalSets)}`);
   }
   if(totalPcs > 0){
-    totalParts.push(`${totalPcs} PCS`);
+    totalParts.push(`${totalPcs} Pcs`);
   }
   lines.push(`TOTAL ORDER: ${totalParts.join(" / ")}`);
 
