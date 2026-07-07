@@ -193,6 +193,24 @@ main{
   background:white;
 }
 
+.tyreCategoryBanner{
+  grid-column:1 / -1;
+  width:100%;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  overflow:hidden;
+}
+
+.tyreCategoryBanner img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  border:0;
+  background:transparent;
+}
+
 .info{
   padding:10px 12px 10px;
   display:flex;

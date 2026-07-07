@@ -17,9 +17,11 @@ let cardBySku = {};
 let latestProductsJsonText = "";
 
 const BRANCH_NAMES_STORAGE_KEY = "branchNames";
+const RAYSPORT_TYRE_BANNER_SRC = "images/raysport-tyre-banner.jpg?v=1120";
 
 const sheetCategories = [
   "ALL",
+  "RAYSPORT TYRE",
   "14",
   "15X6.5",
   "15X7.0",
@@ -34,6 +36,7 @@ const sheetCategories = [
 ];
 
 const allIncludeCategories = [
+  "RAYSPORT TYRE",
   "14",
   "15X6.5",
   "15X7.0",
@@ -291,6 +294,18 @@ function getSetWord(qty){
   return Number(qty) === 1 ? "SET" : "SETS";
 }
 
+function isTyreProduct(product){
+  return normalizeText(product && product.category) === normalizeText("RAYSPORT TYRE");
+}
+
+function getProductQtyWord(product, qty){
+  return isTyreProduct(product) ? "PCS" : getSetWord(qty);
+}
+
+function getOrderQtyLabel(product){
+  return isTyreProduct(product) ? "Order Qty (PCS):" : "Order Qty (Set):";
+}
+
 function getProductBySku(sku){
   return products.find(product => product.sku === sku) || null;
 }
@@ -311,9 +326,9 @@ function getOrderMaxQty(product){
 
 function getOrderLimitNotice(product, maxQty){
   const status = String(product && product.status ? product.status : "This item").trim();
-  const setWord = getSetWord(maxQty).toLowerCase();
+  const qtyWord = getProductQtyWord(product, maxQty).toLowerCase();
 
-  return `${status} can order maximum ${maxQty} ${setWord}.`;
+  return `${status} can order maximum ${maxQty} ${qtyWord}.`;
 }
 
 let orderLimitNoticeTimer = null;
@@ -738,6 +753,13 @@ function showCachedCategory(){
 
   while(grid.firstChild){
     grid.removeChild(grid.firstChild);
+  }
+
+  if(currentCategory === "RAYSPORT TYRE"){
+    const banner = document.createElement("div");
+    banner.className = "tyreCategoryBanner";
+    banner.innerHTML = `<img src="${RAYSPORT_TYRE_BANNER_SRC}" alt="RAYSPORT TYRE">`;
+    grid.appendChild(banner);
   }
 
   if(!categoryCardCache[currentCategory]){
@@ -1575,7 +1597,7 @@ function renderBranchSplitPanel(sku){
     <div class="branchSplitPanel">
       <h4>Branch Split</h4>
       ${rows.join("")}
-      <div class="branchSplitTotal">Cart Qty: ${getCartQty(sku)} ${getSetWord(getCartQty(sku))}</div>
+      <div class="branchSplitTotal">Cart Qty: ${getCartQty(sku)} ${getProductQtyWord(product, getCartQty(sku))}</div>
       <div class="branchEditorActions">
         <button type="button" onclick="saveBranchSplit('${sku}')">Save Branch Split</button>
         <button type="button" onclick="cancelBranchSplit('${sku}')">Cancel</button>
@@ -1662,7 +1684,7 @@ function renderCart(){
         <div class="cartProductInfo">
           <div class="cartProductDesc">${escapeHtml(p.description || "")}</div>
 
-          <small>Order Qty (Set):</small>
+          <small>${getOrderQtyLabel(p)}</small>
 
           <div class="qtyControls">
             <button type="button" ontouchstart="rememberControlTouch(event)" ontouchend="tapChangeQty(event, '${sku}', -1, 'cart')" onclick="tapChangeQty(event, '${sku}', -1, 'cart')">-</button>
@@ -1780,6 +1802,7 @@ document.getElementById("sendWhatsapp").onclick = () => {
   }
 
   let totalSets = 0;
+  let totalPcs = 0;
   const lines = [
     "New Rim Order",
     "",
@@ -1797,11 +1820,15 @@ document.getElementById("sendWhatsapp").onclick = () => {
     const branchTotal = getBranchTotal(sku);
 
     if(branchUsed && branchTotal !== item.qty){
-      alert(`Branch total for ${product.description || sku} is ${branchTotal} ${getSetWord(branchTotal)}, but cart qty is ${item.qty} ${getSetWord(item.qty)}. Please adjust before sending.`);
+      alert(`Branch total for ${product.description || sku} is ${branchTotal} ${getProductQtyWord(product, branchTotal)}, but cart qty is ${item.qty} ${getProductQtyWord(product, item.qty)}. Please adjust before sending.`);
       return;
     }
 
-    totalSets += item.qty;
+    if(isTyreProduct(product)){
+      totalPcs += item.qty;
+    }else{
+      totalSets += item.qty;
+    }
 
     lines.push("");
     lines.push(`${i + 1}. ${product.description || ""}`);
@@ -1810,15 +1837,22 @@ document.getElementById("sendWhatsapp").onclick = () => {
       Object.entries(item.branches)
         .filter(([, qty]) => Number(qty) > 0)
         .forEach(([name, qty]) => {
-          lines.push(`   ${name}: ${qty} ${getSetWord(qty)}`);
+          lines.push(`   ${name}: ${qty} ${getProductQtyWord(product, qty)}`);
         });
     }else{
-      lines.push(`   Order Qty (Set): ${item.qty}`);
+      lines.push(`   ${getOrderQtyLabel(product)} ${item.qty}`);
     }
   }
 
   lines.push("");
-  lines.push(`TOTAL ORDER: ${totalSets} ${getSetWord(totalSets)}`);
+  const totalParts = [];
+  if(totalSets > 0){
+    totalParts.push(`${totalSets} ${getSetWord(totalSets)}`);
+  }
+  if(totalPcs > 0){
+    totalParts.push(`${totalPcs} PCS`);
+  }
+  lines.push(`TOTAL ORDER: ${totalParts.join(" / ")}`);
 
   window.open(`https://wa.me/${customerPhone}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
 
