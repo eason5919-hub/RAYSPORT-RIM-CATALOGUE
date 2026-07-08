@@ -74,10 +74,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1hssemsdtsBnBoiTFiPqrBXiSYfNa00Zc/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1hA70OIPsNIzBeglpo0nX9JNfn_5eDPdF/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1hssemsdtsBnBoiTFiPqrBXiSYfNa00Zc\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1hA70OIPsNIzBeglpo0nX9JNfn_5eDPdF\u0026sz=w1000"
     },
     {
         "sku":  "14-ROW-56",
@@ -90,10 +90,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1C5wK0XKTkeH7wyzAdmnUD0zc9syybx5B/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1C5wK0XKTkeH7wyzAdmnUD0zc9syybx5B\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ\u0026sz=w1000"
     },
     {
         "sku":  "14-ROW-57",
@@ -106,10 +106,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw\u0026sz=w1000"
     },
     {
         "sku":  "15X6.5-ROW-78",
@@ -414,6 +414,38 @@
         "sideOriginal":  "https://drive.google.com/file/d/1uHoEZ-Xzrbzpy_Xl5x_8_-d5SFipXs7P/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1XYQwg6X3wdOOpybZ8UzSkUJKDIOSyek-\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1uHoEZ-Xzrbzpy_Xl5x_8_-d5SFipXs7P\u0026sz=w1000"
+    },
+    {
+        "sku":  "15X6.5-ROW-145",
+        "category":  "15X6.5",
+        "excelRow":  "145",
+        "description":  "SM479 15X6.5 4X100 ET38  CB73.1  GLOSS BLACK",
+        "price":  "675.00",
+        "status":  "Available",
+        "remark":  "",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1mnFzfmsOJzLoMw_5uSWowCUt0epWsCbV/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1cwsLc7khe-7h9jeB51y75-asTxQNVmk1/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1mnFzfmsOJzLoMw_5uSWowCUt0epWsCbV\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1cwsLc7khe-7h9jeB51y75-asTxQNVmk1\u0026sz=w1000"
+    },
+    {
+        "sku":  "15X6.5-ROW-146",
+        "category":  "15X6.5",
+        "excelRow":  "146",
+        "description":  "SM479 15X6.5 4X100 ET38  CB73.1  GLOSS BLACK MF",
+        "price":  "747.00",
+        "status":  "Available",
+        "remark":  "",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1pILqdvc_USK01ojsbn7Rs__7PMUV9WMe/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1LVX1PvgwHhbsxZUgWW9ZiEc-BvPapy9m/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1pILqdvc_USK01ojsbn7Rs__7PMUV9WMe\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1LVX1PvgwHhbsxZUgWW9ZiEc-BvPapy9m\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-10",
@@ -1120,6 +1152,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1w1_L3UfMsX_hgTRpRHroFIPLbIhOYsqA\u0026sz=w1000"
     },
     {
+        "sku":  "15X7.0-ROW-267",
+        "category":  "15X7.0",
+        "excelRow":  "267",
+        "description":  "RFT6082 15X7 4X100 ET38  CB73.1  BLACK CHROME",
+        "price":  "1,050.00",
+        "status":  "Limited",
+        "remark":  "Flow Forming",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1_GCoaDD8rOQYZud82Uhl-Zv3Pm2yCgVA/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/17mIooc0ue6DHve1CWS43CWwWUhe-OIKB/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1_GCoaDD8rOQYZud82Uhl-Zv3Pm2yCgVA\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=17mIooc0ue6DHve1CWS43CWwWUhe-OIKB\u0026sz=w1000"
+    },
+    {
         "sku":  "15X7.0-ROW-296",
         "category":  "15X7.0",
         "excelRow":  "296",
@@ -1194,10 +1242,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1_DIju2DivH5_cSWPbGtoOg1unST1RBmf/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1PXD-lzjGWe0LHCnYKkZUm3QmJPpN8CV5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1_DIju2DivH5_cSWPbGtoOg1unST1RBmf\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1PXD-lzjGWe0LHCnYKkZUm3QmJPpN8CV5\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-304",
@@ -1210,10 +1258,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/15gmQXjfvi5JfoRnAt__jwdi5ZUqoWtf2/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=15gmQXjfvi5JfoRnAt__jwdi5ZUqoWtf2\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-305",
@@ -1226,10 +1274,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1P8CkFcgAx6l-ZWSmLKLHyytpMSmYSRwd/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1mEIa4bZMkN74DQH6QRpAA0_xaL-SNxu4/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1P8CkFcgAx6l-ZWSmLKLHyytpMSmYSRwd\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1mEIa4bZMkN74DQH6QRpAA0_xaL-SNxu4\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-341",
@@ -3450,10 +3498,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1qoB83dbvzd7Wkqmc0mCc0GYMsAgpWWJ8/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1cX2Kv0uZHz6q6FcQQ1YgL0mjJWN8wx3A/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1qoB83dbvzd7Wkqmc0mCc0GYMsAgpWWJ8\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1cX2Kv0uZHz6q6FcQQ1YgL0mjJWN8wx3A\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-424",
@@ -6330,26 +6378,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-51",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "51",
-        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 GLOSS BLACK",
-        "price":  "598.00",
-        "status":  "Sold Out",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1hssemsdtsBnBoiTFiPqrBXiSYfNa00Zc/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1hA70OIPsNIzBeglpo0nX9JNfn_5eDPdF/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1hssemsdtsBnBoiTFiPqrBXiSYfNa00Zc\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1hA70OIPsNIzBeglpo0nX9JNfn_5eDPdF\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-52",
@@ -6362,10 +6394,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1C5wK0XKTkeH7wyzAdmnUD0zc9syybx5B/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1C5wK0XKTkeH7wyzAdmnUD0zc9syybx5B\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-53",
@@ -6378,10 +6410,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-116",
@@ -6394,10 +6426,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1mnFzfmsOJzLoMw_5uSWowCUt0epWsCbV/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1cwsLc7khe-7h9jeB51y75-asTxQNVmk1/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1mnFzfmsOJzLoMw_5uSWowCUt0epWsCbV\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1cwsLc7khe-7h9jeB51y75-asTxQNVmk1\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-117",
@@ -6410,10 +6442,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1pILqdvc_USK01ojsbn7Rs__7PMUV9WMe/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1LVX1PvgwHhbsxZUgWW9ZiEc-BvPapy9m/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1pILqdvc_USK01ojsbn7Rs__7PMUV9WMe\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1LVX1PvgwHhbsxZUgWW9ZiEc-BvPapy9m\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-192",
@@ -6442,42 +6474,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-217",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "217",
-        "description":  "SM5599 15X7 4X100 ET38  CB73.1  VC CHROME",
-        "price":  "1,050.00",
-        "status":  "Sold Out",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-219",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "219",
-        "description":  "SM5599 (ZX842) 15X7 4X114.3 ET38  CB73.1  HYPER BLACK",
-        "price":  "725.00",
-        "status":  "Sold Out",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1_GCoaDD8rOQYZud82Uhl-Zv3Pm2yCgVA/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/17mIooc0ue6DHve1CWS43CWwWUhe-OIKB/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1_GCoaDD8rOQYZud82Uhl-Zv3Pm2yCgVA\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=17mIooc0ue6DHve1CWS43CWwWUhe-OIKB\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-220",
@@ -6490,10 +6490,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1_DIju2DivH5_cSWPbGtoOg1unST1RBmf/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1PXD-lzjGWe0LHCnYKkZUm3QmJPpN8CV5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1_DIju2DivH5_cSWPbGtoOg1unST1RBmf\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1PXD-lzjGWe0LHCnYKkZUm3QmJPpN8CV5\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-221",
@@ -6506,10 +6506,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/15gmQXjfvi5JfoRnAt__jwdi5ZUqoWtf2/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=15gmQXjfvi5JfoRnAt__jwdi5ZUqoWtf2\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-222",
@@ -6522,10 +6522,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1P8CkFcgAx6l-ZWSmLKLHyytpMSmYSRwd/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1mEIa4bZMkN74DQH6QRpAA0_xaL-SNxu4/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1P8CkFcgAx6l-ZWSmLKLHyytpMSmYSRwd\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1mEIa4bZMkN74DQH6QRpAA0_xaL-SNxu4\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-497",
@@ -6586,10 +6586,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1qoB83dbvzd7Wkqmc0mCc0GYMsAgpWWJ8/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1cX2Kv0uZHz6q6FcQQ1YgL0mjJWN8wx3A/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1qoB83dbvzd7Wkqmc0mCc0GYMsAgpWWJ8\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1cX2Kv0uZHz6q6FcQQ1YgL0mjJWN8wx3A\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-646",
