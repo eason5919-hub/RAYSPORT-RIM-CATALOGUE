@@ -2615,7 +2615,7 @@
         "price":  "1,100.00",
         "status":  "Limited",
         "remark":  "Flow Forming",
-        "extraInfo":  "NEW",
+        "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
         "frontOriginal":  "https://drive.google.com/file/d/1izI7N-K2Mcy9ssudEyxAOWFCvSrkKB4O/view?usp=sharing",
@@ -3214,22 +3214,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1g9JKOOTK1_qwjzUXYXEU8RJHxa-lgoXk/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1xyHB1HA9l8GXvW8VuErZaUEqGY8ojOck\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1g9JKOOTK1_qwjzUXYXEU8RJHxa-lgoXk\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-352",
-        "category":  "17X",
-        "excelRow":  "352",
-        "description":  "RFF-V5 17X8 5X113.1 ET35  CB73.1  HYPER SILVER LIP POLISH",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1cAGnrlWs06YTc8q9juoK5TteVXhNdY9D/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1IucgojyZgz4we-pgd5y_ZyR6wMnfyBnU/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1cAGnrlWs06YTc8q9juoK5TteVXhNdY9D\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1IucgojyZgz4we-pgd5y_ZyR6wMnfyBnU\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-353",
