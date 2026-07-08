@@ -96,22 +96,6 @@
         "sideImage":  ""
     },
     {
-        "sku":  "14-ROW-55",
-        "category":  "14",
-        "excelRow":  "55",
-        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 GLOSS BLACK",
-        "price":  "598.00",
-        "status":  "Limited",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
         "sku":  "14-ROW-56",
         "category":  "14",
         "excelRow":  "56",
@@ -3424,22 +3408,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1rmyO5KzX86MfjGtJ9k83QFg8mC2A7lNm\u0026sz=w1000"
     },
     {
-        "sku":  "17X-ROW-382",
-        "category":  "17X",
-        "excelRow":  "382",
-        "description":  "SM1070 17X8 5X114.3 ET35  CB73.1  ULTRA BRONZE (NLP)",
-        "price":  "1,020.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/14VkePDp2DUO8MXJcQ4yFIzxrcva0QXj_/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1bYf4s215MFwJdxmhTCM1m0FrO3pQk9JJ/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=14VkePDp2DUO8MXJcQ4yFIzxrcva0QXj_\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1bYf4s215MFwJdxmhTCM1m0FrO3pQk9JJ\u0026sz=w1000"
-    },
-    {
         "sku":  "17X-ROW-383",
         "category":  "17X",
         "excelRow":  "383",
@@ -6485,7 +6453,7 @@
         "excelRow":  "51",
         "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 GLOSS BLACK",
         "price":  "598.00",
-        "status":  "Limited",
+        "status":  "Sold Out",
         "remark":  "",
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
