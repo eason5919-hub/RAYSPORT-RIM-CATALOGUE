@@ -80,22 +80,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ\u0026sz=w1000"
     },
     {
-        "sku":  "14-ROW-57",
-        "category":  "14",
-        "excelRow":  "57",
-        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 SILVER",
-        "price":  "598.00",
-        "status":  "Limited",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-78",
         "category":  "15X6.5",
         "excelRow":  "78",
@@ -6270,22 +6254,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1C5wK0XKTkeH7wyzAdmnUD0zc9syybx5B\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1dWBMA3BF0tZ4l13PrrQ6kGZaS4goRvUZ\u0026sz=w1000"
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-53",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "53",
-        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 SILVER",
-        "price":  "598.00",
-        "status":  "Limited",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1WuvbMu-a7ItRSj2DuuExqy9Pbe5skzhO\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1Mh6twHyIyenMbjL_HIJ02Kdd87m8XRGw\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-116",
