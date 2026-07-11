@@ -576,22 +576,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1ZJH4UMRL2eK96kfSovCAWkA2saXo168P\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-175",
-        "category":  "15X7.0",
-        "excelRow":  "175",
-        "description":  "MDM012 15X7 4X100 ET35  CB73.1  LIGHT GOLD (C)",
-        "price":  "688.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1cvQnX8t0lsR8kjA8XBdv3k6K4nc3mBbR/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1AUhnvKStTbPcfhYmy74sXokoUqOkjFzM/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1cvQnX8t0lsR8kjA8XBdv3k6K4nc3mBbR\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1AUhnvKStTbPcfhYmy74sXokoUqOkjFzM\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-176",
         "category":  "15X7.0",
         "excelRow":  "176",
@@ -2965,7 +2949,7 @@
         "excelRow":  "341",
         "description":  "RFFCR-C 17X8 5X113.1 ET38  CB73.1  MATT BRONZE",
         "price":  "1,100.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
