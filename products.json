@@ -1077,7 +1077,7 @@
         "excelRow":  "297",
         "description":  "SM5599 (ZX842) 15X7 4X100 ET38  CB73.1  HYPER BLACK",
         "price":  "725.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
@@ -4592,22 +4592,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1KmCV_GL2gvxDP3aB6Xu4KuyhYqCh7bPE\u0026sz=w1000"
     },
     {
-        "sku":  "18X-ROW-253",
-        "category":  "18X",
-        "excelRow":  "253",
-        "description":  "RFF-PF10 18X8.5 5X113.1 ET40  CB73.1  BLACK CHROME",
-        "price":  "1,960.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1mOsJwjNfkTUdNTzMvN5YX9sEDN6TwOR1/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1SOZxw--O5QG0uJ_xBOAPcTBiFwAVBWcQ/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1mOsJwjNfkTUdNTzMvN5YX9sEDN6TwOR1\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1SOZxw--O5QG0uJ_xBOAPcTBiFwAVBWcQ\u0026sz=w1000"
-    },
-    {
         "sku":  "18X-ROW-254",
         "category":  "18X",
         "excelRow":  "254",
@@ -6382,22 +6366,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1cMAepkFHnNBudBkxDqLsoBQEsf54SXUh/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1a-LKoAnD_AgHZm_PdSH771O6rLf9prmX\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1cMAepkFHnNBudBkxDqLsoBQEsf54SXUh\u0026sz=w1000"
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-725",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "725",
-        "description":  "RFF-PF10 18X8.5 5X113.1 ET40  CB73.1  BLACK CHROME",
-        "price":  "1,960.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1mOsJwjNfkTUdNTzMvN5YX9sEDN6TwOR1/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1SOZxw--O5QG0uJ_xBOAPcTBiFwAVBWcQ/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1mOsJwjNfkTUdNTzMvN5YX9sEDN6TwOR1\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1SOZxw--O5QG0uJ_xBOAPcTBiFwAVBWcQ\u0026sz=w1000"
     },
     {
         "sku":  "FORGED-ROW-9",
