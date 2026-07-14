@@ -736,22 +736,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1xBLKqtfuFP6Fk94ahkXwDbhbiBBixrhQ\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-209",
-        "category":  "15X7.0",
-        "excelRow":  "209",
-        "description":  "RFF006-A 15X7 4X100 ET38  CB73.1  HYPER BLACK",
-        "price":  "719.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1NUZVQQQMw8QYGSjXM7EtdfUEOteDXemB/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1h_s7IzA7XvReWoZen_FJbonBThj7MCeP/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1NUZVQQQMw8QYGSjXM7EtdfUEOteDXemB\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1h_s7IzA7XvReWoZen_FJbonBThj7MCeP\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-214",
         "category":  "15X7.0",
         "excelRow":  "214",
@@ -1669,7 +1653,7 @@
         "excelRow":  "249",
         "description":  "SM5599 (ZX842) 16X7 4X100 ET38  CB73.1  GLOSS BLACK",
         "price":  "865.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -3102,22 +3086,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1NwaeXwH4XlgaICzlI_voMAw6-nH8n0ii/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1PENTB2REICWT4onyqkPr-ipEkqOzaaNX\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1NwaeXwH4XlgaICzlI_voMAw6-nH8n0ii\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-368",
-        "category":  "17X",
-        "excelRow":  "368",
-        "description":  "RX4 17X8 5X100 ET38  CB73.1  GLOSS BLACK LP (C)",
-        "price":  "1,060.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1QSh7AeSSfxfskO7QCOZQSnegxHzT6Udn/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1aNUq0fdBl7uakzxQ11XbgCw_UCmWl96d/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1QSh7AeSSfxfskO7QCOZQSnegxHzT6Udn\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1aNUq0fdBl7uakzxQ11XbgCw_UCmWl96d\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-370",
