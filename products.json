@@ -1424,22 +1424,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1DSBUtBOuv-q0_qoF3SzVCSLvfmc74neO\u0026sz=w1000"
     },
     {
-        "sku":  "16X-ROW-222",
-        "category":  "16X",
-        "excelRow":  "222",
-        "description":  "RFT57 16X7 4X100 ET38  CB73.1  CANDY RED",
-        "price":  "865.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1fvUHovZQJr0tIb8os-qO-B4B0cif43ef/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1g33VjXnP1NlAojvKHdeilagacUATR_kH/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1fvUHovZQJr0tIb8os-qO-B4B0cif43ef\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1g33VjXnP1NlAojvKHdeilagacUATR_kH\u0026sz=w1000"
-    },
-    {
         "sku":  "16X-ROW-232",
         "category":  "16X",
         "excelRow":  "232",
@@ -1477,7 +1461,7 @@
         "excelRow":  "237",
         "description":  "SM1338 16X7 4X100 ET38  CB73.1  GLOSS BLACK",
         "price":  "845.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -3872,22 +3856,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1Iu2QzJSkf6-VGRPQ5BpT-lkimBPh8zWd\u0026sz=w1000"
     },
     {
-        "sku":  "18X-ROW-186",
-        "category":  "18X",
-        "excelRow":  "186",
-        "description":  "RFF037 18X8.5 5X113.1 ET38  CB73.1  CANDY RED/MILLING",
-        "price":  "1,562.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Rh5lRcmJa0nuljkCLwIpfHsYONE0a9Z_/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1ir2eQVxw_8-f2otBy6DAem9hHePuR8BX/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Rh5lRcmJa0nuljkCLwIpfHsYONE0a9Z_\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1ir2eQVxw_8-f2otBy6DAem9hHePuR8BX\u0026sz=w1000"
-    },
-    {
         "sku":  "18X-ROW-187",
         "category":  "18X",
         "excelRow":  "187",
@@ -5968,22 +5936,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1Iu2QzJSkf6-VGRPQ5BpT-lkimBPh8zWd\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-647",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "647",
-        "description":  "RFF037 18X8.5 5X113.1 ET38  CB73.1  CANDY RED/MILLING",
-        "price":  "1,562.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Rh5lRcmJa0nuljkCLwIpfHsYONE0a9Z_/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1ir2eQVxw_8-f2otBy6DAem9hHePuR8BX/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Rh5lRcmJa0nuljkCLwIpfHsYONE0a9Z_\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1ir2eQVxw_8-f2otBy6DAem9hHePuR8BX\u0026sz=w1000"
-    },
-    {
         "sku":  "NEW ARRIVAL-ROW-649",
         "category":  "NEW ARRIVAL",
         "excelRow":  "649",
@@ -6277,7 +6229,7 @@
         "excelRow":  "7",
         "description":  "RAYSPORT 195/55R15 SPORT KING SK07 (89V XL) [Y26]",
         "price":  "111.10",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
