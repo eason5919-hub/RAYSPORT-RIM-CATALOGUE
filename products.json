@@ -48,6 +48,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1oc69-Vzf9a2sTz9xzzZs1Xd8xu6qkv7R\u0026sz=w1000"
     },
     {
+        "sku":  "14-ROW-55",
+        "category":  "14",
+        "excelRow":  "55",
+        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 GLOSS BLACK",
+        "price":  "598.00",
+        "status":  "Available",
+        "remark":  "",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "15X6.5-ROW-78",
         "category":  "15X6.5",
         "excelRow":  "78",
@@ -286,6 +302,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/10vGTOH5gg7wuFDKpbYIdgRtC4byr3bQP/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1C6wf25tebkS7baIlJxS_8TNjxcFYfoVY\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=10vGTOH5gg7wuFDKpbYIdgRtC4byr3bQP\u0026sz=w1000"
+    },
+    {
+        "sku":  "15X6.5-ROW-133",
+        "category":  "15X6.5",
+        "excelRow":  "133",
+        "description":  "RFT8890-A 15X6.5 8X100/114.3 ET38 CB73.1  ULTRA BRONZE",
+        "price":  "668.00",
+        "status":  "Available",
+        "remark":  "Flow Forming",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
     },
     {
         "sku":  "15X6.5-ROW-145",
@@ -1006,6 +1038,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/114NgJmnV5H1CHDbJip0atqgpaka8P88k/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1IJ8VPnaXOHJLYVTiDei3N1CXFJjfipRS\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=114NgJmnV5H1CHDbJip0atqgpaka8P88k\u0026sz=w1000"
+    },
+    {
+        "sku":  "15X7.0-ROW-300",
+        "category":  "15X7.0",
+        "excelRow":  "300",
+        "description":  "SM5599 15X7 4X100 ET38  CB73.1  VC CHROME",
+        "price":  "1,050.00",
+        "status":  "Limited",
+        "remark":  "",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
     },
     {
         "sku":  "15X7.0-ROW-304",
@@ -2928,6 +2976,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=12KaJWrly7f8lEF2s6bZUV6NtcByeuSkP\u0026sz=w1000"
     },
     {
+        "sku":  "17X-ROW-397",
+        "category":  "17X",
+        "excelRow":  "397",
+        "description":  "SM502D 17X7.5 4X100 ET38 CB73.1 GOLD BLUE LINE",
+        "price":  "1,100.00",
+        "status":  "Limited",
+        "remark":  "",
+        "extraInfo":  "",
+        "extraInfoColor":  "#C00000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "17X-ROW-399",
         "category":  "17X",
         "excelRow":  "399",
@@ -2942,6 +3006,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/1b2fdvzLDDkfYYt8Nv0lfBnJ6pd3pjxSt/view",
         "frontImage":  "https://drive.google.com/thumbnail?id=1e-HAPHXsAg6D6xgCXgTdzwviYKUj-8Jw\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1b2fdvzLDDkfYYt8Nv0lfBnJ6pd3pjxSt\u0026sz=w1000"
+    },
+    {
+        "sku":  "17X-ROW-400",
+        "category":  "17X",
+        "excelRow":  "400",
+        "description":  "SM502 17X7.5 5X113.1 ET38 CB73.1  GOLD BLUE LINE",
+        "price":  "1,100.00",
+        "status":  "Available",
+        "remark":  "",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
     },
     {
         "sku":  "17X-ROW-402",
@@ -5792,6 +5872,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1pCef6axqRE9wnIWyaFUlk0_N0C1ijVb9\u0026sz=w1000"
     },
     {
+        "sku":  "NEW ARRIVAL-ROW-51",
+        "category":  "NEW ARRIVAL",
+        "excelRow":  "51",
+        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 GLOSS BLACK",
+        "price":  "598.00",
+        "status":  "Available",
+        "remark":  "",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "NEW ARRIVAL-ROW-116",
         "category":  "NEW ARRIVAL",
         "excelRow":  "116",
@@ -5822,6 +5918,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/1LVX1PvgwHhbsxZUgWW9ZiEc-BvPapy9m/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1pILqdvc_USK01ojsbn7Rs__7PMUV9WMe\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1LVX1PvgwHhbsxZUgWW9ZiEc-BvPapy9m\u0026sz=w1000"
+    },
+    {
+        "sku":  "NEW ARRIVAL-ROW-217",
+        "category":  "NEW ARRIVAL",
+        "excelRow":  "217",
+        "description":  "SM5599 15X7 4X100 ET38  CB73.1  VC CHROME",
+        "price":  "1,050.00",
+        "status":  "Limited",
+        "remark":  "",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
     },
     {
         "sku":  "NEW ARRIVAL-ROW-221",
