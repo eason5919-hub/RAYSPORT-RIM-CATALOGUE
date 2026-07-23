@@ -480,7 +480,20 @@ function normalizeCartItem(sku){
 }
 
 function getCartItem(sku){
-  return normalizeCartItem(sku);
+  const item = normalizeCartItem(sku);
+  if(!item) return null;
+
+  const limitedQty = clampOrderQtyForSku(sku, item.qty, false);
+  if(limitedQty.qty !== item.qty){
+    item.qty = limitedQty.qty;
+
+    if(item.qty <= 0){
+      delete cart[sku];
+      return null;
+    }
+  }
+
+  return item;
 }
 
 function getCartQty(sku){
