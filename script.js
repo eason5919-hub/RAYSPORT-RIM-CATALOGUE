@@ -311,7 +311,16 @@ function getProductBySku(sku){
   return products.find(product => product.sku === sku) || null;
 }
 
+function getTyreStockQuantity(product){
+  const stockQuantity = parseInt(product && product.stockQuantity, 10);
+  return isNaN(stockQuantity) ? Infinity : Math.max(0, stockQuantity);
+}
+
 function getOrderMaxQty(product){
+  if(isTyreProduct(product)){
+    return getTyreStockQuantity(product);
+  }
+
   const status = String(product && product.status ? product.status : "").trim().toLowerCase();
 
   if(status === "last set"){
@@ -326,6 +335,10 @@ function getOrderMaxQty(product){
 }
 
 function getOrderLimitNotice(product, maxQty){
+  if(isTyreProduct(product)){
+    return "Stock quantiy is not enough.";
+  }
+
   const status = String(product && product.status ? product.status : "This item").trim();
   const qtyWord = getProductQtyWord(product, maxQty).toLowerCase();
 
