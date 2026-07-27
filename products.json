@@ -816,22 +816,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1NrqG2_TTXLaGiBYy6hwQOh4C4yEm9s0A\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-237",
-        "category":  "15X7.0",
-        "excelRow":  "237",
-        "description":  "RFF202 15X7 4X100 ET35  CB73.1  GLOSS BLACK MILLING",
-        "price":  "820.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/14vYKekTfTzk6SmJpWbMgS8kVvHpmwX_R/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1H-5pxKrW6ghpTISEstcTPuMQffi86-h9/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=14vYKekTfTzk6SmJpWbMgS8kVvHpmwX_R\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1H-5pxKrW6ghpTISEstcTPuMQffi86-h9\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-239",
         "category":  "15X7.0",
         "excelRow":  "239",
@@ -2976,22 +2960,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1-VFTyHUpGbKM5fjFS7FnhXd7DGlf3JlB\u0026sz=w1000"
     },
     {
-        "sku":  "17X-ROW-354",
-        "category":  "17X",
-        "excelRow":  "354",
-        "description":  "RFF-V5 17X8 5X100 ET38  CB73.1  GLOSS BLACK LIP POLISH",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/12Q0YKniKVdLmeC9AU8uHRNLuQe-qyUoJ/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1qBxd5EPvndJw1ESJtY3OaTPv2qw2jaLp/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=12Q0YKniKVdLmeC9AU8uHRNLuQe-qyUoJ\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1qBxd5EPvndJw1ESJtY3OaTPv2qw2jaLp\u0026sz=w1000"
-    },
-    {
         "sku":  "17X-ROW-363",
         "category":  "17X",
         "excelRow":  "363",
@@ -4901,7 +4869,7 @@
         "excelRow":  "47",
         "description":  "FBX124 19X8.5 5X120 ET35 CB72.6 FLAT BLACK",
         "price":  "1,980.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming  [Front]",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -4917,7 +4885,7 @@
         "excelRow":  "48",
         "description":  "FBX124 19X9.5 5X120 ET38 CB72.6 FLAT BLACK",
         "price":  "1,980.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming  [Rear]",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
