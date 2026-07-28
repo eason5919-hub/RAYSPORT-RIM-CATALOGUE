@@ -48,22 +48,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1-QeuvyRubvDo8NHYeuW4KQ3qj_Tn-uH7\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-22",
-        "category":  "15X6.5",
-        "excelRow":  "22",
-        "description":  "CR57 15X6.5 4X100 ET40 CB73.1  HYPER BLACK",
-        "price":  "655.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1yx36LhyRQNE2E2vaEFOTkkDF-0w7SxpI/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1yxfDeaVMG8lUKdNcxRFbsrlVHkpVOeRU/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1yx36LhyRQNE2E2vaEFOTkkDF-0w7SxpI\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1yxfDeaVMG8lUKdNcxRFbsrlVHkpVOeRU\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-78",
         "category":  "15X6.5",
         "excelRow":  "78",
@@ -6325,7 +6309,7 @@
         "category":  "RAYSPORT TYRE",
         "excelRow":  "7",
         "description":  "RAYSPORT 195/55R15 SPORT KING SK07 (89V XL) [Y26]",
-        "stockQuantity":  64,
+        "stockQuantity":  56,
         "price":  "111.10",
         "status":  "Limited",
         "remark":  "",
