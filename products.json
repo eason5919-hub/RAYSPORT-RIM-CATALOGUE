@@ -800,22 +800,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1NrqG2_TTXLaGiBYy6hwQOh4C4yEm9s0A\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-232",
-        "category":  "15X7.0",
-        "excelRow":  "232",
-        "description":  "RFF102 15X7 4X100 ET38  CB73.1  GLOSS BLACK MILLING",
-        "price":  "719.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1JKrFA7JjCiScAfoDt5P-8WIXFunB-t0A/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1ikv-8ILfapGjwAd2lfaoscWIu7HiP-q9/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1JKrFA7JjCiScAfoDt5P-8WIXFunB-t0A\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1ikv-8ILfapGjwAd2lfaoscWIu7HiP-q9\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-239",
         "category":  "15X7.0",
         "excelRow":  "239",
@@ -6149,7 +6133,7 @@
         "excelRow":  "175",
         "description":  "RFF102 15X7 4X100 ET38  CB73.1  GLOSS BLACK MILLING",
         "price":  "719.00",
-        "status":  "Last Set",
+        "status":  "Sold Out",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
