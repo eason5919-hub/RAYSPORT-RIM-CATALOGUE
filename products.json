@@ -448,22 +448,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=17Bz5irI8OrWHfgqx1MuxMx7ZleRoACg-\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-16",
-        "category":  "15X7.0",
-        "excelRow":  "16",
-        "description":  "55412-G 15X7 4X100 ET35  CB73.1  SILVER MILLING FULL POLISH",
-        "price":  "860.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1OEefw49b0Eqyf_tm7553k5_jfE5n4Wli/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/18dvFM1PquTsdlBzNw0G4S-pYn61jnIlI/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1OEefw49b0Eqyf_tm7553k5_jfE5n4Wli\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=18dvFM1PquTsdlBzNw0G4S-pYn61jnIlI\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-59",
         "category":  "15X7.0",
         "excelRow":  "59",
@@ -3765,7 +3749,7 @@
         "excelRow":  "118",
         "description":  "MDM029 18X8.5 5X113.1 ET40 CB73.1  HYPER BLACK MILLING",
         "price":  "1,562.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
@@ -4126,22 +4110,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1Iu2QzJSkf6-VGRPQ5BpT-lkimBPh8zWd/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1hvCm5wyaIjSfcCIieC0Glff0ig5cUoct\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1Iu2QzJSkf6-VGRPQ5BpT-lkimBPh8zWd\u0026sz=w1000"
-    },
-    {
-        "sku":  "18X-ROW-187",
-        "category":  "18X",
-        "excelRow":  "187",
-        "description":  "RFF037 18X8.5 5X113.1 ET38 CB73.1  NANO GREY/MILLING",
-        "price":  "1,562.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1fSSJYOplo6zzEM6nhuTE-cFJ0s1CpYcN/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1qF8oHWcHa1_D95_pfE3u3EA7Wu0WKMn3/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1fSSJYOplo6zzEM6nhuTE-cFJ0s1CpYcN\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1qF8oHWcHa1_D95_pfE3u3EA7Wu0WKMn3\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-188",
