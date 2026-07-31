@@ -5808,22 +5808,6 @@
         "sideImage":  ""
     },
     {
-        "sku":  "20X-ROW-8",
-        "category":  "20X",
-        "excelRow":  "8",
-        "description":  "5478 20X8.5 5X114.3 ET35  CB73.1  GLOSS BLACK",
-        "price":  "2,550.00",
-        "status":  "Limited",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1t-1QXLegzzXB-O-294n7I2kWPhVVCe6A/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1vJcwYpoWkG7p9TUVnCiPt59V0rtaPI_9/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1t-1QXLegzzXB-O-294n7I2kWPhVVCe6A\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1vJcwYpoWkG7p9TUVnCiPt59V0rtaPI_9\u0026sz=w1000"
-    },
-    {
         "sku":  "20X-ROW-9",
         "category":  "20X",
         "excelRow":  "9",
