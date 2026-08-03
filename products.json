@@ -869,7 +869,7 @@
         "excelRow":  "248",
         "description":  "RFF-DR 15X7 4X100 ET38  CB73.1  GLOSS BLACK",
         "price":  "688.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -5950,22 +5950,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1XBY4P7KEGRoDQLFr0In-btn4Cdqxp_UN\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI\u0026sz=w1000"
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-279",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "279",
-        "description":  "RFF-DR 15X7 4X100 ET38 CB73.1 GLOSS BLACK",
-        "price":  "688.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-280",
