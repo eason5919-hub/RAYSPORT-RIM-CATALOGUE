@@ -1920,22 +1920,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1XpWOX4eqHHAtO-YDV5UUpA2nHzQJsF9D\u0026sz=w1000"
     },
     {
-        "sku":  "17X-ROW-136",
-        "category":  "17X",
-        "excelRow":  "136",
-        "description":  "D6082 17X8 4X100 ET38 CB73.1  WHITE RACING RED MILLING",
-        "price":  "1,240.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#C00000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/16gYMhnF9PsxRBI8xdcYhr5XOwdSW4YAs/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1JXYvdS0-HFwLUw3iV2P3P-EBfZFhTWCM/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=16gYMhnF9PsxRBI8xdcYhr5XOwdSW4YAs\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1JXYvdS0-HFwLUw3iV2P3P-EBfZFhTWCM\u0026sz=w1000"
-    },
-    {
         "sku":  "17X-ROW-166",
         "category":  "17X",
         "excelRow":  "166",
@@ -5934,6 +5918,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1XBY4P7KEGRoDQLFr0In-btn4Cdqxp_UN\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI\u0026sz=w1000"
+    },
+    {
+        "sku":  "NEW ARRIVAL-ROW-279",
+        "category":  "NEW ARRIVAL",
+        "excelRow":  "279",
+        "description":  "RFF-DR 15X7 4X100 ET38 CB73.1 GLOSS BLACK",
+        "price":  "688.00",
+        "status":  "Last Set",
+        "remark":  "Flow Forming",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-280",
