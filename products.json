@@ -1,21 +1,5 @@
 [
     {
-        "sku":  "14-ROW-12",
-        "category":  "14",
-        "excelRow":  "12",
-        "description":  "1245(G) 14X6 8X100/110 ET38  CB73.1  GLOSS BLACK (MILLING)",
-        "price":  "619.00",
-        "status":  "Limited",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1o2qAJxwRSapuylYinHOVoJtd5bHUkXnv/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1R7IeRYXfTKnS49jOYGcDYuHruW--HMpf/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1o2qAJxwRSapuylYinHOVoJtd5bHUkXnv\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1R7IeRYXfTKnS49jOYGcDYuHruW--HMpf\u0026sz=w1000"
-    },
-    {
         "sku":  "14-ROW-13",
         "category":  "14",
         "excelRow":  "13",
