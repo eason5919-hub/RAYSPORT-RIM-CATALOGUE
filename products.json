@@ -2005,7 +2005,7 @@
         "excelRow":  "188",
         "description":  "(OD) D7070 17X7.5 8X100/114.3 ET38  CB73.1  GLOSS BLACK",
         "price":  "1,000.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -2942,22 +2942,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1tSKE-xvoWf_om0DwcpI65RI-HS7cxHN4/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1L8jNAYA-2GDhjayIKU9lmCSckWmIRbuJ\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1tSKE-xvoWf_om0DwcpI65RI-HS7cxHN4\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-347",
-        "category":  "17X",
-        "excelRow":  "347",
-        "description":  "RFFCR-C 17X8 5X113.1 ET38  CB73.1  MATT BRONZE",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1su75_vbmVnEJTwO-NvoXBC8bioZ3f92K/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1reuENtS_xql05FMDC9hWf-iDSsJxdwRa/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1su75_vbmVnEJTwO-NvoXBC8bioZ3f92K\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1reuENtS_xql05FMDC9hWf-iDSsJxdwRa\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-348",
