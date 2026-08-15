@@ -816,22 +816,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1NrqG2_TTXLaGiBYy6hwQOh4C4yEm9s0A\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-228",
-        "category":  "15X7.0",
-        "excelRow":  "228",
-        "description":  "RFF102 15X7 4X100 ET38 CB73.1  GREY CENTER POLISH DOUBLE LIP POLISH",
-        "price":  "725.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1IMLaBHIRc59y_EVx1RZoTcZ_x5Kg08bK/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1cuZiVpIUF82iUUPfTKmMU4TpNQpJdZfo/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1IMLaBHIRc59y_EVx1RZoTcZ_x5Kg08bK\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1cuZiVpIUF82iUUPfTKmMU4TpNQpJdZfo\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-229",
         "category":  "15X7.0",
         "excelRow":  "229",
@@ -6628,7 +6612,7 @@
         "category":  "RAYSPORT TYRE",
         "excelRow":  "6",
         "description":  "RAYSPORT 195/50R15 SPORT KING SK07 (86V XL) [Y26]",
-        "stockQuantity":  20,
+        "stockQuantity":  16,
         "price":  "110.70",
         "status":  "Limited",
         "remark":  "",
