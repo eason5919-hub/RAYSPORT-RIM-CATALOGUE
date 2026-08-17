@@ -48,22 +48,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1Vhm58yi_L5sLEnNvhsB1X_QfpVZT0R7y\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-85",
-        "category":  "15X6.5",
-        "excelRow":  "85",
-        "description":  "RFF101-A 15X6.5 4X100 ET40  CB73.1  CANDY RED MILLING",
-        "price":  "760.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#C00000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1pcdVdlitbkSjpdzQju4n0OmBZ8NaLYFk/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1zyu7LW3Y0FJypqao0a_97yNxfRk-GwGs/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1pcdVdlitbkSjpdzQju4n0OmBZ8NaLYFk\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1zyu7LW3Y0FJypqao0a_97yNxfRk-GwGs\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-88",
         "category":  "15X6.5",
         "excelRow":  "88",
@@ -2734,22 +2718,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1fE-r546Gm9lV5kpwO-JnUCRH86G5hB_k/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=10tkD9qNa7frtfiW0fPdLVkLkYZUmxOyq\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1fE-r546Gm9lV5kpwO-JnUCRH86G5hB_k\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-289",
-        "category":  "17X",
-        "excelRow":  "289",
-        "description":  "RFF101 17X7.5 5X113.1 ET35  CB73.1  WHITE CHROME",
-        "price":  "1,456.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1-4VRV0hQim6hfUwwOv_MMlEXpL2v1LcU/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1jSV1vM1Qu-h1jARvASvT9-NJfVoqVAFE/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1-4VRV0hQim6hfUwwOv_MMlEXpL2v1LcU\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1jSV1vM1Qu-h1jARvASvT9-NJfVoqVAFE\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-292",
