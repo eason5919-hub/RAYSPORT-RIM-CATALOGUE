@@ -4352,6 +4352,22 @@
         "sideImage":  ""
     },
     {
+        "sku":  "18X-ROW-120",
+        "category":  "18X",
+        "excelRow":  "120",
+        "description":  "MDM029 18X8.5 5X100 ET40 CB73.1  GLOSS BLACK MILLING",
+        "price":  "1,562.00",
+        "status":  "Last Set",
+        "remark":  "Flow Forming",
+        "extraInfo":  "",
+        "extraInfoColor":  "#000000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1YO5czp05fj1TljYSZgfvsYyNqqibxxJY/view",
+        "sideOriginal":  "https://drive.google.com/file/d/1m9t_Zgv3YPOCQ5hhOHSe2NUfhGP5L_ac/view",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1YO5czp05fj1TljYSZgfvsYyNqqibxxJY\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1m9t_Zgv3YPOCQ5hhOHSe2NUfhGP5L_ac\u0026sz=w1000"
+    },
+    {
         "sku":  "18X-ROW-121",
         "category":  "18X",
         "excelRow":  "121",
