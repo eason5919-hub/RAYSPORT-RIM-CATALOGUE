@@ -1,21 +1,5 @@
 [
     {
-        "sku":  "14-ROW-13",
-        "category":  "14",
-        "excelRow":  "13",
-        "description":  "1245(G) 14X6 8X100/110 ET38  CB73.1  ULTRA BRONZE (HBP 3 MILLING)",
-        "price":  "619.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/10Z65HKeghL4mK-1fd8ygERURxEHrxhah/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1pCef6axqRE9wnIWyaFUlk0_N0C1ijVb9/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=10Z65HKeghL4mK-1fd8ygERURxEHrxhah\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1pCef6axqRE9wnIWyaFUlk0_N0C1ijVb9\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-78",
         "category":  "15X6.5",
         "excelRow":  "78",
@@ -1397,7 +1381,7 @@
         "excelRow":  "131",
         "description":  "JT219 16X7 8X100/114.3 ET35  CB73.1  GLOSS BLACK LIP POLISH",
         "price":  "865.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
