@@ -4672,22 +4672,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1QxF1b2GihxYhbY8Mv0VzVus3U3bCIbF4\u0026sz=w1000"
     },
     {
-        "sku":  "18X-ROW-186",
-        "category":  "18X",
-        "excelRow":  "186",
-        "description":  "RFF037 18X8.5 5X113.1 ET38 CB73.1  GREY CENTER POLISH DOUBLE LIP POLISH",
-        "price":  "1,562.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1hvCm5wyaIjSfcCIieC0Glff0ig5cUoct/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1Iu2QzJSkf6-VGRPQ5BpT-lkimBPh8zWd/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1hvCm5wyaIjSfcCIieC0Glff0ig5cUoct\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1Iu2QzJSkf6-VGRPQ5BpT-lkimBPh8zWd\u0026sz=w1000"
-    },
-    {
         "sku":  "18X-ROW-189",
         "category":  "18X",
         "excelRow":  "189",
@@ -6048,6 +6032,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1ZJapm4Dx7D-YhF2uhwmiVbr0wtzZq1KV\u0026sz=w1000"
     },
     {
+        "sku":  "19X-ROW-89",
+        "category":  "19X",
+        "excelRow":  "89",
+        "description":  "MDM159 19X8.5 5X114.3 ET38 CB60.1 HYPER BLACK",
+        "price":  "1,980.00",
+        "status":  "Limited",
+        "remark":  "Flow Forming",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1GZnGNLuy9pJt6p7-Amm5O9g6Cq-alylu/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1hdhicLMa8BVegAlUPfmUUoxU9j_KYBNo/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1GZnGNLuy9pJt6p7-Amm5O9g6Cq-alylu\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1hdhicLMa8BVegAlUPfmUUoxU9j_KYBNo\u0026sz=w1000"
+    },
+    {
         "sku":  "19X-ROW-91",
         "category":  "19X",
         "excelRow":  "91",
@@ -6608,22 +6608,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1InpXmeDRuMhnsMh8EWyNK_U33XbWnEaI\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-467",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "467",
-        "description":  "MDM010 16X7 5X114.3 ET35 CB73.1 HYPER BLACK (TC)",
-        "price":  "875.00",
-        "status":  "Sold Out",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1_E9BHSQnrfGOgjvJU7DGfss4aobSrCKX/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/13pQyM9MOg5v2aOBJ8C4WMHjIAhPR5KIE/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1_E9BHSQnrfGOgjvJU7DGfss4aobSrCKX\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=13pQyM9MOg5v2aOBJ8C4WMHjIAhPR5KIE\u0026sz=w1000"
-    },
-    {
         "sku":  "NEW ARRIVAL-ROW-474",
         "category":  "NEW ARRIVAL",
         "excelRow":  "474",
@@ -6711,7 +6695,7 @@
         "price":  "1,416.00",
         "status":  "Limited",
         "remark":  "Flow Forming",
-        "extraInfo":  "NEW",
+        "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
         "frontOriginal":  "https://drive.google.com/file/d/1sLlbXiAtUnk4B5jID0oE7Sznl071kTnP/view?usp=sharing",
@@ -6743,7 +6727,7 @@
         "price":  "1,980.00",
         "status":  "Limited",
         "remark":  "Flow Forming",
-        "extraInfo":  "NEW",
+        "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
         "frontOriginal":  "https://drive.google.com/file/d/1GZnGNLuy9pJt6p7-Amm5O9g6Cq-alylu/view?usp=sharing",
