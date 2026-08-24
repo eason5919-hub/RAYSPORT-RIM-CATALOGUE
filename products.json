@@ -1440,22 +1440,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1k0z3CgvUNGL-70MFYbGGFzWlX5MsyAJW\u0026sz=w1000"
     },
     {
-        "sku":  "16X-ROW-141",
-        "category":  "16X",
-        "excelRow":  "141",
-        "description":  "MDM010 16X7 5X114.3 ET35 CB73.1 HYPER BLACK (TC)",
-        "price":  "875.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1_E9BHSQnrfGOgjvJU7DGfss4aobSrCKX/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/13pQyM9MOg5v2aOBJ8C4WMHjIAhPR5KIE/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1_E9BHSQnrfGOgjvJU7DGfss4aobSrCKX\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=13pQyM9MOg5v2aOBJ8C4WMHjIAhPR5KIE\u0026sz=w1000"
-    },
-    {
         "sku":  "16X-ROW-143",
         "category":  "16X",
         "excelRow":  "143",
@@ -2030,22 +2014,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1MefVEs7V90fWy1o0CkqpfrMq98YkOBeE/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=179_-uiJUWV9SeL5QFEh03S-GfISLf49o\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1MefVEs7V90fWy1o0CkqpfrMq98YkOBeE\u0026sz=w1000"
-    },
-    {
-        "sku":  "16X-ROW-243",
-        "category":  "16X",
-        "excelRow":  "243",
-        "description":  "RX388 16X7.5 4X100 ET38 CB73.1  FLAT BLACK",
-        "price":  "855.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1EQx5EPTwgehhqseTSymyjRgVBB7qOlFx/view",
-        "sideOriginal":  "https://drive.google.com/file/d/1bEP-Iphl23W68iDZO-RlRE3GBsj2KoB2/view",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1EQx5EPTwgehhqseTSymyjRgVBB7qOlFx\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1bEP-Iphl23W68iDZO-RlRE3GBsj2KoB2\u0026sz=w1000"
     },
     {
         "sku":  "16X-ROW-251",
@@ -6645,7 +6613,7 @@
         "excelRow":  "467",
         "description":  "MDM010 16X7 5X114.3 ET35 CB73.1 HYPER BLACK (TC)",
         "price":  "875.00",
-        "status":  "Last Set",
+        "status":  "Sold Out",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
