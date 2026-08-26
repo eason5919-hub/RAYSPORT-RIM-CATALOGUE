@@ -560,22 +560,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1bZQ38YR14xsrzQoVKiSoV59TkiGNBJZe\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-193",
-        "category":  "15X7.0",
-        "excelRow":  "193",
-        "description":  "MDM296 15X7 4X100 ET35 CB73.1  GLOSS BLACK/MILLING",
-        "price":  "1,020.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1-vICuHzKDNlqHHCb6QECEIGt-Uzqvszl/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/10OLv0zsaW_s5I478viULHqtBe7UbLdEN/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1-vICuHzKDNlqHHCb6QECEIGt-Uzqvszl\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=10OLv0zsaW_s5I478viULHqtBe7UbLdEN\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-194",
         "category":  "15X7.0",
         "excelRow":  "194",
@@ -5390,22 +5374,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1f8x34eVN-FKzfVsyyarODICEYlX0wSl3\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX\u0026sz=w1000"
-    },
-    {
-        "sku":  "19X-ROW-14",
-        "category":  "19X",
-        "excelRow":  "14",
-        "description":  "5581 19X9.5 5X113.1 ET40 CB73.1 GLOSS BLACK MACHINE FACE + B5",
-        "price":  "1,927.00",
-        "status":  "Last Set",
-        "remark":  "[Rear]",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "#DDEBF7",
-        "frontOriginal":  "https://drive.google.com/file/d/1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1f8x34eVN-FKzfVsyyarODICEYlX0wSl3/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1f8x34eVN-FKzfVsyyarODICEYlX0wSl3\u0026sz=w1000"
     },
     {
         "sku":  "19X-ROW-15",
