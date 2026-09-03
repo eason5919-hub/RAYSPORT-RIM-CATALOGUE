@@ -4101,7 +4101,7 @@
         "excelRow":  "119",
         "description":  "MDM029 18X8.5 5X113.1 ET40  CB73.1  GLOSS BLACK MILLING LIP POLISH",
         "price":  "1,562.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
@@ -6382,22 +6382,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1A97RO7kkDqiGVRSRF6FjCO8yNt1TO5ts/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1fY3irVjFJGn4W1gRvPdH96VMgtMTz2ND\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1A97RO7kkDqiGVRSRF6FjCO8yNt1TO5ts\u0026sz=w1000"
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-702",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "702",
-        "description":  "MDM029 18X8.5 5X113.1 ET40  CB73.1  GLOSS BLACK MILLING LIP POLISH",
-        "price":  "1,562.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1OR-pReyb7ox81LJsgTbRWsoYoKSPVV-U/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1ICk_UPINfizY6ggVOqEMpjVX0nwRtgw1/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1OR-pReyb7ox81LJsgTbRWsoYoKSPVV-U\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1ICk_UPINfizY6ggVOqEMpjVX0nwRtgw1\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-705",
