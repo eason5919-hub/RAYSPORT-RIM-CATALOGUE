@@ -821,7 +821,7 @@
         "excelRow":  "231",
         "description":  "RFF102 15X7 4X100 ET38  CB73.1  ULTRA BRONZE MILLING",
         "price":  "725.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -1230,22 +1230,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/114NgJmnV5H1CHDbJip0atqgpaka8P88k/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1IJ8VPnaXOHJLYVTiDei3N1CXFJjfipRS\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=114NgJmnV5H1CHDbJip0atqgpaka8P88k\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X7.0-ROW-308",
-        "category":  "15X7.0",
-        "excelRow":  "308",
-        "description":  "SM5599 15X7 4X100 ET38  CB73.1  VC CHROME",
-        "price":  "1,050.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1VLFluvkO9f6d0JBQL3LYOCGTq0997tJw/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1VLFluvkO9f6d0JBQL3LYOCGTq0997tJw/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1VLFluvkO9f6d0JBQL3LYOCGTq0997tJw\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1VLFluvkO9f6d0JBQL3LYOCGTq0997tJw\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-312",
