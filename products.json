@@ -1184,6 +1184,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj\u0026sz=w1000"
     },
     {
+        "sku":  "15X7.0-ROW-318",
+        "category":  "15X7.0",
+        "excelRow":  "318",
+        "description":  "SR5328 15X7 4X100 ET35 CB73.1  GOLD LIP POLISH",
+        "price":  "675.00",
+        "status":  "Last Set",
+        "remark":  "",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "15X7.0-ROW-351",
         "category":  "15X7.0",
         "excelRow":  "351",
@@ -5022,6 +5038,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1f8x34eVN-FKzfVsyyarODICEYlX0wSl3\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX\u0026sz=w1000"
+    },
+    {
+        "sku":  "19X-ROW-14",
+        "category":  "19X",
+        "excelRow":  "14",
+        "description":  "5581 19X9.5 5X113.1 ET40 CB73.1 GLOSS BLACK MACHINE FACE + B5",
+        "price":  "1,927.00",
+        "status":  "Last Set",
+        "remark":  "[Rear]",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "#DDEBF7",
+        "frontOriginal":  "https://drive.google.com/file/d/1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1f8x34eVN-FKzfVsyyarODICEYlX0wSl3/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1QP4FGPt6F8hIsdfJ_jF_D9MxVb6lKtzX\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1f8x34eVN-FKzfVsyyarODICEYlX0wSl3\u0026sz=w1000"
     },
     {
         "sku":  "19X-ROW-15",
