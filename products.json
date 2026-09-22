@@ -1376,22 +1376,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1yYIPVF9GNcEkik7Nx3iCbYnNlp4Kg-px\u0026sz=w1000"
     },
     {
-        "sku":  "16X-ROW-158",
-        "category":  "16X",
-        "excelRow":  "158",
-        "description":  "RFF101 16X7 4X100 ET40  CB73.1  CANDY RED/MILLING",
-        "price":  "875.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1t58KjqmGC6rCC4NIUCLCVdcsIx1gGFCe/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1JkWVaipNA-BbpobGHprEgFwPQ1QlSB5E/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1t58KjqmGC6rCC4NIUCLCVdcsIx1gGFCe\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1JkWVaipNA-BbpobGHprEgFwPQ1QlSB5E\u0026sz=w1000"
-    },
-    {
         "sku":  "16X-ROW-162",
         "category":  "16X",
         "excelRow":  "162",
@@ -5173,7 +5157,7 @@
         "excelRow":  "279",
         "description":  "ROMA - 52R 18X8.5 5X113.1 ET40 CB73.1 HYPER SILVER",
         "price":  "1,604.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "",
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
