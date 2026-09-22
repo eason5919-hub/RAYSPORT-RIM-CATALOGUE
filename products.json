@@ -1120,6 +1120,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1AopDZEMCurU1Wv0i-DYDrUhNUETztdjh\u0026sz=w1000"
     },
     {
+        "sku":  "15X7.0-ROW-302",
+        "category":  "15X7.0",
+        "excelRow":  "302",
+        "description":  "ZX859 (SM1338) 15X7 4X100 ET38 CB73.1 GLOSS BLACK",
+        "price":  "666.00",
+        "status":  "Last Set",
+        "remark":  "",
+        "extraInfo":  "",
+        "extraInfoColor":  "#000000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "15X7.0-ROW-308",
         "category":  "15X7.0",
         "excelRow":  "308",
