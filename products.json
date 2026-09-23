@@ -16,22 +16,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1AAlOYBwCK14yTnIxhRaY5wVcWc4mntDj\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-79",
-        "category":  "15X6.5",
-        "excelRow":  "79",
-        "description":  "RFF001-A 15X6.5 8X100/114.3 ET35  CB73.1  GLOSS BLACK MILLING RAINBOW",
-        "price":  "920.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1LnA9Fh9IxspvHbRrFgN6fprhjFlvEPvw/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1Vhm58yi_L5sLEnNvhsB1X_QfpVZT0R7y/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1LnA9Fh9IxspvHbRrFgN6fprhjFlvEPvw\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1Vhm58yi_L5sLEnNvhsB1X_QfpVZT0R7y\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-88",
         "category":  "15X6.5",
         "excelRow":  "88",
@@ -158,22 +142,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1xM2STmmiS2KdeS61RLoNY6dczly2iA5k/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=15iiJZgMOYKb1uzzyAzUkF7gIx1FjAQun\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1xM2STmmiS2KdeS61RLoNY6dczly2iA5k\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X6.5-ROW-119",
-        "category":  "15X6.5",
-        "excelRow":  "119",
-        "description":  "RFF-T4-A 15X6.5 4X100 ET40  CB73.1  CANDY RED LP",
-        "price":  "740.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/19mTbH2fgosaLV7plnj0C89wcRbnGimU0/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/19mTbH2fgosaLV7plnj0C89wcRbnGimU0/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=19mTbH2fgosaLV7plnj0C89wcRbnGimU0\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=19mTbH2fgosaLV7plnj0C89wcRbnGimU0\u0026sz=w1000"
     },
     {
         "sku":  "15X6.5-ROW-120",
@@ -469,7 +437,7 @@
         "excelRow":  "192",
         "description":  "MDM295 15X7 4X100 ET35  CB73.1  GLOSS BLACK RAINBOW",
         "price":  "920.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
