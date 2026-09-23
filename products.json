@@ -64,22 +64,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1ZJXmscqvPI1PG3a_HPrJigy5itc_rHx1\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-104",
-        "category":  "15X6.5",
-        "excelRow":  "104",
-        "description":  "RFF-DR-A 15X6.5 4X100 ET42  CB73.1  GLOSS BLACK",
-        "price":  "668.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1ADsQzXL7ILgVMYR31GYEr0nvN5DMoSmq/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1FKGrrFoyVkFyBSNjGiZ97-kjEqsZm7Ol/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1ADsQzXL7ILgVMYR31GYEr0nvN5DMoSmq\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1FKGrrFoyVkFyBSNjGiZ97-kjEqsZm7Ol\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-106",
         "category":  "15X6.5",
         "excelRow":  "106",
@@ -7192,7 +7176,7 @@
         "category":  "RAYSPORT TYRE",
         "excelRow":  "10",
         "description":  "RAYSPORT 215/45R17 SPORT KING SK07 (91W XL) [Y26]",
-        "stockQuantity":  74,
+        "stockQuantity":  86,
         "price":  "149.40",
         "status":  "Limited",
         "remark":  "",
