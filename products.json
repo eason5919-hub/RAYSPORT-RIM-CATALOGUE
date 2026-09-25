@@ -416,22 +416,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1p-AV6oGXodeYJJ31NDMQunc7YkpOElyW\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-192",
-        "category":  "15X7.0",
-        "excelRow":  "192",
-        "description":  "MDM295 15X7 4X100 ET35  CB73.1  GLOSS BLACK RAINBOW",
-        "price":  "920.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/129dqH8mvf2PQvJqtYOQJwsQEByubtgvy/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1bZQ38YR14xsrzQoVKiSoV59TkiGNBJZe/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=129dqH8mvf2PQvJqtYOQJwsQEByubtgvy\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1bZQ38YR14xsrzQoVKiSoV59TkiGNBJZe\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-194",
         "category":  "15X7.0",
         "excelRow":  "194",
@@ -574,22 +558,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1xBLKqtfuFP6Fk94ahkXwDbhbiBBixrhQ/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=12SzzadzWiWcO1aJHyaGM7-p-pJysejnI\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1xBLKqtfuFP6Fk94ahkXwDbhbiBBixrhQ\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X7.0-ROW-214",
-        "category":  "15X7.0",
-        "excelRow":  "214",
-        "description":  "RFF101 15X7 4X100 ET38 CB73.1  GLOSS BLACK",
-        "price":  "700.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1kZ8yMbVs_4MsJ-zD1_0AjjwCvfrQUt7y/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1ROmU1doVqsfCp7p3-eXtq_veNx-9szNj/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1kZ8yMbVs_4MsJ-zD1_0AjjwCvfrQUt7y\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1ROmU1doVqsfCp7p3-eXtq_veNx-9szNj\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-221",
@@ -2798,22 +2766,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1eHeS97FdBjTLGR6qNMS2GB3IckjMyxG5/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1OMWpI2k5i-vRyacUqYNeS7d_LQqlbCz9\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1eHeS97FdBjTLGR6qNMS2GB3IckjMyxG5\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-296",
-        "category":  "17X",
-        "excelRow":  "296",
-        "description":  "RFF101 17X7.5 5X100 ET40 CB73.1 HYPER BLACK MILLING LIP POLISH",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1edpbnyldWMhlcWfx4Kgew6e7N-bj0BCE/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1qB4egcqWJMfZjQX3zo9CEBZD-CEukBOb/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1edpbnyldWMhlcWfx4Kgew6e7N-bj0BCE\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1qB4egcqWJMfZjQX3zo9CEBZD-CEukBOb\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-297",
@@ -6741,7 +6693,7 @@
         "excelRow":  "453",
         "description":  "RFF101 17X7.5 5X100 ET40 CB73.1 HYPER BLACK MILLING LIP POLISH",
         "price":  "1,100.00",
-        "status":  "Last Set",
+        "status":  "Sold Out",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
