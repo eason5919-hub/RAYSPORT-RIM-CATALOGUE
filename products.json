@@ -2915,17 +2915,17 @@
         "sku":  "17X-ROW-321",
         "category":  "17X",
         "excelRow":  "321",
-        "description":  "RFF102 17X7.5 5X113.1 ET35 CB73.1 BLACK CHROME",
+        "description":  "RFF102 17X7.5 5X113.1 ET35 CB73.1 BLACK CHROME MILLING",
         "price":  "1,520.00",
         "status":  "Available",
         "remark":  "Flow Forming",
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1Kd6liCz7bn9MITfbSZQvmRxQLQ9aQJMk/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1FBQJhtJTt3nriJisHCWP53wHypDNWgSi/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1Kd6liCz7bn9MITfbSZQvmRxQLQ9aQJMk\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1FBQJhtJTt3nriJisHCWP53wHypDNWgSi\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-329",
