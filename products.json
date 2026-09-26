@@ -698,10 +698,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1YkVxtX31SP6up3cAg__TL7RqSUH7Q2xL/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1RPofmyjibJPxHsd-U1v1m9FXe_31NvmR/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1YkVxtX31SP6up3cAg__TL7RqSUH7Q2xL\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1RPofmyjibJPxHsd-U1v1m9FXe_31NvmR\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-242",
@@ -4570,10 +4570,10 @@
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/19s3Q-sIuIK5ke5hjt7_PtZoqZmbzGDFE/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1hT8gNN5SsXT8PiOALqONDNU_QjjwbyBn/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=19s3Q-sIuIK5ke5hjt7_PtZoqZmbzGDFE\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1hT8gNN5SsXT8PiOALqONDNU_QjjwbyBn\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-189",
@@ -4606,22 +4606,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1ck8523ZvI8RnoJRKLffWKPGsIFRFJb0t/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1a_S9L4nD_LzYEMFZlVWKoxDkVA27xWZx\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1ck8523ZvI8RnoJRKLffWKPGsIFRFJb0t\u0026sz=w1000"
-    },
-    {
-        "sku":  "18X-ROW-196",
-        "category":  "18X",
-        "excelRow":  "196",
-        "description":  "RFF037 18X8.5 5X113.1 ET38 CB73.1  WHITE CHROME",
-        "price":  "1,960.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1mMJX5ReHm_-sur2AB_cg-fOZ_F5s4_ks/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1-NtDUif72l8l8DYUbbbe3WXUfQnAjQ7P/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1mMJX5ReHm_-sur2AB_cg-fOZ_F5s4_ks\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1-NtDUif72l8l8DYUbbbe3WXUfQnAjQ7P\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-206",
@@ -4778,10 +4762,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1wgjcCl4kvL-83zhXg_ii9SNHVVKa0nJp/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/19ctFENttVTz8YpPolJAcejCqlfQA5KYO/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1wgjcCl4kvL-83zhXg_ii9SNHVVKa0nJp\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=19ctFENttVTz8YpPolJAcejCqlfQA5KYO\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-234",
@@ -4794,10 +4778,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1mK5AKzoF85t4-nYHliAjs9UwOHf57759/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1mK5AKzoF85t4-nYHliAjs9UwOHf57759\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-235",
@@ -4810,10 +4794,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1mK5AKzoF85t4-nYHliAjs9UwOHf57759/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1mK5AKzoF85t4-nYHliAjs9UwOHf57759\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-242",
@@ -4858,10 +4842,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1BWVb68CPt1LFzmNmlIZerQIoZLM97Gnn/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1EGcbWjO57mEgaKfvMkhHs83uUxsto2Bn/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1BWVb68CPt1LFzmNmlIZerQIoZLM97Gnn\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1EGcbWjO57mEgaKfvMkhHs83uUxsto2Bn\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-249",
@@ -5294,6 +5278,22 @@
         "sideOriginal":  "",
         "frontImage":  "",
         "sideImage":  ""
+    },
+    {
+        "sku":  "18X-ROW-302",
+        "category":  "18X",
+        "excelRow":  "302",
+        "description":  "X80508J 18X8.5 5X108 ET20 CB73.1 MATT BLACK",
+        "price":  "1,750.00",
+        "status":  "Limited",
+        "remark":  "Flow Forming",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq\u0026sz=w1000"
     },
     {
         "sku":  "19X-ROW-3",
@@ -6410,10 +6410,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1oKBpWphaxREbWNEf9VIIJpRPnr60VZb3/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/15Bvv2VlrBGb3Hw6LeGWv_eQV-ABu6prQ/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1oKBpWphaxREbWNEf9VIIJpRPnr60VZb3\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=15Bvv2VlrBGb3Hw6LeGWv_eQV-ABu6prQ\u0026sz=w1000"
     },
     {
         "sku":  "4X4-ROW-10",
@@ -6426,10 +6426,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1YwYtnPtfStb4WPq3uGkN3-Kwy9QgLZyT/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/16Bh8y6rR_U7pbBpdsk2VA1In_c-g4GnY/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1YwYtnPtfStb4WPq3uGkN3-Kwy9QgLZyT\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=16Bh8y6rR_U7pbBpdsk2VA1In_c-g4GnY\u0026sz=w1000"
     },
     {
         "sku":  "4X4-ROW-19",
@@ -6522,10 +6522,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V\u0026sz=w1000"
     },
     {
         "sku":  "4X4-ROW-42",
@@ -6547,22 +6547,6 @@
         "sku":  "4X4-ROW-43",
         "category":  "4X4",
         "excelRow":  "43",
-        "description":  "X80508J 18X8.5 5X108 ET20 CB73.1 MATT BLACK",
-        "price":  "1,750.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
-        "sku":  "4X4-ROW-44",
-        "category":  "4X4",
-        "excelRow":  "44",
         "description":  "RFF194 18X9.5 6X139.7 ET10 CB106.1  NARDO GREY",
         "price":  "1,458.00",
         "status":  "Available",
@@ -6586,10 +6570,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1oKBpWphaxREbWNEf9VIIJpRPnr60VZb3/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/15Bvv2VlrBGb3Hw6LeGWv_eQV-ABu6prQ/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1oKBpWphaxREbWNEf9VIIJpRPnr60VZb3\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=15Bvv2VlrBGb3Hw6LeGWv_eQV-ABu6prQ\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-9",
@@ -6602,15 +6586,31 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1YwYtnPtfStb4WPq3uGkN3-Kwy9QgLZyT/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/16Bh8y6rR_U7pbBpdsk2VA1In_c-g4GnY/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1YwYtnPtfStb4WPq3uGkN3-Kwy9QgLZyT\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=16Bh8y6rR_U7pbBpdsk2VA1In_c-g4GnY\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-28",
         "category":  "NEW ARRIVAL",
         "excelRow":  "28",
+        "description":  "X80442-K 18X9 6X139.7 ET0 CB110.1 MATT BRONZE MATT BLACK LIP",
+        "price":  "1,615.00",
+        "status":  "Last Set",
+        "remark":  "Flow Forming",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V\u0026sz=w1000"
+    },
+    {
+        "sku":  "NEW ARRIVAL-ROW-29",
+        "category":  "NEW ARRIVAL",
+        "excelRow":  "29",
         "description":  "X80442-K 18X9 6X139.7 ET0  CB110.1  MATT GREY MATT BLACK LIP",
         "price":  "1,615.00",
         "status":  "Limited",
@@ -6624,9 +6624,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1kuHxw-SY6ttw0NG6FS2odqren8fbhjd8\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-29",
+        "sku":  "NEW ARRIVAL-ROW-30",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "29",
+        "excelRow":  "30",
         "description":  "X80508J 18X8.5 5X108 ET20 CB73.1 MATT BLACK",
         "price":  "1,750.00",
         "status":  "Limited",
@@ -6634,15 +6634,15 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1oy04R0U_u5z0XBeqjCHMv1_xTgLk3eaq\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-179",
+        "sku":  "NEW ARRIVAL-ROW-180",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "179",
+        "excelRow":  "180",
         "description":  "RFF102 15X7 4X100 ET38 CB73.1  GREY CENTER POLISH DOUBLE LIP POLISH",
         "price":  "725.00",
         "status":  "Limited",
@@ -6656,9 +6656,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1cuZiVpIUF82iUUPfTKmMU4TpNQpJdZfo\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-181",
+        "sku":  "NEW ARRIVAL-ROW-182",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "181",
+        "excelRow":  "182",
         "description":  "RFF102 15X7 4X100 ET38  CB73.1  ULTRA BRONZE MILLING",
         "price":  "725.00",
         "status":  "Last Set",
@@ -6672,9 +6672,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1JSTmxTVIM8XosXsCv3O52aeOc6IghOz3\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-184",
+        "sku":  "NEW ARRIVAL-ROW-185",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "184",
+        "excelRow":  "185",
         "description":  "RFF102 15X7 4X100 ET38 CB73.1 CHROME MILLING",
         "price":  "1,050.00",
         "status":  "Available",
@@ -6682,15 +6682,15 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1YkVxtX31SP6up3cAg__TL7RqSUH7Q2xL/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1RPofmyjibJPxHsd-U1v1m9FXe_31NvmR/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1YkVxtX31SP6up3cAg__TL7RqSUH7Q2xL\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1RPofmyjibJPxHsd-U1v1m9FXe_31NvmR\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-266",
+        "sku":  "NEW ARRIVAL-ROW-267",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "266",
+        "excelRow":  "267",
         "description":  "RFF101 15X7 4X100 ET38  CB73.1  HYPER BLACK MILLING LIP POLISH",
         "price":  "780.00",
         "status":  "Limited",
@@ -6704,41 +6704,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=19QJIHzGlxQ7moExv0GaMeAhwhwrzJLiB\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-453",
+        "sku":  "NEW ARRIVAL-ROW-462",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "453",
-        "description":  "RFF101 17X7.5 5X100 ET40 CB73.1 HYPER BLACK MILLING LIP POLISH",
-        "price":  "1,100.00",
-        "status":  "Sold Out",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1edpbnyldWMhlcWfx4Kgew6e7N-bj0BCE/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1qB4egcqWJMfZjQX3zo9CEBZD-CEukBOb/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1edpbnyldWMhlcWfx4Kgew6e7N-bj0BCE\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1qB4egcqWJMfZjQX3zo9CEBZD-CEukBOb\u0026sz=w1000"
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-460",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "460",
-        "description":  "RFF202 17X8 5X113.1 ET35 CB73.1 GLOSS BLACK MILLING",
-        "price":  "1,260.00",
-        "status":  "Sold Out",
-        "remark":  "Flow Forming",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-461",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "461",
+        "excelRow":  "462",
         "description":  "RFF202 17X8 5X100 ET40 CB73.1 GLOSS BLACK MILLING",
         "price":  "1,260.00",
         "status":  "Limited",
@@ -6746,47 +6714,31 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1T374oLul_Ef9AUJ4C3YV6VZgxzXL5FvA/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1wMMO1hXhRD8_1SpQwDaOJQVz25XrqYr-/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1T374oLul_Ef9AUJ4C3YV6VZgxzXL5FvA\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1wMMO1hXhRD8_1SpQwDaOJQVz25XrqYr-\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-534",
+        "sku":  "NEW ARRIVAL-ROW-535",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "534",
-        "description":  "RFF102 17X7.5 5X113.1 ET35 CB73.1 BLACK CHROME",
+        "excelRow":  "535",
+        "description":  "RFF102 17X7.5 5X113.1 ET35 CB73.1 BLACK CHROME MILLING",
         "price":  "1,520.00",
         "status":  "Available",
         "remark":  "Flow Forming",
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1Kd6liCz7bn9MITfbSZQvmRxQLQ9aQJMk/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1FBQJhtJTt3nriJisHCWP53wHypDNWgSi/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1Kd6liCz7bn9MITfbSZQvmRxQLQ9aQJMk\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1FBQJhtJTt3nriJisHCWP53wHypDNWgSi\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-718",
+        "sku":  "NEW ARRIVAL-ROW-759",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "718",
-        "description":  "RFF037 18X8.5 5X113.1 ET38  CB73.1  WHITE CHROME",
-        "price":  "1,960.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1mMJX5ReHm_-sur2AB_cg-fOZ_F5s4_ks/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1-NtDUif72l8l8DYUbbbe3WXUfQnAjQ7P/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1mMJX5ReHm_-sur2AB_cg-fOZ_F5s4_ks\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1-NtDUif72l8l8DYUbbbe3WXUfQnAjQ7P\u0026sz=w1000"
-    },
-    {
-        "sku":  "NEW ARRIVAL-ROW-758",
-        "category":  "NEW ARRIVAL",
-        "excelRow":  "758",
+        "excelRow":  "759",
         "description":  "RFF202 18X8.5 5X113.1 ET35 CB73.1 GLOSS BLACK MILLING RAINBOW",
         "price":  "1,650.00",
         "status":  "Limited",
@@ -6794,15 +6746,15 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1wgjcCl4kvL-83zhXg_ii9SNHVVKa0nJp/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/19ctFENttVTz8YpPolJAcejCqlfQA5KYO/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1wgjcCl4kvL-83zhXg_ii9SNHVVKa0nJp\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=19ctFENttVTz8YpPolJAcejCqlfQA5KYO\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-759",
+        "sku":  "NEW ARRIVAL-ROW-760",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "759",
+        "excelRow":  "760",
         "description":  "RFF202 18X8.5 5X113.1 ET35 CB73.1 GLOSS BLACK MILLING",
         "price":  "1,650.00",
         "status":  "Limited",
@@ -6810,15 +6762,15 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1mK5AKzoF85t4-nYHliAjs9UwOHf57759/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1mK5AKzoF85t4-nYHliAjs9UwOHf57759\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-760",
+        "sku":  "NEW ARRIVAL-ROW-761",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "760",
+        "excelRow":  "761",
         "description":  "RFF202 18X8.5 5X100 ET38 CB73.1 GLOSS BLACK MILLING",
         "price":  "1,650.00",
         "status":  "Limited",
@@ -6826,15 +6778,15 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1mK5AKzoF85t4-nYHliAjs9UwOHf57759/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1j9ar8CaMs19dJgVgldYM4fnuKdhUJEMQ\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1mK5AKzoF85t4-nYHliAjs9UwOHf57759\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-784",
+        "sku":  "NEW ARRIVAL-ROW-785",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "784",
+        "excelRow":  "785",
         "description":  "RFFCR 18X8.5 5X113.1 ET38 CB73.1 BLACK CHROME",
         "price":  "1,960.00",
         "status":  "Limited",
@@ -6842,15 +6794,15 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1BWVb68CPt1LFzmNmlIZerQIoZLM97Gnn/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1EGcbWjO57mEgaKfvMkhHs83uUxsto2Bn/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1BWVb68CPt1LFzmNmlIZerQIoZLM97Gnn\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1EGcbWjO57mEgaKfvMkhHs83uUxsto2Bn\u0026sz=w1000"
     },
     {
-        "sku":  "NEW ARRIVAL-ROW-838",
+        "sku":  "NEW ARRIVAL-ROW-839",
         "category":  "NEW ARRIVAL",
-        "excelRow":  "838",
+        "excelRow":  "839",
         "description":  "ROMA - 52R 18X8.5 5X113.1 ET40 CB73.1 HYPER SILVER",
         "price":  "1,604.00",
         "status":  "Available",
