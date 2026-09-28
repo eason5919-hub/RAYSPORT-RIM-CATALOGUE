@@ -1168,6 +1168,22 @@
         "sideImage":  ""
     },
     {
+        "sku":  "16X-ROW-25",
+        "category":  "16X",
+        "excelRow":  "25",
+        "description":  "65403-G 16X7 8X100/114.3 ET38 CB73.1  GLOSS BLACK",
+        "price":  "845.00",
+        "status":  "Last Set",
+        "remark":  "",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/174RF-rkN-8ZAYZeFTaQGHDX_pQcYo8ag/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1yyXooCIPhKNmvdIa5Uka2IdPtnB03k2-/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=174RF-rkN-8ZAYZeFTaQGHDX_pQcYo8ag\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1yyXooCIPhKNmvdIa5Uka2IdPtnB03k2-\u0026sz=w1000"
+    },
+    {
         "sku":  "16X-ROW-36",
         "category":  "16X",
         "excelRow":  "36",
@@ -6522,10 +6538,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V\u0026sz=w1000"
+        "frontOriginal":  "https://drive.google.com/file/d/1ii5D_APZOHX49IYg-z2ql--AtieZAxxj/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1ii5D_APZOHX49IYg-z2ql--AtieZAxxj/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1ii5D_APZOHX49IYg-z2ql--AtieZAxxj\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1ii5D_APZOHX49IYg-z2ql--AtieZAxxj\u0026sz=w1000"
     },
     {
         "sku":  "4X4-ROW-42",
@@ -6602,10 +6618,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Tt3uE0n8zJcD2Vv62al60b359j2nfDT4\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1KG_XD7S7smCRLXda9eHF0kd_wOH6nO0V\u0026sz=w1000"
+        "frontOriginal":  "https://drive.google.com/file/d/1ii5D_APZOHX49IYg-z2ql--AtieZAxxj/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1ii5D_APZOHX49IYg-z2ql--AtieZAxxj/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1ii5D_APZOHX49IYg-z2ql--AtieZAxxj\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1ii5D_APZOHX49IYg-z2ql--AtieZAxxj\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-29",
