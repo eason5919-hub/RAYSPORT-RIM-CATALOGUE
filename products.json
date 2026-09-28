@@ -688,22 +688,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1RPofmyjibJPxHsd-U1v1m9FXe_31NvmR\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-242",
-        "category":  "15X7.0",
-        "excelRow":  "242",
-        "description":  "RFF202 15X7 4X100 ET35  CB73.1  GLOSS BLACK MILLING LIP POLISH",
-        "price":  "820.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1vgucaIYsH8XpEL0GnNyX8NFTF8s79WcG/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1mvw7jB4sNbRvLVT9gShkyl4GQm7uRvcl/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1vgucaIYsH8XpEL0GnNyX8NFTF8s79WcG\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1mvw7jB4sNbRvLVT9gShkyl4GQm7uRvcl\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-243",
         "category":  "15X7.0",
         "excelRow":  "243",
@@ -1166,22 +1150,6 @@
         "sideOriginal":  "",
         "frontImage":  "",
         "sideImage":  ""
-    },
-    {
-        "sku":  "16X-ROW-25",
-        "category":  "16X",
-        "excelRow":  "25",
-        "description":  "65403-G 16X7 8X100/114.3 ET38 CB73.1  GLOSS BLACK",
-        "price":  "845.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/174RF-rkN-8ZAYZeFTaQGHDX_pQcYo8ag/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1yyXooCIPhKNmvdIa5Uka2IdPtnB03k2-/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=174RF-rkN-8ZAYZeFTaQGHDX_pQcYo8ag\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1yyXooCIPhKNmvdIa5Uka2IdPtnB03k2-\u0026sz=w1000"
     },
     {
         "sku":  "16X-ROW-36",
