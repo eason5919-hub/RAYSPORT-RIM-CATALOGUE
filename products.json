@@ -1,21 +1,5 @@
 [
     {
-        "sku":  "14-ROW-54",
-        "category":  "14",
-        "excelRow":  "54",
-        "description":  "SM6082 14X5.5 8X100/110 ET38 CB73.1 ULTRA BRONZE",
-        "price":  "598.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1hssemsdtsBnBoiTFiPqrBXiSYfNa00Zc/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1hA70OIPsNIzBeglpo0nX9JNfn_5eDPdF/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1hssemsdtsBnBoiTFiPqrBXiSYfNa00Zc\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1hA70OIPsNIzBeglpo0nX9JNfn_5eDPdF\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-78",
         "category":  "15X6.5",
         "excelRow":  "78",
@@ -5902,22 +5886,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1hdhicLMa8BVegAlUPfmUUoxU9j_KYBNo/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1GZnGNLuy9pJt6p7-Amm5O9g6Cq-alylu\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1hdhicLMa8BVegAlUPfmUUoxU9j_KYBNo\u0026sz=w1000"
-    },
-    {
-        "sku":  "19X-ROW-91",
-        "category":  "19X",
-        "excelRow":  "91",
-        "description":  "MDM159 19X8.5 5X120 ET38 CB60.1 HYPER BLACK",
-        "price":  "1,980.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1LSBzdDJ-dm11kjxXTRo4wSwX7te2tCyD/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1_mtwfQyMn49urblEHcjaSZDpT4gPD86D/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1LSBzdDJ-dm11kjxXTRo4wSwX7te2tCyD\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1_mtwfQyMn49urblEHcjaSZDpT4gPD86D\u0026sz=w1000"
     },
     {
         "sku":  "19X-ROW-95",
