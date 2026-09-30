@@ -4288,22 +4288,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1i-YdOklNEIzkWg1FS6NhE5RJLPh0vijy\u0026sz=w1000"
     },
     {
-        "sku":  "18X-ROW-149",
-        "category":  "18X",
-        "excelRow":  "149",
-        "description":  "MDM193 18X8 5X113.1 ET38  CB73.1  GLOSS BLACK",
-        "price":  "1,562.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1pI7lqPDM_TLwegMfFVYhQDGTdQr2IdGq/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1mnT_i0J5j5FwSLeWUo3H9-tm0fd6fXJ0/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1pI7lqPDM_TLwegMfFVYhQDGTdQr2IdGq\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1mnT_i0J5j5FwSLeWUo3H9-tm0fd6fXJ0\u0026sz=w1000"
-    },
-    {
         "sku":  "18X-ROW-150",
         "category":  "18X",
         "excelRow":  "150",
@@ -4645,7 +4629,7 @@
         "excelRow":  "220",
         "description":  "RFF110 18X8 5X113.1 ET38  CB73.1  GLOSS BLACK",
         "price":  "1,562.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
