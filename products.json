@@ -672,22 +672,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1cuZiVpIUF82iUUPfTKmMU4TpNQpJdZfo\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-231",
-        "category":  "15X7.0",
-        "excelRow":  "231",
-        "description":  "RFF102 15X7 4X100 ET38 CB73.1  CANDY RED/MILLING",
-        "price":  "725.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1h_FxajOy3w3Jkb0UWk-sMl-oLNSd3zCA/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1OFiCyumkVloHLWo2NAgAp51HweYfDtcE/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1h_FxajOy3w3Jkb0UWk-sMl-oLNSd3zCA\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1OFiCyumkVloHLWo2NAgAp51HweYfDtcE\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-236",
         "category":  "15X7.0",
         "excelRow":  "236",
@@ -4965,7 +4949,7 @@
         "excelRow":  "252",
         "description":  "RFFCR 18X8.5 5X100 ET38  CB73.1  MATT BRONZE",
         "price":  "1,562.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
