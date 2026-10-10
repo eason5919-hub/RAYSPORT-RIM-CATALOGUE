@@ -48,22 +48,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1GQPT2g25w-j6Mgh9TCAsnY6EU7cfh4wl\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-94",
-        "category":  "15X6.5",
-        "excelRow":  "94",
-        "description":  "RFF105-A 15X6.5 4X100 ET40  CB73.1  CANDY RED LIP POLISH",
-        "price":  "708.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/106Euak5Zmiz6nmVreb-SXP13_2ywFjEQ/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1TMdJ5uxdYMdrPe5m_b2g-4FTQv1oZKN2/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=106Euak5Zmiz6nmVreb-SXP13_2ywFjEQ\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1TMdJ5uxdYMdrPe5m_b2g-4FTQv1oZKN2\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-102",
         "category":  "15X6.5",
         "excelRow":  "102",
@@ -885,7 +869,7 @@
         "excelRow":  "258",
         "description":  "RFF-T4 15X7 4X100 ET38 CB73.1 GLOSS BLACK LP",
         "price":  "760.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -1312,22 +1296,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1cG6ckl71Vp5A5SUaBb0LLabtpoX6X1rV\u0026sz=w1000"
     },
     {
-        "sku":  "16X-ROW-147",
-        "category":  "16X",
-        "excelRow":  "147",
-        "description":  "MDM012 16X7 4X114.3 ET35 CB73.1 LIGHT GOLD (C)",
-        "price":  "875.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1kB86RXE7TsWf4-fqmYl4gXXZrhneS2sr/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1zvAzgNxRV31nuBazxB-1B0_iRCXG0AHj/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1kB86RXE7TsWf4-fqmYl4gXXZrhneS2sr\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1zvAzgNxRV31nuBazxB-1B0_iRCXG0AHj\u0026sz=w1000"
-    },
-    {
         "sku":  "16X-ROW-151",
         "category":  "16X",
         "excelRow":  "151",
@@ -1406,22 +1374,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1zD7H1Yss-Stnuhn6WWrpxsnO9Uv5MzT7/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1W12NeQrQQG6JaAZH35DGagBKuXdF4Uyf\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1zD7H1Yss-Stnuhn6WWrpxsnO9Uv5MzT7\u0026sz=w1000"
-    },
-    {
-        "sku":  "16X-ROW-184",
-        "category":  "16X",
-        "excelRow":  "184",
-        "description":  "RFF105 16X7 4X100 ET38 CB73.1  CANDY RED LIP POLISH",
-        "price":  "855.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1VMfV9mg8vsM8YehpCshQatXSpOXHxSE9/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/17578CiLtwW5l-gHGp59ZplpzvksEiCYu/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1VMfV9mg8vsM8YehpCshQatXSpOXHxSE9\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=17578CiLtwW5l-gHGp59ZplpzvksEiCYu\u0026sz=w1000"
     },
     {
         "sku":  "16X-ROW-195",
