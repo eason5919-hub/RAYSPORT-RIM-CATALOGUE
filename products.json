@@ -1045,7 +1045,7 @@
         "excelRow":  "281",
         "description":  "RFT6082 15X7 4X114.3 ET35 CB73.1 DARK BRONZE",
         "price":  "708.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming",
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
@@ -1130,10 +1130,10 @@
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1c-Shsj1ct_SEWhg8d0SKhwEXsXhRJMkz/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/19GqJGFaLnAwfj-CSDYTNvHAraGnUrCSZ/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1c-Shsj1ct_SEWhg8d0SKhwEXsXhRJMkz\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=19GqJGFaLnAwfj-CSDYTNvHAraGnUrCSZ\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-291",
@@ -1146,10 +1146,10 @@
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1oL462-xi2xIRybxTT04IQOdJvgGZM2S5/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1oL462-xi2xIRybxTT04IQOdJvgGZM2S5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1oL462-xi2xIRybxTT04IQOdJvgGZM2S5\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1oL462-xi2xIRybxTT04IQOdJvgGZM2S5\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-293",
@@ -1178,10 +1178,10 @@
         "extraInfo":  "",
         "extraInfoColor":  "#000000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1LAgBdhOVn7iJdcTapcnn5_P8YnQx4T-J/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/14QE5ipnDtpyJJBjRlLQkWvvQqn3leONC/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1LAgBdhOVn7iJdcTapcnn5_P8YnQx4T-J\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=14QE5ipnDtpyJJBjRlLQkWvvQqn3leONC\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-314",
@@ -6501,7 +6501,7 @@
         "excelRow":  "212",
         "description":  "RFT6082 15X7 4X114.3 ET35 CB73.1 DARK BRONZE",
         "price":  "708.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming",
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
