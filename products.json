@@ -1248,22 +1248,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1DKkYl5_B9cbwiEPbM2uXRhhoBuC-d7AN\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-363",
-        "category":  "15X7.0",
-        "excelRow":  "363",
-        "description":  "D5836 15X8 8X100/114.3 ET25  CB73.1  M19 ULTRA BRONZE",
-        "price":  "646.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
         "sku":  "16X-ROW-36",
         "category":  "16X",
         "excelRow":  "36",
@@ -4339,7 +4323,7 @@
         "sku":  "18X-ROW-124",
         "category":  "18X",
         "excelRow":  "124",
-        "description":  "MDM029 18X9.5 5X120 ET38 CB72.6 GLOSS BLACK LPÂ ",
+        "description":  "MDM029 18X9.5 5X120 ET38 CB72.6 GLOSS BLACK LP ",
         "price":  "1,562.00",
         "status":  "Available",
         "remark":  "Flow Forming  Rear",
