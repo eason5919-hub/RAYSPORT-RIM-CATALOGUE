@@ -3312,22 +3312,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1P4q_LqIvUm-cUSHPj8IQR-fsYepE9mts\u0026sz=w1000"
     },
     {
-        "sku":  "17X-ROW-349",
-        "category":  "17X",
-        "excelRow":  "349",
-        "description":  "RFFCR 17X7.5 4X100 ET40  CB73.1  HYPER BLACK",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1516XIbOs4-m5XTvh4WVskPpRPaMqpmHJ/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1safnvR9A8wopC0ys3gnECnmrCSpUlsr4/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1516XIbOs4-m5XTvh4WVskPpRPaMqpmHJ\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1safnvR9A8wopC0ys3gnECnmrCSpUlsr4\u0026sz=w1000"
-    },
-    {
         "sku":  "17X-ROW-351",
         "category":  "17X",
         "excelRow":  "351",
@@ -5397,7 +5381,7 @@
         "excelRow":  "303",
         "description":  "X80508J 18X8.5 5X108 ET20 CB73.1 MATT BLACK",
         "price":  "1,750.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
