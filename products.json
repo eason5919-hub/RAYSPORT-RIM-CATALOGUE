@@ -1146,10 +1146,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1v2Y7lDybpeknuC8BnTufAUGw7QQ3OB3R/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/17e3Mr2efdXwRHJqkY8YwI4POloyb00h-/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1v2Y7lDybpeknuC8BnTufAUGw7QQ3OB3R\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=17e3Mr2efdXwRHJqkY8YwI4POloyb00h-\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-282",
@@ -6762,10 +6762,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1v2Y7lDybpeknuC8BnTufAUGw7QQ3OB3R/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/17e3Mr2efdXwRHJqkY8YwI4POloyb00h-/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1v2Y7lDybpeknuC8BnTufAUGw7QQ3OB3R\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=17e3Mr2efdXwRHJqkY8YwI4POloyb00h-\u0026sz=w1000"
     },
     {
         "sku":  "NEW ARRIVAL-ROW-215",
