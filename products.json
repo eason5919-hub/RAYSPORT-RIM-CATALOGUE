@@ -2944,6 +2944,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1eHeS97FdBjTLGR6qNMS2GB3IckjMyxG5\u0026sz=w1000"
     },
     {
+        "sku":  "17X-ROW-293",
+        "category":  "17X",
+        "excelRow":  "293",
+        "description":  "RFF101 17X7.5 5X113.1 ET35  CB73.1  WHITE CHROME",
+        "price":  "1,456.00",
+        "status":  "Last Set",
+        "remark":  "Flow Forming",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1-4VRV0hQim6hfUwwOv_MMlEXpL2v1LcU/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1jSV1vM1Qu-h1jARvASvT9-NJfVoqVAFE/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1-4VRV0hQim6hfUwwOv_MMlEXpL2v1LcU\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1jSV1vM1Qu-h1jARvASvT9-NJfVoqVAFE\u0026sz=w1000"
+    },
+    {
         "sku":  "17X-ROW-297",
         "category":  "17X",
         "excelRow":  "297",
@@ -5438,6 +5454,22 @@
         "sideOriginal":  "https://drive.google.com/file/d/1mUhnO7t7bNyC8uhxW_Nn0TsS1DcwXFFr/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=11pQlQYXuOtCuWQHazKn_37zNY2Pr2poP\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1mUhnO7t7bNyC8uhxW_Nn0TsS1DcwXFFr\u0026sz=w1000"
+    },
+    {
+        "sku":  "19X-ROW-40",
+        "category":  "19X",
+        "excelRow":  "40",
+        "description":  "D5861 19X9.5 5X120 ET35 CB72.6 HYPER BLACK MILLING/LIP POLISH",
+        "price":  "1,927.00",
+        "status":  "Last Set",
+        "remark":  "[Rear]",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1mYcbNV0PrSdgu4-ijZglTnoCpuEE0nMr/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1smyl1PXx1cYuymJWMWv4YQMpPSuugnwp/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1mYcbNV0PrSdgu4-ijZglTnoCpuEE0nMr\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1smyl1PXx1cYuymJWMWv4YQMpPSuugnwp\u0026sz=w1000"
     },
     {
         "sku":  "19X-ROW-47",
