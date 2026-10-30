@@ -2304,22 +2304,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1Hvb7IE-khWmOMbHu8aUqQhcyVpWgB1-M\u0026sz=w1000"
     },
     {
-        "sku":  "17X-ROW-110",
-        "category":  "17X",
-        "excelRow":  "110",
-        "description":  "D5489 17X8 5X114.3 ET35 CB73.1  SILVER",
-        "price":  "1,000.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#C00000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/16DZFjWa04FVAt33u_3WotSqjdBP6RJ1H/view",
-        "sideOriginal":  "https://drive.google.com/file/d/1-UEXWr79pH60RXwqQ_Zv9mVSUhuS9ZAp/view",
-        "frontImage":  "https://drive.google.com/thumbnail?id=16DZFjWa04FVAt33u_3WotSqjdBP6RJ1H\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1-UEXWr79pH60RXwqQ_Zv9mVSUhuS9ZAp\u0026sz=w1000"
-    },
-    {
         "sku":  "17X-ROW-111",
         "category":  "17X",
         "excelRow":  "111",
@@ -3525,7 +3509,7 @@
         "excelRow":  "383",
         "description":  "RFT6082 17X8 5X113.1 ET40 CB73.1 GLOSS BLACK",
         "price":  "1,100.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
