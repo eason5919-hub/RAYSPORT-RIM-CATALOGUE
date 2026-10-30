@@ -1120,22 +1120,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1aQFqSKMrnm3UMZkxlr9CLUY2Q_MJuzT_\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-283",
-        "category":  "15X7.0",
-        "excelRow":  "283",
-        "description":  "RFT6082 15X7 4X114.3 ET35 CB73.1 DARK BRONZE",
-        "price":  "708.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Xk9JB2_3lspSy5Umics0B7faeASjcwcu/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1qJL314YgNncPlz3mlNDoWFnc5M5B1WB6/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Xk9JB2_3lspSy5Umics0B7faeASjcwcu\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1qJL314YgNncPlz3mlNDoWFnc5M5B1WB6\u0026sz=w1000"
-    },
-    {
         "sku":  "15X7.0-ROW-284",
         "category":  "15X7.0",
         "excelRow":  "284",
@@ -1173,7 +1157,7 @@
         "excelRow":  "287",
         "description":  "RFT8890 15X7 8X100/114.3 ET38  CB73.1  GLOSS BLACK",
         "price":  "688.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
