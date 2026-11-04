@@ -1280,22 +1280,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj\u0026sz=w1000"
     },
     {
-        "sku":  "15X7.0-ROW-361",
-        "category":  "15X7.0",
-        "excelRow":  "361",
-        "description":  "RFF-DR-B 15X7.5 4X100 ET25  CB73.1  GLOSS BLACK (LASER)",
-        "price":  "625.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming  (Offer)",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1EI9A7SkO7zSiPrQambGEUeoC2kZydziw/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1DKkYl5_B9cbwiEPbM2uXRhhoBuC-d7AN/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1EI9A7SkO7zSiPrQambGEUeoC2kZydziw\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1DKkYl5_B9cbwiEPbM2uXRhhoBuC-d7AN\u0026sz=w1000"
-    },
-    {
         "sku":  "16X-ROW-131",
         "category":  "16X",
         "excelRow":  "131",
@@ -6788,7 +6772,7 @@
         "category":  "RAYSPORT TYRE",
         "excelRow":  "6",
         "description":  "RAYSPORT 195/50R15 SPORT KING SK07 (86V XL) [Y26]",
-        "stockQuantity":  198,
+        "stockQuantity":  178,
         "price":  "110.70",
         "status":  "Available",
         "remark":  "",
