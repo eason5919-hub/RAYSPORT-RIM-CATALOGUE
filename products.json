@@ -96,22 +96,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1p9OGZ8E5k_glxZw8XJN4WaBdM5R8UwRy\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-109",
-        "category":  "15X6.5",
-        "excelRow":  "109",
-        "description":  "RFF-DR-A 15X6.5 4X100 ET42  CB73.1  WHITE",
-        "price":  "668.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Er9ICBCiyJxK0nepZFsPdTr_QiNWzP3Z/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1gXvy_5qpqKNi9cY29Muh22pR8DmeEbjh/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Er9ICBCiyJxK0nepZFsPdTr_QiNWzP3Z\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1gXvy_5qpqKNi9cY29Muh22pR8DmeEbjh\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-112",
         "category":  "15X6.5",
         "excelRow":  "112",
@@ -670,22 +654,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1q1RNobhIXqIb8l4FA1dBfS_8cQgF9M5B/view",
         "frontImage":  "https://drive.google.com/thumbnail?id=1R9hR-acpFz4Nov_FyEmc0pCVDmmppIgf\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1q1RNobhIXqIb8l4FA1dBfS_8cQgF9M5B\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X7.0-ROW-209",
-        "category":  "15X7.0",
-        "excelRow":  "209",
-        "description":  "RFF006-A 15X7 4X100 ET38  CB73.1  GLOSS BLACK",
-        "price":  "625.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming  (Offer)",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/12SzzadzWiWcO1aJHyaGM7-p-pJysejnI/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1xBLKqtfuFP6Fk94ahkXwDbhbiBBixrhQ/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=12SzzadzWiWcO1aJHyaGM7-p-pJysejnI\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1xBLKqtfuFP6Fk94ahkXwDbhbiBBixrhQ\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-224",
@@ -2766,22 +2734,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1fQ9hNywkEvHtSHlqfsl2O0mEymE7AdiT/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1Fn4Y--uN_adHBSPWe-eAC8Uy_yTfWbGO\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1fQ9hNywkEvHtSHlqfsl2O0mEymE7AdiT\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-262",
-        "category":  "17X",
-        "excelRow":  "262",
-        "description":  "MDM425 17X7.5 5X113.1 ET38 CB73.1 HYPER SILVER",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1_RkF1XljEv_u7rzZOUeLTbwUZ0aivOyK/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1rgow3jzOsi6-l9KeT2PQaqDIqIkk_hlC/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1_RkF1XljEv_u7rzZOUeLTbwUZ0aivOyK\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1rgow3jzOsi6-l9KeT2PQaqDIqIkk_hlC\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-263",
@@ -6676,7 +6628,7 @@
         "category":  "RAYSPORT TYRE",
         "excelRow":  "6",
         "description":  "RAYSPORT 195/50R15 SPORT KING SK07 (86V XL) [Y26]",
-        "stockQuantity":  178,
+        "stockQuantity":  150,
         "price":  "110.70",
         "status":  "Available",
         "remark":  "",
