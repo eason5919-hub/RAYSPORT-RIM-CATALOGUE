@@ -1104,6 +1104,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1D2JT5hs-itUZ57fuAxE07JwJXx45X5Fj\u0026sz=w1000"
     },
     {
+        "sku":  "15X7.0-ROW-374",
+        "category":  "15X7.0",
+        "excelRow":  "374",
+        "description":  "JT072 15X8.25 4X100 ET25 CB73.1 BLACK LIP POLISH",
+        "price":  "625.00",
+        "status":  "Last Set",
+        "remark":  "(Offer)",
+        "extraInfo":  "",
+        "extraInfoColor":  "#000000",
+        "rowColor":  "",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "16X-ROW-131",
         "category":  "16X",
         "excelRow":  "131",
@@ -2256,22 +2272,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=18QdU1ulzN8SBw5UHOH96tIqKbOdoie2L\u0026sz=w1000"
     },
     {
-        "sku":  "17X-ROW-188",
-        "category":  "17X",
-        "excelRow":  "188",
-        "description":  "(OD) D7070 17X7.5 8X100/114.3 ET38  CB73.1  GLOSS BLACK",
-        "price":  "1,000.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1CuF82bb_UK38sS3OLeZM_J72w5uq3KvM/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1ZpOY4rOHi8MmYqR39tbXcnmfkXeblYlj/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1CuF82bb_UK38sS3OLeZM_J72w5uq3KvM\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1ZpOY4rOHi8MmYqR39tbXcnmfkXeblYlj\u0026sz=w1000"
-    },
-    {
         "sku":  "17X-ROW-202",
         "category":  "17X",
         "excelRow":  "202",
@@ -2814,22 +2814,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1ykaxGvB5uoku6iVLFZ0kAiOwyozdqpdK/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=19w-2lP0CUFDAhxotl3-uTJJhsLFWBHoA\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1ykaxGvB5uoku6iVLFZ0kAiOwyozdqpdK\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-286",
-        "category":  "17X",
-        "excelRow":  "286",
-        "description":  "RFF101 17X7.5 4X100 ET40  CB73.1  GLOSS BLACK MILLING",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1jgNsAnGZ6BLBQL91m80mwcYGowyIomPo/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1tprxnta_vw3hHcFfMvSAhJehAR4Tj67o/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1jgNsAnGZ6BLBQL91m80mwcYGowyIomPo\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1tprxnta_vw3hHcFfMvSAhJehAR4Tj67o\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-289",
