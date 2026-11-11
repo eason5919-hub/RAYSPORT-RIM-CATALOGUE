@@ -144,22 +144,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=10vGTOH5gg7wuFDKpbYIdgRtC4byr3bQP\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-126",
-        "category":  "15X6.5",
-        "excelRow":  "126",
-        "description":  "RFT090-A 15X6.5 4X100 ET40  CB73.1  HYPER BLACK MILLING",
-        "price":  "728.00",
-        "status":  "Limited",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1u2aVXJh0v2l7XoobAxg9I8QXw3SprW9d/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1amcFlDf1vNHU8Z0kD35ALdFt7rytTrn8/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1u2aVXJh0v2l7XoobAxg9I8QXw3SprW9d\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1amcFlDf1vNHU8Z0kD35ALdFt7rytTrn8\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-127",
         "category":  "15X6.5",
         "excelRow":  "127",
@@ -782,22 +766,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X7.0-ROW-254",
-        "category":  "15X7.0",
-        "excelRow":  "254",
-        "description":  "RFF-DR 15X7 4X100 ET38  CB73.1  CANDY RED",
-        "price":  "625.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming  (Offer)",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/18DLorxLvXkv-xneHGJ6KnPWiwgMN7TcE/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1XHxDUU9le5cRTYcZAOD6Zgy-16VpDC9j/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=18DLorxLvXkv-xneHGJ6KnPWiwgMN7TcE\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1XHxDUU9le5cRTYcZAOD6Zgy-16VpDC9j\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-255",
@@ -6436,7 +6404,7 @@
         "category":  "RAYSPORT TYRE",
         "excelRow":  "6",
         "description":  "RAYSPORT 195/50R15 SPORT KING SK07 (86V XL) [Y26]",
-        "stockQuantity":  138,
+        "stockQuantity":  130,
         "price":  "110.70",
         "status":  "Available",
         "remark":  "",
