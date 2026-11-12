@@ -1125,7 +1125,7 @@
         "excelRow":  "139",
         "description":  "MDM010 16X7 4X100 ET35 CB73.1  GLOSS BLACK (TC-X)",
         "price":  "875.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -2622,22 +2622,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1d9-AO9eQzelV7L4isOBqWpeL3dgsbuFU/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=16o-2Akl3Y2KTN5zLLzhxyRjUaUcvFDeH\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1d9-AO9eQzelV7L4isOBqWpeL3dgsbuFU\u0026sz=w1000"
-    },
-    {
-        "sku":  "17X-ROW-262",
-        "category":  "17X",
-        "excelRow":  "262",
-        "description":  "MDM425 17X7.5 5X113.1 ET38 CB73.1 HYPER BLACK",
-        "price":  "1,100.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Fn4Y--uN_adHBSPWe-eAC8Uy_yTfWbGO/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1fQ9hNywkEvHtSHlqfsl2O0mEymE7AdiT/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Fn4Y--uN_adHBSPWe-eAC8Uy_yTfWbGO\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1fQ9hNywkEvHtSHlqfsl2O0mEymE7AdiT\u0026sz=w1000"
     },
     {
         "sku":  "17X-ROW-263",
