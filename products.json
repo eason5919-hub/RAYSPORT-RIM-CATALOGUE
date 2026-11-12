@@ -2752,6 +2752,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1ykaxGvB5uoku6iVLFZ0kAiOwyozdqpdK\u0026sz=w1000"
     },
     {
+        "sku":  "17X-ROW-285",
+        "category":  "17X",
+        "excelRow":  "285",
+        "description":  "RFF101 17X7.5 4X100 ET40 CB73.1  CANDY RED MILLING",
+        "price":  "1,100.00",
+        "status":  "Last Set",
+        "remark":  "Flow Forming",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1NGYijT4ILOJtFUhgO4-m8LkF9b-8WZI_/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1_wwEAiHffbiCQqGj0PvNRDZoUEZc_9oD/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1NGYijT4ILOJtFUhgO4-m8LkF9b-8WZI_\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1_wwEAiHffbiCQqGj0PvNRDZoUEZc_9oD\u0026sz=w1000"
+    },
+    {
         "sku":  "17X-ROW-289",
         "category":  "17X",
         "excelRow":  "289",
@@ -4094,22 +4110,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/18hfKyORZJoJ3u-TyzXQ_GuAz4yZQ1szL/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1xlpGvMmc4khQVS0yiM3mdqkULMBGOwVp\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=18hfKyORZJoJ3u-TyzXQ_GuAz4yZQ1szL\u0026sz=w1000"
-    },
-    {
-        "sku":  "18X-ROW-112",
-        "category":  "18X",
-        "excelRow":  "112",
-        "description":  "JT111 18X8.5 5X113.1 ET38 CB73.1 CANDY RED",
-        "price":  "1,416.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/1Fgn6CjTTJZxlY0s9xNNs4T9AcScs_7L9/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1BQdfo41_EVG-TtbELdS2z5mPPWvNbSJp/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1Fgn6CjTTJZxlY0s9xNNs4T9AcScs_7L9\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1BQdfo41_EVG-TtbELdS2z5mPPWvNbSJp\u0026sz=w1000"
     },
     {
         "sku":  "18X-ROW-113",
