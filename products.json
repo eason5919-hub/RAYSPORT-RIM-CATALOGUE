@@ -1088,22 +1088,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1wvvPWl9U8j0C4CZGBFMNwR3KuZ4DtLmv\u0026sz=w1000"
     },
     {
-        "sku":  "16X-ROW-135",
-        "category":  "16X",
-        "excelRow":  "135",
-        "description":  "JT219 16X7 8X100/114.3 ET35 CB73.1 WHITE CHROME",
-        "price":  "1,240.00",
-        "status":  "Limited",
-        "remark":  "",
-        "extraInfo":  "NEW",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
-    },
-    {
         "sku":  "16X-ROW-136",
         "category":  "16X",
         "excelRow":  "136",
@@ -6181,7 +6165,7 @@
         "excelRow":  "331",
         "description":  "JT219 16X7 8X100/114.3 ET35 CB73.1 WHITE CHROME",
         "price":  "1,240.00",
-        "status":  "Limited",
+        "status":  "Sold Out",
         "remark":  "",
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
