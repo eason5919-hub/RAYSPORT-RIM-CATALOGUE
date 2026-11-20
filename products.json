@@ -80,22 +80,6 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1qWL3SVNa2WDvwiEuP9TyaeVoKyeX-i1y\u0026sz=w1000"
     },
     {
-        "sku":  "15X6.5-ROW-114",
-        "category":  "15X6.5",
-        "excelRow":  "114",
-        "description":  "RFF-T4-A 15X6.5 4X100 ET40  CB73.1  MAG BLUE LP",
-        "price":  "740.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/15iiJZgMOYKb1uzzyAzUkF7gIx1FjAQun/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1xM2STmmiS2KdeS61RLoNY6dczly2iA5k/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=15iiJZgMOYKb1uzzyAzUkF7gIx1FjAQun\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1xM2STmmiS2KdeS61RLoNY6dczly2iA5k\u0026sz=w1000"
-    },
-    {
         "sku":  "15X6.5-ROW-120",
         "category":  "15X6.5",
         "excelRow":  "120",
@@ -581,7 +565,7 @@
         "excelRow":  "225",
         "description":  "RFF101 15X7 4X100 ET38  CB73.1  HYPER BLACK MILLING LIP POLISH",
         "price":  "780.00",
-        "status":  "Available",
+        "status":  "Limited",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -910,22 +894,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1aQFqSKMrnm3UMZkxlr9CLUY2Q_MJuzT_/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1oEZsNU28Oo_aL7kFEfWEnUEBozdc4ZTD\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1aQFqSKMrnm3UMZkxlr9CLUY2Q_MJuzT_\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X7.0-ROW-318",
-        "category":  "15X7.0",
-        "excelRow":  "318",
-        "description":  "SM5599 15X7 4X100 ET38  CB73.1  MATT BRONZE",
-        "price":  "725.00",
-        "status":  "Last Set",
-        "remark":  "",
-        "extraInfo":  "",
-        "extraInfoColor":  "#000000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/17kkhftotKlPJHvZ1cYq30ETNWe8hlWyw/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1QjUOj0CrVHJfULoiThbyjDw8BE_xWUj7/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=17kkhftotKlPJHvZ1cYq30ETNWe8hlWyw\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1QjUOj0CrVHJfULoiThbyjDw8BE_xWUj7\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-319",
