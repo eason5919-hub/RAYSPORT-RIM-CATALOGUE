@@ -5824,6 +5824,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1rE7Kbqj8LPG87rChB45dS63r_vtegR_Y\u0026sz=w1000"
     },
     {
+        "sku":  "19X-ROW-130",
+        "category":  "19X",
+        "excelRow":  "130",
+        "description":  "SM027 19X8.5 5X113.1 ET30 CB73.1  FLAT BLACK/RED LINE MILLING",
+        "price":  "2,300.00",
+        "status":  "Last Set",
+        "remark":  "Front",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "#DDEBF7",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
         "sku":  "20X-ROW-9",
         "category":  "20X",
         "excelRow":  "9",
