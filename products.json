@@ -21,7 +21,7 @@
         "excelRow":  "86",
         "description":  "RFF101-A 15X6.5 4X100 ET40  CB73.1  HYPER BLACK MILLING LIP POLISH",
         "price":  "760.00",
-        "status":  "Limited",
+        "status":  "Last Set",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
@@ -720,6 +720,22 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1whcCQKC-FkdfF0T1TYm1TIGoOksldxQe\u0026sz=w1000"
     },
     {
+        "sku":  "15X7.0-ROW-253",
+        "category":  "15X7.0",
+        "excelRow":  "253",
+        "description":  "RFF-DR 15X7 4X100 ET38  CB73.1  GLOSS BLACK",
+        "price":  "625.00",
+        "status":  "Last Set",
+        "remark":  "Flow Forming  (Offer)",
+        "extraInfo":  "",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "",
+        "frontOriginal":  "https://drive.google.com/file/d/1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1Sd_VA8huhJnpuYdN6VCLraYsR7d7L0Gj\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1GZtcAj0JBbiUBtaBCb2skWpeDFsSjUgB\u0026sz=w1000"
+    },
+    {
         "sku":  "15X7.0-ROW-255",
         "category":  "15X7.0",
         "excelRow":  "255",
@@ -862,22 +878,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/1AopDZEMCurU1Wv0i-DYDrUhNUETztdjh/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=146vInXic4xdtOYV80JLvaCGNERjjf5Pv\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=1AopDZEMCurU1Wv0i-DYDrUhNUETztdjh\u0026sz=w1000"
-    },
-    {
-        "sku":  "15X7.0-ROW-276",
-        "category":  "15X7.0",
-        "excelRow":  "276",
-        "description":  "RFT6082 15X7 4X100 ET38  CB73.1  ULTRA BRONZE",
-        "price":  "688.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/122jU5cMuroLTgSx9601cmPSi0D5sJngW/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1w1_L3UfMsX_hgTRpRHroFIPLbIhOYsqA/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=122jU5cMuroLTgSx9601cmPSi0D5sJngW\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1w1_L3UfMsX_hgTRpRHroFIPLbIhOYsqA\u0026sz=w1000"
     },
     {
         "sku":  "15X7.0-ROW-283",
@@ -1326,22 +1326,6 @@
         "sideOriginal":  "https://drive.google.com/file/d/16a8Vp7src9Uh_NfUzdLtNMApkCsGXWCQ/view?usp=sharing",
         "frontImage":  "https://drive.google.com/thumbnail?id=1diC5q7wCrcFpMV6BzHkwxyQm6QNip0hD\u0026sz=w1000",
         "sideImage":  "https://drive.google.com/thumbnail?id=16a8Vp7src9Uh_NfUzdLtNMApkCsGXWCQ\u0026sz=w1000"
-    },
-    {
-        "sku":  "16X-ROW-197",
-        "category":  "16X",
-        "excelRow":  "197",
-        "description":  "RFF107 16X7 8X100/114.3 ET40  CB73.1  STEEL GREY",
-        "price":  "855.00",
-        "status":  "Last Set",
-        "remark":  "Flow Forming",
-        "extraInfo":  "",
-        "extraInfoColor":  "#FF0000",
-        "rowColor":  "",
-        "frontOriginal":  "https://drive.google.com/file/d/11RwlAaDfDeTPxLtxqTo92Gd66Rh4TAGG/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1SjsG5Eqrh6QnaLjExdZMT4ORLLqs4afx/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=11RwlAaDfDeTPxLtxqTo92Gd66Rh4TAGG\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1SjsG5Eqrh6QnaLjExdZMT4ORLLqs4afx\u0026sz=w1000"
     },
     {
         "sku":  "16X-ROW-199",
@@ -6309,7 +6293,7 @@
         "excelRow":  "207",
         "description":  "RFT6082 15X7 4X100 ET38  CB73.1  ULTRA BRONZE",
         "price":  "688.00",
-        "status":  "Last Set",
+        "status":  "Sold Out",
         "remark":  "Flow Forming",
         "extraInfo":  "",
         "extraInfoColor":  "#FF0000",
