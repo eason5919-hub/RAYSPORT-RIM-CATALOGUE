@@ -6528,9 +6528,41 @@
         "sideImage":  ""
     },
     {
-        "sku":  "20X-ROW-21",
+        "sku":  "20X-ROW-18",
         "category":  "20X",
-        "excelRow":  "21",
+        "excelRow":  "18",
+        "description":  "FG495 20X10.5 5X114.3 ET25 CB66.1 GLOSS BLACK MATT BRONZE",
+        "price":  "8,800.00",
+        "status":  "Last Set",
+        "remark":  "Forged  [Front]",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "#EDEDED",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
+        "sku":  "20X-ROW-19",
+        "category":  "20X",
+        "excelRow":  "19",
+        "description":  "FG495 20X11.5 5X114.3 ET5 CB66.1 GLOSS BLACK MATT BRONZE",
+        "price":  "8,800.00",
+        "status":  "Last Set",
+        "remark":  "Forged  [Rear]",
+        "extraInfo":  "NEW",
+        "extraInfoColor":  "#FF0000",
+        "rowColor":  "#EDEDED",
+        "frontOriginal":  "",
+        "sideOriginal":  "",
+        "frontImage":  "",
+        "sideImage":  ""
+    },
+    {
+        "sku":  "20X-ROW-23",
+        "category":  "20X",
+        "excelRow":  "23",
         "description":  "RFF106 (A046) 20X8.5 5X113.1 ET32 CB73.1  GLOSS BLACK",
         "price":  "2,800.00",
         "status":  "Available",
@@ -6544,9 +6576,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1O07SXcWFynrolzsrGaT6unEQF2aEGt3b\u0026sz=w1000"
     },
     {
-        "sku":  "20X-ROW-22",
+        "sku":  "20X-ROW-24",
         "category":  "20X",
-        "excelRow":  "22",
+        "excelRow":  "24",
         "description":  "RFF106 (A046) 20X8.5 5X113.1 ET32 CB73.1  HYPER BLACK",
         "price":  "2,800.00",
         "status":  "Available",
@@ -6560,9 +6592,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1GsPMojzuU-9qWlY6s4oX6Hp-kLVYgPLw\u0026sz=w1000"
     },
     {
-        "sku":  "20X-ROW-25",
+        "sku":  "20X-ROW-27",
         "category":  "20X",
-        "excelRow":  "25",
+        "excelRow":  "27",
         "description":  "GL039 20X8.5 5X112 ET35  CB66.45  MATT BLACK",
         "price":  "2,500.00",
         "status":  "Limited",
@@ -6576,9 +6608,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=19AHqoX7sFsvTo2O9t9T63PzVLWQJKD58\u0026sz=w1000"
     },
     {
-        "sku":  "20X-ROW-26",
+        "sku":  "20X-ROW-28",
         "category":  "20X",
-        "excelRow":  "26",
+        "excelRow":  "28",
         "description":  "GL084 20X8.5 5X114.3 ET35  CB73.1  HYPER BLACK",
         "price":  "2,500.00",
         "status":  "Limited",
@@ -6592,9 +6624,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1a3h-fSLVO2D8iioWZpzBebwptoQIcmro\u0026sz=w1000"
     },
     {
-        "sku":  "20X-ROW-30",
+        "sku":  "20X-ROW-32",
         "category":  "20X",
-        "excelRow":  "30",
+        "excelRow":  "32",
         "description":  "MDM193 20X8.5 5X113.1 ET35  CB73.1  GLOSS BLACK",
         "price":  "2,500.00",
         "status":  "Limited",
@@ -6608,9 +6640,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1VWThVs2VOE7ZIxeqxEzERMOZuIl09EpY\u0026sz=w1000"
     },
     {
-        "sku":  "20X-ROW-32",
+        "sku":  "20X-ROW-34",
         "category":  "20X",
-        "excelRow":  "32",
+        "excelRow":  "34",
         "description":  "MDM193 20X8.5 5X120 ET35  CB73.1  GLOSS BLACK",
         "price":  "2,500.00",
         "status":  "Available",
@@ -6624,9 +6656,9 @@
         "sideImage":  "https://drive.google.com/thumbnail?id=1Ln84YAo8nJg8GMAfcDEOpvSMo8VOA0rm\u0026sz=w1000"
     },
     {
-        "sku":  "20X-ROW-34",
+        "sku":  "20X-ROW-36",
         "category":  "20X",
-        "excelRow":  "34",
+        "excelRow":  "36",
         "description":  "RFF108 20X8.5 5X120 ET38 CB73.1 GLOSS BLACK MACHINE FACE",
         "price":  "2,600.00",
         "status":  "Limited",
@@ -7354,10 +7386,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "#EDEDED",
-        "frontOriginal":  "https://drive.google.com/file/d/1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1pQEPF9R9bmmStktYic-ew1D1t46o4bs5/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1pQEPF9R9bmmStktYic-ew1D1t46o4bs5\u0026sz=w1000"
+        "frontOriginal":  "https://drive.google.com/file/d/1pQEPF9R9bmmStktYic-ew1D1t46o4bs5/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1pQEPF9R9bmmStktYic-ew1D1t46o4bs5\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5\u0026sz=w1000"
     },
     {
         "sku":  "FORGED-ROW-9",
@@ -7754,10 +7786,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "#EDEDED",
-        "frontOriginal":  "https://drive.google.com/file/d/1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5/view?usp=sharing",
-        "sideOriginal":  "https://drive.google.com/file/d/1pQEPF9R9bmmStktYic-ew1D1t46o4bs5/view?usp=sharing",
-        "frontImage":  "https://drive.google.com/thumbnail?id=1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5\u0026sz=w1000",
-        "sideImage":  "https://drive.google.com/thumbnail?id=1pQEPF9R9bmmStktYic-ew1D1t46o4bs5\u0026sz=w1000"
+        "frontOriginal":  "https://drive.google.com/file/d/1pQEPF9R9bmmStktYic-ew1D1t46o4bs5/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1pQEPF9R9bmmStktYic-ew1D1t46o4bs5\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5\u0026sz=w1000"
     },
     {
         "sku":  "RAYSPORT TYRE-ROW-6",
