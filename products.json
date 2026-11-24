@@ -6538,10 +6538,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "#EDEDED",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1pQEPF9R9bmmStktYic-ew1D1t46o4bs5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1pQEPF9R9bmmStktYic-ew1D1t46o4bs5\u0026sz=w1000"
     },
     {
         "sku":  "20X-ROW-19",
@@ -6554,10 +6554,10 @@
         "extraInfo":  "NEW",
         "extraInfoColor":  "#FF0000",
         "rowColor":  "#EDEDED",
-        "frontOriginal":  "",
-        "sideOriginal":  "",
-        "frontImage":  "",
-        "sideImage":  ""
+        "frontOriginal":  "https://drive.google.com/file/d/1pQEPF9R9bmmStktYic-ew1D1t46o4bs5/view?usp=sharing",
+        "sideOriginal":  "https://drive.google.com/file/d/1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5/view?usp=sharing",
+        "frontImage":  "https://drive.google.com/thumbnail?id=1pQEPF9R9bmmStktYic-ew1D1t46o4bs5\u0026sz=w1000",
+        "sideImage":  "https://drive.google.com/thumbnail?id=1aNTZ25MRExCz5b1JW0Fm0hZxJqi4kcg5\u0026sz=w1000"
     },
     {
         "sku":  "20X-ROW-23",
