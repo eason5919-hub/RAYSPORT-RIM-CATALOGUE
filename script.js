@@ -45,7 +45,6 @@ const allIncludeCategories = [
   "18X",
   "19X",
   "20X",
-  "4X4",
   "FORGED"
 ];
 
